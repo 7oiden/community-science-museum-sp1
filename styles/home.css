@@ -1,0 +1,21 @@
+@import "imports/variables.css" /* global styles
+--------------------*/ html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* header 
+--------------------*/
+
+/* main 
+--------------------*/
+
+/* footer 
+--------------------*/
+
+/* styles that change
+--------------------*/
