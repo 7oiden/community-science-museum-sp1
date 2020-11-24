@@ -1,5 +1,8 @@
-@import "imports/variables.css" /* global styles
---------------------*/ html {
+@import "imports/variables.css";
+
+/* global styles
+--------------------*/
+html {
   box-sizing: border-box;
 }
 *,
