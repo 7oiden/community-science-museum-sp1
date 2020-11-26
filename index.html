@@ -17,71 +17,69 @@
 
   <body>
     <header>
-      <figure class="logo">
-        <a href="index.html"
-          ><img src="images\cms-logo.png" alt="Community Science Museum logo"
-        /></a>
-      </figure>
-      <nav aria-label="icons">
-        <ul>
-          <li>
-            <a href=""
-              ><figure><span class="fa fa-search"></span></figure
-            ></a>
-          </li>
-          <li>
-            <a href="www.ticketmaster.com"
-              ><figure><span class="fa fa-ticket-alt"></span></figure
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><figure><span class="fa fa-user-circle"></span></figure
-            ></a>
-          </li>
-        </ul>
-      </nav>
-      <nav aria-label="menu">
-        <ul class="menu">
-          <li>
-            <label class="hamburger-label" for="hamburger-menu"
-              ><span class="fa fa-bars"></span
-            ></label>
-            <input type="checkbox" id="hamburger-menu" />
-            <ul class="mobile-menu">
-              <li><a href="exhibitions.html">EXHIBITIONS</a></li>
-              <li><a href="explore.html">EXPLORE</a></li>
-              <li><a href="get_involved.html">GET INVOLVED</a></li>
-              <li><a href="visit.html">VISIT</a></li>
-            </ul>
-          </li>
-          <li>MENU</li>
+      <div class="header-wrapper">
+        <figure class="logo">
+          <a href="index.html"
+            ><img src="images\cms-logo.png" alt="Community Science Museum logo"
+          /></a>
+        </figure>
+        <nav aria-label="icons" class="icons">
+          <figure>
+            <a href=""><span class="fa fa-search icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-ticket-alt icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-user-circle icon"></span></a>
+          </figure>
+        </nav>
+      </div>
+
+      <nav aria-label="menu" class="menu">
+        <ul class="small-screen">
+          <label class="hamburger-label" for="hamburger-menu"
+            ><span class="fa fa-bars"></span>
+            <p id="menu">MENU</p></label
+          >
+          <input type="checkbox" id="hamburger-menu" />
           <li><a href="exhibitions.html">EXHIBITIONS</a></li>
-          <ul class="dropdown">
+          <li><a href="explore.html">EXPLORE</a></li>
+          <li><a href="get_involved.html">GET INVOLVED</a></li>
+          <li id="visit"><a href="visit.html">VISIT</a></li>
+        </ul>
+        <ul class="large-screen">
+          <li>
+            <a href="exhibitions.html">EXHIBITIONS</a>
+          </li>
+
+          <!-- <ul class="dropdown">
             <p>Our Exhibition Spaces Include:</p>
             <li>Cosmology</li>
             <li>Evolution</li>
             <li>Biology & Medicine</li>
             <li>Robotics & AI</li>
             <li>Ecology</li>
-          </ul>
+          </ul> -->
           <li><a href="explore.html">EXPLORE</a></li>
-          <ul class="dropdown">
+          <!-- <ul class="dropdown">
             <p>Learn more about what have on offer, wheter you are a:</p>
             <li>Kid</li>
             <li>Parent</li>
             <li>Teacher</li>
             <li>Researcher</li>
-          </ul>
-          <li><a href="get_involved.html">GET INVOLVED</a></li>
-          <ul class="dropdown">
+          </ul> -->
+          <li>
+            <a href="get_involved.html">GET INVOLVED</a>
+          </li>
+          <!-- <ul class="dropdown">
             <p>Do you want to support the museum?:</p>
             <li>Donations</li>
             <li>Volunteering</li>
             <li>Internships</li>
-          </ul>
+          </ul> -->
           <li><a href="visit.html">VISIT</a></li>
-          <ul class="dropdown">
+          <!-- <ul class="dropdown">
             <p>Information about:</p>
             <li>Admission</li>
             <li>Location</li>
@@ -89,30 +87,32 @@
             <li>Accessibility</li>
             <li>Food and Drink</li>
             <li>Shop</li>
-          </ul>
+          </ul> -->
         </ul>
       </nav>
     </header>
 
     <main>
-      <div class="main-wrapper">
-        <div class="background-container">
+      <div class="background-container">
+        <div class="main-wrapper">
           <section class="main-content">
             <hgroup>
               <h1>EXPLORE 1000+ EXHIBITIONS</h1>
               <h2>entrance is FREE FOR ALL</h2>
               <h2>GUIDED TOUR starting every hour</h2>
             </hgroup>
-            <span class="fa fa-clock"></span>
-            <p>Open Today Until 16:00</p>
-            <div class="button-container">
+            <div class="clock">
+              <span class="fa fa-clock"></span>
+              <p>Open Today Until 16:00</p>
+            </div>
+            <div class="button">
               <a href="www.ticketmaster.com">
                 <p class="button">BUY TICKETS</p></a
               >
             </div>
             <p>Guided Tour 70 NOK per Person</p>
             <p>Online Tickets Provided by:</p>
-            <figure>
+            <figure id="ticketmaster">
               <img
                 src="images\icons\Ticketmaster-Logo-White.svg"
                 alt="Ticketmaster logo"
@@ -127,39 +127,37 @@
             </div>
           </aside>
           <section class="categories">
-            <div class="color-box">
+            <div class="color-box" id="cosmology">
               <a href="exhibitions.html">
-                <figure>
-                  <ion-icon ios="ios-planet" md="md-planet"></ion-icon>
-                </figure>
+                <figure><span class="fa fa-globe-americas"></span></figure>
                 <h4>COSMOLOGY</h4></a
               >
             </div>
-            <div class="color-box">
+            <div class="color-box" id="evolution">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-dna"></span></figure>
                 <h4>EVOLUTION</h4></a
               >
             </div>
-            <div class="color-box">
+            <div class="color-box" id="biology">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-microscope"></span></figure>
                 <h4>BIOLOGY & MEDICINE</h4></a
               >
             </div>
-            <div class="color-box">
+            <div class="color-box" id="robotics">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-robot"></span></figure>
                 <h4>ROBOTICS & AI</h4></a
               >
             </div>
-            <div class="color-box">
+            <div class="color-box" id="ecology">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-globe-americas"></span></figure>
                 <h4>ECOLOGY</h4></a
               >
             </div>
-            <div class="color-box">
+            <div class="color-box" id="events">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-rocket"></span></figure>
                 <h4>SPECIAL EVENTS</h4></a
@@ -167,11 +165,14 @@
             </div>
           </section>
         </div>
-        <div class="secondary-container">
-          <section class="news">
-            <h5>NEWS: Special Events and Exhibitions</h5>
-            <figure><img src="images\t-rex.jpg" alt="" /></figure>
-            <div class="description"></div>
+      </div>
+      <div class="secondary-container">
+        <section class="news">
+          <h5>NEWS: Special Events and Exhibitions</h5>
+          <figure class="news">
+            <img src="images\t-rex.jpg" alt="" width="300px" />
+          </figure>
+          <div class="news">
             <h6>Night in the Museum</h6>
             <p>
               Get your family together for an exciting night in the museum as
@@ -181,39 +182,51 @@
               Bring your own sleeping bag and get ready to rough it as we go
               exploring the wonders of science.
             </p>
-          </section>
-          <section class="clubs">
-            <h5>Join One of our Children Clubs</h5>
+          </div>
+        </section>
+        <section class="clubs">
+          <h5>Join One of our Children Clubs</h5>
+          <div class="image-wrapper">
             <figure>
-              <a href=""><img src="images\club_1.jpg" alt="" /></a>
+              <a href=""
+                ><img src="images\club_1.jpg" alt="" width="300px"
+              /></a>
             </figure>
             <figure>
-              <a href=""><img src="images\club_2.jpg" alt="" /></a>
+              <a href=""
+                ><img src="images\club_2.jpg" alt="" width="300px"
+              /></a>
             </figure>
-          </section>
-          <section class="newsletter">
-            <p>
-              Sign up to our Newsletter and be the first to know about Our
-              exciting New stuff:
-            </p>
-            <form action="form-success.php" method="get" class="newsletter">
-              <input
-                id="newsletter"
-                type="text"
-                name="email"
-                placeholder="YOUR EMAIL"
-              />
-              <input id="join" type="submit" name="subscribe" value="SIGN UP" />
-            </form>
-          </section>
-        </div>
+          </div>
+        </section>
+        <section class="newsletter">
+          <p>
+            Sign up to our Newsletter and be the first to know about Our
+            exciting New stuff:
+          </p>
+          <form action="form-success.php" method="get" class="newsletter">
+            <input
+              id="newsletter"
+              type="text"
+              name="email"
+              placeholder="YOUR EMAIL"
+            />
+            <input
+              id="sign-up"
+              type="submit"
+              name="subscribe"
+              value="SIGN UP"
+            />
+          </form>
+        </section>
       </div>
     </main>
+
     <footer>
       <div class="footer-wrapper">
         <div class="footer-container">
           <h6>CONNECT:</h6>
-          <ul>
+          <ul class="connect">
             <li>
               <a href="www.facebook.com"
                 ><span class="fa fa-facebook-f"></span
@@ -234,41 +247,45 @@
         </div>
         <div class="footer-container">
           <h6>HOURS:</h6>
-          <ul>
-            <li>Monday:</li>
-            <li>Tuesday:</li>
-            <li>Wednesday:</li>
-            <li>Thursday:</li>
-            <li>Friday:</li>
-            <li>Saturday:</li>
-            <li>Sunday:</li>
-          </ul>
-          <ul>
-            <li>Closed</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 19:00</li>
-            <li>09:00 - 16:00</li>
-            <li>09:00 - 13:00</li>
-          </ul>
+          <div class="hours-wrapper">
+            <ul class="hours">
+              <li>Monday:</li>
+              <li>Tuesday:</li>
+              <li>Wednesday:</li>
+              <li>Thursday:</li>
+              <li>Friday:</li>
+              <li>Saturday:</li>
+              <li>Sunday:</li>
+            </ul>
+            <ul>
+              <li>Closed</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 19:00</li>
+              <li>09:00 - 16:00</li>
+              <li>09:00 - 13:00</li>
+            </ul>
+          </div>
         </div>
         <div class="footer-container">
           <h6>LOCATION:</h6>
           <p>Nygårdsgaten 112</p>
           <p>5008 Bergen, Norway</p>
-          <a href="visit.html"
-            ><span class="fa fa-map-marker-alt"><p>Getting Here</p></span></a
+          <a href="visit.html" class="location"
+            ><span class="fa fa-map-marker-alt"></span>
+            <p>Getting Here</p></a
           >
         </div>
         <div class="footer-container">
           <h6>CONTACT & SUPPORT:</h6>
-          <ul>
-            <a href="about_us.html">About Us</a>
-            <a href="visit.html">Facilities</a>
-            <p>Email: contact@cms.com</p>
-            <p>Phone: 500 55 555</p>
-            <p>Community Science Museum 2020</p>
+          <ul class="contact">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="visit.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><p>Email: contact@cms.com</p></li>
+            <li><p>Phone: 500 55 555</p></li>
+            <li><p>Community Science Museum 2020</p></li>
           </ul>
         </div>
       </div>

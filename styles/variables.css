@@ -1,5 +1,6 @@
 :root {
   --magenta: #a20067;
+  --dark-purple: #210759;
   --purple: #470c68;
   --dark-blue: #003057;
   --dark-green: #034638;
@@ -7,8 +8,10 @@
   --orange: #dc4405;
   --teal: #487a7b;
   --light-grey: #f2f2f2;
+  --white: #ffffff;
   --sofia: "sofia pro";
   --proxima: "proxima nova";
+  --proxima-soft: "proxima soft";
   --neue-haas: "neue haas unica W1G";
   --center-align: 0 auto 0 auto;
 }
