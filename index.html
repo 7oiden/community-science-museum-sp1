@@ -121,46 +121,50 @@
           </section>
           <aside>
             <div class="bubble">
-              <h3>"Let us Explore Together"</h3>
-              <p>Learn more ABOUT US and our VISION</p>
-              <span class="fa fa-arrow-circle-right"></span>
+              <a href="about-us.html">
+                <h3>"Let us Explore Together"</h3>
+                <div>
+                  <p>Learn more ABOUT US and our VISON</p>
+                  <span class="fa fa-arrow-circle-right"></span>
+                </div>
+              </a>
             </div>
           </aside>
           <section class="categories">
             <div class="color-box" id="cosmology">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-globe-americas"></span></figure>
-                <h4>COSMOLOGY</h4></a
+                <figcaption>COSMOLOGY</figcaption></a
               >
             </div>
             <div class="color-box" id="evolution">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-dna"></span></figure>
-                <h4>EVOLUTION</h4></a
+                <figcaption>EVOLUTION</figcaption></a
               >
             </div>
             <div class="color-box" id="biology">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-microscope"></span></figure>
-                <h4>BIOLOGY & MEDICINE</h4></a
+                <figcaption>BIOLOGY & MEDICINE</figcaption></a
               >
             </div>
             <div class="color-box" id="robotics">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-robot"></span></figure>
-                <h4>ROBOTICS & AI</h4></a
+                <figcaption>ROBOTICS & AI</figcaption></a
               >
             </div>
             <div class="color-box" id="ecology">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-globe-americas"></span></figure>
-                <h4>ECOLOGY</h4></a
+                <figcaption>ECOLOGY</figcaption></a
               >
             </div>
             <div class="color-box" id="events">
               <a href="exhibitions.html">
                 <figure><span class="fa fa-rocket"></span></figure>
-                <h4>SPECIAL EVENTS</h4></a
+                <figcaption>SPECIAL EVENTS</figcaption></a
               >
             </div>
           </section>
@@ -168,12 +172,12 @@
       </div>
       <div class="secondary-container">
         <section class="news">
-          <h5>NEWS: Special Events and Exhibitions</h5>
+          <h4>NEWS: Special Events and Exhibitions</h4>
           <figure class="news">
-            <img src="images\t-rex.jpg" alt="" width="300px" />
+            <img src="images\t-rex.jpg" alt="" />
           </figure>
           <div class="news">
-            <h6>Night in the Museum</h6>
+            <h5>Night in the Museum</h5>
             <p>
               Get your family together for an exciting night in the museum as
               you sleep over beside dinosaurs and science displays.
@@ -185,40 +189,40 @@
           </div>
         </section>
         <section class="clubs">
-          <h5>Join One of our Children Clubs</h5>
+          <h4>Join One of our Children Clubs</h4>
           <div class="image-wrapper">
-            <figure>
-              <a href=""
-                ><img src="images\club_1.jpg" alt="" width="300px"
-              /></a>
+            <figure class="clubs">
+              <a href=""><img src="images\club_1.jpg" alt="" /></a>
             </figure>
-            <figure>
-              <a href=""
-                ><img src="images\club_2.jpg" alt="" width="300px"
-              /></a>
+            <figure class="clubs">
+              <a href=""><img src="images\club_2.jpg" alt="" /></a>
             </figure>
           </div>
         </section>
-        <section class="newsletter">
-          <p>
-            Sign up to our Newsletter and be the first to know about Our
-            exciting New stuff:
-          </p>
-          <form action="form-success.php" method="get" class="newsletter">
-            <input
-              id="newsletter"
-              type="text"
-              name="email"
-              placeholder="YOUR EMAIL"
-            />
-            <input
-              id="sign-up"
-              type="submit"
-              name="subscribe"
-              value="SIGN UP"
-            />
-          </form>
-        </section>
+        <div class="newsletter-wrapper">
+          <div class="blur">
+            <section class="newsletter">
+              <p>
+                Sign up to our Newsletter and be the first to know about Our
+                exciting New stuff:
+              </p>
+              <form action="form-success.php" method="get" class="newsletter">
+                <input
+                  id="newsletter"
+                  type="text"
+                  name="email"
+                  placeholder="YOUR EMAIL"
+                />
+                <input
+                  id="sign-up"
+                  type="submit"
+                  name="subscribe"
+                  value="SIGN UP"
+                />
+              </form>
+            </section>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -268,14 +272,18 @@
             </ul>
           </div>
         </div>
-        <div class="footer-container">
-          <h6>LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
-          <a href="visit.html" class="location"
-            ><span class="fa fa-map-marker-alt"></span>
-            <p>Getting Here</p></a
-          >
+        <div class="footer-container visit">
+          <div>
+            <h6>LOCATION:</h6>
+            <p>Nygårdsgaten 112</p>
+            <p>5008 Bergen, Norway</p>
+          </div>
+          <div class="map-link">
+            <a href="visit.html" class="location"
+              ><span class="fa fa-map-marker-alt"></span>
+              <p>Getting Here</p></a
+            >
+          </div>
         </div>
         <div class="footer-container">
           <h6>CONTACT & SUPPORT:</h6>
@@ -285,10 +293,10 @@
             <li><a href="contact.html">Contact</a></li>
             <li><p>Email: contact@cms.com</p></li>
             <li><p>Phone: 500 55 555</p></li>
-            <li><p>Community Science Museum 2020</p></li>
           </ul>
         </div>
       </div>
+      <p id="copyright">Community Science Museum 2020</p>
     </footer>
   </body>
 </html>

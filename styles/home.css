@@ -144,7 +144,7 @@ h1 {
   font-size: 2.5rem;
   margin-top: 0;
   padding-top: 32px;
-  background-color: olive;
+  /* background-color: olive; */
 }
 h2 {
   font-size: 1.25rem;
@@ -167,35 +167,41 @@ h2 {
   color: var(--white);
   padding: 10px 50px;
 }
+.clock span {
+  margin-right: 15px;
+}
 #ticketmaster {
   width: 150px;
   margin: 0 auto;
 }
-aside {
-  text-align: center;
-}
 .bubble {
-  color: var(--purple);
-  height: 135px;
-  margin: 0 auto;
-}
-h3 {
   font-family: var(--proxima-soft);
   font-size: 1.125rem;
   background-color: var(--white);
-  margin-bottom: 0;
-  padding-top: 32px;
-  padding-bottom: 20px;
-  border-radius: 50px 50px 0 0;
+  color: var(--purple);
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+.bubble a {
+  color: color: var(--purple);
+}
+h3 {
+  padding-top: 24px;
 }
 .bubble p {
-  background-color: var(--white);
-  margin-top: 0;
-  padding-bottom: 32px;
-  border-radius: 0 0 50px 50px;
+  margin: 0;
+  font-family: var(--neue-haas);
+  width: 200px;
+  text-align: right;
 }
 .bubble span {
   color: var(--dark-purple);
+}
+.bubble div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .categories {
   /* background-color: lime; */
@@ -210,9 +216,19 @@ h3 {
   color: var(--white);
   text-align: center;
   height: 156px;
+  border-radius: 25px;
 }
 .color-box a {
   text-decoration: none;
+}
+.color-box figure {
+  margin-top: 32px;
+}
+.color-box figcaption {
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 5px 16px;
+  /* background-color: olive; */
 }
 #cosmology {
   background-color: #470c68;
@@ -232,22 +248,54 @@ h3 {
 #events {
   background-color: #003057;
 }
-h4 {
-  color: var(--white);
-}
 .news {
   width: 100%;
 }
-h5 {
+h4 {
   font-family: var(--proxima);
   font-size: 1.125rem;
+  font-weight: bold;
   background-color: var(--dark-blue);
+  color: var(--white);
   display: block;
   padding: 15px 0;
+  margin-bottom: 0;
   text-align: center;
 }
 figure.news {
   width: 100%;
+  height: 290px;
+  margin: 0;
+}
+figure.news img {
+  width: 100%;
+  height: 290px;
+}
+h5 {
+  text-align: left;
+  font-family: var(--proxima);
+  font-size: 1.125rem;
+}
+div.news {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+section.clubs {
+  width: 90%;
+  margin: 0 auto;
+}
+div.image-wrapper {
+  display: flex;
+}
+figure.clubs {
+  width: 50%;
+  height: 200px;
+  margin: 0;
+}
+figure.clubs img {
+  width: 100%;
+  height: 200px;
 }
 h6 {
   font-size: 1.125rem;
@@ -262,27 +310,40 @@ div.news {
   justify-content: space-between;
   /* background-color: limegreen; */
 }
-section.newsletter {
+.newsletter-wrapper {
   background-image: url(../images/newsletter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+section.newsletter {
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
 }
+.blur {
+  background-color: #ffffffa6;
+}
+.newsletter p {
+  font-family: var(--neue-haas);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
 form.newsletter {
-  background-color: mediumvioletred;
-  width: 90%;
   display: flex;
   justify-content: center;
   height: 40px;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
 }
 #newsletter {
+  font-size: 1.125rem;
   width: 70%;
   height: 40px;
   border: 3px solid var(--purple);
   padding-left: 20px;
 }
 #sign-up {
+  font-size: 1.125rem;
   width: 30%;
   height: 40px;
   border: 3px solid var(--purple);
@@ -292,6 +353,9 @@ form.newsletter {
 
 /* footer 
 --------------------*/
+footer {
+  font-family: var(--neue-haas);
+}
 .footer-wrapper {
   display: flex;
   flex-direction: column;
@@ -301,25 +365,46 @@ form.newsletter {
 .footer-container {
   margin-left: 5%;
 }
+.footer-container ul {
+  margin-top: 0;
+}
 .footer-container ul li {
   list-style: none;
+}
+.footer-container p {
+  margin: 0;
 }
 ul.connect {
   display: flex;
   width: 90%;
-  justify-content: space-between;
-  background-color: mediumvioletred;
+  /* background-color: mediumvioletred; */
   margin-left: 0;
   padding-left: 0;
 }
+ul.connect span {
+  margin-right: 32px;
+}
 .hours-wrapper {
   display: flex;
+}
+.visit {
+  display: flex;
+  align-items: flex-end;
+}
+.map-link {
+  margin-left: 64px;
+}
+.fa-map-marker-alt {
+  margin-right: 8px;
 }
 .location span {
   display: flex;
 }
 .location {
   display: flex;
+}
+.location p {
+  text-decoration: underline;
 }
 .hours,
 .contact {
@@ -328,7 +413,24 @@ ul.connect {
   padding: 0;
 }
 .contact a {
+  display: block;
   text-decoration: underline;
+  margin-bottom: 5px;
+}
+h6 {
+  font-family: var(--proxima);
+  font-weight: bold;
+  margin: 32px 0 16px 0;
+}
+#copyright {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 8px 0;
+}
+#copyright::before {
+  content: "\00A9";
+  padding-right: 5px;
 }
 
 /* styles that change
