@@ -61,14 +61,21 @@ nav.icons {
 .icons li {
   list-style: none;
 }
-nav.menu {
+.white-box {
   position: sticky;
   top: 0;
+  z-index: 100;
+  background-color: #ffffffbf;
+  width: 100%;
+  height: 62px;
+}
+nav.menu {
+  position: relative;
+  top: 5px;
   background-color: var(--magenta);
   color: var(--white);
   font-family: var(--proxima-soft);
   font-size: 1.5rem;
-  width: 100%;
   display: flex;
   border-radius: 0 50px 0 0;
   margin-bottom: 0;
@@ -326,7 +333,7 @@ figure.clubs img {
   height: 200px;
 }
 h6 {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 div.news {
   color: #000;
@@ -344,12 +351,14 @@ div.news {
   background-repeat: no-repeat;
   height: 360px;
   margin-top: 32px;
+  margin-bottom: 0;
 }
 .blur {
   background-color: #ffffffa6;
   margin-bottom: 0;
   position: relative;
   top: 200px;
+  margin-bottom: 0;
 }
 section.newsletter {
   width: 90%;
@@ -399,9 +408,11 @@ footer {
   flex-direction: column;
   background-color: var(--teal);
   color: #fff;
+  margin-top: 0;
 }
 .footer-container {
   margin-left: 5%;
+  margin-top: 0;
 }
 .footer-container ul {
   margin-top: 0;
