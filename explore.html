@@ -22,9 +22,9 @@
       <div class="main-wrapper">
         <h1>More To Explore</h1>
         <section class="for-kids">
-          <div>
+          <div class="margins">
             <h2>For Kids</h2>
-            <p>
+            <p id="intro">
               Are you a young person looking to learn more about science? Come
               on down to our museum, there’s plenty to see and do.
             </p>
@@ -35,8 +35,10 @@
               so make sure you come ready to learn and explore.
             </p>
           </div>
-          <div>
-            <h5>Join a Childrens Club</h5>
+        </section>
+        <section class="clubs">
+          <div class="margins">
+            <h4>Join a Childrens Club</h4>
             <p>
               We also have the Young Stars Club which meets once a week on a
               Saturday between 10:00 and 13:00 where you’ll get to explore and
@@ -49,14 +51,15 @@
               holiday club and how you can join, send us a message.
             </p>
           </div>
-          <figure><img src="images\kids-cartoon.jpg" alt="" /></figure>
-          <div class="get-in-touch">
-            <h3>Want to join one of our clubs?</h3>
-            <a href=""><p>GET IN TOUCH</p></a>
-          </div>
         </section>
-        <section class="for-adults">
-          <div>
+        <figure><img src="images\kids-cartoon.jpg" alt="" /></figure>
+        <div class="get-in-touch">
+          <p>Want to join one of our clubs?</p>
+          <a href=""><p class="button">GET IN TOUCH</p></a>
+        </div>
+
+        <section class="teachers">
+          <div class="margins">
             <h3>For Teachers</h3>
             <p>
               Are you a young person looking to learn more about science? Come
@@ -69,7 +72,9 @@
               so make sure you come ready to learn and explore.
             </p>
           </div>
-          <div>
+        </section>
+        <section class="researcers">
+          <div class="margins">
             <h3>For Researchers</h3>
             <p>
               We also have the Young Stars Club which meets once a week on a
@@ -83,28 +88,38 @@
               holiday club and how you can join, send us a message.
             </p>
           </div>
-          <figure><img src="" alt="images\researcher-cartoon.jpg" /></figure>
+          <figure><img src="images\researcher-cartoon.jpg" alt="" /></figure>
           <div class="get-in-touch">
-            <h4>Are you a Teacher or a Resercher?</h4>
-            <a href=""><p>GET IN TOUCH</p></a>
+            <p>Are you a Teacher or a Resercher?</p>
+            <a href=""><p class="button">GET IN TOUCH</p></a>
           </div>
         </section>
       </div>
-      <section class="newsletter">
-        <p>
-          Sign up to our Newsletter and be the first to know about Our exciting
-          New stuff:
-        </p>
-        <form action="form-success.php" method="get" class="newsletter">
-          <input
-            id="newsletter"
-            type="text"
-            name="email"
-            placeholder="YOUR EMAIL"
-          />
-          <input id="join" type="submit" name="subscribe" value="SIGN UP" />
-        </form>
-      </section>
+
+      <div class="newsletter-wrapper">
+        <div class="blur">
+          <section class="newsletter">
+            <p>
+              Sign up to our Newsletter and be the first to know about Our
+              exciting New stuff:
+            </p>
+            <form action="form-success.php" method="get" class="newsletter">
+              <input
+                id="newsletter"
+                type="text"
+                name="email"
+                placeholder="YOUR EMAIL"
+              />
+              <input
+                id="sign-up"
+                type="submit"
+                name="subscribe"
+                value="SIGN UP"
+              />
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer>
