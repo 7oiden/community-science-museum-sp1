@@ -16,13 +16,87 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <div class="header-wrapper">
+        <figure class="logo">
+          <a href="index.html"
+            ><img src="images\cms-logo.png" alt="Community Science Museum logo"
+          /></a>
+        </figure>
+        <nav aria-label="icons" class="icons">
+          <figure>
+            <a href=""><span class="fa fa-search icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-ticket-alt icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-user-circle icon"></span></a>
+          </figure>
+        </nav>
+      </div>
+      <nav aria-label="menu" class="menu">
+        <ul class="small-screen">
+          <label class="hamburger-label" for="hamburger-menu"
+            ><span class="fa fa-bars"></span>
+            <p id="menu">MENU</p></label
+          >
+          <input type="checkbox" id="hamburger-menu" />
+          <li><a href="exhibitions.html">EXHIBITIONS</a></li>
+          <li><a href="explore.html">EXPLORE</a></li>
+          <li><a href="get_involved.html">GET INVOLVED</a></li>
+          <li id="visit"><a href="visit.html">VISIT</a></li>
+        </ul>
+        <ul class="large-screen">
+          <li>
+            <a href="exhibitions.html">EXHIBITIONS</a>
+          </li>
+
+          <!-- <ul class="dropdown">
+            <p>Our Exhibition Spaces Include:</p>
+            <li>Cosmology</li>
+            <li>Evolution</li>
+            <li>Biology & Medicine</li>
+            <li>Robotics & AI</li>
+            <li>Ecology</li>
+          </ul> -->
+          <li><a href="explore.html">EXPLORE</a></li>
+          <!-- <ul class="dropdown">
+            <p>Learn more about what have on offer, wheter you are a:</p>
+            <li>Kid</li>
+            <li>Parent</li>
+            <li>Teacher</li>
+            <li>Researcher</li>
+          </ul> -->
+          <li>
+            <a href="get_involved.html">GET INVOLVED</a>
+          </li>
+          <!-- <ul class="dropdown">
+            <p>Do you want to support the museum?:</p>
+            <li>Donations</li>
+            <li>Volunteering</li>
+            <li>Internships</li>
+          </ul> -->
+          <li><a href="visit.html">VISIT</a></li>
+          <!-- <ul class="dropdown">
+            <p>Information about:</p>
+            <li>Admission</li>
+            <li>Location</li>
+            <li>Hours</li>
+            <li>Accessibility</li>
+            <li>Food and Drink</li>
+            <li>Shop</li>
+          </ul> -->
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <div class="main-wrapper">
-        <section>
+        <section class="info">
+          <h1>Visit</h1>
           <div class="info">
-            <h1>Admnission</h1>
+            <h2>Admission</h2>
             <p>The entrance is free for all.</p>
             <p>
               There are guided tours of the museum that leave every hour. These
@@ -41,35 +115,45 @@
           <div class="info">
             <h2>Location</h2>
             <p>The Museum is Located at:</p>
-            <p>Nygårdsgaten 112</p>
-            <p>5008 Bergen</p>
-            <iframe src="" frameborder="0"></iframe>
+            <p id="street">Nygårdsgaten 112</p>
+            <p id="postal">5008 Bergen</p>
+            <iframe
+              title="address to Community Science Museum "
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.6798987692655!2d5.331311116446823!3d60.384447582040345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfeacef54f159%3A0x62678fec8f2c1061!2sNyg%C3%A5rdsgaten%20112%2C%205008%20Bergen!5e0!3m2!1sen!2sno!4v1606574333874!5m2!1sen!2sno"
+              width="200"
+              height="450"
+              allowfullscreen=""
+            ></iframe>
           </div>
           <div class="info">
-            <ul>
-              <h2>Hours:</h2>
-              <li>Monday:</li>
-              <li>Tuesday:</li>
-              <li>Wednesday:</li>
-              <li>Thursday:</li>
-              <li>Friday:</li>
-              <li>Saturday:</li>
-              <li>Sunday</li>
-            </ul>
-            <ul>
-              <li>Closed</li>
-              <li>10:00 - 16:00</li>
-              <li>10:00 - 16:00</li>
-              <li>10:00 - 16:00</li>
-              <li>10:00 - 19:00</li>
-              <li>09:00 - 16:00</li>
-              <li>09:00 - 13:00</li>
-            </ul>
+            <h2>Hours:</h2>
+            <div class="hours-wrapper">
+              <ul>
+                <li>Monday:</li>
+                <li>Tuesday:</li>
+                <li>Wednesday:</li>
+                <li>Thursday:</li>
+                <li>Friday:</li>
+                <li>Saturday:</li>
+                <li>Sunday</li>
+              </ul>
+              <ul>
+                <li>Closed</li>
+                <li>10:00 - 16:00</li>
+                <li>10:00 - 16:00</li>
+                <li>10:00 - 16:00</li>
+                <li>10:00 - 19:00</li>
+                <li>09:00 - 16:00</li>
+                <li>09:00 - 13:00</li>
+              </ul>
+            </div>
           </div>
         </section>
-        <section>
-          <figure><img src="" alt="" /></figure>
-          <div class="facilities">
+        <section class="facilities">
+          <figure class="facilities">
+            <img src="../images/handicap.jpg" alt="" />
+          </figure>
+          <div id="accessibility" class="facilities">
             <h3>Accessibility</h3>
             <p>The museum has wheelchair accessibility ramps.</p>
             <p>
@@ -77,16 +161,21 @@
               visually impaired.
             </p>
           </div>
-          <div class="facilities">
+          <figure class="facilities">
+            <img src="images\cafe.jpg" alt="" />
+          </figure>
+          <div id="food-drink" class="facilities">
             <h3>Food and Drink</h3>
             <p>
               There is a café attached to the museum where you can get light
               lunches, soft drinks, coffee, snacks and more.
             </p>
           </div>
-          <figure><img src="images\cafe.jpg" alt="" /></figure>
-          <figure><img src="images\shop.jpg" alt="" /></figure>
-          <div class="facilities">
+          <figure class="facilities">
+            <img src="images\shop.jpg" alt="" />
+          </figure>
+          <div id="shop" class="facilities">
+            <h3>Shop</h3>
             <p>
               Our shop offers a range of memorabilia from the museum as well as
               great gifts and activity packs that allow you to continue to
@@ -94,21 +183,30 @@
             </p>
           </div>
         </section>
-        <section class="newsletter">
-          <p>
-            Sign up to our Newsletter and be the first to know about Our
-            exciting New stuff:
-          </p>
-          <form action="form-success.php" method="get" class="newsletter">
-            <input
-              id="newsletter"
-              type="text"
-              name="email"
-              placeholder="YOUR EMAIL"
-            />
-            <input id="join" type="submit" name="subscribe" value="SIGN UP" />
-          </form>
-        </section>
+        <div class="newsletter-wrapper">
+          <div class="blur">
+            <section class="newsletter">
+              <p>
+                Sign up to our Newsletter and be the first to know about Our
+                exciting New stuff:
+              </p>
+              <form action="form-success.php" method="get" class="newsletter">
+                <input
+                  id="newsletter"
+                  type="text"
+                  name="email"
+                  placeholder="YOUR EMAIL"
+                />
+                <input
+                  id="sign-up"
+                  type="submit"
+                  name="subscribe"
+                  value="SIGN UP"
+                />
+              </form>
+            </section>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -116,7 +214,7 @@
       <div class="footer-wrapper">
         <div class="footer-container">
           <h6>CONNECT:</h6>
-          <ul>
+          <ul class="connect">
             <li>
               <a href="www.facebook.com"
                 ><span class="fa fa-facebook-f"></span
@@ -137,44 +235,50 @@
         </div>
         <div class="footer-container">
           <h6>HOURS:</h6>
-          <ul>
-            <li>Monday:</li>
-            <li>Tuesday:</li>
-            <li>Wednesday:</li>
-            <li>Thursday:</li>
-            <li>Friday:</li>
-            <li>Saturday:</li>
-            <li>Sunday:</li>
-          </ul>
-          <ul>
-            <li>Closed</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 19:00</li>
-            <li>09:00 - 16:00</li>
-            <li>09:00 - 13:00</li>
-          </ul>
+          <div class="hours-wrapper">
+            <ul class="hours">
+              <li>Monday:</li>
+              <li>Tuesday:</li>
+              <li>Wednesday:</li>
+              <li>Thursday:</li>
+              <li>Friday:</li>
+              <li>Saturday:</li>
+              <li>Sunday:</li>
+            </ul>
+            <ul>
+              <li>Closed</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 19:00</li>
+              <li>09:00 - 16:00</li>
+              <li>09:00 - 13:00</li>
+            </ul>
+          </div>
         </div>
         <div class="footer-container">
-          <h6>LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
-          <a href="visit.html"
-            ><span class="fa fa-map-marker-alt"><p>Getting Here</p></span></a
+          <div>
+            <h6>LOCATION:</h6>
+            <p>Nygårdsgaten 112</p>
+            <p>5008 Bergen, Norway</p>
+          </div>
+          <a href="visit.html" class="location"
+            ><span class="fa fa-map-marker-alt"></span>
+            <p>Getting Here</p></a
           >
         </div>
         <div class="footer-container">
           <h6>CONTACT & SUPPORT:</h6>
-          <ul>
-            <a href="about_us.html">About Us</a>
-            <a href="visit.html">Facilities</a>
-            <p>Email: contact@cms.com</p>
-            <p>Phone: 500 55 555</p>
-            <p>Community Science Museum 2020</p>
+          <ul class="contact">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="visit.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><p>Email: contact@cms.com</p></li>
+            <li><p>Phone: 500 55 555</p></li>
           </ul>
         </div>
       </div>
+      <p id="copyright">Community Science Museum 2020</p>
     </footer>
   </body>
 </html>

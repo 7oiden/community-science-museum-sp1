@@ -18,13 +18,87 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <div class="header-wrapper">
+        <figure class="logo">
+          <a href="index.html"
+            ><img src="images\cms-logo.png" alt="Community Science Museum logo"
+          /></a>
+        </figure>
+        <nav aria-label="icons" class="icons">
+          <figure>
+            <a href=""><span class="fa fa-search icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-ticket-alt icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-user-circle icon"></span></a>
+          </figure>
+        </nav>
+      </div>
+      <nav aria-label="menu" class="menu">
+        <ul class="small-screen">
+          <label class="hamburger-label" for="hamburger-menu"
+            ><span class="fa fa-bars"></span>
+            <p id="menu">MENU</p></label
+          >
+          <input type="checkbox" id="hamburger-menu" />
+          <li><a href="exhibitions.html">EXHIBITIONS</a></li>
+          <li><a href="explore.html">EXPLORE</a></li>
+          <li><a href="get_involved.html">GET INVOLVED</a></li>
+          <li id="visit"><a href="visit.html">VISIT</a></li>
+        </ul>
+        <ul class="large-screen">
+          <li>
+            <a href="exhibitions.html">EXHIBITIONS</a>
+          </li>
+
+          <!-- <ul class="dropdown">
+            <p>Our Exhibition Spaces Include:</p>
+            <li>Cosmology</li>
+            <li>Evolution</li>
+            <li>Biology & Medicine</li>
+            <li>Robotics & AI</li>
+            <li>Ecology</li>
+          </ul> -->
+          <li><a href="explore.html">EXPLORE</a></li>
+          <!-- <ul class="dropdown">
+            <p>Learn more about what have on offer, wheter you are a:</p>
+            <li>Kid</li>
+            <li>Parent</li>
+            <li>Teacher</li>
+            <li>Researcher</li>
+          </ul> -->
+          <li>
+            <a href="get_involved.html">GET INVOLVED</a>
+          </li>
+          <!-- <ul class="dropdown">
+            <p>Do you want to support the museum?:</p>
+            <li>Donations</li>
+            <li>Volunteering</li>
+            <li>Internships</li>
+          </ul> -->
+          <li><a href="visit.html">VISIT</a></li>
+          <!-- <ul class="dropdown">
+            <p>Information about:</p>
+            <li>Admission</li>
+            <li>Location</li>
+            <li>Hours</li>
+            <li>Accessibility</li>
+            <li>Food and Drink</li>
+            <li>Shop</li>
+          </ul> -->
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <div class="main-wrapper">
-        <section>
+        <section class="main-content">
+          <h1>Get involved</h1>
           <div class="support">
-            <h1>Donations</h1>
+            <h2>Donations</h2>
             <p>
               There are various ways you can support the museum. Donations are
               very welcome and are an important way we keep this museum open and
@@ -54,7 +128,7 @@
             </p>
           </div>
           <div class="support">
-            <h1>Internships</h1>
+            <h2>Internships</h2>
             <p>
               Are you interested in working in a museum? Do you enjoy the fun
               and excitement of sharing the wonders of nature with people?
@@ -65,59 +139,66 @@
             </p>
           </div>
           <div class="get-in-touch">
-            <h3>
-              If any of these descriptions sounds like you, please don't
-              hesitate to get in touch
-            </h3>
-            <a href=""><p>GET IN TOUCH</p></a>
+            <p>
+              If any of These descriptions sounds like you, please get in touch
+            </p>
+            <a href=""><p class="button">GET IN TOUCH</p></a>
           </div>
         </section>
-        <section class="newsletter">
-          <p>
-            Sign up to our Newsletter and be the first to know about Our
-            exciting New stuff:
-          </p>
-          <form action="form-success.php" method="get" class="newsletter">
-            <input
-              id="newsletter"
-              type="text"
-              name="email"
-              placeholder="YOUR EMAIL"
-            />
-            <input id="join" type="submit" name="subscribe" value="SIGN UP" />
-          </form>
-        </section>
+        <div class="newsletter-wrapper">
+          <div class="blur">
+            <section class="newsletter">
+              <p>
+                Sign up to our Newsletter and be the first to know about Our
+                exciting New stuff:
+              </p>
+              <form action="form-success.php" method="get" class="newsletter">
+                <input
+                  id="newsletter"
+                  type="text"
+                  name="email"
+                  placeholder="YOUR EMAIL"
+                />
+                <input
+                  id="sign-up"
+                  type="submit"
+                  name="subscribe"
+                  value="SIGN UP"
+                />
+              </form>
+            </section>
+          </div>
+        </div>
       </div>
-      <footer>
-        <div class="footer-wrapper">
-          <div class="footer-container">
-            <h6>CONNECT:</h6>
-            <ul>
-              <li>
-                <a href="www.facebook.com"
-                  ><span class="fa fa-facebook-f"></span
-                ></a>
-              </li>
-              <li>
-                <a href="www.instagram.com"
-                  ><span class="fa fa-instagram"></span
-                ></a>
-              </li>
-              <li>
-                <a href="www.youtube.com"
-                  ><span class="fa fa-youtube"></span
-                ></a>
-              </li>
-              <li>
-                <a href="www.twitter.com"
-                  ><span class="fa fa-twitter"></span
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-container">
-            <h6>HOURS:</h6>
-            <ul>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-container">
+          <h6>CONNECT:</h6>
+          <ul class="connect">
+            <li>
+              <a href="www.facebook.com"
+                ><span class="fa fa-facebook-f"></span
+              ></a>
+            </li>
+            <li>
+              <a href="www.instagram.com"
+                ><span class="fa fa-instagram"></span
+              ></a>
+            </li>
+            <li>
+              <a href="www.youtube.com"><span class="fa fa-youtube"></span></a>
+            </li>
+            <li>
+              <a href="www.twitter.com"><span class="fa fa-twitter"></span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container">
+          <h6>HOURS:</h6>
+          <div class="hours-wrapper">
+            <ul class="hours">
               <li>Monday:</li>
               <li>Tuesday:</li>
               <li>Wednesday:</li>
@@ -136,26 +217,30 @@
               <li>09:00 - 13:00</li>
             </ul>
           </div>
-          <div class="footer-container">
+        </div>
+        <div class="footer-container">
+          <div>
             <h6>LOCATION:</h6>
             <p>Nygårdsgaten 112</p>
             <p>5008 Bergen, Norway</p>
-            <a href="visit.html"
-              ><span class="fa fa-map-marker-alt"><p>Getting Here</p></span></a
-            >
           </div>
-          <div class="footer-container">
-            <h6>CONTACT & SUPPORT:</h6>
-            <ul>
-              <a href="about_us.html">About Us</a>
-              <a href="visit.html">Facilities</a>
-              <p>Email: contact@cms.com</p>
-              <p>Phone: 500 55 555</p>
-              <p>Community Science Museum 2020</p>
-            </ul>
-          </div>
+          <a href="visit.html" class="location"
+            ><span class="fa fa-map-marker-alt"></span>
+            <p>Getting Here</p></a
+          >
         </div>
-      </footer>
-    </main>
+        <div class="footer-container">
+          <h6>CONTACT & SUPPORT:</h6>
+          <ul class="contact">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="visit.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><p>Email: contact@cms.com</p></li>
+            <li><p>Phone: 500 55 555</p></li>
+          </ul>
+        </div>
+      </div>
+      <p id="copyright">Community Science Museum 2020</p>
+    </footer>
   </body>
 </html>
