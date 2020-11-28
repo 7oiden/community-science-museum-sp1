@@ -9,14 +9,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
     <link rel="stylesheet" href="styles/explore.css" />
-    <script>
-      src = "https://kit.fontawesome.com/fbd3401b24.js";
-      crossorigin = "anonymous";
-    </script>
+    <script
+      src="https://kit.fontawesome.com/fbd3401b24.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <div class="header-wrapper">
+        <figure class="logo">
+          <a href="index.html"
+            ><img src="images\cms-logo.png" alt="Community Science Museum logo"
+          /></a>
+        </figure>
+        <nav aria-label="icons" class="icons">
+          <figure>
+            <a href=""><span class="fa fa-search icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-ticket-alt icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-user-circle icon"></span></a>
+          </figure>
+        </nav>
+      </div>
+
+      <div class="white-box">
+        <nav aria-label="menu" class="menu">
+          <ul class="small-screen">
+            <label class="hamburger-label" for="hamburger-menu"
+              ><span class="fa fa-bars"></span>
+              <p id="menu">MENU</p></label
+            >
+            <input type="checkbox" id="hamburger-menu" />
+            <li><a href="exhibitions.html">EXHIBITIONS</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="get_involved.html">GET INVOLVED</a></li>
+            <li id="visit"><a href="visit.html">VISIT</a></li>
+          </ul>
+          <ul class="large-screen">
+            <li>
+              <a href="exhibitions.html">EXHIBITIONS</a>
+            </li>
+
+            <!-- <ul class="dropdown">
+            <p>Our Exhibition Spaces Include:</p>
+            <li>Cosmology</li>
+            <li>Evolution</li>
+            <li>Biology & Medicine</li>
+            <li>Robotics & AI</li>
+            <li>Ecology</li>
+          </ul> -->
+            <li><a href="explore.html">EXPLORE</a></li>
+            <!-- <ul class="dropdown">
+            <p>Learn more about what have on offer, wheter you are a:</p>
+            <li>Kid</li>
+            <li>Parent</li>
+            <li>Teacher</li>
+            <li>Researcher</li>
+          </ul> -->
+            <li>
+              <a href="get_involved.html">GET INVOLVED</a>
+            </li>
+            <!-- <ul class="dropdown">
+            <p>Do you want to support the museum?:</p>
+            <li>Donations</li>
+            <li>Volunteering</li>
+            <li>Internships</li>
+          </ul> -->
+            <li><a href="visit.html">VISIT</a></li>
+            <!-- <ul class="dropdown">
+            <p>Information about:</p>
+            <li>Admission</li>
+            <li>Location</li>
+            <li>Hours</li>
+            <li>Accessibility</li>
+            <li>Food and Drink</li>
+            <li>Shop</li>
+          </ul> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <div class="main-wrapper">
@@ -52,10 +128,12 @@
             </p>
           </div>
         </section>
-        <figure><img src="images\kids-cartoon.jpg" alt="" /></figure>
-        <div class="get-in-touch">
-          <p>Want to join one of our clubs?</p>
-          <a href=""><p class="button">GET IN TOUCH</p></a>
+        <div class="margins">
+          <figure><img src="images\kids-cartoon.jpg" alt="" /></figure>
+          <div class="get-in-touch">
+            <p>Want to join one of our clubs?</p>
+            <a href=""><p class="button">GET IN TOUCH</p></a>
+          </div>
         </div>
 
         <section class="teachers">
@@ -88,12 +166,14 @@
               holiday club and how you can join, send us a message.
             </p>
           </div>
+        </section>
+        <div class="margins">
           <figure><img src="images\researcher-cartoon.jpg" alt="" /></figure>
           <div class="get-in-touch">
             <p>Are you a Teacher or a Resercher?</p>
             <a href=""><p class="button">GET IN TOUCH</p></a>
           </div>
-        </section>
+        </div>
       </div>
 
       <div class="newsletter-wrapper">
@@ -126,7 +206,7 @@
       <div class="footer-wrapper">
         <div class="footer-container">
           <h6>CONNECT:</h6>
-          <ul>
+          <ul class="connect">
             <li>
               <a href="www.facebook.com"
                 ><span class="fa fa-facebook-f"></span
@@ -147,44 +227,50 @@
         </div>
         <div class="footer-container">
           <h6>HOURS:</h6>
-          <ul>
-            <li>Monday:</li>
-            <li>Tuesday:</li>
-            <li>Wednesday:</li>
-            <li>Thursday:</li>
-            <li>Friday:</li>
-            <li>Saturday:</li>
-            <li>Sunday:</li>
-          </ul>
-          <ul>
-            <li>Closed</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 19:00</li>
-            <li>09:00 - 16:00</li>
-            <li>09:00 - 13:00</li>
-          </ul>
+          <div class="hours-wrapper">
+            <ul class="hours">
+              <li>Monday:</li>
+              <li>Tuesday:</li>
+              <li>Wednesday:</li>
+              <li>Thursday:</li>
+              <li>Friday:</li>
+              <li>Saturday:</li>
+              <li>Sunday:</li>
+            </ul>
+            <ul>
+              <li>Closed</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 19:00</li>
+              <li>09:00 - 16:00</li>
+              <li>09:00 - 13:00</li>
+            </ul>
+          </div>
         </div>
         <div class="footer-container">
-          <h6>LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
-          <a href="visit.html"
-            ><span class="fa fa-map-marker-alt"><p>Getting Here</p></span></a
+          <div>
+            <h6>LOCATION:</h6>
+            <p>Nygårdsgaten 112</p>
+            <p>5008 Bergen, Norway</p>
+          </div>
+          <a href="visit.html" class="location"
+            ><span class="fa fa-map-marker-alt"></span>
+            <p>Getting Here</p></a
           >
         </div>
         <div class="footer-container">
           <h6>CONTACT & SUPPORT:</h6>
-          <ul>
-            <a href="about_us.html">About Us</a>
-            <a href="visit.html">Facilities</a>
-            <p>Email: contact@cms.com</p>
-            <p>Phone: 500 55 555</p>
-            <p>Community Science Museum 2020</p>
+          <ul class="contact">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="visit.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><p>Email: contact@cms.com</p></li>
+            <li><p>Phone: 500 55 555</p></li>
           </ul>
         </div>
       </div>
+      <p id="copyright">Community Science Museum 2020</p>
     </footer>
   </body>
 </html>

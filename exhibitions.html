@@ -18,7 +18,83 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <div class="header-wrapper">
+        <figure class="logo">
+          <a href="index.html"
+            ><img src="images\cms-logo.png" alt="Community Science Museum logo"
+          /></a>
+        </figure>
+        <nav aria-label="icons" class="icons">
+          <figure>
+            <a href=""><span class="fa fa-search icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-ticket-alt icon"></span></a>
+          </figure>
+          <figure>
+            <a href=""><span class="fa fa-user-circle icon"></span></a>
+          </figure>
+        </nav>
+      </div>
+
+      <div class="white-box">
+        <nav aria-label="menu" class="menu">
+          <ul class="small-screen">
+            <label class="hamburger-label" for="hamburger-menu"
+              ><span class="fa fa-bars"></span>
+              <p id="menu">MENU</p></label
+            >
+            <input type="checkbox" id="hamburger-menu" />
+            <li><a href="exhibitions.html">EXHIBITIONS</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="get_involved.html">GET INVOLVED</a></li>
+            <li id="visit"><a href="visit.html">VISIT</a></li>
+          </ul>
+          <ul class="large-screen">
+            <li>
+              <a href="exhibitions.html">EXHIBITIONS</a>
+            </li>
+
+            <!-- <ul class="dropdown">
+            <p>Our Exhibition Spaces Include:</p>
+            <li>Cosmology</li>
+            <li>Evolution</li>
+            <li>Biology & Medicine</li>
+            <li>Robotics & AI</li>
+            <li>Ecology</li>
+          </ul> -->
+            <li><a href="explore.html">EXPLORE</a></li>
+            <!-- <ul class="dropdown">
+            <p>Learn more about what have on offer, wheter you are a:</p>
+            <li>Kid</li>
+            <li>Parent</li>
+            <li>Teacher</li>
+            <li>Researcher</li>
+          </ul> -->
+            <li>
+              <a href="get_involved.html">GET INVOLVED</a>
+            </li>
+            <!-- <ul class="dropdown">
+            <p>Do you want to support the museum?:</p>
+            <li>Donations</li>
+            <li>Volunteering</li>
+            <li>Internships</li>
+          </ul> -->
+            <li><a href="visit.html">VISIT</a></li>
+            <!-- <ul class="dropdown">
+            <p>Information about:</p>
+            <li>Admission</li>
+            <li>Location</li>
+            <li>Hours</li>
+            <li>Accessibility</li>
+            <li>Food and Drink</li>
+            <li>Shop</li>
+          </ul> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <div class="main-wrapper">
@@ -27,88 +103,95 @@
             Our More Than 1000 Different Exhibits Are Divided Between 5 Spaces
           </h1>
           <div class="card">
-            <h2>COSMOLOGY</h2>
-            <span class="fa fa-"></span>
-            <p>
-              Explore the wonders of our cosmos. Our fantastic exhibition, ‘The
-              Sky Above Us’, explores the night sky and what we can see and know
-              about the universe around us. We’ll locate the various
-              constellations and galaxies that can be seen and learn a bit about
-              the early navigators who used the stars to travel by.
-            </p>
-            <p>
-              Follow the journey of our solar exploration: from early Arab
-              traders, to Galileo’s telescope, to the latest exploration of the
-              planets in our solar system.
-            </p>
+            <h2 id="cosmology">COSMOLOGY</h2>
+            <div class="cosmology">
+              <p>
+                Explore the wonders of our cosmos. Our fantastic exhibition,
+                ‘The Sky Above Us’, explores the night sky and what we can see
+                and know about the universe around us. We’ll locate the various
+                constellations and galaxies that can be seen and learn a bit
+                about the early navigators who used the stars to travel by.
+              </p>
+              <p>
+                Follow the journey of our solar exploration: from early Arab
+                traders, to Galileo’s telescope, to the latest exploration of
+                the planets in our solar system.
+              </p>
+            </div>
           </div>
           <span class="fa fa-arrow-circle-right"></span>
           <figure class="card">
             <img src="images\cosmology.jpg" alt="" />
           </figure>
           <div class="card">
-            <h2>EVOLUTION</h2>
-            <span class="fa fa-dna"></span>
-            <p>
-              For centuries, philosophers and scientists have wrestled with the
-              question of our origins. Where do we come from and how did we get
-              here? Since Darwin proposed his theory of evolution we have had a
-              framework for exploring and understanding our place in this world.
-            </p>
-            <p>
-              Discover the origins of life on this planet and how the species we
-              know today have evolved our time. You can also take some time to
-              meet a few of the creatures who didn’t survive, including our
-              Woolly Mammoth, the Dodos, and a number of dinosaurs too.
-            </p>
+            <h2 id="evolution">EVOLUTION</h2>
+            <div class="evolution">
+              <p>
+                For centuries, philosophers and scientists have wrestled with
+                the question of our origins. Where do we come from and how did
+                we get here? Since Darwin proposed his theory of evolution we
+                have had a framework for exploring and understanding our place
+                in this world.
+              </p>
+              <p>
+                Discover the origins of life on this planet and how the species
+                we know today have evolved our time. You can also take some time
+                to meet a few of the creatures who didn’t survive, including our
+                Woolly Mammoth, the Dodos, and a number of dinosaurs too.
+              </p>
+            </div>
           </div>
           <span class="fa fa-arrow-circle-left"></span>
           <figure class="card">
             <img src="images\evolution.jpg" alt="" />
           </figure>
           <div class="card">
-            <h2>BIOLOGY & MEDICINE</h2>
-            <span class="fa fa-microscope"></span>
-            <p>
-              From micro-organisms to the human body, major breakthroughs in
-              biology are offering us unique insights into the great wonders of
-              the tiny world.
-            </p>
-            <p>
-              For many people their life expectancy is much longer and their
-              quality of life much improved, thanks to the growth of our
-              understanding of medicine. Over a series of exhibits we explore
-              the history of medicine and take a look at some major
-              breakthroughs including the discovery of penicillin and the first
-              heart transplant.
-            </p>
+            <h2 id="biology">BIOLOGY & MEDICINE</h2>
+            <div class="biology">
+              <p>
+                From micro-organisms to the human body, major breakthroughs in
+                biology are offering us unique insights into the great wonders
+                of the tiny world.
+              </p>
+              <p>
+                For many people their life expectancy is much longer and their
+                quality of life much improved, thanks to the growth of our
+                understanding of medicine. Over a series of exhibits we explore
+                the history of medicine and take a look at some major
+                breakthroughs including the discovery of penicillin and the
+                first heart transplant.
+              </p>
+            </div>
           </div>
           <span class="fa fa-arrow-circle-right"></span>
           <figure class="card"><img src="images\biology.jpg" alt="" /></figure>
           <div class="card">
-            <h2>ROBOTICS & AI</h2>
-            <span class="fa fa-robot"></span>
-            <p>
-              The information revolution is here and robotics and artificial
-              intelligence are the science of the future.
-            </p>
-            <p>
-              From useful home applications of AI to industrial uses of
-              robotics, the future is here. You can even say hello and shake the
-              hand of Rob the Robot.
-            </p>
+            <h2 id="robotics">ROBOTICS & AI</h2>
+            <div class="robotics">
+              <span class="fa fa-robot"></span>
+              <p>
+                The information revolution is here and robotics and artificial
+                intelligence are the science of the future.
+              </p>
+              <p>
+                From useful home applications of AI to industrial uses of
+                robotics, the future is here. You can even say hello and shake
+                the hand of Rob the Robot.
+              </p>
+            </div>
           </div>
           <figure class="card"><img src="images\robotics.jpg" alt="" /></figure>
           <span class="fa fa-arrow-circle-left"></span>
           <div class="card">
-            <h2>ECOLOGY</h2>
-            <span class="fa fa-globe-americas"></span>
-            <p>
-              As we learn more and more of the impact humans are having on the
-              planet, the more important it becomes that scientists explore how
-              to create a sustainable future not just for humans but for the
-              whole planet.
-            </p>
+            <h2 id="ecology">ECOLOGY</h2>
+            <div class="ecology">
+              <p>
+                As we learn more and more of the impact humans are having on the
+                planet, the more important it becomes that scientists explore
+                how to create a sustainable future not just for humans but for
+                the whole planet.
+              </p>
+            </div>
           </div>
           <span class="fa fa-arrow-circle-left"></span>
           <figure class="card"><img src="images\ecology.jpg" alt="" /></figure>
@@ -122,28 +205,38 @@
           <figure><img src="" alt="" /></figure>
           <figure><img src="" alt="" /></figure>
         </section>
-        <section class="newsletter">
-          <p>
-            Sign up to our Newsletter and be the first to know about Our
-            exciting New stuff:
-          </p>
-          <form action="form-success.php" method="get" class="newsletter">
-            <input
-              id="newsletter"
-              type="text"
-              name="email"
-              placeholder="YOUR EMAIL"
-            />
-            <input id="join" type="submit" name="subscribe" value="SIGN UP" />
-          </form>
-        </section>
+
+        <div class="newsletter-wrapper">
+        <div class="blur">
+          <section class="newsletter">
+            <p>
+              Sign up to our Newsletter and be the first to know about Our
+              exciting New stuff:
+            </p>
+            <form action="form-success.php" method="get" class="newsletter">
+              <input
+                id="newsletter"
+                type="text"
+                name="email"
+                placeholder="YOUR EMAIL"
+              />
+              <input
+                id="sign-up"
+                type="submit"
+                name="subscribe"
+                value="SIGN UP"
+              />
+            </form>
+          </section>
+        </div>
       </div>
     </main>
+
     <footer>
       <div class="footer-wrapper">
         <div class="footer-container">
           <h6>CONNECT:</h6>
-          <ul>
+          <ul class="connect">
             <li>
               <a href="www.facebook.com"
                 ><span class="fa fa-facebook-f"></span
@@ -164,44 +257,50 @@
         </div>
         <div class="footer-container">
           <h6>HOURS:</h6>
-          <ul>
-            <li>Monday:</li>
-            <li>Tuesday:</li>
-            <li>Wednesday:</li>
-            <li>Thursday:</li>
-            <li>Friday:</li>
-            <li>Saturday:</li>
-            <li>Sunday:</li>
-          </ul>
-          <ul>
-            <li>Closed</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 16:00</li>
-            <li>10:00 - 19:00</li>
-            <li>09:00 - 16:00</li>
-            <li>09:00 - 13:00</li>
-          </ul>
+          <div class="hours-wrapper">
+            <ul class="hours">
+              <li>Monday:</li>
+              <li>Tuesday:</li>
+              <li>Wednesday:</li>
+              <li>Thursday:</li>
+              <li>Friday:</li>
+              <li>Saturday:</li>
+              <li>Sunday:</li>
+            </ul>
+            <ul>
+              <li>Closed</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 19:00</li>
+              <li>09:00 - 16:00</li>
+              <li>09:00 - 13:00</li>
+            </ul>
+          </div>
         </div>
         <div class="footer-container">
-          <h6>LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
-          <a href="visit.html"
-            ><span class="fa fa-map-marker-alt"><p>Getting Here</p></span></a
+          <div>
+            <h6>LOCATION:</h6>
+            <p>Nygårdsgaten 112</p>
+            <p>5008 Bergen, Norway</p>
+          </div>
+          <a href="visit.html" class="location"
+            ><span class="fa fa-map-marker-alt"></span>
+            <p>Getting Here</p></a
           >
         </div>
         <div class="footer-container">
           <h6>CONTACT & SUPPORT:</h6>
-          <ul>
-            <a href="about_us.html">About Us</a>
-            <a href="visit.html">Facilities</a>
-            <p>Email: contact@cms.com</p>
-            <p>Phone: 500 55 555</p>
-            <p>Community Science Museum 2020</p>
+          <ul class="contact">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="visit.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><p>Email: contact@cms.com</p></li>
+            <li><p>Phone: 500 55 555</p></li>
           </ul>
         </div>
       </div>
+      <p id="copyright">Community Science Museum 2020</p>
     </footer>
   </body>
 </html>
