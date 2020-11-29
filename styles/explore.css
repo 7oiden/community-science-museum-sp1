@@ -49,8 +49,9 @@ a {
 }
 nav.icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
+  margin: 16px 0;
   /* background-color: aqua; */
 }
 .icon {
@@ -135,6 +136,11 @@ section {
   background-color: var(--light-grey);
   margin: 16px auto;
 }
+section.for-kids {
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 15px 0;
+}
 section.newsletter {
   width: 100%;
   background-color: transparent;
@@ -148,7 +154,6 @@ section.newsletter {
   margin-top: 0;
 }
 h1 {
-  width: 90%;
   margin: 32px auto 16px auto;
   font-family: var(--proxima);
   font-size: 1.5rem;
@@ -157,8 +162,8 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   text-align: center;
-  padding: 8px;
-  border-radius: 0 15px 0 15px;
+  padding: 12px;
+  border-radius: 50px 0;
 }
 h2,
 h3 {
@@ -173,9 +178,13 @@ h4 {
   font-size: 1.25rem;
   padding-top: 16px;
 }
+h5 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
 #intro {
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
 }
 figure {
   width: 100%;

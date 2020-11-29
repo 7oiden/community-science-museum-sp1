@@ -51,8 +51,9 @@ a {
 }
 nav.icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
+  margin: 16px 0;
   /* background-color: aqua; */
 }
 .icon {
@@ -139,7 +140,7 @@ main {
 .background-container {
   width: 100%;
   color: var(--white);
-  background-image: url(../images/robot-main.jpg);
+  background-image: url(../images/robot-main_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0;
@@ -161,6 +162,9 @@ h1 {
 h2 {
   font-size: 1.25rem;
 }
+/* em {
+  text-decoration: underline;
+} */
 .clock {
   font-size: 1.125rem;
   display: flex;
@@ -203,20 +207,38 @@ p.button::after {
   margin: 0 auto;
   padding-bottom: 32px;
 }
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 264px;
+  height: 60px;
+  width: 60px;
+  border-bottom-right-radius: 50%;
+  background-color: transparent;
+}
+.bubble::before {
+  box-shadow: 0 30px 0 0 #fff;
+  z-index: 1;
+}
 .bubble {
+  position: relative;
+  z-index: 1;
   font-family: var(--proxima-soft);
   font-size: 1.125rem;
   background-color: var(--white);
   color: var(--dark-purple);
   height: 150px;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 50px 0 50px 50px;
 }
 .bubble a {
   color: var(--dark-purple);
 }
 h3 {
-  padding-top: 24px;
+  padding-top: 32px;
+  z-index: 10;
 }
 .bubble p {
   margin: 0;
@@ -315,10 +337,6 @@ div.news {
   width: 90%;
   margin: 0 auto;
   text-align: left;
-}
-section.clubs {
-  width: 90%;
-  margin: 0 auto;
 }
 div.image-wrapper {
   display: flex;
