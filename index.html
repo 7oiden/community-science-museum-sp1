@@ -30,11 +30,39 @@
           <div>
             <a href=""><span class="fa fa-ticket-alt icon"></span></a>
           </div>
-          <div>
-            <a href=""><span class="fa fa-user-circle icon"></span></a>
+          <label class="dropdown-label" for="dropdown-box">
+            <span class="fa fa-user-circle icon"></span>
+          </label>
+          <input type="checkbox" id="dropdown-box" />
+          <div class="profile-dropdown">
+            <p class="profile-header">YOUR ACCOUNT</p>
+            <form action="login.php" method="GET">
+              <label for="email" class="label">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                id="email"
+                class="box"
+                required="required"
+              />
+            </form>
+            <form action="login.php" method="GET">
+              <label for="choose" class="label_2">Choose password</label>
+              <input
+                type="password"
+                name="choose"
+                placeholder="* * * * * * * *"
+                class="box password"
+                id="choose"
+              />
+            </form>
+            <p class="dropdown-button">SIGN IN</p>
           </div>
         </nav>
       </div>
+
+      <form action=""></form>
 
       <nav aria-label="menu" class="menu">
         <ul class="small-screen">

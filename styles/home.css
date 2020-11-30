@@ -35,6 +35,71 @@ a {
 }
 /* header 
 --------------------*/
+
+/* profile-dropdown */
+.dropdown-label {
+  cursor: pointer;
+  position: relative;
+}
+.profile-dropdown {
+  position: absolute;
+  z-index: 1000;
+  top: 154px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0 0 70px 0;
+}
+.profile-header {
+  z-index: 1000;
+  width: 100%;
+  font-family: var(--proxima-soft);
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--dark-purple);
+  color: #fff;
+  margin-top: 0;
+  padding: 17px;
+  border-radius: 0 0 50px 0;
+}
+form {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+form.label {
+  font-family: var(--neue-haas);
+}
+input.box {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.125rem;
+  color: #172940;
+  border-radius: 0;
+  border: 2px solid #5361757d;
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto 0 auto;
+  border-radius: 15px;
+  transition-property: border;
+  transition-duration: 0.5s;
+}
+.dropdown-button {
+  font-size: 1.5rem;
+  background-color: var(--magenta);
+  color: #fff;
+  padding: 8px 50px;
+  margin: 32px auto 64px auto;
+  border-radius: 15px;
+}
+
+#dropdown-box {
+  display: none;
+}
+#dropdown-box:checked ~ div {
+  display: none;
+}
+
 .header-wrapper {
   display: flex;
   flex-direction: column;
@@ -141,8 +206,9 @@ main {
   width: 100%;
   color: var(--white);
   background-image: url(../images/robot-main_mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat;
+
   margin-top: 0;
 }
 .main-wrapper {
@@ -183,7 +249,7 @@ p.button {
   border-radius: 15px;
   background-color: var(--dark-purple);
   color: var(--white);
-  padding: 10px 50px;
+  padding: 12px 50px;
 }
 p.button::after {
   content: "\002A";
