@@ -21,7 +21,6 @@ body {
 .fa {
   color: var(--white);
   font-size: 2.5rem;
-  display: none;
 }
 figure {
   display: block;
@@ -318,11 +317,10 @@ h1 {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: capitalize;
+  text-align: center;
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px;
-  border-radius: 0 15px 0 15px;
-  padding-left: 5%;
 }
 h2 {
   text-align: center;
@@ -330,6 +328,35 @@ h2 {
   color: #fff;
   border-radius: 25px 25px 0 0;
   padding: 16px;
+}
+.fa-arrow-circle-left {
+  display: none;
+}
+.fa-arrow-circle-right {
+  display: none;
+}
+.fa-arrow-circle-down {
+  display: block;
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  margin: 16px auto;
+  opacity: 0.15;
+}
+.purple {
+  color: var(--purple);
+}
+.blue {
+  color: var(--blue);
+}
+.dark-green {
+  color: var(--dark-green);
+}
+.orange {
+  color: var(--orange);
+}
+.magenta {
+  color: var(--magenta);
 }
 #cosmology {
   background-color: var(--purple);
@@ -365,7 +392,7 @@ figure.card {
   border: 15px solid #fff;
   border-radius: 20px;
   box-shadow: 0 6px 12px #00000029;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 figure.card img {
   width: 100%;
@@ -404,11 +431,49 @@ figure.card img {
   width: 90%;
   margin: 0 auto;
   background-image: url(../images/icons/tellus.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
-.photo-gallery {
-  display: none;
+section.photo-gallery {
+  width: 100%;
+  margin: 0 auto;
+}
+h3 {
+  font-family: var(--proxima);
+  font-size: 1.25rem;
+  background-color: var(--dark-purple);
+  color: #fff;
+  padding: 12px 16px;
+  margin: 32px 16px 16px 0;
+  border-radius: 0 0 50px 0;
+}
+.photo-gallery img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  /* opacity: 0.65; */
+}
+.image-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.image-wrapper div {
+  border-radius: 15px;
+}
+p.visit {
+  font-family: var(--sofia);
+  font-size: 1.125rem;
+  font-style: italic;
+  background-color: var(--light-purple);
+  color: #fff;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  border-radius: 0 50px 0 0;
 }
 .newsletter-wrapper {
   background-image: url(../images/newsletter.jpg);
@@ -440,6 +505,7 @@ section.newsletter {
   padding-top: 16px;
 }
 form.newsletter {
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 40px;
@@ -447,7 +513,7 @@ form.newsletter {
 }
 #newsletter {
   font-family: var(--sofia);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 70%;
   height: 40px;
   border: 3px solid var(--dark-purple);
@@ -455,7 +521,7 @@ form.newsletter {
 }
 #sign-up {
   font-family: var(--sofia);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 30%;
   height: 40px;
   border: 3px solid var(--dark-purple);

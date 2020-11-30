@@ -321,8 +321,7 @@ h1 {
   text-align: center;
   background-color: var(--dark-purple);
   color: #fff;
-  padding: 8px;
-  border-radius: 0 15px 0 15px;
+  padding: 12px;
   padding-left: 5%;
 }
 h2,
@@ -429,6 +428,7 @@ section.newsletter {
   padding-top: 16px;
 }
 form.newsletter {
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 40px;
@@ -436,7 +436,7 @@ form.newsletter {
 }
 #newsletter {
   font-family: var(--sofia);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 70%;
   height: 40px;
   border: 3px solid var(--dark-purple);
@@ -444,7 +444,7 @@ form.newsletter {
 }
 #sign-up {
   font-family: var(--sofia);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 30%;
   height: 40px;
   border: 3px solid var(--dark-purple);

@@ -564,6 +564,7 @@ section.newsletter {
   padding-top: 16px;
 }
 form.newsletter {
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 40px;
@@ -571,7 +572,7 @@ form.newsletter {
 }
 #newsletter {
   font-family: var(--sofia);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 70%;
   height: 40px;
   border: 3px solid var(--dark-purple);
@@ -579,7 +580,7 @@ form.newsletter {
 }
 #sign-up {
   font-family: var(--sofia);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 30%;
   height: 40px;
   border: 3px solid var(--dark-purple);

@@ -316,7 +316,7 @@ h1 {
   font-family: var(--proxima);
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   background-color: var(--dark-purple);
   color: #fff;
@@ -376,8 +376,7 @@ p.button {
 }
 section.tourguides {
   width: 100%;
-  text-align: center;
-  background-color: var(--light-grey);
+  /* background-color: var(--light-grey); */
 }
 .image-wrapper {
   width: 100%;
@@ -394,7 +393,7 @@ figure.tourguides {
   justify-self: start;
   margin: 0;
   padding: 0;
-  background-color: aquamarine;
+  border-radius: 15px;
 }
 .tourguides img {
   display: block;
@@ -402,9 +401,11 @@ figure.tourguides {
   justify-self: start;
   margin: 0;
   padding: 0;
+  border-radius: 15px;
 }
 figcaption {
   font-family: var(--proxima-soft);
+  text-align: center;
   font-weight: bold;
   padding-top: 8px;
 }
@@ -413,9 +414,9 @@ h4 {
   font-size: 1.25rem;
   background-color: var(--dark-purple);
   color: #fff;
-  padding: 12px;
-  margin: 32px auto 0 auto;
-  border-radius: 50px 0;
+  padding: 12px 16px;
+  margin: 32px 16px 0 0;
+  border-radius: 0 0 50px 0;
 }
 h5 {
   font-size: 1rem;
@@ -429,9 +430,10 @@ p.tourguides {
   font-style: italic;
   background-color: var(--light-purple);
   color: #fff;
-  padding: 8px;
+  padding: 12px 16px;
   margin-bottom: 16px;
-  border-radius: 0 50px;
+  margin-right: 16px;
+  border-radius: 0 50px 0 0;
 }
 .newsletter-wrapper {
   background-image: url(../images/newsletter.jpg);
@@ -463,6 +465,7 @@ section.newsletter {
   padding-top: 16px;
 }
 form.newsletter {
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 40px;
@@ -470,7 +473,7 @@ form.newsletter {
 }
 #newsletter {
   font-family: var(--sofia);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 70%;
   height: 40px;
   border: 3px solid var(--dark-purple);
@@ -478,7 +481,7 @@ form.newsletter {
 }
 #sign-up {
   font-family: var(--sofia);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 30%;
   height: 40px;
   border: 3px solid var(--dark-purple);
