@@ -80,8 +80,11 @@ form {
 #search-box {
   display: none;
 }
-#search-box:checked ~ div {
+#search-box ~ .search-dropdown {
   display: none;
+}
+#search-box:checked ~ .search-dropdown {
+  display: block;
 }
 /* ticket-dropdown */
 .ticket-label {
@@ -110,19 +113,25 @@ form {
   padding: 17px;
   border-radius: 50px 0 50px 0;
 }
-.ticket-button {
+button.ticket {
+  display: block;
+  font-family: var(--sofia);
   font-size: 1.5rem;
   background-color: var(--magenta);
   color: #fff;
   padding: 8px 50px;
-  margin: 32px auto 64px auto;
+  margin: 16px auto 50px auto;
+  border: none;
   border-radius: 15px;
 }
 #ticket-box {
   display: none;
 }
-#ticket-box:checked ~ div {
+#ticket-box ~ .ticket-dropdown {
   display: none;
+}
+#ticket-box:checked ~ div {
+  display: block;
 }
 
 /* profile-dropdown */
@@ -169,21 +178,26 @@ input.box {
   transition-property: border;
   transition-duration: 0.5s;
 }
-.profile-button {
+button.profile {
+  display: block;
+  font-family: var(--sofia);
   font-size: 1.5rem;
   background-color: var(--magenta);
   color: #fff;
   padding: 8px 50px;
-  margin: 32px auto 64px auto;
+  margin: 16px auto 50px auto;
+  border: none;
   border-radius: 15px;
 }
 #profile-box {
   display: none;
 }
-#profile-box:checked ~ div {
+#profile-box ~ .profile-dropdown {
   display: none;
 }
-
+#profile-box:checked ~ .profile-dropdown {
+  display: block;
+}
 .header-wrapper {
   display: flex;
   flex-direction: column;
@@ -231,15 +245,17 @@ nav.menu {
 header {
   display: inline;
 }
+
+/* mobile menu */
 .fa-bars {
   font-size: 1.875rem;
 }
-ul.small-screen {
+ul.mobile-menu {
   /* background-color: navy; */
   margin: 0 0 0 2rem;
   padding: 0;
 }
-.small-screen label p {
+.mobile-menu label p {
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -256,10 +272,11 @@ ul li {
 #visit {
   margin-bottom: 20px;
 }
-.small-screen li {
+.mobile-menu li {
   display: block;
   float: left;
   clear: left;
+  font-size: 1.25rem;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -278,9 +295,13 @@ ul li {
 #hamburger-menu {
   display: none;
 }
-#hamburger-menu:checked ~ li {
+#hamburger-menu ~ li {
   display: none;
 }
+#hamburger-menu:checked ~ li {
+  display: block;
+}
+
 /* main 
 --------------------*/
 main {
@@ -640,7 +661,6 @@ h6 {
 }
 #copyright {
   font-family: var(--neue-haas);
-  font-weight: bold;
   display: block;
   text-align: center;
   margin: 0;
@@ -649,7 +669,6 @@ h6 {
 #copyright::before {
   content: "\00A9";
   padding-right: 5px;
-  font-weight: bold;
 }
 
 /* styles that change

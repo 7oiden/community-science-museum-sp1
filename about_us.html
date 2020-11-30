@@ -24,19 +24,84 @@
           /></a>
         </figure>
         <nav aria-label="icons" class="icons">
-          <div>
-            <a href=""><span class="fa fa-search icon"></span></a>
+          <label class="search-label" for="search-box">
+            <span class="fa fa-search icon"></span>
+          </label>
+          <input type="checkbox" id="search-box" />
+          <div class="search-dropdown">
+            <p class="search-header">SEARCH RESULTS</p>
+            <form action="">
+              <label for="search" class="label">Search</label>
+              <input
+                type="text"
+                name="first-name"
+                placeholder="Start Writing..."
+                id="search"
+                class="box"
+              />
+            </form>
+            <p class="dropdown-text">
+              Sorry, No Result for Your Search, Please Try Something Else
+            </p>
           </div>
-          <div>
-            <a href=""><span class="fa fa-ticket-alt icon"></span></a>
+
+          <label class="ticket-label" for="ticket-box">
+            <span class="fa fa-ticket-alt icon"></span>
+          </label>
+          <input type="checkbox" id="ticket-box" />
+          <div class="ticket-dropdown">
+            <p class="ticket-header">BUY TICKET</p>
+            <form action="">
+              <p class="dropdown-text">
+                Please Choose the Desired Number of Tickets and Click Proceed
+              </p>
+              <label for="select">6 or more people</label>
+              <select name="tickets" id="select">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="more">6 or more</option>
+              </select>
+            </form>
+            <button class="ticket">PROCEED</button>
           </div>
-          <div>
-            <a href=""><span class="fa fa-user-circle icon"></span></a>
+
+          <label class="profile-label" for="profile-box">
+            <span class="fa fa-user-circle icon"></span>
+          </label>
+          <input type="checkbox" id="profile-box" />
+          <div class="profile-dropdown">
+            <p class="profile-header">YOUR ACCOUNT</p>
+            <form action="login.php" method="GET">
+              <label for="email" class="label">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                id="email"
+                class="box"
+                required="required"
+              />
+            </form>
+            <form action="login.php" method="GET">
+              <label for="choose" class="label_2">Choose password</label>
+              <input
+                type="password"
+                name="choose"
+                placeholder="* * * * * * * *"
+                class="box password"
+                id="choose"
+              />
+            </form>
+            <button class="profile">SIGN IN</button>
           </div>
         </nav>
       </div>
+
       <nav aria-label="menu" class="menu">
-        <ul class="small-screen">
+        <ul class="mobile-menu">
           <label class="hamburger-label" for="hamburger-menu"
             ><span class="fa fa-bars"></span>
             <p id="menu">MENU</p></label
