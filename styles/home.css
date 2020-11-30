@@ -35,6 +35,9 @@ a {
 }
 /* header 
 --------------------*/
+.icons label {
+  display: block;
+}
 /* search-dropdown */
 .search-label {
   cursor: pointer;
@@ -43,12 +46,24 @@ a {
 .search-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 154px;
+  top: 138px;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border-radius: 70px 0 70px 0;
+}
+.search-header {
+  z-index: 1000;
+  width: 100%;
+  font-family: var(--proxima-soft);
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--dark-purple);
+  color: #fff;
+  margin-top: 0;
+  padding: 17px;
+  border-radius: 50px 0 50px 0;
 }
 form {
   width: 85%;
@@ -76,14 +91,33 @@ form {
 .ticket-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 154px;
+  top: 138px;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border-radius: 70px 0 70px 0;
 }
-
+.ticket-header {
+  z-index: 1000;
+  width: 100%;
+  font-family: var(--proxima-soft);
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--dark-purple);
+  color: #fff;
+  margin-top: 0;
+  padding: 17px;
+  border-radius: 50px 0 50px 0;
+}
+.ticket-button {
+  font-size: 1.5rem;
+  background-color: var(--magenta);
+  color: #fff;
+  padding: 8px 50px;
+  margin: 32px auto 64px auto;
+  border-radius: 15px;
+}
 #ticket-box {
   display: none;
 }
@@ -99,14 +133,14 @@ form {
 .profile-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 154px;
+  top: 138px;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border-radius: 70px 0 70px 0;
 }
-.dropdown-header {
+.profile-header {
   z-index: 1000;
   width: 100%;
   font-family: var(--proxima-soft);
@@ -135,7 +169,7 @@ input.box {
   transition-property: border;
   transition-duration: 0.5s;
 }
-.dropdown-button {
+.profile-button {
   font-size: 1.5rem;
   background-color: var(--magenta);
   color: #fff;
