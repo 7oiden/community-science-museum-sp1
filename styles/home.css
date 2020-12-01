@@ -51,6 +51,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
 .search-header {
@@ -72,7 +73,7 @@ form {
 }
 .dropdown-text {
   font-family: var(--neue-haas);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 85%;
   margin: 0 auto;
   padding-bottom: 32px;
@@ -99,6 +100,7 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
 .ticket-header {
@@ -113,10 +115,29 @@ form {
   padding: 17px;
   border-radius: 50px 0 50px 0;
 }
+form.ticket {
+  margin: 0 auto;
+}
+#select {
+  font-family: var(--proxima-soft);
+  font-size: 1.125rem;
+  font-weight: bold;
+  border: 2px solid var(--dark-purple);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: var(--light-grey);
+}
+#select option {
+  font-family: var(--proxima-soft);
+  font-size: 1.125rem;
+  font-weight: bold;
+  border: 2px solid var(--dark-purple);
+  background-color: var(--light-grey);
+}
 button.ticket {
   display: block;
   font-family: var(--sofia);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: var(--magenta);
   color: #fff;
   padding: 8px 50px;
@@ -130,7 +151,7 @@ button.ticket {
 #ticket-box ~ .ticket-dropdown {
   display: none;
 }
-#ticket-box:checked ~ div {
+#ticket-box:checked ~ .ticket-dropdown {
   display: block;
 }
 
@@ -147,6 +168,7 @@ button.ticket {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
 .profile-header {
@@ -172,7 +194,7 @@ input.box {
   color: #172940;
   border-radius: 0;
   border: 2px solid #5361757d;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   margin: 0 auto 0 auto;
   border-radius: 15px;
   transition-property: border;
@@ -181,7 +203,7 @@ input.box {
 button.profile {
   display: block;
   font-family: var(--sofia);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: var(--magenta);
   color: #fff;
   padding: 8px 50px;
@@ -327,12 +349,16 @@ h1 {
   font-family: var(--proxima);
   font-size: 2.5rem;
   margin-top: 0;
+  margin-bottom: 16px;
   padding-top: 32px;
   /* background-color: olive; */
 }
 h2 {
   font-size: 1.5rem;
   text-align: center;
+  /* background-color: green; */
+  margin-bottom: 0;
+  margin-top: 0;
 }
 /* em {
   text-decoration: underline;
@@ -342,12 +368,15 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
+  margin-top: 16px;
   /* background-color: lightseagreen; */
 }
 .fa-clock {
   color: var(--white);
   font-size: 1.5rem;
+}
+div.button {
+  margin-bottom: 64px;
 }
 p.button {
   font-size: 1.25rem;
@@ -381,7 +410,7 @@ p.button::after {
   margin: 0 auto;
   padding-bottom: 32px;
 }
-.bubble::before {
+/* .bubble::before {
   content: "";
   position: absolute;
   top: -60px;
@@ -394,6 +423,16 @@ p.button::after {
 .bubble::before {
   box-shadow: 0 30px 0 0 #fff;
   z-index: 1;
+} */
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid #fff;
+  position: absolute;
+  bottom: 145px;
+  left: 170px;
 }
 .bubble {
   position: relative;
@@ -404,13 +443,13 @@ p.button::after {
   color: var(--dark-purple);
   height: 150px;
   margin: 0 auto;
-  border-radius: 50px 0 50px 50px;
+  border-radius: 50px;
 }
 .bubble a {
   color: var(--dark-purple);
 }
 h3 {
-  padding-top: 32px;
+  padding-top: 24px;
   z-index: 10;
 }
 .bubble p {
