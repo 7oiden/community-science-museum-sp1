@@ -312,15 +312,15 @@ section.main-content {
   margin: 0 auto;
 }
 h1 {
-  margin: 32px auto 16px auto;
   font-family: var(--proxima);
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
   background-color: var(--dark-purple);
   color: #fff;
-  padding: 12px;
+  margin: 32px 16px 32px 0;
+  padding: 12px 32px;
+  border-radius: 0 0 50px 0;
 }
 h2 {
   margin-left: 5%;

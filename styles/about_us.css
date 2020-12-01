@@ -312,16 +312,15 @@ section {
   margin: 0 auto;
 }
 h1 {
-  margin: 32px auto 16px auto;
   font-family: var(--proxima);
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: capitalize;
-  text-align: center;
   background-color: var(--dark-purple);
   color: #fff;
-  padding: 12px;
-  padding-left: 5%;
+  margin: 32px 16px 32px 0;
+  padding: 12px 32px;
+  border-radius: 0 0 50px 0;
 }
 div.vision {
   width: 100%;
@@ -332,7 +331,6 @@ div.vision {
 div.blue {
   background-color: var(--blue);
   color: #fff;
-  border-radius: 15px 0;
 }
 div.vision p {
   width: 90%;
@@ -428,12 +426,13 @@ p.tourguides {
   font-family: var(--sofia);
   font-size: 1.125rem;
   font-style: italic;
+  text-align: center;
   background-color: var(--light-purple);
   color: #fff;
-  padding: 12px 16px;
+  padding: 12px 32px;
   margin-bottom: 16px;
-  margin-right: 16px;
-  border-radius: 0 50px 0 0;
+
+  border-radius: 50px 50px 0 0;
 }
 .newsletter-wrapper {
   background-image: url(../images/newsletter.jpg);
