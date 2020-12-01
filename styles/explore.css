@@ -303,29 +303,37 @@ ul li {
 /* main 
 --------------------*/
 .main-wrapper {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 section {
-  width: 90%;
-  background-color: var(--light-grey);
-  margin: 16px auto;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-section.for-kids {
+div.blue {
   background-color: var(--blue);
   color: #fff;
+}
+#intro {
+  font-family: var(--sofia);
+  font-weight: bold;
+  /* font-style: italic; */
 }
 section.newsletter {
   width: 100%;
   background-color: transparent;
 }
 .margins {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  background-color: var(--light-grey);
+  margin-top: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.margins > p {
-  padding-bottom: 16px;
-  margin-top: 0;
+figure.margins {
+  padding: 0;
 }
 h1 {
   font-family: var(--proxima);
@@ -334,7 +342,7 @@ h1 {
   text-transform: uppercase;
   background-color: var(--dark-purple);
   color: #fff;
-  margin: 32px 16px 32px 0;
+  margin: 32px 16px 0 0;
   padding: 12px 32px;
   border-radius: 0 0 50px 0;
 }
@@ -343,38 +351,43 @@ h3 {
   font-family: var(--proxima-soft);
   font-size: 1.5rem;
   margin-bottom: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 h4 {
   font-family: var(--proxima-soft);
   font-size: 1.25rem;
-  padding-top: 16px;
 }
 h5 {
   font-size: 1rem;
-  margin-bottom: 8px;
-}
-#intro {
-  font-weight: bold;
-  /* font-style: italic; */
+  margin-bottom: 0;
 }
 figure {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-img {
+#item-3 {
+  background-image: url(../images/kids-cartoon_large.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#item-6 {
+  background-image: url(../images/researcher-cartoon_large.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* img {
   width: 100%;
   margin: 0;
   padding: 0;
-}
+} */
 .get-in-touch {
   background-color: #7c68a6;
   color: #fff;
   font-size: 1.125rem;
   text-align: center;
   border-radius: 0 15px 0 15px;
+  display: flex;
+  flex-direction: column;
 }
 .get-in-touch > p {
   font-family: var(--proxima);
@@ -531,4 +544,67 @@ h6 {
 #copyright::before {
   content: "\00A9";
   padding-right: 5px;
+}
+/* styles that change
+--------------------*/
+@media only screen and (min-width: 1200px) {
+  main {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-right: 0;
+    border-radius: 50px 0 50px 0;
+  }
+  h2,
+  h3 {
+    font-size: 1.875rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  section {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .margins {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .margins img {
+    height: 480px;
+  }
+  .get-in-touch p {
+    font-size: 1.5rem;
+  }
+  #item-1 {
+    flex: 1;
+  }
+  #item-2 {
+    flex: 1;
+  }
+  #item-3 {
+    flex: 2;
+  }
+  #item-4 {
+    flex: 1;
+  }
+  #item-5 {
+    flex: 1;
+  }
+  #item-6 {
+    flex: 2;
+  }
+  .get-in-touch {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 64px;
+  }
 }
