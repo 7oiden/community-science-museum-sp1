@@ -531,3 +531,26 @@ h6 {
   content: "\00A9";
   padding-right: 5px;
 }
+
+/* styles that change
+--------------------*/
+@media only screen and (min-width: 1200px) {
+  /* Footer
+--------------------*/
+  .footer-wrapper {
+    font-size: 1.125rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    /* background-color: green; */
+  }
+  ul.connect {
+    flex-direction: column;
+  }
+  .connect li {
+    padding: 8px;
+  }
+}
