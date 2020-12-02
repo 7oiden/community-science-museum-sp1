@@ -337,6 +337,9 @@ section.main-content {
   display: flex;
   flex-direction: column;
 }
+h1.large-screen {
+  display: none;
+}
 h1 {
   font-family: var(--proxima);
   font-size: 1.5rem;
@@ -655,15 +658,17 @@ h6 {
   }
   /* Main
 --------------------*/
-  h1 {
+  h1.mobile {
+    display: none;
+  }
+  h1.large-screen {
+    display: block;
     width: 90%;
-    font-size: 2.5rem;
+    margin: 50px auto 16px auto;
+    font-size: 2rem;
     text-transform: capitalize;
     text-align: center;
-    margin-right: 0;
-    margin-left: 5%;
-    margin: 32px 0 16px 5%;
-    border-radius: 50px 0 50px 0;
+    border-radius: 0;
   }
   h2 {
     font-size: 1.875rem;

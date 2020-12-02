@@ -355,6 +355,9 @@ div.blue {
 figure.margins {
   padding: 0;
 }
+h1.large-screen {
+  display: none;
+}
 h1 {
   font-family: var(--proxima);
   font-size: 1.5rem;
@@ -696,12 +699,17 @@ h6 {
   main {
     font-size: 1.25rem;
   }
-  h1 {
-    font-size: 2.5rem;
+  h1.mobile {
+    display: none;
+  }
+  h1.large-screen {
+    display: block;
+    width: 100%;
+    margin: 50px auto 16px auto;
+    font-size: 2rem;
     text-transform: capitalize;
     text-align: center;
-    margin-right: 0;
-    border-radius: 50px 0 50px 0;
+    border-radius: 0;
   }
   h2,
   h3 {
@@ -718,6 +726,9 @@ h6 {
     flex-direction: row;
     gap: 16px;
   }
+  /* section.kids {
+    margin-top: 0;
+  } */
   .margins {
     padding-left: 2rem;
     padding-right: 2rem;
