@@ -591,6 +591,7 @@ h6 {
   }
   .logo {
     width: 500px;
+    margin-left: 128px;
   }
   .logo img {
     width: 500px;
@@ -661,7 +662,7 @@ h6 {
   .inactive:hover {
     /* border-left: 2px solid var(--dark-purple);
     border-right: 2px solid var(--dark-purple); */
-    background-color: #8578a1bf;
+    background-color: #210759a6;
   }
   .dropdown-info {
     font-size: 1.125rem;
@@ -693,7 +694,7 @@ h6 {
   /* Main
 --------------------*/
   main {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
   h1 {
     font-size: 2.5rem;
@@ -707,11 +708,11 @@ h6 {
     font-size: 1.875rem;
   }
   h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
   }
   h5 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
   section {
     flex-direction: row;
@@ -724,9 +725,7 @@ h6 {
   .margins img {
     height: 480px;
   }
-  .get-in-touch p {
-    font-size: 1.5rem;
-  }
+
   #item-1 {
     flex: 1;
   }
@@ -750,6 +749,9 @@ h6 {
     align-items: baseline;
     justify-content: center;
     gap: 64px;
+  }
+  .get-in-touch p {
+    font-size: 1.5rem;
   }
   p.button {
     font-size: 1.25rem;
