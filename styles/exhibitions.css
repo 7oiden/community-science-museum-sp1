@@ -311,6 +311,14 @@ section.main-content {
   width: 90%;
   margin: 0 auto;
 }
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1.large-screen {
+  display: none;
+}
 h1 {
   font-family: var(--proxima);
   font-size: 1.5rem;
@@ -340,10 +348,9 @@ h2 {
 .fa-arrow-circle-down {
   display: block;
   font-size: 4rem;
-  color: black;
   text-align: center;
   margin: 16px auto;
-  opacity: 0.15;
+  opacity: 0.5;
 }
 .purple {
   color: var(--purple);
@@ -376,7 +383,7 @@ h2 {
   background-color: var(--magenta);
 }
 div.card {
-  width: 100%;
+  width: 325px;
   min-height: 415px;
   border-radius: 25px;
   box-shadow: 0 6px 12px #00000029;
@@ -384,11 +391,13 @@ div.card {
 }
 div.card p {
   /* font-family: var(--neue-haas); */
+  width: 90%;
+  margin: 16px auto;
   font-size: 1rem;
   padding-top: 0;
 }
 figure.card {
-  width: 100%;
+  width: 325px;
   height: 415px;
   margin: 0 auto;
   border: 15px solid #fff;
@@ -403,36 +412,26 @@ figure.card img {
   border-radius: 20px;
 }
 .cosmology {
-  width: 90%;
-  margin: 0 auto;
-  padding: 32px;
   background-image: url(../images/icons/globe-americas.svg);
   background-repeat: no-repeat;
+  background-size: 90%;
 }
 .evolution {
-  width: 90%;
-  margin: 0 auto;
   background-image: url(../images/icons/dna.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .biology {
-  width: 90%;
-  margin: 0 auto;
   background-image: url(../images/icons/microscope.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .robotics {
-  width: 90%;
-  margin: 0 auto;
   background-image: url(../images/icons/robot.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .ecology {
-  width: 90%;
-  margin: 0 auto;
   background-image: url(../images/icons/tellus.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -618,11 +617,60 @@ h6 {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 1200px) {
+  /* Main
+--------------------*/
+  section.main-content {
+    background-color: var(--light-grey);
+    padding-top: 32px;
+  }
+  h1.mobile {
+    display: none;
+  }
+  h1.large-screen {
+    display: block;
+    width: 90%;
+    margin: 50px auto 16px auto;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 0;
+  }
+  .item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lightblue; */
+  }
+  div.card {
+    width: 690px;
+    margin-bottom: 64px;
+    margin-left: 5%;
+  }
+  figure.card {
+    width: 690px;
+    margin-right: 5%;
+  }
+  .fa-arrow-circle-down {
+    display: none;
+  }
+  .fa-arrow-circle-left {
+    display: block;
+    font-size: 5rem;
+    padding: 0;
+    margin-left: 5%;
+  }
+  .fa-arrow-circle-right {
+    display: block;
+    font-size: 5rem;
+    margin-left: 5%;
+  }
+
   /* Footer
 --------------------*/
   .footer-wrapper {
     font-size: 1.125rem;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
   }
   .footer-container {
