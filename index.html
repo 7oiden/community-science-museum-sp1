@@ -185,84 +185,89 @@
               <div class="arrow-up"></div>
               <a href="about_us.html">
                 <h3>"Let us Explore Together"</h3>
-                <div>
+                <div id="about">
                   <p>Learn more ABOUT US and our VISON</p>
                   <span class="fa fa-arrow-circle-right"></span>
                 </div>
               </a>
+              <div class="arrow-down"></div>
             </div>
           </aside>
-          <section class="categories">
-            <div class="color-box" id="cosmology">
-              <a href="exhibitions.html">
-                <figure><span class="fa fa-globe-americas"></span></figure>
-                <figcaption>COSMOLOGY</figcaption></a
-              >
-            </div>
-            <div class="color-box" id="evolution">
-              <a href="exhibitions.html">
-                <figure><span class="fa fa-dna"></span></figure>
-                <figcaption>EVOLUTION</figcaption></a
-              >
-            </div>
-            <div class="color-box" id="biology">
-              <a href="exhibitions.html">
-                <figure><span class="fa fa-microscope"></span></figure>
-                <figcaption>BIOLOGY & MEDICINE</figcaption></a
-              >
-            </div>
-            <div class="color-box" id="robotics">
-              <a href="exhibitions.html">
-                <figure><span class="fa fa-robot"></span></figure>
-                <figcaption>ROBOTICS & AI</figcaption></a
-              >
-            </div>
-            <div class="color-box" id="ecology">
-              <a href="exhibitions.html">
-                <figure><span class="fa fa-globe-americas"></span></figure>
-                <figcaption>ECOLOGY</figcaption></a
-              >
-            </div>
-            <div class="color-box" id="events">
-              <a href="exhibitions.html">
-                <figure><span class="fa fa-rocket"></span></figure>
-                <figcaption>SPECIAL EVENTS</figcaption></a
-              >
-            </div>
-          </section>
-          <p id="tour">Guided Tour 70 NOK per Person</p>
-          <p id="tickets">Online Tickets Provided by:</p>
-          <figure id="ticketmaster">
-            <img
-              src="images\icons\Ticketmaster-Logo-White.svg"
-              alt="Ticketmaster logo"
-            />
-          </figure>
         </div>
+        <section class="categories">
+          <div class="color-box" id="cosmology">
+            <a href="exhibitions.html">
+              <figure><span class="fa fa-globe-americas"></span></figure>
+              <figcaption>COSMOLOGY</figcaption></a
+            >
+          </div>
+          <div class="color-box" id="evolution">
+            <a href="exhibitions.html">
+              <figure><span class="fa fa-dna"></span></figure>
+              <figcaption>EVOLUTION</figcaption></a
+            >
+          </div>
+          <div class="color-box" id="biology">
+            <a href="exhibitions.html">
+              <figure><span class="fa fa-microscope"></span></figure>
+              <figcaption>BIOLOGY & MEDICINE</figcaption></a
+            >
+          </div>
+          <div class="color-box" id="robotics">
+            <a href="exhibitions.html">
+              <figure><span class="fa fa-robot"></span></figure>
+              <figcaption>ROBOTICS & AI</figcaption></a
+            >
+          </div>
+          <div class="color-box" id="ecology">
+            <a href="exhibitions.html">
+              <figure><span class="fa fa-globe-americas"></span></figure>
+              <figcaption>ECOLOGY</figcaption></a
+            >
+          </div>
+          <div class="color-box" id="events">
+            <a href="exhibitions.html">
+              <figure><span class="fa fa-rocket"></span></figure>
+              <figcaption>SPECIAL EVENTS</figcaption></a
+            >
+          </div>
+        </section>
+        <p id="tour">Guided Tour 70 NOK per Person</p>
+        <p id="tickets">Online Tickets Provided by:</p>
+        <figure id="ticketmaster">
+          <img
+            src="images\icons\Ticketmaster-Logo-White.svg"
+            alt="Ticketmaster logo"
+          />
+        </figure>
       </div>
+
       <div class="secondary-container">
         <section class="news">
           <h4>NEWS: Special Events & Exhibitions</h4>
-          <figure class="news">
-            <img src="images\t-rex.jpg" alt="" />
-          </figure>
-          <div class="angle-wrapper">
-            <span class="fa fa-angle-left angle"></span>
-            <div></div>
-            <div></div>
-            <div></div>
-            <span class="fa fa-angle-right angle"></span>
-          </div>
-          <div class="news">
-            <h5>Night in the Museum</h5>
-            <p>
-              Get your family together for an exciting night in the museum as
-              you sleep over beside dinosaurs and science displays.
-            </p>
-            <p>
-              Bring your own sleeping bag and get ready to rough it as we go
-              exploring the wonders of science.
-            </p>
+          <div class="news-wrapper">
+            <figure class="news item-1">
+              <img src="images\t-rex.jpg" alt="" class="mobile" />
+              <img src="images\t-rex_large.jpg" alt="" class="large-screen" />
+            </figure>
+            <div class="angle-wrapper">
+              <span class="fa fa-angle-left angle"></span>
+              <div></div>
+              <div></div>
+              <div></div>
+              <span class="fa fa-angle-right angle"></span>
+            </div>
+            <div class="news item-2">
+              <h5>Night in the Museum</h5>
+              <p>
+                Get your family together for an exciting night in the museum as
+                you sleep over beside dinosaurs and science displays.
+              </p>
+              <p>
+                Bring your own sleeping bag and get ready to rough it as we go
+                exploring the wonders of science.
+              </p>
+            </div>
           </div>
         </section>
         <section class="clubs">
@@ -279,29 +284,30 @@
           </div>
           <p>Click Images to Learn More</p>
         </section>
-        <div class="newsletter-wrapper">
-          <div class="blur">
-            <section class="newsletter">
-              <p>
-                Sign up to our Newsletter and be the first to know about Our
-                exciting New stuff:
-              </p>
-              <form action="form-success.php" method="get" class="newsletter">
-                <input
-                  id="newsletter"
-                  type="text"
-                  name="email"
-                  placeholder="YOUR EMAIL"
-                />
-                <input
-                  id="sign-up"
-                  type="submit"
-                  name="subscribe"
-                  value="SIGN UP"
-                />
-              </form>
-            </section>
-          </div>
+      </div>
+
+      <div class="newsletter-wrapper">
+        <div class="blur">
+          <section class="newsletter">
+            <p>
+              Sign up to our Newsletter and be the first to know about Our
+              exciting New stuff:
+            </p>
+            <form action="form-success.php" method="get" class="newsletter">
+              <input
+                id="newsletter"
+                type="text"
+                name="email"
+                placeholder="YOUR EMAIL"
+              />
+              <input
+                id="sign-up"
+                type="submit"
+                name="subscribe"
+                value="SIGN UP"
+              />
+            </form>
+          </section>
         </div>
       </div>
     </main>

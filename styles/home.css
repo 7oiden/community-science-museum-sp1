@@ -332,10 +332,9 @@ main {
 .background-container {
   width: 100%;
   color: var(--white);
-  background-image: url(../images/robot-main_mobile.jpg);
-  background-size: contain;
+  background-image: url(../images/robot-main.jpg);
+  background-size: cover;
   background-repeat: repeat;
-
   margin-top: 0;
 }
 .main-wrapper {
@@ -441,7 +440,8 @@ p.button::after {
   font-size: 1.125rem;
   background-color: var(--white);
   color: var(--dark-purple);
-  height: 150px;
+  min-width: 325px;
+  min-height: 150px;
   margin: 0 auto;
   border-radius: 50px;
 }
@@ -469,6 +469,7 @@ h3 {
 }
 .categories {
   /* background-color: lime; */
+  width: 90%;
   font-family: var(--proxima-soft);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -761,6 +762,94 @@ h6 {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 1200px) {
+  /* Main
+--------------------*/
+  h1 {
+    font-size: 4.25rem;
+    margin-top: 100px;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+    margin: 16px auto;
+    padding-top: 32px;
+    max-width: 250px;
+  }
+  .clock {
+    font-size: 1.5rem;
+  }
+  .fa-clock {
+    font-size: 2rem;
+  }
+  p.button {
+    font-size: 1.875rem;
+  }
+  .main-wrapper {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bubble {
+    border-radius: 50px 50px 50px 0;
+  }
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #fff;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #fff;
+    position: absolute;
+    top: 175px;
+    left: 0px;
+  }
+  #about {
+    padding-bottom: 32px;
+  }
+  .categories {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .color-box {
+    width: 260px;
+    height: 260px;
+    border-radius: 25px;
+  }
+  .color-box figcaption {
+    font-size: 1.75rem;
+  }
+  .color-box span {
+    font-size: 4rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .secondary-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--light-grey);
+  }
+  h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .angle-wrapper {
+    display: none;
+  }
+  .news-wrapper {
+    display: flex;
+    gap: 16px;
+  }
+  .item-1 {
+    flex: 2;
+  }
+  .item-2 {
+    flex: 1;
+  }
   /* Footer
 --------------------*/
   .footer-wrapper {
