@@ -690,24 +690,6 @@ h6 {
   p.button {
     font-size: 1.25rem;
   }
-  /* Footer
---------------------*/
-  .footer-wrapper {
-    font-size: 1.125rem;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .footer-container {
-    margin-left: 5%;
-    margin-right: 5%;
-    /* background-color: green; */
-  }
-  ul.connect {
-    flex-direction: column;
-  }
-  .connect li {
-    padding: 8px;
-  }
   /* newsletter
 --------------------*/
   .newsletter-wrapper {
