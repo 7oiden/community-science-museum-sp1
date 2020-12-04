@@ -357,8 +357,18 @@ div.vision {
   padding-top: 16px;
 }
 div.item-1 {
+  font-family: var(--sofia);
   background-color: var(--blue);
   color: #fff;
+  /* border-radius: 25px; */
+}
+.item-1 p::before {
+  content: "“";
+  font-size: 1.5rem;
+}
+.item-1 p::after {
+  content: "”";
+  font-size: 1.5rem;
 }
 div.vision p {
   width: 90%;
@@ -367,13 +377,16 @@ div.vision p {
 }
 figure.vision {
   width: 100%;
-  height: 250px;
-  margin: 0 auto 16px auto;
+  height: 100%;
+  margin: 0 auto 0 auto;
 }
 .vision img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   margin: 0;
+}
+img.large-screen {
+  display: none;
 }
 .get-in-touch {
   width: 90%;
@@ -729,6 +742,12 @@ border-right: 2px solid var(--dark-purple); */
   }
   /* Main
 --------------------*/
+  img.mobile {
+    display: none;
+  }
+  img.large-screen {
+    display: block;
+  }
   h1 {
     display: block;
     width: 90%;
@@ -738,35 +757,41 @@ border-right: 2px solid var(--dark-purple); */
     text-align: center;
     border-radius: 0;
   }
-  /* div.vision {
-    max-width: 398px;
+  .item-1 {
+    grid-area: introduction;
   }
-  div.image {
-    max-width: 815px;
+  .item-2 {
+    grid-area: image;
   }
-  div.item-1 {
-    grid-area: item1;
+  .item-3 {
+    grid-area: paragraph-1;
   }
-  div.item-2 {
-    grid-area: item2;
+  .item-4 {
+    grid-area: paragraph-2;
   }
-  div.item-3 {
-    grid-area: item3;
+  .item-5 {
+    grid-area: paragraph-3;
   }
-  div.item-4 {
-    grid-area: item4;
-  }
-  div.item-5 {
-    grid-area: item5;
-  } */
   section.vision {
     display: grid;
-    gap: 16px;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-columns: 25% 25% auto;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "introduction paragraph-2 image"
+      "paragraph-1 paragraph-2 image"
+      "paragraph-1 paragraph-3 image"
+      "paragraph-1 paragraph-3 image";
   }
-  div.vision {
-    margin-bottom: 0;
+  h5 {
+    font-size: 1.25rem;
+  }
+  .item-1 p {
+    font-size: 1.25rem;
+  }
+  .item-3,
+  .item-4,
+  .item-5 {
+    font-size: 1.25rem;
   }
   .get-in-touch {
     flex-direction: row;
