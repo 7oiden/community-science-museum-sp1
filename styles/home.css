@@ -259,7 +259,7 @@ nav.icons {
 nav.menu {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 999;
   padding: 0;
   margin: 0;
   background-color: var(--magenta);
@@ -539,7 +539,6 @@ h4 {
 figure.news {
   width: 100%;
   margin: 0;
-  position: relative;
 }
 figure.news img {
   width: 100%;
@@ -563,36 +562,34 @@ div.circle-wrapper {
   height: 20px;
   margin: 10px;
   border-radius: 50%;
-  border: 3px solid #000;
+  border: 3px solid var(--dark-blue);
   background-color: #fff;
 }
 div.selected {
-  background-color: #000;
+  background-color: var(--dark-blue);
 }
 /* carousel */
-.aerodynamics-wrapper {
+.aeronautic-wrapper {
   position: absolute;
   z-index: 100;
-}
-.energica-label {
-  position: absolute;
 }
 .fa-angle-left {
   color: #000;
   font-size: 5rem;
 }
-.aerodynamics-label {
+.aeronautic-label {
   cursor: pointer;
   position: relative;
 }
-#aerodynamics {
+#aeronautic {
   display: none;
 }
-#aerodynamics ~ .aerodynamics-wrapper {
+#aeronautic ~ .aeronautic-wrapper {
   display: none;
 }
-#aerodynamics:checked ~ .aerodynamics-wrapper {
-  display: block;
+#aeronautic:checked ~ .aeronautic-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .energica-wrapper {
   position: absolute;
@@ -613,14 +610,17 @@ div.selected {
   display: none;
 }
 #energica:checked ~ .energica-wrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
-
 div.news {
   width: 90%;
   margin: 0 auto;
   text-align: left;
   border-radius: 0 0 25px 0;
+  color: #000;
+  background-color: #fff;
+  font-family: var(--neue-haas);
 }
 div.news p {
   font-family: var(--sofia);
@@ -659,7 +659,7 @@ div.image-wrapper {
   flex-direction: column;
 }
 #clubs {
-  margin: 32px 16px 16px 0;
+  margin: 100px 16px 16px 0;
   border-radius: 0 0 50px 0;
   /* text-align: center;
   background-color: var(--light-grey);
@@ -693,11 +693,6 @@ figcaption {
 }
 h6 {
   font-size: 1rem;
-}
-div.news {
-  color: #000;
-  background-color: #fff;
-  font-family: var(--neue-haas);
 }
 .image-wrapper {
   display: flex;
@@ -1030,15 +1025,7 @@ border-right: 2px solid var(--dark-purple); */
     margin-top: 16px;
     margin-bottom: 16px;
   }
-  .secondary-container {
-    width: 90%;
-    margin: 32px auto;
-    padding-top: 32px;
-    background-color: var(--light-grey);
-  }
-  #clubs {
-    margin-left: 5%;
-  }
+
   h4 {
     width: 90%;
     margin: 0 auto 16px auto;
@@ -1049,25 +1036,26 @@ border-right: 2px solid var(--dark-purple); */
   h5 {
     font-size: 1.875rem;
   }
-  figure.news img {
-    border-radius: 0 0 0 25px;
-    box-shadow: 0 6px 12px #00000029;
-  }
-  div.news {
-    box-shadow: 0 6px 12px #00000029;
-    padding: 32px;
-  }
-  div.news p {
-    font-size: 1.5rem;
-    /* background-color: lightblue; */
-  }
-  /* .angle-wrapper {
+  div.circle-wrapper {
     display: none;
-  } */
-  .news2-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
+  }
+  .aeronautic-wrapper {
+    right: 9.5%;
+  }
+  #aeronautic:checked ~ .aeronautic-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: lightblue; */
+    width: 81%;
+    gap: 16px;
+  }
+  .energica-wrapper {
+    right: 9.5%;
+  }
+  #energica:checked ~ .energica-wrapper {
+    flex-direction: row;
+    gap: 16px;
+    width: 81%;
     gap: 16px;
   }
   .news-wrapper {
@@ -1076,17 +1064,46 @@ border-right: 2px solid var(--dark-purple); */
     display: flex;
     gap: 16px;
   }
+  figure.news {
+    flex: 3;
+    margin: 0;
+  }
+  figure.news img {
+    border-radius: 25px;
+    border-top: 2px solid var(--dark-blue);
+    border-left: 8px solid var(--dark-blue);
+    border-right: 2px solid var(--dark-blue);
+    border-bottom: 8px solid var(--dark-blue);
+    /* box-shadow: 0 6px 12px #00000029; */
+  }
+  /* div.circle-wrapper {
+    flex: 1;
+    background-color: lightblue;
+  } */
+  div.news {
+    /* box-shadow: 0 6px 12px #00000029; */
+    padding: 32px;
+    flex: 2;
+    border-radius: 25px;
+    border-top: 2px solid var(--dark-blue);
+    border-left: 2px solid var(--dark-blue);
+    border-right: 8px solid var(--dark-blue);
+    border-bottom: 8px solid var(--dark-blue);
+  }
+  div.news p {
+    font-size: 1.5rem;
+    /* background-color: lightblue; */
+  }
+  /* .angle-wrapper {
+    display: none;
+  } */
+
   img.mobile {
     display: none;
   }
   img.large-screen {
     display: block;
-  }
-  .item-1 {
-    flex: 2;
-  }
-  .item-2 {
-    flex: 1;
+    width: 100px;
   }
   div.image-wrapper {
     width: 90%;
@@ -1097,6 +1114,15 @@ border-right: 2px solid var(--dark-purple); */
   figure.clubs img {
     border-radius: 25px;
     box-shadow: 0 6px 12px #00000029;
+  }
+  .secondary-container {
+    width: 90%;
+    margin: 32px auto;
+    padding-top: 32px;
+    background-color: var(--light-grey);
+  }
+  #clubs {
+    margin-left: 5%;
   }
   .clubs p {
     font-size: 1.75rem;
