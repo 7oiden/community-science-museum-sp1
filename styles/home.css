@@ -454,6 +454,14 @@ h3 {
   padding-top: 24px;
   z-index: 10;
 }
+h3::before {
+  content: "“";
+  font-size: 2rem;
+}
+h3::after {
+  content: "”";
+  font-size: 2rem;
+}
 .bubble p {
   margin: 0;
   font-family: var(--neue-haas);
@@ -543,19 +551,86 @@ h5 {
   text-align: left;
   font-family: var(--proxima);
   font-size: 1.125rem;
-  margin-top: 16px;
+  margin-top: 10px;
   margin-bottom: 0;
 }
+div.circle-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.circle-wrapper div {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  background-color: #fff;
+}
+div.selected {
+  background-color: #000;
+}
+/* carousel */
+.aerodynamics-wrapper {
+  position: absolute;
+  z-index: 100;
+}
+.energica-label {
+  position: absolute;
+}
+.fa-angle-left {
+  color: #000;
+  font-size: 5rem;
+}
+.aerodynamics-label {
+  cursor: pointer;
+  position: relative;
+}
+#aerodynamics {
+  display: none;
+}
+#aerodynamics ~ .aerodynamics-wrapper {
+  display: none;
+}
+#aerodynamics:checked ~ .aerodynamics-wrapper {
+  display: block;
+}
+.energica-wrapper {
+  position: absolute;
+  z-index: 100;
+}
+.fa-angle-right {
+  color: #000;
+  font-size: 5rem;
+}
+.energica-label {
+  cursor: pointer;
+  position: relative;
+}
+#energica {
+  display: none;
+}
+#energica ~ .energica-wrapper {
+  display: none;
+}
+#energica:checked ~ .energica-wrapper {
+  display: block;
+}
+
 div.news {
   width: 90%;
   margin: 0 auto;
   text-align: left;
   border-radius: 0 0 25px 0;
 }
-.news p {
+div.news p {
   font-family: var(--sofia);
 }
-.angle-wrapper {
+/* span.large-screen {
+  color: #000;
+  font-size: 5rem;
+  display: inline-block;
+} */
+/* .angle-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -573,7 +648,7 @@ div.news {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 0;
-}
+}*/
 section.clubs {
   width: 100%;
   margin: 0 auto;
@@ -980,14 +1055,20 @@ border-right: 2px solid var(--dark-purple); */
   }
   div.news {
     box-shadow: 0 6px 12px #00000029;
-    padding: 16px;
+    padding: 32px;
   }
-  news.p {
+  div.news p {
     font-size: 1.5rem;
-    margin-left: 16px;
+    /* background-color: lightblue; */
   }
-  .angle-wrapper {
+  /* .angle-wrapper {
     display: none;
+  } */
+  .news2-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
   }
   .news-wrapper {
     width: 90%;
