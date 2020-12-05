@@ -366,6 +366,14 @@ div.info {
   margin-bottom: 16px;
   padding-bottom: 16px;
 }
+#map {
+  padding-bottom: 0;
+}
+p > a {
+  color: var(--dark-purple);
+  font-weight: bold;
+  text-decoration: underline;
+}
 /* div.map {
   border: 10px solid grey;
 } */
@@ -381,7 +389,7 @@ div.info {
 }
 iframe {
   width: 100%;
-  border: none;
+  border: 6px solid grey;
 }
 div.facilities {
   width: 100%;
@@ -449,6 +457,7 @@ section.newsletter {
   height: 150px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   /* background-color: green; */
 }
@@ -459,7 +468,8 @@ section.newsletter {
   font-weight: bold;
   text-transform: capitalize;
   text-align: left;
-  max-width: 328px;
+  min-width: 328px;
+  max-width: 400px;
   padding-top: 16px;
   margin: 0;
 }
@@ -718,6 +728,7 @@ h6 {
   }
   .hours-wrapper_2 li {
     font-size: 1.875rem;
+    margin-left: 16px;
   }
   #street,
   #postal {
@@ -773,12 +784,15 @@ h6 {
     /* background-color: green; */
   }
   .newsletter p {
-    font-size: 1.125rem;
-    max-width: 400px;
+    min-width: 33%;
+    font-size: 1.25rem;
+    text-transform: uppercase;
     margin-bottom: 16px;
+    margin-left: 10%;
   }
   form.newsletter {
     height: 60px;
+    margin-left: 10%;
   }
   #newsletter {
     font-size: 1.125rem;

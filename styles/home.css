@@ -526,22 +526,28 @@ section.news {
   width: 100%;
 }
 h4 {
+  margin: 32px 16px 0 0;
   font-family: var(--proxima);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: left;
   background-color: var(--dark-blue);
   color: var(--white);
   display: block;
-  padding: 16px 32px;
-  margin: 32px 0 0 0;
+  padding: 16px 0 16px 32px;
+  border-radius: 0 0 50px 0;
 }
 figure.news {
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  margin: 0 auto;
 }
 figure.news img {
   width: 100%;
+  border-top: 2px solid var(--dark-blue);
+  border-right: 4px solid var(--dark-blue);
+  border-left: 2px solid var(--dark-blue);
+  border-bottom: 8px solid var(--dark-blue);
+  border-radius: 15px;
 }
 img.large-screen {
   display: none;
@@ -573,10 +579,37 @@ div.selected {
   position: absolute;
   z-index: 100;
 }
-.fa-angle-left {
-  color: #000;
-  font-size: 5rem;
+#aeronautic-image,
+#energica-image {
+  display: inline-block;
+  height: 100px;
+  width: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
+#aeronautic-image img,
+#energica-image img {
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  border-top: 2px solid var(--dark-blue);
+  border-right: 2px solid var(--dark-blue);
+  border-left: 2px solid var(--dark-blue);
+  border-bottom: 4px solid var(--dark-blue);
+  border-radius: 15px;
+}
+/* .fa-angle-left {
+  color: #fff;
+  font-size: 5rem;
+  opacity: 0.65;
+  position: relative;
+  right: 35%;
+  top: 150px;
+  z-index: 2000;
+} */
 .aeronautic-label {
   cursor: pointer;
   position: relative;
@@ -596,8 +629,13 @@ div.selected {
   z-index: 100;
 }
 .fa-angle-right {
-  color: #000;
+  color: #fff;
   font-size: 5rem;
+  opacity: 0.65;
+  position: relative;
+  left: 35%;
+  top: 150px;
+  z-index: 2000;
 }
 .energica-label {
   cursor: pointer;
@@ -652,13 +690,13 @@ div.news p {
 section.clubs {
   width: 100%;
   margin: 0 auto;
-  background-color: var(--light-grey);
 }
 div.image-wrapper {
   display: flex;
   flex-direction: column;
 }
 #clubs {
+  background-color: var(--dark-purple);
   margin: 100px 16px 16px 0;
   border-radius: 0 0 50px 0;
   /* text-align: center;
@@ -678,14 +716,20 @@ figure.clubs img {
   border-right: 4px solid var(--dark-purple);
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 15px;
+  position: relative;
 }
 figcaption.clubs {
   font-family: var(--proxima);
+  font-size: 1.25rem;
   text-transform: uppercase;
   color: var(--dark-purple);
   font-weight: bold;
   margin-bottom: 24px;
   margin-top: 16px;
+  /* border-top: 2px solid var(--dark-purple);
+  border-left: 2px solid var(--dark-purple);
+  border-right: 2px solid var(--dark-purple);
+  border-bottom: 4px solid var(--dark-purple); */
 }
 .clubs p {
   margin: 0 0 0 16px;
@@ -723,7 +767,9 @@ section.newsletter {
   height: 150px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
+
   /* background-color: green; */
 }
 .newsletter p {
@@ -733,7 +779,8 @@ section.newsletter {
   font-weight: bold;
   text-transform: capitalize;
   text-align: left;
-  max-width: 328px;
+  min-width: 328px;
+  max-width: 400px;
   padding-top: 16px;
   margin: 0;
 }
@@ -1029,7 +1076,6 @@ border-right: 2px solid var(--dark-purple); */
     margin-top: 16px;
     margin-bottom: 16px;
   }
-
   h4 {
     width: 90%;
     margin: 0 auto 16px auto;
@@ -1075,10 +1121,18 @@ border-right: 2px solid var(--dark-purple); */
   figure.news img {
     border-radius: 25px;
     border-top: 2px solid var(--dark-blue);
-    border-left: 8px solid var(--dark-blue);
-    border-right: 2px solid var(--dark-blue);
+    border-left: 2px solid var(--dark-blue);
+    border-right: 8px solid var(--dark-blue);
     border-bottom: 8px solid var(--dark-blue);
     /* box-shadow: 0 6px 12px #00000029; */
+  }
+  #aeronautic-image,
+  #energica-image {
+    height: 200px;
+  }
+  #aeronautic-image img,
+  #energica-image img {
+    height: 200px;
   }
   /* div.circle-wrapper {
     flex: 1;
@@ -1131,8 +1185,8 @@ border-right: 2px solid var(--dark-purple); */
   .clubs p {
     font-size: 1.75rem;
   }
-  figcaption {
-    font-size: 1.5rem;
+  figcaption.clubs {
+    font-size: 2rem;
   }
   /* newsletter
 --------------------*/
@@ -1147,12 +1201,15 @@ border-right: 2px solid var(--dark-purple); */
     /* background-color: green; */
   }
   .newsletter p {
-    font-size: 1.125rem;
-    max-width: 400px;
+    min-width: 33%;
+    font-size: 1.25rem;
+    text-transform: uppercase;
     margin-bottom: 16px;
+    margin-left: 10%;
   }
   form.newsletter {
     height: 60px;
+    margin-left: 10%;
   }
   #newsletter {
     font-size: 1.125rem;

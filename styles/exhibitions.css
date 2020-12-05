@@ -526,6 +526,7 @@ section.newsletter {
   height: 150px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   /* background-color: green; */
 }
@@ -534,9 +535,10 @@ section.newsletter {
   font-family: var(--neue-haas);
   font-size: 0.875rem;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: left;
-  max-width: 328px;
+  min-width: 328px;
+  max-width: 400px;
   padding-top: 16px;
   margin: 0;
 }
@@ -826,6 +828,9 @@ border-right: 2px solid var(--dark-purple); */
   span.reverse {
     order: 2;
   }
+  div.background {
+    background-size: 40%;
+  }
   .fa-arrow-circle-down {
     display: none;
   }
@@ -866,12 +871,15 @@ border-right: 2px solid var(--dark-purple); */
     /* background-color: green; */
   }
   .newsletter p {
-    font-size: 1.125rem;
-    max-width: 400px;
+    min-width: 33%;
+    font-size: 1.25rem;
+    text-transform: uppercase;
     margin-bottom: 16px;
+    margin-left: 10%;
   }
   form.newsletter {
     height: 60px;
+    margin-left: 10%;
   }
   #newsletter {
     font-size: 1.125rem;

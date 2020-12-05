@@ -463,6 +463,7 @@ section.newsletter {
   height: 150px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   /* background-color: green; */
 }
@@ -473,7 +474,8 @@ section.newsletter {
   font-weight: bold;
   text-transform: capitalize;
   text-align: left;
-  max-width: 328px;
+  min-width: 328px;
+  max-width: 400px;
   padding-top: 16px;
   margin: 0;
 }
@@ -768,7 +770,9 @@ h6 {
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
+    margin-top: 16px;
     gap: 64px;
+    padding-top: 12px;
   }
   .get-in-touch p {
     font-size: 1.5rem;
@@ -789,12 +793,15 @@ h6 {
     /* background-color: green; */
   }
   .newsletter p {
-    font-size: 1.125rem;
-    max-width: 400px;
+    min-width: 33%;
+    font-size: 1.25rem;
+    text-transform: uppercase;
     margin-bottom: 16px;
+    margin-left: 10%;
   }
   form.newsletter {
     height: 60px;
+    margin-left: 10%;
   }
   #newsletter {
     font-size: 1.125rem;
