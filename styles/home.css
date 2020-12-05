@@ -533,7 +533,7 @@ h4 {
   background-color: var(--dark-blue);
   color: var(--white);
   display: block;
-  padding: 12px 32px;
+  padding: 16px 32px;
   margin: 32px 0 0 0;
 }
 figure.news {
@@ -674,22 +674,25 @@ figure.clubs {
 figure.clubs img {
   width: 100%;
   border-top: 2px solid var(--dark-purple);
-  border-left: 4px solid var(--dark-purple);
+  border-left: 2px solid var(--dark-purple);
   border-right: 4px solid var(--dark-purple);
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 15px;
 }
-figcaption {
-  margin-bottom: 16px;
-  margin-top: 8px;
+figcaption.clubs {
+  font-family: var(--proxima);
+  text-transform: uppercase;
+  color: var(--dark-purple);
+  font-weight: bold;
+  margin-bottom: 24px;
+  margin-top: 16px;
 }
 .clubs p {
-  width: 90%;
-  margin: 0 auto;
+  margin: 0 0 0 16px;
   background-color: var(--light-purple);
   color: #fff;
   padding: 12px;
-  border-radius: 50px 50px 0 0;
+  border-radius: 50px 0 0 0;
 }
 h6 {
   font-size: 1rem;
@@ -716,6 +719,7 @@ h6 {
 }
 section.newsletter {
   width: 90%;
+  margin: 0 auto;
   height: 150px;
   display: flex;
   flex-direction: column;

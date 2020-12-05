@@ -349,9 +349,19 @@ section.newsletter {
   margin: 0 auto;
   /* background-color: teal; */
 }
-section p {
+section > p {
   font-family: var(--sofia);
   font-weight: bold;
+}
+ul.contact {
+  font-family: var(--sofia);
+  list-style-type: circle;
+  list-style-position: inside;
+  margin: 16px;
+}
+.contact li {
+  padding: 8px;
+  list-style: square;
 }
 /* section p::before {
   content: "⦿";
@@ -391,7 +401,7 @@ form {
 button {
   display: block;
   font-family: var(--sofia);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: var(--magenta);
   color: #fff;
   padding: 8px 50px;
@@ -417,7 +427,6 @@ li > P {
   margin-bottom: 16px;
   margin: 5px 16px 16px 16px;
 }
-
 .newsletter-wrapper {
   background-image: url(../images/newsletter.jpg);
   background-size: cover;

@@ -376,12 +376,20 @@ h3 {
   margin-bottom: 0;
 }
 h4 {
-  font-family: var(--proxima-soft);
+  font-family: var(--proxima);
   font-size: 1.25rem;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 h5 {
+  font-family: var(--proxima-soft);
   font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 24px;
   margin-bottom: 0;
+}
+#item-2 p {
+  margin-top: 8px;
 }
 figure {
   width: 100%;
@@ -408,15 +416,16 @@ figure {
   color: #fff;
   font-size: 1.125rem;
   text-align: center;
-  border-radius: 0 15px 0 15px;
+  border-radius: 0 25px 0 25px;
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 .get-in-touch > p {
   font-family: var(--proxima);
   font-weight: bold;
   text-transform: capitalize;
-  padding-top: 16px;
   margin: 16px 0;
 }
 p.button {

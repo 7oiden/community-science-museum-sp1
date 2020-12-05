@@ -409,8 +409,8 @@ h2 {
 }
 div.card {
   background-color: #fff;
-  width: 325px;
-  min-height: 450px;
+  width: 344px;
+  height: 450px;
   border-radius: 25px;
   box-shadow: 0 6px 12px #00000029;
   padding-bottom: 16px;
@@ -419,7 +419,7 @@ div.card p {
   /* font-family: var(--neue-haas); */
   width: 90%;
   margin: 16px auto;
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding-top: 0;
 }
 figure.card-large {
@@ -427,9 +427,9 @@ figure.card-large {
 }
 figure.card,
 figure.card-large {
-  width: 325px;
+  width: 344px;
   height: 450px;
-  margin: 0 auto;
+  margin: 0;
   border: 16px solid #fff;
   border-radius: 25px;
   box-shadow: 0 6px 12px #00000029;
@@ -443,10 +443,11 @@ figure.card-large img {
   border-radius: 10px;
 }
 div.background {
-  height: 330px;
-  background-size: contain;
+  height: 400px;
+  background-size: 90%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  /* background-position-y: center; */
 }
 .cosmology {
   background-image: url(../images/icons/tellus.png);
@@ -521,6 +522,7 @@ p.visit {
 }
 section.newsletter {
   width: 90%;
+  margin: 0 auto;
   height: 150px;
   display: flex;
   flex-direction: column;

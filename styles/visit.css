@@ -364,6 +364,7 @@ div.info {
   width: 100%;
   background-color: var(--light-grey);
   margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 /* div.map {
   border: 10px solid grey;
@@ -401,8 +402,7 @@ div.facilities p {
 }
 .hours-wrapper_2 ul {
   padding: 0;
-  margin-left: 5%;
-  margin-right: 10%;
+  margin: 0 1rem 0 1rem;
 }
 .hours-wrapper_2 li {
   font-family: var(--sofia);

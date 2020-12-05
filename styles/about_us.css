@@ -395,7 +395,7 @@ img.large-screen {
   color: #fff;
   font-size: 1.125rem;
   text-align: center;
-  border-radius: 0 15px 0 15px;
+  border-radius: 0 25px;
   display: flex;
   flex-direction: column;
 }
@@ -403,7 +403,6 @@ img.large-screen {
   font-family: var(--proxima);
   font-weight: bold;
   text-transform: capitalize;
-  padding-top: 16px;
   margin: 16px 0;
 }
 p.button {
@@ -476,8 +475,8 @@ p.tourguides {
   color: #fff;
   padding: 12px 32px;
   margin-bottom: 16px;
-
-  border-radius: 50px 50px 0 0;
+  margin-left: 16px;
+  border-radius: 50px 0 0 0;
 }
 .newsletter-wrapper {
   background-image: url(../images/newsletter.jpg);
