@@ -334,8 +334,8 @@ main {
 .background-container {
   width: 100%;
   color: var(--white);
-  background-image: url(../images/robot-main.jpg);
-  background-size: cover;
+  background-image: url(../images/robot-main_mobile.jpg);
+  background-size: contain;
   background-repeat: repeat;
   margin-top: 0;
 }
