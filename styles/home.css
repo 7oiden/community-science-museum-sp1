@@ -535,6 +535,9 @@ h4 {
   color: var(--white);
   display: block;
   padding: 16px 0 16px 32px;
+  border-top: 2px solid #000;
+  border-right: 4px solid #000;
+  border-bottom: 6px solid #000;
   border-radius: 0 0 50px 0;
 }
 figure.news {
@@ -582,18 +585,16 @@ div.selected {
 #aeronautic-image,
 #energica-image {
   display: inline-block;
+  text-align: center;
   height: 100px;
-  width: auto;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 150px;
+  margin: 16px 8px;
 }
 #aeronautic-image img,
 #energica-image img {
   display: inline-block;
   height: 100px;
-  width: 100%;
+  width: 150px;
   margin: 0;
   border-top: 2px solid var(--dark-blue);
   border-right: 2px solid var(--dark-blue);
@@ -1129,10 +1130,12 @@ border-right: 2px solid var(--dark-purple); */
   #aeronautic-image,
   #energica-image {
     height: 200px;
+    width: 300px;
   }
   #aeronautic-image img,
   #energica-image img {
     height: 200px;
+    width: 300px;
   }
   /* div.circle-wrapper {
     flex: 1;
