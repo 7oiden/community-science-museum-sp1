@@ -811,6 +811,7 @@ border-right: 2px solid var(--dark-purple); */
   }
   .fa-arrow-circle-down {
     display: none;
+    opacity: 0;
   }
   figure.card-large {
     display: block;

@@ -535,9 +535,9 @@ h4 {
   color: var(--white);
   display: block;
   padding: 16px 0 16px 32px;
-  border-top: 2px solid #000;
+  /* border-top: 2px solid #000;
   border-right: 4px solid #000;
-  border-bottom: 6px solid #000;
+  border-bottom: 6px solid #000; */
   border-radius: 0 0 50px 0;
 }
 figure.news {
