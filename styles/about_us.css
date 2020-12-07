@@ -33,9 +33,7 @@ a {
   text-decoration: none;
   color: #fff;
 }
-/* header 
---------------------*/
-.icons label {
+* header --------------------*/ .icons label {
   display: block;
 }
 /* search-dropdown */
@@ -46,7 +44,8 @@ a {
   position: absolute;
   z-index: 1000;
   top: 138px;
-  width: 90%;
+  max-width: 90%;
+  left: 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -147,6 +146,13 @@ button.ticket {
   margin: 16px auto 50px auto;
   border: none;
   border-radius: 15px;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+button.ticket:hover {
+  opacity: 0.65;
 }
 #ticket-box {
   display: none;
@@ -168,6 +174,7 @@ button.ticket {
   z-index: 1000;
   top: 138px;
   width: 90%;
+  right: 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -206,6 +213,7 @@ input.box {
 }
 button.profile {
   display: block;
+  cursor: pointer;
   font-family: var(--sofia);
   font-size: 1.25rem;
   background-color: var(--magenta);
@@ -214,6 +222,12 @@ button.profile {
   margin: 16px auto 50px auto;
   border: none;
   border-radius: 15px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+button.profile:hover {
+  opacity: 0.65;
 }
 #profile-box {
   display: none;
@@ -247,6 +261,12 @@ nav.icons {
 }
 .icon {
   color: var(--dark-purple);
+  transition-property: scale;
+  transition-duration: 0.5s;
+  scale: 1;
+}
+.icon:hover {
+  scale: 1.15;
 }
 .icons li {
   list-style: none;
@@ -496,6 +516,7 @@ p.tourguides {
 }
 section.newsletter {
   width: 90%;
+  margin: 0 auto;
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -508,7 +529,7 @@ section.newsletter {
   font-family: var(--neue-haas);
   font-size: 0.875rem;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: left;
   min-width: 328px;
   max-width: 400px;
@@ -541,6 +562,13 @@ form.newsletter {
   background-color: var(--dark-purple);
   color: #fff;
   flex: 1;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+#sign-up:hover {
+  opacity: 0.65;
 }
 
 /* footer 
@@ -613,8 +641,8 @@ ul.connect span {
 h6 {
   font-family: var(--proxima);
   font-weight: bold;
-  font-size: 1rem;
-  margin: 32px 0 16px 0;
+  font-size: 1.125rem;
+  margin: 32px 0 8px 0;
 }
 #copyright {
   font-family: var(--neue-haas);
@@ -630,22 +658,35 @@ h6 {
 
 /* styles that change
 --------------------*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 576px) {
   /* Header
 --------------------*/
+  .search-dropdown,
+  .ticket-dropdown,
+  .profile-dropdown {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* Header
+--------------------*/
+  .logo {
+    width: 300px;
+    margin-left: 32px;
+    margin-top: 16px;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .icons label span {
+    font-size: 3rem;
+  }
   .header-wrapper {
     width: 90%;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     /* background-color: lightblue; */
-  }
-  .logo {
-    width: 500px;
-    margin-left: 128px;
-  }
-  .logo img {
-    width: 500px;
   }
   nav.icons {
     justify-content: flex-end;
@@ -657,23 +698,91 @@ h6 {
   .ticket-label {
     margin-left: 64px;
   }
+  .search-dropdown {
+    width: 400px;
+    top: 113.5px;
+    margin-right: 236px;
+    right: 5%;
+  }
+  .ticket-dropdown {
+    width: 400px;
+    top: 113.5px;
+    margin-right: 124px;
+    right: 5%;
+  }
+  .profile-dropdown {
+    width: 400px;
+    top: 113.5px;
+    margin-right: 24px;
+    right: 5%;
+  }
+  /* Main
+--------------------*/
+
+  /* Footer
+--------------------*/
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .fi1 {
+    order: 1;
+  }
+  .fi2 {
+    order: 3;
+  }
+  .fi3 {
+    order: 2;
+  }
+  .fi4 {
+    order: 4;
+  }
+  .footer-container {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* Main
+--------------------*/
+
+  /* Footer
+--------------------*/
+  .footer-wrapper {
+    font-size: 1.125rem;
+  }
+  .footer-container {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Header
+--------------------*/
+  .logo {
+    width: 500px;
+    margin-left: 128px;
+  }
+  .logo img {
+    width: 500px;
+  }
   .icons label span {
     font-size: 4rem;
   }
-  .search-dropdown,
-  .ticket-dropdown,
-  .profile-dropdown {
-    width: 400px;
-    top: 128px;
-  }
   .search-dropdown {
-    right: 18.5%;
+    top: 128px;
+    margin-right: 288px;
+    right: 5%;
+    left: auto;
   }
   .ticket-dropdown {
-    right: 12.5%;
+    top: 128px;
+    margin-right: 160px;
+    right: 5%;
   }
   .profile-dropdown {
-    right: 6.5%;
+    top: 128px;
+    margin-right: 32px;
+    right: 5%;
   }
   nav.menu {
     height: 60px;
@@ -702,6 +811,7 @@ h6 {
     /* border-left: 2px solid var(--dark-purple);
 border-right: 2px solid var(--dark-purple); */
     border-radius: 70px 0 70px 0;
+    position: relative;
   }
   .purple-box:hover {
     border-radius: 70px 0 0 0;
@@ -712,12 +822,10 @@ border-right: 2px solid var(--dark-purple); */
 border-right: 2px solid transparent; */
   }
   .inactive:hover {
-    /* border-left: 2px solid var(--dark-purple);
-border-right: 2px solid var(--dark-purple); */
     background-color: var(--dark-purple);
   }
   .dropdown-info {
-    font-size: 1.125rem;
+    font-size: 1rem;
     padding-left: 16px;
     padding-right: 16px;
     width: 270px;
@@ -742,6 +850,9 @@ border-right: 2px solid var(--dark-purple); */
     font-family: var(--proxima);
     font-weight: bold;
     margin-top: 16px;
+  }
+  .dropdown-info p {
+    font-family: var(--neue-haas);
   }
   /* Main
 --------------------*/
@@ -831,6 +942,7 @@ border-right: 2px solid var(--dark-purple); */
     border-radius: 0 0 50px 50px;
   }
   section.newsletter {
+    width: 100%;
     flex-direction: row;
     align-items: center;
     /* background-color: green; */
@@ -851,22 +963,20 @@ border-right: 2px solid var(--dark-purple); */
     height: 60px;
     padding-left: 20px;
     flex: 3;
-    border-radius: 25px 0 0 25px;
   }
   #sign-up {
     font-family: var(--sofia);
     font-size: 1.25rem;
     height: 60px;
-    border-radius: 0 25px 25px 0;
   }
   /* Footer
 --------------------*/
   .footer-wrapper {
     font-size: 1.125rem;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
   }
   .footer-container {
+    width: auto;
     margin-left: 5%;
     margin-right: 5%;
     /* background-color: green; */
@@ -889,14 +999,4 @@ border-right: 2px solid var(--dark-purple); */
   }
   /* Main
 --------------------*/
-  figure.card {
-    display: none;
-  }
-  figure.card-large {
-    display: block;
-  }
-  div.card {
-    min-width: 675px;
-    height: 450px;
-  }
 }
