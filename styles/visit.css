@@ -147,6 +147,13 @@ button.ticket {
   margin: 16px auto 50px auto;
   border: none;
   border-radius: 15px;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+button.ticket:hover {
+  opacity: 0.65;
 }
 #ticket-box {
   display: none;
@@ -206,6 +213,7 @@ input.box {
 }
 button.profile {
   display: block;
+  cursor: pointer;
   font-family: var(--sofia);
   font-size: 1.25rem;
   background-color: var(--magenta);
@@ -214,6 +222,12 @@ button.profile {
   margin: 16px auto 50px auto;
   border: none;
   border-radius: 15px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+button.profile:hover {
+  opacity: 0.65;
 }
 #profile-box {
   display: none;
@@ -247,6 +261,12 @@ nav.icons {
 }
 .icon {
   color: var(--dark-purple);
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+.icon:hover {
+  opacity: 0.65;
 }
 .icons li {
   list-style: none;
@@ -499,8 +519,14 @@ form.newsletter {
   background-color: var(--dark-purple);
   color: #fff;
   flex: 1;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
 }
-
+#sign-up:hover {
+  opacity: 0.65;
+}
 /* footer 
 --------------------*/
 footer {
@@ -654,7 +680,7 @@ h6 {
     text-align: center;
     background-color: var(--dark-purple);
     width: 320px;
-    padding: 16px;
+    padding: 16.5px;
     margin: 0;
     /* border-left: 2px solid var(--dark-purple);
     border-right: 2px solid var(--dark-purple); */
@@ -669,9 +695,7 @@ h6 {
     border-right: 2px solid transparent; */
   }
   .inactive:hover {
-    /* border-left: 2px solid var(--dark-purple);
-    border-right: 2px solid var(--dark-purple); */
-    background-color: #210759a6;
+    background-color: var(--dark-purple);
   }
   .dropdown-info {
     font-size: 1.125rem;
@@ -699,6 +723,9 @@ h6 {
     font-family: var(--proxima);
     font-weight: bold;
     margin-top: 16px;
+  }
+  .dropdown-info p {
+    font-family: var(--neue-haas);
   }
   /* Main
 --------------------*/

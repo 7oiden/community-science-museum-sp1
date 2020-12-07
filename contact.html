@@ -189,14 +189,14 @@
         <h1>Contact & FAQ</h1>
         <section class="contact">
           <p>If you need to get in touch with us, Please use this form:</p>
-          <ul class="contact">
+          <ul class="contact-form">
             <li>
               Submit your inquiry, and we will get back to you as soon as
               possible.
             </li>
             <li>Please also see our FAQ before submitting a question.</li>
           </ul>
-          <form action="" method="GET">
+          <form action="" method="GET" class="main-form">
             <label for="name" class="label">Name</label>
             <input
               type="text"
@@ -206,7 +206,7 @@
               required="required"
             />
           </form>
-          <form action="login.php" method="GET">
+          <form action="login.php" method="GET" class="main-form">
             <label for="email_2" class="label">E-mail</label>
             <input
               type="email"
@@ -217,7 +217,7 @@
               required="required"
             />
           </form>
-          <form action="">
+          <form action="" class="main-form">
             <label for="option" class="label">My inquiry</label>
             <select name="tickets" id="option" class="form">
               <option value="1">I would like to book a group tour</option>
@@ -236,7 +236,7 @@
             </select>
           </form>
 
-          <form action="">
+          <form action="" class="main-form">
             <label for="text">Message</label>
             <textarea
               name=""

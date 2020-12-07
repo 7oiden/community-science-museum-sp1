@@ -695,7 +695,7 @@ h6 {
     text-align: center;
     background-color: var(--dark-purple);
     width: 320px;
-    padding: 16px;
+    padding: 16.5px;
     margin: 0;
     /* border-left: 2px solid var(--dark-purple);
 border-right: 2px solid var(--dark-purple); */
@@ -712,7 +712,7 @@ border-right: 2px solid transparent; */
   .inactive:hover {
     /* border-left: 2px solid var(--dark-purple);
 border-right: 2px solid var(--dark-purple); */
-    background-color: #210759a6;
+    background-color: var(--dark-purple);
   }
   .dropdown-info {
     font-size: 1.125rem;

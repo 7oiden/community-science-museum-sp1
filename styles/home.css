@@ -147,6 +147,13 @@ button.ticket {
   margin: 16px auto 50px auto;
   border: none;
   border-radius: 15px;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+button.ticket:hover {
+  opacity: 0.65;
 }
 #ticket-box {
   display: none;
@@ -206,6 +213,7 @@ input.box {
 }
 button.profile {
   display: block;
+  cursor: pointer;
   font-family: var(--sofia);
   font-size: 1.25rem;
   background-color: var(--magenta);
@@ -214,6 +222,12 @@ button.profile {
   margin: 16px auto 50px auto;
   border: none;
   border-radius: 15px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+button.profile:hover {
+  opacity: 0.65;
 }
 #profile-box {
   display: none;
@@ -247,6 +261,12 @@ nav.icons {
 }
 .icon {
   color: var(--dark-purple);
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+.icon:hover {
+  opacity: 0.65;
 }
 .icons li {
   list-style: none;
@@ -325,7 +345,6 @@ ul li {
 #hamburger-menu:checked ~ li {
   display: block;
 }
-
 /* main 
 --------------------*/
 main {
@@ -388,6 +407,12 @@ p.button {
   color: var(--white);
   padding: 8px 32px;
   margin-bottom: 16px;
+  transition-property: scale;
+  transition-duration: 0.5s;
+  scale: 1;
+}
+p.button:hover {
+  scale: 1.1;
 }
 p.button::after {
   content: "\002A";
@@ -411,20 +436,6 @@ p.button::after {
   margin: 0 auto;
   padding-bottom: 32px;
 }
-/* .bubble::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 264px;
-  height: 60px;
-  width: 60px;
-  border-bottom-right-radius: 50%;
-  background-color: transparent;
-}
-.bubble::before {
-  box-shadow: 0 30px 0 0 #fff;
-  z-index: 1;
-} */
 .arrow-up {
   width: 0;
   height: 0;
@@ -446,6 +457,12 @@ p.button::after {
   min-height: 150px;
   margin: 0 auto;
   border-radius: 50px;
+  transition-property: scale;
+  transition-duration: 0.5s;
+  scale: 1;
+}
+.bubble:hover {
+  scale: 1.05;
 }
 .bubble a {
   color: var(--dark-purple);
@@ -491,6 +508,12 @@ h3::after {
   color: var(--white);
   text-align: center;
   height: 156px;
+  transition-property: scale;
+  transition-duration: 0.5s;
+  scale: 1;
+}
+.color-box:hover {
+  scale: 1.1;
 }
 .color-box a {
   text-decoration: none;
@@ -589,6 +612,13 @@ div.selected {
   height: 100px;
   width: 150px;
   margin: 16px 8px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+#aeronautic-image:hover,
+#energica-image:hover {
+  opacity: 0.65;
 }
 #aeronautic-image img,
 #energica-image img {
@@ -709,6 +739,12 @@ figure.clubs {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 8px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+figure.clubs:hover {
+  opacity: 0.65;
 }
 figure.clubs img {
   width: 100%;
@@ -811,6 +847,13 @@ form.newsletter {
   background-color: var(--dark-purple);
   color: #fff;
   flex: 1;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+#sign-up:hover {
+  opacity: 0.65;
 }
 
 /* footer 
@@ -966,7 +1009,7 @@ h6 {
     text-align: center;
     background-color: var(--dark-purple);
     width: 320px;
-    padding: 16px;
+    padding: 16.5px;
     margin: 0;
     /* border-left: 2px solid var(--dark-purple);
 border-right: 2px solid var(--dark-purple); */
@@ -981,9 +1024,7 @@ border-right: 2px solid var(--dark-purple); */
 border-right: 2px solid transparent; */
   }
   .inactive:hover {
-    /* border-left: 2px solid var(--dark-purple);
-border-right: 2px solid var(--dark-purple); */
-    background-color: #210759a6;
+    background-color: var(--dark-purple);
   }
   .dropdown-info {
     font-size: 1.125rem;
@@ -1001,6 +1042,7 @@ border-right: 2px solid var(--dark-purple); */
     visibility: hidden;
     opacity: 0;
     display: none;
+    cursor: pointer;
   }
   .large-screen li:hover > .dropdown-info {
     visibility: visible;
@@ -1008,15 +1050,21 @@ border-right: 2px solid var(--dark-purple); */
     display: block;
   }
   p.header {
-    font-family: var(--proxima);
     font-weight: bold;
     margin-top: 16px;
   }
+  .dropdown-info p {
+    font-family: var(--neue-haas);
+  }
   /* Main
 --------------------*/
+  .background-container {
+    background-image: url(../images/robot-main.jpg);
+    background-size: cover;
+  }
   h1 {
     font-size: 4.25rem;
-    margin-top: 100px;
+    margin-top: 60px;
   }
   h2 {
     font-size: 2.25rem;
@@ -1065,6 +1113,7 @@ border-right: 2px solid var(--dark-purple); */
     justify-content: space-between;
   }
   .color-box {
+    margin-top: 140px;
     width: 260px;
     height: 260px;
     border-radius: 25px;
@@ -1098,32 +1147,29 @@ border-right: 2px solid var(--dark-purple); */
     justify-content: space-between;
     /* background-color: lightblue; */
     width: 81%;
-    gap: 16px;
   }
   .energica-wrapper {
     right: 9.5%;
   }
   #energica:checked ~ .energica-wrapper {
     flex-direction: row;
-    gap: 16px;
     width: 81%;
-    gap: 16px;
   }
   .news-wrapper {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    gap: 16px;
+    justify-content: center;
   }
   figure.news {
     flex: 3;
     margin: 0;
   }
   figure.news img {
-    border-radius: 25px;
+    border-radius: 25px 0 0 25px;
     border-top: 2px solid var(--dark-blue);
     border-left: 2px solid var(--dark-blue);
-    border-right: 8px solid var(--dark-blue);
+    border-right: none;
     border-bottom: 8px solid var(--dark-blue);
     /* box-shadow: 0 6px 12px #00000029; */
   }
@@ -1143,11 +1189,12 @@ border-right: 2px solid var(--dark-purple); */
   } */
   div.news {
     /* box-shadow: 0 6px 12px #00000029; */
-    padding: 32px;
+    padding: 64px;
+    padding-top: 32px;
     flex: 2;
-    border-radius: 25px;
+    border-radius: 0 25px 25px 0;
     border-top: 2px solid var(--dark-blue);
-    border-left: 2px solid var(--dark-blue);
+    border-left: none;
     border-right: 8px solid var(--dark-blue);
     border-bottom: 8px solid var(--dark-blue);
   }
@@ -1167,14 +1214,14 @@ border-right: 2px solid var(--dark-purple); */
     width: 100px;
   }
   div.image-wrapper {
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 32px auto 0 auto;
     flex-direction: row;
-    gap: 16px;
+    gap: 64px;
   }
   figure.clubs img {
     border-radius: 25px;
-    box-shadow: 0 6px 12px #00000029;
+    /* box-shadow: 0 6px 12px #00000029; */
   }
   .secondary-container {
     width: 90%;
@@ -1186,6 +1233,8 @@ border-right: 2px solid var(--dark-purple); */
     margin-left: 5%;
   }
   .clubs p {
+    width: 90%;
+    margin: 0 auto;
     font-size: 1.75rem;
   }
   figcaption.clubs {
