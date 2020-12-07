@@ -48,8 +48,9 @@ span {
 .search-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 137px;
-  width: 100%;
+  top: 138px;
+  max-width: 90%;
+  left: 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -99,8 +100,8 @@ form {
 .ticket-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 137px;
-  width: 100%;
+  top: 138px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -176,8 +177,9 @@ button.ticket:hover {
 .profile-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 137px;
-  width: 100%;
+  top: 138px;
+  width: 90%;
+  right: 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -264,12 +266,12 @@ nav.icons {
 }
 .icon {
   color: var(--dark-purple);
-  transition-property: opacity;
+  transition-property: scale;
   transition-duration: 0.5s;
-  opacity: 1;
+  scale: 1;
 }
 .icon:hover {
-  opacity: 0.65;
+  scale: 1.15;
 }
 .icons li {
   list-style: none;
@@ -290,6 +292,7 @@ nav.menu {
   font-family: var(--proxima-soft);
   font-size: 1.5rem;
   display: flex;
+  justify-content: flex-start;
   margin-bottom: 0;
 }
 header {
@@ -374,7 +377,7 @@ h1 {
   text-align: left;
   background-color: var(--dark-purple);
   color: #fff;
-  padding: 12px 16px;
+  padding: 12px 5%;
   margin: 32px 16px 32px 0;
   border-radius: 0 0 50px 0;
 }
@@ -510,6 +513,7 @@ h3 {
   width: 90%;
   margin: 32px auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
   transition-property: scale;
@@ -582,7 +586,7 @@ form.newsletter {
   width: 100%;
   max-width: 600px;
   height: 40px;
-  margin: 16px auto;
+  margin: 16px auto 32px auto;
   display: flex;
   justify-content: center;
 }
@@ -683,8 +687,8 @@ ul.connect span {
 h6 {
   font-family: var(--proxima);
   font-weight: bold;
-  font-size: 1rem;
-  margin: 32px 0 16px 0;
+  font-size: 1.125rem;
+  margin: 32px 0 8px 0;
 }
 #copyright {
   font-family: var(--neue-haas);
@@ -700,22 +704,99 @@ h6 {
 
 /* styles that change
 --------------------*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 576px) {
   /* Header
 --------------------*/
+  .search-dropdown,
+  .ticket-dropdown,
+  .profile-dropdown {
+    width: 400px;
+  }
+
+  /* Main
+--------------------*/
+  h1 {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  p.visit {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  div.card p {
+    font-size: 1.25rem;
+  }
+  div.card {
+    min-width: 675px;
+    height: 450px;
+    scale: 0.8;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .fa-arrow-circle-down {
+    margin: 0;
+    padding: 0;
+  }
+  figure.card {
+    display: none;
+  }
+  figure.card-large {
+    display: block;
+    min-width: 675px;
+    height: 450px;
+    margin: 0 5%;
+    scale: 0.8;
+  }
+  div.background {
+    background-size: 40%;
+  }
+  .photo-gallery img {
+    width: 200px;
+    height: 200px;
+  }
+  section.newsletter {
+    width: 70%;
+  }
+  #newsletter {
+    font-size: 1.125rem;
+    height: 45px;
+    border-radius: 25px 0 0 25px;
+  }
+  #sign-up {
+    font-size: 1.25rem;
+    height: 45px;
+    border-radius: 0 25px 25px 0;
+  }
+  /* Footer
+--------------------*/
+}
+@media only screen and (min-width: 768px) {
+  /* Header
+--------------------*/
+  .logo {
+    width: 300px;
+    margin-left: 32px;
+    margin-top: 16px;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .icons label span {
+    font-size: 3rem;
+  }
   .header-wrapper {
     width: 90%;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     /* background-color: lightblue; */
-  }
-  .logo {
-    width: 500px;
-    margin-left: 128px;
-  }
-  .logo img {
-    width: 500px;
   }
   nav.icons {
     justify-content: flex-end;
@@ -727,28 +808,121 @@ h6 {
   .ticket-label {
     margin-left: 64px;
   }
+  .search-dropdown {
+    width: 400px;
+    top: 113.5px;
+    margin-right: 236px;
+    right: 5%;
+  }
+  .ticket-dropdown {
+    width: 400px;
+    top: 113.5px;
+    margin-right: 124px;
+    right: 5%;
+  }
+  .profile-dropdown {
+    width: 400px;
+    top: 113.5px;
+    margin-right: 24px;
+    right: 5%;
+  }
+  /* Main
+--------------------*/
+  h1 {
+    font-size: 2.25rem;
+  }
+  div.card {
+    scale: 1;
+    margin-top: 32px;
+  }
+  figure.card-large {
+    scale: 1;
+  }
+  .fa-arrow-circle-down {
+    margin: 32px auto;
+  }
+  section.newsletter {
+    width: 50%;
+  }
+  /* Footer
+--------------------*/
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .fi1 {
+    order: 1;
+  }
+  .fi2 {
+    order: 3;
+  }
+  .fi3 {
+    order: 2;
+  }
+  .fi4 {
+    order: 4;
+  }
+  .footer-container {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* Main
+--------------------*/
+  .image-wrapper {
+    justify-content: flex-start;
+  }
+  .photo-gallery img {
+    width: 250px;
+    height: 250px;
+  }
+  section.newsletter {
+    width: 40%;
+  }
+  /* Footer
+--------------------*/
+  .footer-wrapper {
+    font-size: 1.125rem;
+  }
+  .footer-container {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Header
+--------------------*/
+  .logo {
+    width: 500px;
+    margin-left: 128px;
+  }
+  .logo img {
+    width: 500px;
+  }
   .icons label span {
     font-size: 4rem;
   }
-  .search-dropdown,
-  .ticket-dropdown,
-  .profile-dropdown {
-    width: 400px;
-    top: 128px;
-  }
   .search-dropdown {
-    right: 18.5%;
+    top: 128px;
+    margin-right: 288px;
+    right: 5%;
+    left: auto;
   }
   .ticket-dropdown {
-    right: 12.5%;
+    top: 128px;
+    margin-right: 160px;
+    right: 5%;
   }
   .profile-dropdown {
-    right: 6.5%;
+    top: 128px;
+    margin-right: 32px;
+    right: 5%;
   }
   nav.menu {
     height: 60px;
     border-radius: 0 100px 0 0;
     align-items: center;
+    justify-content: space-around;
   }
   ul.mobile-menu {
     display: none;
@@ -765,12 +939,13 @@ h6 {
     display: block;
     text-align: center;
     background-color: var(--dark-purple);
-    width: 320px;
+    width: 270px;
     padding: 16.5px;
     margin: 0;
     /* border-left: 2px solid var(--dark-purple);
 border-right: 2px solid var(--dark-purple); */
     border-radius: 70px 0 70px 0;
+    position: relative;
   }
   .purple-box:hover {
     border-radius: 70px 0 0 0;
@@ -784,10 +959,10 @@ border-right: 2px solid transparent; */
     background-color: var(--dark-purple);
   }
   .dropdown-info {
-    font-size: 1.125rem;
+    font-size: 1rem;
     padding-left: 16px;
     padding-right: 16px;
-    width: 320px;
+    width: 270px;
     background-color: #fff;
     color: #000;
     position: absolute;
@@ -816,7 +991,6 @@ border-right: 2px solid transparent; */
   /* Main
 --------------------*/
   section.main-content {
-    background-color: var(--light-grey);
     padding-top: 32px;
   }
   h1.mobile {
@@ -826,31 +1000,28 @@ border-right: 2px solid transparent; */
     display: block;
     font-size: 2.5rem;
     width: 90%;
-    margin: 50px auto 32px auto;
+    margin: 50px auto 0 auto;
     text-transform: capitalize;
     text-align: center;
     border-radius: 0;
   }
   .card-wrapper {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     /* background-color: lightblue; */
   }
-  h2 {
-    font-size: 2.5rem;
-  }
   div.card {
-    min-width: 675px;
-    height: 450px;
-    margin-bottom: 64px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  div.card p {
-    font-size: 1.25rem;
+    min-width: 450px;
+    height: 550px;
+    margin: 64px 5% 32px 5%;
   }
   figure.card {
+    display: block;
+    min-width: 450px;
+    height: 550px;
+    margin: 64px 5% 32px 5%;
+  }
+  figure.card-large {
     display: none;
   }
   .fa-arrow-circle-down {
@@ -858,12 +1029,9 @@ border-right: 2px solid transparent; */
     opacity: 0;
     visibility: hidden;
   }
-  figure.card-large {
-    display: block;
-    min-width: 675px;
-    height: 450px;
-    margin-left: 5%;
-    margin-right: 5%;
+  div.background {
+    background-size: contain;
+    height: 300px;
   }
   div.reverse {
     order: 3;
@@ -874,9 +1042,6 @@ border-right: 2px solid transparent; */
   span.reverse {
     order: 2;
   }
-  div.background {
-    background-size: 40%;
-  }
   .fa-arrow-circle-down {
     display: none;
   }
@@ -885,7 +1050,7 @@ border-right: 2px solid transparent; */
     display: block;
     visibility: visible;
     opacity: 1;
-    font-size: 6rem;
+    font-size: 4rem;
     margin-bottom: 50px;
   }
   h3 {
@@ -914,6 +1079,7 @@ border-right: 2px solid transparent; */
     border-radius: 0 0 50px 50px;
   }
   section.newsletter {
+    width: 100%;
     flex-direction: row;
     align-items: center;
     /* background-color: green; */
@@ -934,22 +1100,20 @@ border-right: 2px solid transparent; */
     height: 60px;
     padding-left: 20px;
     flex: 3;
-    border-radius: 25px 0 0 25px;
   }
   #sign-up {
     font-family: var(--sofia);
     font-size: 1.25rem;
     height: 60px;
-    border-radius: 0 25px 25px 0;
   }
   /* Footer
 --------------------*/
   .footer-wrapper {
     font-size: 1.125rem;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
   }
   .footer-container {
+    width: auto;
     margin-left: 5%;
     margin-right: 5%;
     /* background-color: green; */
@@ -959,5 +1123,27 @@ border-right: 2px solid transparent; */
   }
   .connect li {
     padding: 8px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  /* Header
+--------------------*/
+  .purple-box {
+    width: 320px;
+  }
+  .dropdown-info {
+    width: 320px;
+  }
+  /* Main
+--------------------*/
+  figure.card {
+    display: none;
+  }
+  figure.card-large {
+    display: block;
+  }
+  div.card {
+    min-width: 675px;
+    height: 450px;
   }
 }

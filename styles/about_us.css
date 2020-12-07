@@ -45,8 +45,8 @@ a {
 .search-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 137px;
-  width: 100%;
+  top: 138px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -96,8 +96,8 @@ form {
 .ticket-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 137px;
-  width: 100%;
+  top: 138px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -166,8 +166,8 @@ button.ticket {
 .profile-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 137px;
-  width: 100%;
+  top: 138px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -267,6 +267,7 @@ nav.menu {
   font-family: var(--proxima-soft);
   font-size: 1.5rem;
   display: flex;
+  justify-content: flex-start;
   margin-bottom: 0;
 }
 header {
@@ -518,7 +519,7 @@ form.newsletter {
   width: 100%;
   max-width: 600px;
   height: 40px;
-  margin: 16px auto;
+  margin: 16px auto 32px auto;
   display: flex;
   justify-content: center;
 }
@@ -678,6 +679,7 @@ h6 {
     height: 60px;
     border-radius: 0 100px 0 0;
     align-items: center;
+    justify-content: space-around;
   }
   ul.mobile-menu {
     display: none;
@@ -694,7 +696,7 @@ h6 {
     display: block;
     text-align: center;
     background-color: var(--dark-purple);
-    width: 320px;
+    width: 270px;
     padding: 16.5px;
     margin: 0;
     /* border-left: 2px solid var(--dark-purple);
@@ -718,7 +720,7 @@ border-right: 2px solid var(--dark-purple); */
     font-size: 1.125rem;
     padding-left: 16px;
     padding-right: 16px;
-    width: 320px;
+    width: 270px;
     background-color: #fff;
     color: #000;
     position: absolute;
@@ -874,5 +876,27 @@ border-right: 2px solid var(--dark-purple); */
   }
   .connect li {
     padding: 8px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  /* Header
+--------------------*/
+  .purple-box {
+    width: 320px;
+  }
+  .dropdown-info {
+    width: 320px;
+  }
+  /* Main
+--------------------*/
+  figure.card {
+    display: none;
+  }
+  figure.card-large {
+    display: block;
+  }
+  div.card {
+    min-width: 675px;
+    height: 450px;
   }
 }
