@@ -355,8 +355,8 @@ main {
   width: 100%;
   color: var(--white);
   background-image: url(../images/robot-main_mobile.jpg);
-  background-size: contain;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 0;
 }
 .main-wrapper {
@@ -365,8 +365,13 @@ main {
 }
 .main-content {
   font-family: var(--sofia);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: teal; */
 }
 h1 {
+  max-width: 600px;
   font-family: var(--proxima);
   font-size: 2.5rem;
   margin-top: 0;
@@ -444,7 +449,7 @@ p.button::after {
   border-right: 40px solid transparent;
   border-bottom: 40px solid #fff;
   position: absolute;
-  bottom: 155px;
+  bottom: 170px;
   left: 170px;
 }
 .bubble {
@@ -454,9 +459,9 @@ p.button::after {
   font-size: 1.125rem;
   background-color: var(--white);
   color: var(--dark-purple);
-  min-width: 325px;
-  max-width: 325px;
-  min-height: 160px;
+  width: 300px;
+  width: 300px;
+  min-height: 170px;
   margin: 0 auto;
   border-radius: 50px;
   transition-property: scale;
@@ -471,15 +476,19 @@ p.button::after {
 }
 h3 {
   padding-top: 24px;
+  padding-bottom: 0;
+  margin-bottom: 12px;
   z-index: 10;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 h3::before {
   content: "“";
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 h3::after {
   content: "”";
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .bubble p {
   margin: 0;
@@ -956,8 +965,22 @@ h6 {
   /* Main
 --------------------*/
   h1 {
-    font-size: 1.875rem;
+    font-size: 2.75rem;
     text-align: center;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  .clock {
+    font-size: 1.25rem;
+  }
+  p.button {
+    font-size: 1.5rem;
+  }
+  .fa-clock {
+    font-size: 1.75rem;
+  }
+  h3 {
   }
   h4 {
     font-size: 1.5rem;
@@ -1086,6 +1109,59 @@ h6 {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
+  .main-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: lightblue; */
+  }
+  .main-content {
+    margin-right: 50px;
+  }
+  .background-container {
+    background-image: url(../images/robot-main.jpg);
+    background-size: contain;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 32px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .clock {
+    font-size: 1.25rem;
+  }
+  .fa-clock {
+    font-size: 2rem;
+  }
+  p.button {
+    font-size: 1.5rem;
+  }
+  h3 {
+    margin: 16px auto;
+    padding-top: 32px;
+    max-width: 250px;
+  }
+  .bubble {
+    border-radius: 50px 50px 50px 0;
+    margin-top: 100px;
+  }
+  #about {
+    padding-bottom: 32px;
+  }
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #fff;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #fff;
+    position: absolute;
+    top: 160px;
+    left: 0px;
+  }
   .secondary-container {
     width: 90%;
     margin: 32px auto;
@@ -1095,7 +1171,6 @@ h6 {
   h4 {
     font-size: 2rem;
   }
-
   .aeronautic-wrapper {
     right: 9.5%;
   }
@@ -1302,9 +1377,8 @@ border-right: 2px solid transparent; */
   }
   /* Main
 --------------------*/
-  .background-container {
-    background-image: url(../images/robot-main.jpg);
-    background-size: cover;
+  .main-wrapper {
+    width: 85%;
   }
   h1 {
     font-size: 4.25rem;
@@ -1312,12 +1386,6 @@ border-right: 2px solid transparent; */
   }
   h2 {
     font-size: 2.25rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-    margin: 16px auto;
-    padding-top: 32px;
-    max-width: 250px;
   }
   .clock {
     font-size: 1.5rem;
@@ -1327,29 +1395,6 @@ border-right: 2px solid transparent; */
   }
   p.button {
     font-size: 1.875rem;
-  }
-  .main-wrapper {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .bubble {
-    border-radius: 50px 50px 50px 0;
-  }
-  .arrow-up {
-    width: 0;
-    height: 0;
-    border-bottom: 40px solid transparent;
-    border-left: 40px solid #fff;
-    border-right: 40px solid transparent;
-    border-top: 40px solid #fff;
-    position: absolute;
-    top: 175px;
-    left: 0px;
-  }
-  #about {
-    padding-bottom: 32px;
   }
   .categories {
     grid-template-rows: 1fr;
