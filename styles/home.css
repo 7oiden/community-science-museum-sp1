@@ -855,7 +855,6 @@ form.newsletter {
 #sign-up:hover {
   opacity: 0.65;
 }
-
 /* footer 
 --------------------*/
 footer {
@@ -951,6 +950,25 @@ h6 {
   .profile-dropdown {
     width: 400px;
   }
+  /* Main
+--------------------*/
+  h1 {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  section.newsletter {
+    width: 70%;
+  }
+  #newsletter {
+    font-size: 1.125rem;
+    height: 45px;
+    border-radius: 25px 0 0 25px;
+  }
+  #sign-up {
+    font-size: 1.25rem;
+    height: 45px;
+    border-radius: 0 25px 25px 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* Header
@@ -1003,7 +1021,9 @@ h6 {
   }
   /* Main
 --------------------*/
-
+  section.newsletter {
+    width: 50%;
+  }
   /* Footer
 --------------------*/
   .footer-wrapper {
@@ -1030,7 +1050,9 @@ h6 {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-
+  section.newsletter {
+    width: 40%;
+  }
   /* Footer
 --------------------*/
   .footer-wrapper {

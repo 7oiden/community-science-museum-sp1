@@ -350,7 +350,8 @@ ul li {
   width: 90%;
   margin: 0 auto;
 }
-section {
+section.kids,
+section.teachers {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -367,13 +368,11 @@ div.blue {
 }
 .margins {
   width: 100%;
+  /* min-width: 400px; */
   background-color: var(--light-grey);
   margin-top: 16px;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-figure.margins {
-  padding: 0;
 }
 h1.large-screen {
   display: none;
@@ -385,7 +384,7 @@ h1 {
   text-transform: uppercase;
   background-color: var(--dark-purple);
   color: #fff;
-  margin: 32px 16px 0 0;
+  margin: 32px 5% 0 0;
   padding: 12px 32px;
   border-radius: 0 0 50px 0;
 }
@@ -417,11 +416,13 @@ figure {
   padding: 0;
 }
 #item-3 {
+  height: 300px;
   background-image: url(../images/kids-cartoon_large.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 #item-6 {
+  height: 300px;
   background-image: url(../images/researcher-cartoon_large.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -439,7 +440,7 @@ figure {
   border-radius: 0 25px 0 25px;
   display: flex;
   flex-direction: column;
-  margin-top: 0;
+  margin-top: 16px;
   margin-bottom: 32px;
 }
 .get-in-touch > p {
@@ -634,6 +635,25 @@ h6 {
   .profile-dropdown {
     width: 400px;
   }
+  /* Main
+--------------------*/
+  h1 {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  section.newsletter {
+    width: 70%;
+  }
+  #newsletter {
+    font-size: 1.125rem;
+    height: 45px;
+    border-radius: 25px 0 0 25px;
+  }
+  #sign-up {
+    font-size: 1.25rem;
+    height: 45px;
+    border-radius: 0 25px 25px 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* Header
@@ -686,6 +706,28 @@ h6 {
   }
   /* Main
 --------------------*/
+  #item-1,
+  #item-2,
+  #item-4,
+  #item-5 {
+    min-width: 45%;
+    flex: 1;
+  }
+  #item-3,
+  #item-6 {
+    min-width: 300px;
+    flex: 1;
+    margin-top: 0;
+  }
+  section.kids,
+  section.teachers {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  section.newsletter {
+    width: 50%;
+  }
 
   /* Footer
 --------------------*/
@@ -713,7 +755,9 @@ h6 {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-
+  section.newsletter {
+    width: 40%;
+  }
   /* Footer
 --------------------*/
   .footer-wrapper {
@@ -846,14 +890,12 @@ border-right: 2px solid transparent; */
   h4 {
     font-size: 1.5rem;
     text-transform: uppercase;
+    margin-top: 24px;
   }
   h5 {
     font-size: 1.25rem;
   }
-  section {
-    flex-direction: row;
-    gap: 16px;
-  }
+
   /* section.kids {
     margin-top: 0;
   } */
@@ -865,23 +907,16 @@ border-right: 2px solid transparent; */
     height: 480px;
   }
 
-  #item-1 {
-    flex: 1;
-  }
-  #item-2 {
-    flex: 1;
-  }
-  #item-3 {
-    flex: 2;
-  }
-  #item-4 {
-    flex: 1;
-  }
+  #item-1,
+  #item-2,
+  #item-4,
   #item-5 {
-    flex: 1;
+    min-width: auto;
   }
+  #item-3,
   #item-6 {
-    flex: 2;
+    height: auto;
+    margin-top: 16px;
   }
   .get-in-touch {
     flex-direction: row;
@@ -962,4 +997,8 @@ border-right: 2px solid transparent; */
   }
   /* Main
 --------------------*/
+  #item-3,
+  #item-6 {
+    flex: 2;
+  }
 }

@@ -359,7 +359,7 @@ h1 {
   text-transform: uppercase;
   background-color: var(--dark-purple);
   color: #fff;
-  margin: 32px 16px 32px 0;
+  margin: 32px 5% 32px 0;
   padding: 12px 32px;
   border-radius: 0 0 50px 0;
 }
@@ -521,7 +521,6 @@ form.newsletter {
 #sign-up:hover {
   opacity: 0.65;
 }
-
 /* footer 
 --------------------*/
 footer {
@@ -617,6 +616,25 @@ h6 {
   .profile-dropdown {
     width: 400px;
   }
+  /* Main
+--------------------*/
+  h1 {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  section.newsletter {
+    width: 70%;
+  }
+  #newsletter {
+    font-size: 1.125rem;
+    height: 45px;
+    border-radius: 25px 0 0 25px;
+  }
+  #sign-up {
+    font-size: 1.25rem;
+    height: 45px;
+    border-radius: 0 25px 25px 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* Header
@@ -669,6 +687,9 @@ h6 {
   }
   /* Main
 --------------------*/
+  section.newsletter {
+    width: 50%;
+  }
 
   /* Footer
 --------------------*/
@@ -696,7 +717,9 @@ h6 {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-
+  section.newsletter {
+    width: 40%;
+  }
   /* Footer
 --------------------*/
   .footer-wrapper {
