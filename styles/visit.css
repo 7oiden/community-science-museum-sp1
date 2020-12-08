@@ -380,6 +380,9 @@ h3 {
   padding-top: 16px;
   margin-top: 0;
 }
+h3 {
+  padding-top: ;
+}
 div.info {
   width: 100%;
   background-color: var(--light-grey);
@@ -429,12 +432,13 @@ div.facilities p {
   justify-content: flex-start;
 }
 .hours-wrapper_2 ul {
+  font-size: 1.25rem;
   padding: 0;
-  margin: 0 1rem 0 1rem;
+  margin: 0 0 0 5%;
 }
 .hours-wrapper_2 li {
   font-family: var(--sofia);
-  font-size: 1.25rem;
+
   list-style: none;
   /* background-color: violet; */
 }
@@ -694,6 +698,53 @@ h6 {
   }
   /* Main
 --------------------*/
+  section.facilities {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  section > .facilities {
+    height: 325px;
+    margin: 0;
+  }
+  .facilities img {
+    height: 325px;
+  }
+  .item-1 {
+    flex: 30%;
+    order: 1;
+  }
+  .item-2 {
+    flex: 30%;
+    order: 4;
+  }
+  .item-3 {
+    flex: 30%;
+    order: 5;
+  }
+  .item-4 {
+    flex: 30%;
+    order: 2;
+  }
+  .item-5 {
+    flex: 30%;
+    order: 3;
+  }
+  .item-6 {
+    flex: 30%;
+    order: 6;
+  }
+  #location {
+    margin-left: 32px;
+  }
+  iframe {
+    width: 50%;
+    margin-right: 5%;
+  }
+  #map {
+    display: flex;
+    justify-content: space-between;
+  }
   section.newsletter {
     width: 50%;
   }
@@ -723,6 +774,20 @@ h6 {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
+  section.info {
+    flex-direction: row;
+    gap: 16px;
+  }
+  #map {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #location {
+    margin-left: 0;
+  }
+  iframe {
+    width: 100%;
+  }
   section.newsletter {
     width: 40%;
   }
@@ -853,58 +918,22 @@ border-right: 2px solid transparent; */
   } */
   section.info {
     font-size: 1.25rem;
-    flex-direction: row;
-    gap: 16px;
+  }
+  section.facilities {
+    font-size: 1.25rem;
   }
   h2,
   h3 {
     font-size: 1.875rem;
   }
   .hours-wrapper_2 li {
-    font-size: 1.875rem;
-    margin-left: 16px;
+    font-size: 1.5rem;
   }
   #street,
   #postal {
     font-size: 1.25rem;
   }
-  section.facilities {
-    font-size: 1.25rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  section > .facilities {
-    height: 325px;
-    margin: 0;
-  }
-  .facilities img {
-    height: 325px;
-  }
-  .item-1 {
-    flex: 30%;
-    order: 1;
-  }
-  .item-2 {
-    flex: 30%;
-    order: 4;
-  }
-  .item-3 {
-    flex: 30%;
-    order: 5;
-  }
-  .item-4 {
-    flex: 30%;
-    order: 2;
-  }
-  .item-5 {
-    flex: 30%;
-    order: 3;
-  }
-  .item-6 {
-    flex: 30%;
-    order: 6;
-  }
+
   /* newsletter
 --------------------*/
   .newsletter-wrapper {
@@ -970,4 +999,7 @@ border-right: 2px solid transparent; */
   }
   /* Main
 --------------------*/
+  .hours-wrapper_2 li {
+    font-size: 1.875rem;
+  }
 }

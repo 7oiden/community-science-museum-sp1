@@ -690,6 +690,10 @@ h6 {
   section.newsletter {
     width: 40%;
   }
+  section.main-content {
+    flex-direction: row;
+    gap: 16px;
+  }
   /* Footer
 --------------------*/
   .footer-wrapper {
@@ -817,9 +821,7 @@ border-right: 2px solid transparent; */
     margin-bottom: 16px;
   }
   section.main-content {
-    font-size: 1.25rem;
-    flex-direction: row;
-    gap: 16px;
+    font-size: 1.125rem;
   }
   .get-in-touch {
     flex-direction: row;

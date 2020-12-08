@@ -706,6 +706,9 @@ h6 {
   }
   /* Main
 --------------------*/
+  h1 {
+    font-size: 2.25rem;
+  }
   #item-1,
   #item-2,
   #item-4,
@@ -878,7 +881,7 @@ border-right: 2px solid transparent; */
     display: block;
     width: 100%;
     margin: 50px auto 16px auto;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     text-align: center;
     border-radius: 0;
