@@ -444,7 +444,7 @@ p.button::after {
   border-right: 40px solid transparent;
   border-bottom: 40px solid #fff;
   position: absolute;
-  bottom: 145px;
+  bottom: 155px;
   left: 170px;
 }
 .bubble {
@@ -455,7 +455,8 @@ p.button::after {
   background-color: var(--white);
   color: var(--dark-purple);
   min-width: 325px;
-  min-height: 150px;
+  max-width: 325px;
+  min-height: 160px;
   margin: 0 auto;
   border-radius: 50px;
   transition-property: scale;
@@ -509,6 +510,7 @@ h3::after {
   color: var(--white);
   text-align: center;
   height: 156px;
+  border-radius: 15px;
   transition-property: scale;
   transition-duration: 0.5s;
   scale: 1;
@@ -550,7 +552,6 @@ section.news {
   width: 100%;
 }
 h4 {
-  margin: 32px 16px 0 0;
   font-family: var(--proxima);
   font-size: 1.25rem;
   font-weight: bold;
@@ -558,6 +559,7 @@ h4 {
   background-color: var(--dark-blue);
   color: var(--white);
   display: block;
+  margin: 32px 5% 32px 0;
   padding: 16px 0 16px 32px;
   /* border-top: 2px solid #000;
   border-right: 4px solid #000;
@@ -570,6 +572,7 @@ figure.news {
 }
 figure.news img {
   width: 100%;
+  height: 100%;
   border-top: 2px solid var(--dark-blue);
   border-right: 4px solid var(--dark-blue);
   border-left: 2px solid var(--dark-blue);
@@ -577,6 +580,9 @@ figure.news img {
   border-radius: 15px;
 }
 img.large-screen {
+  display: none;
+}
+img.medium {
   display: none;
 }
 h5 {
@@ -613,13 +619,15 @@ div.selected {
   height: 100px;
   width: 150px;
   margin: 16px 8px;
-  transition-property: opacity;
+  transition-property: opacity scale;
   transition-duration: 0.5s;
   opacity: 1;
+  scale: 1;
 }
 #aeronautic-image:hover,
 #energica-image:hover {
   opacity: 0.65;
+  scale: 1.1;
 }
 #aeronautic-image img,
 #energica-image img {
@@ -729,12 +737,7 @@ div.image-wrapper {
 }
 #clubs {
   background-color: var(--dark-purple);
-  margin: 100px 16px 16px 0;
-  border-radius: 0 0 50px 0;
-  /* text-align: center;
-  background-color: var(--light-grey);
-  color: var(--dark-blue);
-*/
+  margin-top: 120px;
 }
 figure.clubs {
   width: 90%;
@@ -956,6 +959,21 @@ h6 {
     font-size: 1.875rem;
     text-align: center;
   }
+  h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  div.news p {
+    font-size: 1.125rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  .categories {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
   section.newsletter {
     width: 70%;
   }
@@ -1021,6 +1039,24 @@ h6 {
   }
   /* Main
 --------------------*/
+  h4 {
+    font-size: 1.875rem;
+  }
+  div.news p {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  .categories {
+    gap: 32px;
+  }
+  .color-box span {
+    font-size: 3rem;
+  }
+  .color-box figcaption {
+    font-size: 1.25rem;
+  }
   section.newsletter {
     width: 50%;
   }
@@ -1050,6 +1086,109 @@ h6 {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
+  .secondary-container {
+    width: 90%;
+    margin: 32px auto;
+    padding-top: 32px;
+    background-color: var(--light-grey);
+  }
+  h4 {
+    font-size: 2rem;
+  }
+
+  .aeronautic-wrapper {
+    right: 9.5%;
+  }
+  #aeronautic:checked ~ .aeronautic-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: lightblue; */
+    width: 81%;
+  }
+  .energica-wrapper {
+    right: 9.5%;
+  }
+  #energica:checked ~ .energica-wrapper {
+    flex-direction: row;
+    width: 81%;
+  }
+  div.circle-wrapper {
+    display: none;
+  }
+  .news-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  figure.news {
+    flex: 2;
+    height: auto;
+    margin: 0;
+  }
+  figure.news img {
+    height: auto;
+    width: 100%;
+    border-radius: 25px 0 0 25px;
+    border-top: 2px solid var(--dark-blue);
+    border-left: 2px solid var(--dark-blue);
+    border-right: none;
+    border-bottom: 8px solid var(--dark-blue);
+    /* box-shadow: 0 6px 12px #00000029; */
+  }
+  #aeronautic-image,
+  #energica-image {
+    height: 200px;
+    width: 300px;
+  }
+  #aeronautic-image img,
+  #energica-image img {
+    height: 100%;
+    width: 100%;
+  }
+  /* div.circle-wrapper {
+    flex: 1;
+    background-color: lightblue;
+  } */
+  #energica-p1,
+  #energica-p2 {
+    font-size: 1rem;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  div.news {
+    flex: 1;
+    padding: 16px 16px;
+    min-height: auto;
+    border-radius: 0 25px 25px 0;
+    border-top: 2px solid var(--dark-blue);
+    border-left: none;
+    border-right: 8px solid var(--dark-blue);
+    border-bottom: 8px solid var(--dark-blue);
+  }
+  div.news p {
+    font-size: 1.125rem;
+  }
+  /* .angle-wrapper {
+    display: none;
+  } */
+
+  img.mobile {
+    display: none;
+  }
+  img.large-screen {
+    display: none;
+  }
+  img.medium {
+    display: block;
+  }
+  div.image-wrapper {
+    width: 80%;
+    margin: 32px auto 0 auto;
+    flex-direction: row;
+    gap: 64px;
+  }
   section.newsletter {
     width: 40%;
   }
@@ -1213,129 +1352,48 @@ border-right: 2px solid transparent; */
     padding-bottom: 32px;
   }
   .categories {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
   }
   .color-box {
     margin-top: 140px;
-    width: 260px;
-    height: 260px;
-    border-radius: 25px;
-  }
-  .color-box figcaption {
-    font-size: 1.75rem;
+    height: 220px;
   }
   .color-box span {
-    font-size: 4rem;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    font-size: 3.5rem;
+  }
+  .color-box figcaption {
+    margin-top: 32px;
+    font-size: 1.35rem;
   }
   h4 {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 16px auto;
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 16px;
-  }
-  h5 {
-    font-size: 1.875rem;
-  }
-  div.circle-wrapper {
-    display: none;
-  }
-  .aeronautic-wrapper {
-    right: 9.5%;
-  }
-  #aeronautic:checked ~ .aeronautic-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    /* background-color: lightblue; */
-    width: 81%;
-  }
-  .energica-wrapper {
-    right: 9.5%;
-  }
-  #energica:checked ~ .energica-wrapper {
-    flex-direction: row;
-    width: 81%;
-  }
-  .news-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-  figure.news {
-    flex: 3;
-    margin: 0;
-  }
-  figure.news img {
-    border-radius: 25px 0 0 25px;
-    border-top: 2px solid var(--dark-blue);
-    border-left: 2px solid var(--dark-blue);
-    border-right: none;
-    border-bottom: 8px solid var(--dark-blue);
-    /* box-shadow: 0 6px 12px #00000029; */
-  }
-  #aeronautic-image,
-  #energica-image {
-    height: 200px;
-    width: 300px;
-  }
-  #aeronautic-image img,
-  #energica-image img {
-    height: 200px;
-    width: 300px;
-  }
-  /* div.circle-wrapper {
-    flex: 1;
-    background-color: lightblue;
-  } */
-  div.news {
-    /* box-shadow: 0 6px 12px #00000029; */
-    padding: 64px;
-    padding-top: 32px;
-    flex: 2;
-    border-radius: 0 25px 25px 0;
-    border-top: 2px solid var(--dark-blue);
-    border-left: none;
-    border-right: 8px solid var(--dark-blue);
-    border-bottom: 8px solid var(--dark-blue);
-  }
-  div.news p {
-    font-size: 1.5rem;
-    /* background-color: lightblue; */
-  }
-  /* .angle-wrapper {
-    display: none;
-  } */
-
-  img.mobile {
-    display: none;
+    border-radius: 0;
   }
   img.large-screen {
     display: block;
     width: 100px;
   }
-  div.image-wrapper {
-    width: 80%;
-    margin: 32px auto 0 auto;
-    flex-direction: row;
-    gap: 64px;
+  img.medium {
+    display: none;
+  }
+  figure.news {
+    flex: 2;
+  }
+  div.news {
+    flex: 1;
+    padding: 16px 32px;
+  }
+  div.news p {
+    font-size: 1.25rem;
   }
   figure.clubs img {
     border-radius: 25px;
     /* box-shadow: 0 6px 12px #00000029; */
-  }
-  .secondary-container {
-    width: 90%;
-    margin: 32px auto;
-    padding-top: 32px;
-    background-color: var(--light-grey);
-  }
-  #clubs {
-    margin-left: 5%;
   }
   .clubs p {
     width: 90%;
@@ -1399,6 +1457,40 @@ border-right: 2px solid transparent; */
     padding: 8px;
   }
 }
+@media only screen and (min-width: 1300px) {
+  #energica-p1,
+  #energica-p2 {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* Main
+--------------------*/
+  .color-box {
+    height: 260px;
+  }
+  .color-box span {
+    font-size: 4rem;
+    padding-top: 16px;
+  }
+  .color-box figcaption {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  div.news {
+    padding: 32px 64px;
+  }
+  h5 {
+    font-size: 1.875rem;
+  }
+  div.news p {
+    font-size: 1.5rem;
+  }
+  #energica-p1,
+  #energica-p2 {
+    font-size: 1.25rem;
+  }
+}
 @media only screen and (min-width: 1800px) {
   /* Header
 --------------------*/
@@ -1410,4 +1502,7 @@ border-right: 2px solid transparent; */
   }
   /* Main
 --------------------*/
+  .color-box figcaption {
+    font-size: 1.75rem;
+  }
 }
