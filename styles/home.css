@@ -33,7 +33,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
-* header --------------------*/ .icons label {
+/* header 
+--------------------*/
+.icons label {
   display: block;
 }
 /* search-dropdown */
@@ -289,6 +291,9 @@ nav.menu {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0;
+  /* border-top: 2px solid var(--dark-purple); */
+  border-right: 8px solid var(--dark-purple);
+  border-radius: 0 100px 0 0;
 }
 header {
   display: inline;
@@ -355,8 +360,8 @@ main {
   width: 100%;
   color: var(--white);
   background-image: url(../images/robot-main_mobile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
   margin-top: 0;
 }
 .main-wrapper {
@@ -374,13 +379,13 @@ h1 {
   max-width: 600px;
   font-family: var(--proxima);
   font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 16px;
-  padding-top: 32px;
+  margin-top: 10%;
+  margin-bottom: 5%;
   /* background-color: olive; */
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
   text-align: center;
   /* background-color: green; */
   margin-bottom: 0;
@@ -402,7 +407,8 @@ h2 {
   font-size: 1.5rem;
 }
 div.button {
-  margin-bottom: 64px;
+  margin-top: 5%;
+  margin-bottom: 30%;
 }
 p.button {
   font-size: 1.25rem;
@@ -412,7 +418,8 @@ p.button {
   background-color: var(--dark-purple);
   color: var(--white);
   padding: 8px 32px;
-  margin-bottom: 16px;
+  margin-bottom: 10%;
+  margin-top: 5%;
   transition-property: scale;
   transition-duration: 0.5s;
   scale: 1;
@@ -449,7 +456,7 @@ p.button::after {
   border-right: 40px solid transparent;
   border-bottom: 40px solid #fff;
   position: absolute;
-  bottom: 170px;
+  bottom: 150px;
   left: 170px;
 }
 .bubble {
@@ -461,8 +468,8 @@ p.button::after {
   color: var(--dark-purple);
   width: 300px;
   width: 300px;
-  min-height: 170px;
-  margin: 0 auto;
+  min-height: 150px;
+  margin: 12% auto 0 auto;
   border-radius: 50px;
   transition-property: scale;
   transition-duration: 0.5s;
@@ -475,24 +482,26 @@ p.button::after {
   color: var(--dark-purple);
 }
 h3 {
+  max-width: 200px;
   padding-top: 24px;
   padding-bottom: 0;
-  margin-bottom: 12px;
+  margin: 0 auto 12px auto;
   z-index: 10;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
 }
 h3::before {
   content: "“";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 h3::after {
   content: "”";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .bubble p {
   margin: 0;
   font-family: var(--neue-haas);
+  font-size: 1rem;
   width: 200px;
   text-align: right;
   margin-right: 16px;
@@ -525,7 +534,7 @@ h3::after {
   scale: 1;
 }
 .color-box:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 .color-box a {
   text-decoration: none;
@@ -749,15 +758,17 @@ div.image-wrapper {
   margin-top: 120px;
 }
 figure.clubs {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 8px;
-  transition-property: opacity;
+  transition-property: opacity scale;
   transition-duration: 0.5s;
   opacity: 1;
+  scale: 1;
 }
 figure.clubs:hover {
   opacity: 0.65;
+  scale: 1.05;
 }
 figure.clubs img {
   width: 100%;
@@ -957,6 +968,9 @@ h6 {
 @media only screen and (min-width: 576px) {
   /* Header
 --------------------*/
+  .icons label span {
+    font-size: 3rem;
+  }
   .search-dropdown,
   .ticket-dropdown,
   .profile-dropdown {
@@ -964,12 +978,16 @@ h6 {
   }
   /* Main
 --------------------*/
+  .background-container {
+    background-image: url(../images/robot-main_tablet.jpg);
+    background-size: contain;
+  }
   h1 {
     font-size: 2.75rem;
     text-align: center;
   }
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   .clock {
     font-size: 1.25rem;
@@ -980,7 +998,8 @@ h6 {
   .fa-clock {
     font-size: 1.75rem;
   }
-  h3 {
+  .bubble {
+    bottom: 120px;
   }
   h4 {
     font-size: 1.5rem;
@@ -1022,9 +1041,6 @@ h6 {
   .logo img {
     width: 300px;
   }
-  .icons label span {
-    font-size: 3rem;
-  }
   .header-wrapper {
     width: 90%;
     margin: 0 auto;
@@ -1062,6 +1078,38 @@ h6 {
   }
   /* Main
 --------------------*/
+  .background-container {
+    background-image: url(../images/robot-main_medium.jpg);
+    background-size: contain;
+  }
+  .main-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: lightblue; */
+  }
+  .arrow-up {
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #fff;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #fff;
+    top: 140px;
+    left: 0px;
+  }
+  h3 {
+    margin: 16px auto;
+    padding-top: 32px;
+    max-width: 250px;
+  }
+  .bubble {
+    border-radius: 50px 50px 50px 0;
+    margin-top: 70px;
+    bottom: 0;
+  }
+  #about {
+    padding-bottom: 32px;
+  }
   h4 {
     font-size: 1.875rem;
   }
@@ -1109,13 +1157,6 @@ h6 {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-  .main-wrapper {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* background-color: lightblue; */
-  }
   .main-content {
     margin-right: 50px;
   }
@@ -1130,6 +1171,9 @@ h6 {
   h2 {
     font-size: 2rem;
   }
+  .bubble {
+    margin-top: 100px;
+  }
   .clock {
     font-size: 1.25rem;
   }
@@ -1138,29 +1182,6 @@ h6 {
   }
   p.button {
     font-size: 1.5rem;
-  }
-  h3 {
-    margin: 16px auto;
-    padding-top: 32px;
-    max-width: 250px;
-  }
-  .bubble {
-    border-radius: 50px 50px 50px 0;
-    margin-top: 100px;
-  }
-  #about {
-    padding-bottom: 32px;
-  }
-  .arrow-up {
-    width: 0;
-    height: 0;
-    border-bottom: 40px solid transparent;
-    border-left: 40px solid #fff;
-    border-right: 40px solid transparent;
-    border-top: 40px solid #fff;
-    position: absolute;
-    top: 160px;
-    left: 0px;
   }
   .secondary-container {
     width: 90%;
@@ -1225,8 +1246,7 @@ h6 {
     flex: 1;
     background-color: lightblue;
   } */
-  #energica-p1,
-  #energica-p2 {
+  .small-text {
     font-size: 1rem;
     padding: 0;
     margin-top: 16px;
@@ -1307,7 +1327,6 @@ h6 {
   }
   nav.menu {
     height: 60px;
-    border-radius: 0 100px 0 0;
     align-items: center;
     justify-content: space-around;
   }

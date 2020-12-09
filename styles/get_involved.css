@@ -33,7 +33,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
-* header --------------------*/ .icons label {
+/* header 
+--------------------*/
+.icons label {
   display: block;
 }
 /* search-dropdown */
@@ -289,6 +291,8 @@ nav.menu {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0;
+  border-right: 8px solid var(--dark-purple);
+  border-radius: 0 100px 0 0;
 }
 header {
   display: inline;
@@ -581,6 +585,9 @@ h6 {
 @media only screen and (min-width: 576px) {
   /* Header
 --------------------*/
+  .icons label span {
+    font-size: 3rem;
+  }
   .search-dropdown,
   .ticket-dropdown,
   .profile-dropdown {
@@ -616,9 +623,6 @@ h6 {
   }
   .logo img {
     width: 300px;
-  }
-  .icons label span {
-    font-size: 3rem;
   }
   .header-wrapper {
     width: 90%;
@@ -734,7 +738,6 @@ h6 {
   }
   nav.menu {
     height: 60px;
-    border-radius: 0 100px 0 0;
     align-items: center;
     justify-content: space-around;
   }
