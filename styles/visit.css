@@ -291,8 +291,6 @@ nav.menu {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0;
-  border-right: 8px solid var(--dark-purple);
-  border-radius: 0 100px 0 0;
 }
 header {
   display: inline;
@@ -834,6 +832,8 @@ h6 {
     height: 60px;
     align-items: center;
     justify-content: space-around;
+    border-right: 8px solid var(--dark-purple);
+    border-radius: 0 100px 0 0;
   }
   ul.mobile-menu {
     display: none;

@@ -281,7 +281,7 @@ nav.icons {
 nav.menu {
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
   padding: 0;
   margin: 0;
   background-color: var(--magenta);
@@ -292,8 +292,6 @@ nav.menu {
   justify-content: flex-start;
   margin-bottom: 0;
   /* border-top: 2px solid var(--dark-purple); */
-  border-right: 8px solid var(--dark-purple);
-  border-radius: 0 100px 0 0;
 }
 header {
   display: inline;
@@ -718,8 +716,20 @@ div.news {
   background-color: #fff;
   font-family: var(--neue-haas);
 }
+div.news div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 div.news p {
+  max-width: 500px;
   font-family: var(--sofia);
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#large-text p {
+  padding-top: 16px;
 }
 /* span.large-screen {
   color: #000;
@@ -755,7 +765,7 @@ div.image-wrapper {
 }
 #clubs {
   background-color: var(--dark-purple);
-  margin-top: 120px;
+  margin-top: 96px;
 }
 figure.clubs {
   width: 80%;
@@ -1006,7 +1016,7 @@ h6 {
     text-align: center;
   }
   div.news p {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   h5 {
     font-size: 1.25rem;
@@ -1113,9 +1123,9 @@ h6 {
   h4 {
     font-size: 1.875rem;
   }
-  div.news p {
+  /* div.news p {
     font-size: 1.25rem;
-  }
+  } */
   h5 {
     font-size: 1.5rem;
   }
@@ -1192,6 +1202,9 @@ h6 {
   h4 {
     font-size: 2rem;
   }
+  h5 {
+    margin-top: 0;
+  }
   .aeronautic-wrapper {
     right: 9.5%;
   }
@@ -1226,10 +1239,10 @@ h6 {
     height: auto;
     width: 100%;
     border-radius: 25px 0 0 25px;
-    border-top: 2px solid var(--dark-blue);
-    border-left: 2px solid var(--dark-blue);
+    border-top: 4px solid var(--dark-blue);
+    border-left: 4px solid var(--dark-blue);
     border-right: none;
-    border-bottom: 8px solid var(--dark-blue);
+    border-bottom: 12px solid var(--dark-blue);
     /* box-shadow: 0 6px 12px #00000029; */
   }
   #aeronautic-image,
@@ -1246,29 +1259,28 @@ h6 {
     flex: 1;
     background-color: lightblue;
   } */
-  .small-text {
-    font-size: 1rem;
-    padding: 0;
-    margin-top: 16px;
-    margin-bottom: 0;
-  }
   div.news {
     flex: 1;
     padding: 16px 16px;
     min-height: auto;
     border-radius: 0 25px 25px 0;
-    border-top: 2px solid var(--dark-blue);
+    border-top: 4px solid var(--dark-blue);
     border-left: none;
     border-right: 8px solid var(--dark-blue);
-    border-bottom: 8px solid var(--dark-blue);
+    border-bottom: 12px solid var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
-  div.news p {
+  #large-text p {
     font-size: 1.125rem;
   }
+  /* div.news p {
+    font-size: 1rem;
+  } */
   /* .angle-wrapper {
     display: none;
   } */
-
   img.mobile {
     display: none;
   }
@@ -1329,6 +1341,8 @@ h6 {
     height: 60px;
     align-items: center;
     justify-content: space-around;
+    border-right: 8px solid var(--dark-purple);
+    border-radius: 0 100px 0 0;
   }
   ul.mobile-menu {
     display: none;
@@ -1452,7 +1466,7 @@ border-right: 2px solid transparent; */
     flex: 1;
     padding: 16px 32px;
   }
-  div.news p {
+  #large-text p {
     font-size: 1.25rem;
   }
   figure.clubs img {
@@ -1522,8 +1536,7 @@ border-right: 2px solid transparent; */
   }
 }
 @media only screen and (min-width: 1300px) {
-  #energica-p1,
-  #energica-p2 {
+  div.news p {
     font-size: 1.125rem;
   }
 }
@@ -1548,11 +1561,10 @@ border-right: 2px solid transparent; */
     font-size: 1.875rem;
   }
   div.news p {
-    font-size: 1.5rem;
-  }
-  #energica-p1,
-  #energica-p2 {
     font-size: 1.25rem;
+  }
+  #large-text p {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -1568,5 +1580,12 @@ border-right: 2px solid transparent; */
 --------------------*/
   .color-box figcaption {
     font-size: 1.75rem;
+  }
+  h5 {
+    font-size: 2rem;
+    padding-bottom: 32px;
+  }
+  div.news p {
+    font-size: 1.5rem;
   }
 }

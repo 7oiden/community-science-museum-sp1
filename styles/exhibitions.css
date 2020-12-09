@@ -284,7 +284,7 @@ nav.icons {
 nav.menu {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 999;
   padding: 0;
   margin: 0;
   background-color: var(--magenta);
@@ -294,8 +294,6 @@ nav.menu {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0;
-  border-right: 8px solid var(--dark-purple);
-  border-radius: 0 100px 0 0;
 }
 header {
   display: inline;
@@ -521,18 +519,13 @@ h3 {
 }
 .image-wrapper figure {
   margin: 0;
-  transition-property: scale opacity z-index;
-  transition-duration: 0.5s;
-  scale: 1;
-  opacity: 0.65;
-  z-index: 1;
 }
-.image-wrapper figure:active {
+/* .image-wrapper figure:active {
   scale: 2;
   opacity: 1;
   z-index: 1000;
   position: absolute;
-}
+} */
 .image-wrapper div {
   border-radius: 15px;
 }
@@ -929,6 +922,8 @@ h6 {
     height: 60px;
     align-items: center;
     justify-content: space-around;
+    border-right: 4px solid var(--dark-purple);
+    border-radius: 0 70px 0 0;
   }
   ul.mobile-menu {
     display: none;
@@ -1074,10 +1069,10 @@ border-right: 2px solid transparent; */
     transition-property: scale opacity;
     transition-duration: 0.5s;
     scale: 1;
-    opacity: 0.65;
+    opacity: 0.75;
   }
   .image-wrapper figure:hover {
-    scale: 1.4;
+    scale: 1.3;
     opacity: 1;
     z-index: 100;
   }
@@ -1157,9 +1152,13 @@ border-right: 2px solid transparent; */
   }
   figure.card-large {
     display: block;
+    margin-top: 0;
+    margin-bottom: 96px;
   }
   div.card {
     min-width: 675px;
     height: 450px;
+    margin-top: 0;
+    margin-bottom: 96px;
   }
 }
