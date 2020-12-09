@@ -517,21 +517,21 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
-  transition-property: scale;
-  transition-duration: 0.5s;
-  scale: 1;
+  gap: 16px;
 }
 .image-wrapper figure {
   margin: 0;
-  transition-property: scale opacity;
+  transition-property: scale opacity z-index;
   transition-duration: 0.5s;
   scale: 1;
   opacity: 0.65;
+  z-index: 1;
 }
-.image-wrapper figure:hover {
-  scale: 1.1;
+.image-wrapper figure:active {
+  scale: 2;
   opacity: 1;
+  z-index: 1000;
+  position: absolute;
 }
 .image-wrapper div {
   border-radius: 15px;
@@ -766,6 +766,9 @@ h6 {
     width: 200px;
     height: 200px;
   }
+  .image-wrapper {
+    gap: 32px;
+  }
   section.newsletter {
     width: 70%;
   }
@@ -839,6 +842,8 @@ h6 {
   }
   figure.card-large {
     scale: 1;
+    margin-bottom: 16px;
+    margin-bottom: 64px;
   }
   .fa-arrow-circle-down {
     margin: 32px auto;
@@ -1063,8 +1068,18 @@ border-right: 2px solid transparent; */
   .photo-gallery img {
     width: 275px;
     height: 275px;
-    border-radius: 15px;
     /* opacity: 0.65; */
+  }
+  .image-wrapper figure {
+    transition-property: scale opacity;
+    transition-duration: 0.5s;
+    scale: 1;
+    opacity: 0.65;
+  }
+  .image-wrapper figure:hover {
+    scale: 1.4;
+    opacity: 1;
+    z-index: 100;
   }
   p.visit {
     width: 90%;
