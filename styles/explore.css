@@ -461,18 +461,22 @@ p.button {
   padding: 8px 32px;
   margin-top: 0;
   margin-bottom: 16px;
-  transition-property: background-color;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition-property: background-color scale;
   transition-duration: 0.5s;
+  scale: 1;
 }
 p.button:hover {
   background-color: #a2006780;
+  scale: 1.1;
 }
 /* section.newsletter {
   width: 100%;
   background-color: transparent;
 } */
 .newsletter-wrapper {
-  background-image: url(../images/newsletter.jpg);
+  background-image: url(../images/newsletter_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -493,7 +497,7 @@ section.newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   /* background-color: green; */
 }
 .newsletter p {
@@ -504,7 +508,6 @@ section.newsletter {
   text-transform: uppercase;
   text-align: left;
   min-width: 328px;
-  max-width: 400px;
   padding-top: 16px;
   margin: 0;
 }
@@ -733,6 +736,13 @@ h6 {
   section.newsletter {
     width: 50%;
   }
+  .newsletter-wrapper {
+    background-image: url(../images/newsletter.jpg);
+    height: 600px;
+  }
+  .blur {
+    top: 450px;
+  }
 
   /* Footer
 --------------------*/
@@ -912,7 +922,12 @@ border-right: 2px solid transparent; */
   .margins img {
     height: 480px;
   }
-
+  #item-3 {
+    background-image: url(../images/kids-cartoon_vertical.jpg);
+  }
+  #item-6 {
+    background-image: url(../images/researcher-cartoon_vertical.jpg);
+  }
   #item-1,
   #item-2,
   #item-4,
@@ -947,20 +962,19 @@ border-right: 2px solid transparent; */
   }
   section.newsletter {
     width: 100%;
-    flex-direction: row;
-    align-items: center;
     /* background-color: green; */
   }
+  .blur {
+    height: 200px;
+    top: 400px;
+  }
   .newsletter p {
-    min-width: 33%;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin-bottom: 16px;
-    margin-left: 10%;
+    margin-top: 64px;
   }
   form.newsletter {
     height: 60px;
-    margin-left: 10%;
   }
   #newsletter {
     font-size: 1.125rem;
@@ -990,6 +1004,15 @@ border-right: 2px solid transparent; */
   }
   .connect li {
     padding: 8px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #item-3 {
+    background-image: url(../images/kids-cartoon_large.jpg);
+  }
+  #item-6 {
+    background-image: url(../images/researcher-cartoon_large.jpg);
   }
 }
 @media only screen and (min-width: 1800px) {

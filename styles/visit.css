@@ -414,8 +414,9 @@ iframe {
   border: 6px solid grey;
 }
 div.facilities {
+  font-size: 1.125rem;
   width: 100%;
-  height: 250px;
+  height: 225px;
   color: #fff;
   margin-bottom: 16px;
   margin-top: 0;
@@ -443,14 +444,29 @@ div.facilities p {
 }
 figure.facilities {
   width: 100%;
-  height: 250px;
+  height: 300px;
   margin: 0 auto;
 }
-.facilities img {
+.item-1 {
+  background-image: url(../images/handicap.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item-3 {
+  background-image: url(../images/cafe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item-5 {
+  background-image: url(../images/shop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* .facilities img {
   width: 100%;
   height: 250px;
   margin: 0;
-}
+} */
 #accessibility {
   background-color: var(--orange);
 }
@@ -461,7 +477,7 @@ figure.facilities {
   background-color: var(--blue);
 }
 .newsletter-wrapper {
-  background-image: url(../images/newsletter.jpg);
+  background-image: url(../images/newsletter_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -482,7 +498,7 @@ section.newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   /* background-color: green; */
 }
 .newsletter p {
@@ -493,7 +509,6 @@ section.newsletter {
   text-transform: uppercase;
   text-align: left;
   min-width: 328px;
-  max-width: 400px;
   padding-top: 16px;
   margin: 0;
 }
@@ -635,7 +650,7 @@ h6 {
     font-size: 1.875rem;
     text-align: center;
   }
-  section.newsletter {
+  section {
     width: 70%;
   }
   #newsletter {
@@ -697,7 +712,11 @@ h6 {
   }
   /* Main
 --------------------*/
+  section.info {
+    width: 90%;
+  }
   section.facilities {
+    width: 90%;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
@@ -746,6 +765,13 @@ h6 {
   }
   section.newsletter {
     width: 50%;
+  }
+  .newsletter-wrapper {
+    background-image: url(../images/newsletter.jpg);
+    height: 600px;
+  }
+  .blur {
+    top: 450px;
   }
   /* Footer
 --------------------*/
@@ -926,12 +952,30 @@ border-right: 2px solid transparent; */
   h3 {
     font-size: 1.875rem;
   }
+  .facilities p {
+    font-size: 1.25rem;
+  }
   .hours-wrapper_2 li {
     font-size: 1.5rem;
   }
   #street,
   #postal {
     font-size: 1.25rem;
+  }
+  .item-1 {
+    background-image: url(../images/handicap_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .item-3 {
+    background-image: url(../images/cafe_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .item-5 {
+    background-image: url(../images/shop_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   /* newsletter
@@ -943,20 +987,19 @@ border-right: 2px solid transparent; */
   }
   section.newsletter {
     width: 100%;
-    flex-direction: row;
-    align-items: center;
     /* background-color: green; */
   }
+  .blur {
+    height: 200px;
+    top: 400px;
+  }
   .newsletter p {
-    min-width: 33%;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin-bottom: 16px;
-    margin-left: 10%;
+    margin-top: 64px;
   }
   form.newsletter {
     height: 60px;
-    margin-left: 10%;
   }
   #newsletter {
     font-size: 1.125rem;
@@ -986,6 +1029,14 @@ border-right: 2px solid transparent; */
   }
   .connect li {
     padding: 8px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  div.facilities {
+    height: 350px;
+  }
+  figure.facilities {
+    height: 350px;
   }
 }
 @media only screen and (min-width: 1800px) {

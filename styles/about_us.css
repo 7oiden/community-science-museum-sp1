@@ -502,7 +502,7 @@ p.tourguides {
   border-radius: 50px 0 0 0;
 }
 .newsletter-wrapper {
-  background-image: url(../images/newsletter.jpg);
+  background-image: url(../images/newsletter_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -523,7 +523,7 @@ section.newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   /* background-color: green; */
 }
 .newsletter p {
@@ -534,7 +534,6 @@ section.newsletter {
   text-transform: uppercase;
   text-align: left;
   min-width: 328px;
-  max-width: 400px;
   padding-top: 16px;
   margin: 0;
 }
@@ -761,6 +760,13 @@ h6 {
   }
   section.newsletter {
     width: 50%;
+  }
+  .newsletter-wrapper {
+    background-image: url(../images/newsletter.jpg);
+    height: 600px;
+  }
+  .blur {
+    top: 450px;
   }
 
   /* Footer
@@ -997,20 +1003,19 @@ border-right: 2px solid transparent; */
   }
   section.newsletter {
     width: 100%;
-    flex-direction: row;
-    align-items: center;
     /* background-color: green; */
   }
+  .blur {
+    height: 200px;
+    top: 400px;
+  }
   .newsletter p {
-    min-width: 33%;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin-bottom: 16px;
-    margin-left: 10%;
+    margin-top: 64px;
   }
   form.newsletter {
     height: 60px;
-    margin-left: 10%;
   }
   #newsletter {
     font-size: 1.125rem;

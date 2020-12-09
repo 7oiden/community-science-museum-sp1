@@ -418,6 +418,8 @@ p.button {
   padding: 8px 32px;
   margin-bottom: 10%;
   margin-top: 5%;
+  /* border-bottom: 4px solid #ffffff59;
+  border-right: 2px solid #ffffff59; */
   transition-property: scale;
   transition-duration: 0.5s;
   scale: 1;
@@ -468,6 +470,8 @@ p.button::after {
   width: 300px;
   min-height: 150px;
   margin: 12% auto 0 auto;
+  border-bottom: 6px solid var(--dark-purple);
+  border-right: 4px solid var(--dark-purple);
   border-radius: 50px;
   transition-property: scale;
   transition-duration: 0.5s;
@@ -818,7 +822,7 @@ h6 {
   /* background-color: limegreen; */
 }
 .newsletter-wrapper {
-  background-image: url(../images/newsletter.jpg);
+  background-image: url(../images/newsletter_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -839,18 +843,19 @@ section.newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   /* background-color: green; */
 }
 .newsletter p {
   display: block;
   font-family: var(--neue-haas);
   font-size: 0.875rem;
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
   min-width: 328px;
-  max-width: 400px;
+  /* max-width: 400px; */
   padding-top: 16px;
   margin: 0;
 }
@@ -1140,6 +1145,13 @@ h6 {
   }
   section.newsletter {
     width: 50%;
+  }
+  .newsletter-wrapper {
+    background-image: url(../images/newsletter.jpg);
+    height: 600px;
+  }
+  .blur {
+    top: 450px;
   }
   /* Footer
 --------------------*/
@@ -1490,20 +1502,22 @@ border-right: 2px solid transparent; */
   }
   section.newsletter {
     width: 100%;
-    flex-direction: row;
-    align-items: center;
+    /* flex-direction: row;
+    align-items: center; */
     /* background-color: green; */
   }
+  .blur {
+    height: 200px;
+    top: 400px;
+  }
   .newsletter p {
-    min-width: 33%;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin-bottom: 16px;
-    margin-left: 10%;
+    margin-top: 64px;
   }
   form.newsletter {
     height: 60px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
   }
   #newsletter {
     font-size: 1.125rem;
