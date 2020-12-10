@@ -54,8 +54,8 @@ span {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple);
+  /* border-left: 2px solid var(--dark-purple);
+  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
@@ -105,8 +105,8 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple);
+  /* border-left: 2px solid var(--dark-purple);
+  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
@@ -183,8 +183,8 @@ button.ticket:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple);
+  /* border-left: 2px solid var(--dark-purple);
+  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
@@ -361,11 +361,23 @@ section.main-content {
   width: 90%;
   margin: 0 auto;
 }
+#cosmology-anchor,
+#evolution-anchor,
+#biology-anchor,
+#robotics-anchor,
+#ecology-anchor {
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
 .card-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
+}
+#card-wrapper-cosmology {
+  margin-top: 32px;
 }
 h1.large-screen {
   display: none;
@@ -448,6 +460,9 @@ div.card {
   margin-top: 64px;
   /* padding-bottom: 16px; */
 }
+#card-wrapper-cosmology > .card {
+  margin-top: 16px;
+}
 div.card p {
   /* font-family: var(--neue-haas); */
   width: 90%;
@@ -483,7 +498,7 @@ div.background {
   /* background-position-y: center; */
 }
 .cosmology {
-  background-image: url(../images/icons/tellus.png);
+  background-image: url(../images/icons/planet.png);
 }
 .evolution {
   background-image: url(../images/icons/dna.png);
@@ -611,12 +626,6 @@ form.newsletter {
   color: #fff;
   flex: 1;
   cursor: pointer;
-  transition-property: opacity;
-  transition-duration: 0.5s;
-  opacity: 1;
-}
-#sign-up:hover {
-  opacity: 0.65;
 }
 
 /* footer 
@@ -735,6 +744,9 @@ h6 {
     font-size: 1.5rem;
     text-align: center;
   }
+  #card-wrapper-cosmology > .card {
+    margin-top: 0;
+  }
   div.card p {
     font-size: 1.25rem;
   }
@@ -759,6 +771,7 @@ h6 {
   }
   div.background {
     background-size: 40%;
+    margin-top: 32px;
   }
   .photo-gallery img {
     width: 200px;
@@ -780,6 +793,7 @@ h6 {
     height: 45px;
     border-radius: 0 25px 25px 0;
   }
+
   /* Footer
 --------------------*/
 }
@@ -836,6 +850,9 @@ h6 {
   }
   .card-wrapper {
     margin-bottom: 64px;
+  }
+  #card-wrapper-cosmology > .card {
+    margin-top: 32px;
   }
   div.card {
     scale: 1;
@@ -985,8 +1002,8 @@ border-right: 2px solid transparent; */
     color: #000;
     position: absolute;
     left: 0;
-    border-left: 2px solid var(--dark-purple);
-    border-right: 2px solid var(--dark-purple);
+    /* border-left: 2px solid var(--dark-purple);
+    border-right: 2px solid var(--dark-purple); */
     border-bottom: 8px solid var(--dark-purple);
     border-radius: 0 0 70px 0;
     visibility: hidden;
@@ -1008,9 +1025,6 @@ border-right: 2px solid transparent; */
   }
   /* Main
 --------------------*/
-  section.main-content {
-    padding-top: 32px;
-  }
   h1.mobile {
     display: none;
   }
@@ -1027,7 +1041,7 @@ border-right: 2px solid transparent; */
     flex-direction: row;
     justify-content: space-evenly;
     /* background-color: lightblue; */
-    margin: 64px auto;
+    margin: 96px auto;
   }
   div.card {
     min-width: 450px;
@@ -1052,6 +1066,7 @@ border-right: 2px solid transparent; */
   div.background {
     background-size: contain;
     height: 300px;
+    margin-top: 32px;
   }
   div.reverse {
     order: 3;
@@ -1121,8 +1136,14 @@ border-right: 2px solid transparent; */
   }
   #sign-up {
     font-family: var(--sofia);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     height: 60px;
+    transition-property: font-size background-color;
+    transition-duration: 0.5s;
+  }
+  #sign-up:hover {
+    font-size: 1.65rem;
+    background-color: #210759d9;
   }
   /* Footer
 --------------------*/

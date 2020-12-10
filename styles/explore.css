@@ -49,8 +49,8 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple);
+  /* border-left: 2px solid var(--dark-purple);
+  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
@@ -100,8 +100,8 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple);
+  /* border-left: 2px solid var(--dark-purple);
+  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
@@ -178,8 +178,8 @@ button.ticket:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple);
+  /* border-left: 2px solid var(--dark-purple);
+  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
 }
@@ -409,6 +409,11 @@ h5 {
   margin-top: 24px;
   margin-bottom: 0;
 }
+#club-anchor {
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+}
 #item-2 p {
   margin-top: 8px;
 }
@@ -463,12 +468,11 @@ p.button {
   margin-bottom: 16px;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
-  transition-property: background-color scale;
+  transition-property: scale;
   transition-duration: 0.5s;
   scale: 1;
 }
 p.button:hover {
-  background-color: #a2006780;
   scale: 1.1;
 }
 /* section.newsletter {
@@ -538,14 +542,7 @@ form.newsletter {
   color: #fff;
   flex: 1;
   cursor: pointer;
-  transition-property: opacity;
-  transition-duration: 0.5s;
-  opacity: 1;
 }
-#sign-up:hover {
-  opacity: 0.65;
-}
-
 /* footer 
 --------------------*/
 footer {
@@ -861,8 +858,8 @@ border-right: 2px solid transparent; */
     color: #000;
     position: absolute;
     left: 0;
-    border-left: 2px solid var(--dark-purple);
-    border-right: 2px solid var(--dark-purple);
+    /* border-left: 2px solid var(--dark-purple);
+    border-right: 2px solid var(--dark-purple); */
     border-bottom: 8px solid var(--dark-purple);
     border-radius: 0 0 70px 0;
     visibility: hidden;
@@ -984,8 +981,14 @@ border-right: 2px solid transparent; */
   }
   #sign-up {
     font-family: var(--sofia);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     height: 60px;
+    transition-property: font-size background-color;
+    transition-duration: 0.5s;
+  }
+  #sign-up:hover {
+    font-size: 1.65rem;
+    background-color: #210759d9;
   }
   /* Footer
 --------------------*/
