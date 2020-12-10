@@ -1003,14 +1003,8 @@ border-right: 2px solid transparent; */
   }
   #sign-up {
     font-family: var(--sofia);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     height: 60px;
-    transition-property: font-size background-color;
-    transition-duration: 0.5s;
-  }
-  #sign-up:hover {
-    font-size: 1.65rem;
-    background-color: #210759d9;
   }
   /* Footer
 --------------------*/

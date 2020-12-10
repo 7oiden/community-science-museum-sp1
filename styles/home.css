@@ -1474,6 +1474,9 @@ border-right: 2px solid transparent; */
   h2 {
     font-size: 2.25rem;
   }
+  .bubble {
+    margin-top: 150px;
+  }
   .clock {
     font-size: 1.5rem;
   }
