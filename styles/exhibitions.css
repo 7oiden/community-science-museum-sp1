@@ -408,13 +408,12 @@ figure.arrow-down {
   margin: 32px auto;
 }
 img.arrow-down {
-  width: 100%;
-  height: 100%;
-}
-figure.arrow-left-right {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+}
+figure.arrow-left-right {
+  width: 90px;
+  height: 90px;
   display: none;
 }
 img.arrow-left-right {
@@ -1037,6 +1036,9 @@ border-right: 2px solid transparent; */
     text-align: center;
     border-radius: 0;
   }
+  #card-wrapper-cosmology {
+    margin-top: 32px;
+  }
   .card-wrapper {
     flex-direction: row;
     justify-content: space-evenly;
@@ -1164,6 +1166,23 @@ border-right: 2px solid transparent; */
     padding: 8px;
   }
 }
+@media only screen and (min-width: 1700px) {
+  /* Main
+--------------------*/
+  figure.card {
+    display: none;
+  }
+  figure.card-large {
+    display: block;
+  }
+  div.card {
+    min-width: 675px;
+    height: 450px;
+  }
+  #astronaut {
+    margin-top: 32px;
+  }
+}
 @media only screen and (min-width: 1800px) {
   /* Header
 --------------------*/
@@ -1172,19 +1191,5 @@ border-right: 2px solid transparent; */
   }
   .dropdown-info {
     width: 320px;
-  }
-  /* Main
---------------------*/
-  figure.card {
-    display: none;
-  }
-  figure.card-large {
-    display: block;
-    margin-top: 0;
-  }
-  div.card {
-    min-width: 675px;
-    height: 450px;
-    margin-top: 0;
   }
 }
