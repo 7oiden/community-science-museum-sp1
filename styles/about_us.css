@@ -670,6 +670,7 @@ h6 {
   .ticket-dropdown,
   .profile-dropdown {
     width: 400px;
+    top: 145px;
   }
   /* Main
 --------------------*/
