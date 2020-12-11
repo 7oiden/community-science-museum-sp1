@@ -489,7 +489,7 @@ div.ticketmaster {
   scale: 1;
 }
 .bubble:hover {
-  scale: 1.05;
+  scale: 1.1;
 }
 .bubble a {
   color: var(--dark-purple);

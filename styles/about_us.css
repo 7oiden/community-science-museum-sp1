@@ -393,6 +393,9 @@ div.item-1 {
   color: #fff;
   /* border-radius: 15px 0 0 0; */
 }
+#hours {
+  background-color: var(--dark-purple);
+}
 div.vision p {
   width: 90%;
   margin: 0 auto;
@@ -970,6 +973,11 @@ border-right: 2px solid transparent; */
   .item-1 p {
     font-size: 1.125rem;
   }
+  .item-3,
+  .item-4,
+  .item-5 {
+    font-size: 1.125rem;
+  }
   .get-in-touch {
     flex-direction: row;
     align-items: baseline;
@@ -1072,11 +1080,6 @@ border-right: 2px solid transparent; */
       "paragraph-1 paragraph-3 image"
       "paragraph-1 paragraph-3 image";
   }
-  .item-3,
-  .item-4,
-  .item-5 {
-    font-size: 1.125rem;
-  }
 }
 @media only screen and (min-width: 1800px) {
   /* Header
@@ -1089,4 +1092,12 @@ border-right: 2px solid transparent; */
   }
   /* Main
 --------------------*/
+  .item-1 p {
+    font-size: 1.25rem;
+  }
+  .item-3,
+  .item-4,
+  .item-5 {
+    font-size: 1.25rem;
+  }
 }

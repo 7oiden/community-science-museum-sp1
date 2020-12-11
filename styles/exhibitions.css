@@ -861,6 +861,7 @@ h6 {
   }
   figure.card-large {
     scale: 1;
+    margin-top: 16px;
     /* margin-bottom: 16px;
     margin-bottom: 64px; */
   }

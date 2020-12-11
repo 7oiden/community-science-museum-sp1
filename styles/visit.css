@@ -427,6 +427,10 @@ div.facilities p {
   margin: 0 auto;
   padding-bottom: 16px;
 }
+/* #hours {
+  background-color: var(--purple);
+  color: #fff;
+} */
 .hours-wrapper_2 {
   display: flex;
   justify-content: flex-start;
