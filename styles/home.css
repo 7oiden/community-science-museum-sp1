@@ -358,8 +358,18 @@ main {
   width: 100%;
   color: var(--white);
   background-image: url(../images/robot-main_mobile.jpg);
-  background-size: contain;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 100px;
+}
+.background-container-2 {
+  width: 100%;
+  color: var(--white);
+  background-image: url(../images/gradient-bg_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 0;
 }
 .main-wrapper {
@@ -383,7 +393,7 @@ h1 {
 }
 h2 {
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   /* background-color: green; */
   margin-bottom: 0;
@@ -416,10 +426,9 @@ p.button {
   background-color: var(--dark-purple);
   color: var(--white);
   padding: 8px 32px;
-  margin-bottom: 10%;
-  margin-top: 5%;
-  /* border-bottom: 4px solid #ffffff59;
-  border-right: 2px solid #ffffff59; */
+  margin-top: 50px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   transition-property: scale;
   transition-duration: 0.5s;
   scale: 1;
@@ -429,6 +438,10 @@ p.button:hover {
 }
 p.button::after {
   content: "\002A";
+}
+div.ticketmaster {
+  display: flex;
+  flex-direction: column;
 }
 .clock span {
   margin-right: 15px;
@@ -469,7 +482,7 @@ p.button::after {
   width: 300px;
   width: 300px;
   min-height: 150px;
-  margin: 12% auto 0 auto;
+  margin: 0 auto 0 auto;
   border-radius: 50px;
   transition-property: scale;
   transition-duration: 0.5s;
@@ -522,7 +535,8 @@ h3::after {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin: 70px auto 32px auto;
+  margin: 0 auto 32px auto;
+  padding-top: 32px;
 }
 .color-box {
   color: var(--white);
@@ -1033,7 +1047,9 @@ h6 {
 --------------------*/
   .background-container {
     background-image: url(../images/robot-main_tablet.jpg);
-    background-size: contain;
+  }
+  .background-container-2 {
+    background-image: url(../images/gradient-bg_tablet.jpg);
   }
   h1 {
     font-size: 2.75rem;
@@ -1052,7 +1068,8 @@ h6 {
     font-size: 1.75rem;
   }
   .bubble {
-    bottom: 120px;
+    bottom: 30px;
+    right: 20px;
   }
   h4 {
     font-size: 1.5rem;
@@ -1133,7 +1150,9 @@ h6 {
 --------------------*/
   .background-container {
     background-image: url(../images/robot-main_medium.jpg);
-    background-size: contain;
+  }
+  .background-container-2 {
+    background-image: url(../images/gradient-bg_medium.jpg);
   }
   .main-wrapper {
     width: 90%;
@@ -1225,8 +1244,10 @@ h6 {
     margin-right: 50px;
   }
   .background-container {
-    background-image: url(../images/robot-main.jpg);
-    background-size: contain;
+    background-image: url(../images/robot-main_large.jpg);
+  }
+  .background-container-2 {
+    background-image: url(../images/gradient-bg_large.jpg);
   }
   h1 {
     font-size: 3.5rem;
@@ -1453,6 +1474,10 @@ border-right: 2px solid transparent; */
     visibility: visible;
     opacity: 1;
     display: block;
+    cursor: pointer;
+  }
+  .dropdown-info:hover ~ .inactive {
+    background-color: var(--dark-purple);
   }
   p.header {
     font-family: var(--proxima);
@@ -1496,7 +1521,6 @@ border-right: 2px solid transparent; */
     gap: 16px;
   }
   .color-box {
-    margin-top: 140px;
     height: 220px;
   }
   .color-box span {
@@ -1613,6 +1637,15 @@ border-right: 2px solid transparent; */
 @media only screen and (min-width: 1600px) {
   /* Main
 --------------------*/
+  .background-container {
+    background-image: url(../images/robot-main_extralarge.jpg);
+  }
+  .background-container-2 {
+    background-image: url(../images/gradient-bg_extralarge.jpg);
+  }
+  /* .background-container {
+    padding-bottom: 200px;
+  } */
   #planet {
     width: 64px;
     height: 64px;
