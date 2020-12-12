@@ -1135,6 +1135,7 @@ h6 {
     top: 113.5px;
     margin-right: 236px;
     right: 5%;
+    left: auto;
   }
   .ticket-dropdown {
     width: 400px;
@@ -1418,7 +1419,7 @@ h6 {
     top: 128px;
     margin-right: 288px;
     right: 5%;
-    left: auto;
+    /* left: auto; */
   }
   .ticket-dropdown {
     top: 128px;

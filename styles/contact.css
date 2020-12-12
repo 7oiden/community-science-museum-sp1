@@ -430,12 +430,13 @@ button {
   margin: 16px auto 50px auto;
   border: none;
   border-radius: 15px;
-  transition-property: background-color;
+  transition-property: scale;
   transition-duration: 0.5s;
   cursor: pointer;
+  scale: 1;
 }
 button:hover {
-  background-color: #a20067a6;
+  scale: 1.1;
 }
 h2 {
   font-family: var(--proxima);
