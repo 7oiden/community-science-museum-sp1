@@ -392,6 +392,7 @@ div.vision {
 }
 div.item-1 {
   font-family: var(--sofia);
+  font-weight: 600;
   background-color: var(--blue);
   color: #fff;
   /* border-radius: 15px 0 0 0; */
@@ -419,7 +420,7 @@ img.large-screen {
   margin: 16px auto;
   background-color: #7c68a6;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   text-align: center;
   border-radius: 0 50px;
   display: flex;
@@ -441,7 +442,7 @@ p.button {
   padding: 8px 32px;
   margin-top: 0;
   margin-bottom: 16px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #fff;
   border-right: 2px solid #fff;
   transition-property: scale;
   transition-duration: 0.5s;
@@ -505,7 +506,7 @@ p.tourguides {
   font-size: 1.125rem;
   font-style: italic;
   text-align: center;
-  background-color: var(--light-purple);
+  background-color: var(--purple);
   color: #fff;
   padding: 12px 32px;
   margin-bottom: 16px;
@@ -521,7 +522,7 @@ p.tourguides {
   margin-bottom: 0;
 }
 .blur {
-  background-color: #ffffffa6;
+  background-color: #ffffffbf;
   margin-bottom: 0;
   height: 150px;
   position: relative;

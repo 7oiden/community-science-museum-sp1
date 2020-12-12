@@ -374,6 +374,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0;
+  /* border-top: 10px solid var(--dark-purple); */
 }
 .main-wrapper {
   width: 90%;
@@ -396,7 +397,7 @@ h1 {
 }
 h2 {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   /* background-color: green; */
   margin-bottom: 0;
@@ -430,7 +431,7 @@ p.button {
   color: var(--white);
   padding: 8px 32px;
   margin-top: 50px;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   border-right: 2px solid #ffffff;
   transition-property: scale;
   transition-duration: 0.5s;
@@ -871,7 +872,7 @@ figcaption.clubs {
 .clubs p {
   font-size: 1.125rem;
   margin: 0 0 0 16px;
-  background-color: var(--light-purple);
+  background-color: var(--purple);
   color: #fff;
   padding: 12px;
   border-radius: 50px 0 0 0;
@@ -893,7 +894,7 @@ h6 {
   margin-bottom: 0;
 }
 .blur {
-  background-color: #ffffffa6;
+  background-color: #ffffffbf;
   margin-bottom: 0;
   height: 150px;
   position: relative;

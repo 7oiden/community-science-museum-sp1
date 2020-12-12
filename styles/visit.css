@@ -375,15 +375,15 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px 5%;
-  margin: 32px 5% 16px 0;
-  border-radius: 0 0 50px 0;
+  margin: 8px 0 16px 0;
+  /* border-radius: 0 0 50px 0; */
 }
 h4 {
   font-size: 1.25rem;
   font-weight: 800;
-  font-family: var(--sofia);
+  font-family: var(--proxima);
   color: var(--dark-purple);
-  margin: 0 5% 32px 5%;
+  margin: 8px 5% 32px 5%;
   text-transform: capitalize;
 }
 h2,
@@ -484,7 +484,7 @@ figure.facilities {
   margin: 0;
 } */
 #accessibility {
-  background-color: var(--orange);
+  background-color: var(--dark-blue);
 }
 #food-drink {
   background-color: var(--dark-green);
@@ -501,7 +501,7 @@ figure.facilities {
   margin-bottom: 0;
 }
 .blur {
-  background-color: #ffffffa6;
+  background-color: #ffffffbf;
   margin-bottom: 0;
   height: 150px;
   position: relative;
@@ -657,12 +657,12 @@ h6 {
   }
   /* Main
 --------------------*/
-  h1 {
+  /* h1 {
     font-size: 1.875rem;
-  }
-  h4 {
+  } */
+  /* h4 {
     font-size: 1.5rem;
-  }
+  } */
   section {
     width: 70%;
   }
@@ -1026,8 +1026,14 @@ border-right: 2px solid transparent; */
   }
   #sign-up {
     font-family: var(--sofia);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     height: 60px;
+    transition-property: font-size background-color;
+    transition-duration: 0.5s;
+  }
+  #sign-up:hover {
+    font-size: 1.65rem;
+    background-color: #210759d9;
   }
   /* Footer
 --------------------*/

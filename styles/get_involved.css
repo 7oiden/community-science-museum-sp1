@@ -375,15 +375,15 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px 5%;
-  margin: 32px 5% 16px 0;
-  border-radius: 0 0 50px 0;
+  margin: 8px 0 16px 0;
+  /* border-radius: 0 0 50px 0; */
 }
 h4 {
   font-size: 1.25rem;
   font-weight: 800;
-  font-family: var(--sofia);
+  font-family: var(--proxima);
   color: var(--dark-purple);
-  margin: 0 5% 32px 5%;
+  margin: 8px 5% 32px 5%;
   text-transform: capitalize;
 }
 h2 {
@@ -407,7 +407,7 @@ div.support p {
   margin: 0 auto;
   background-color: #7c68a6;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   text-align: center;
   border-radius: 0 50px;
   display: flex;
@@ -429,7 +429,7 @@ p.button {
   padding: 8px 32px;
   margin-top: 0;
   margin-bottom: 16px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #fff;
   border-right: 2px solid #fff;
   transition-property: scale;
   transition-duration: 0.5s;
@@ -447,7 +447,7 @@ p.button:hover {
   margin-bottom: 0;
 }
 .blur {
-  background-color: #ffffffa6;
+  background-color: #ffffffbf;
   margin-bottom: 0;
   height: 150px;
   position: relative;
@@ -602,12 +602,12 @@ h6 {
   }
   /* Main
 --------------------*/
-  h1 {
+  /* h1 {
     font-size: 1.875rem;
-  }
-  h4 {
+  } */
+  /* h4 {
     font-size: 1.5rem;
-  }
+  } */
   section.newsletter {
     width: 70%;
   }

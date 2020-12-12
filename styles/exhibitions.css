@@ -394,15 +394,15 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px 5%;
-  margin: 32px 5% 16px 0;
-  border-radius: 0 0 50px 0;
+  margin: 8px 0 16px 0;
+  /* border-radius: 0 0 50px 0; */
 }
 h4 {
   font-size: 1.25rem;
   font-weight: 800;
-  font-family: var(--sofia);
+  font-family: var(--proxima);
   color: var(--dark-purple);
-  margin: 0 5%;
+  margin: 8px 5% 32px 5%;
   text-transform: capitalize;
 }
 h2 {
@@ -566,7 +566,7 @@ p.visit {
   font-family: var(--sofia);
   font-size: 1.125rem;
   font-style: italic;
-  background-color: var(--light-purple);
+  background-color: var(--purple);
   color: #fff;
   padding: 12px 16px;
   margin-bottom: 16px;
@@ -582,7 +582,7 @@ p.visit {
   margin-bottom: 0;
 }
 .blur {
-  background-color: #ffffffa6;
+  background-color: #ffffffbf;
   margin-bottom: 0;
   height: 150px;
   position: relative;
@@ -740,10 +740,9 @@ h6 {
 
   /* Main
 --------------------*/
-  h1 {
+  /* h1 {
     font-size: 1.875rem;
-    /* text-align: center; */
-  }
+  } */
   h4 {
     font-size: 1.5rem;
   }
@@ -855,9 +854,9 @@ h6 {
   }
   /* Main
 --------------------*/
-  h1 {
+  /* h1 {
     font-size: 2.25rem;
-  }
+  } */
   .card-wrapper {
     margin-bottom: 64px;
   }
