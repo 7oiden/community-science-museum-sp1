@@ -705,12 +705,7 @@ h6 {
   /* Header
 --------------------*/
   .logo {
-    width: 350px;
-    margin-left: 32px;
     margin-top: 16px;
-  }
-  .logo img {
-    width: 350px;
   }
   .header-wrapper {
     width: 90%;
@@ -799,6 +794,14 @@ h6 {
   }
 }
 @media only screen and (min-width: 992px) {
+  /* Header
+--------------------*/
+  .logo {
+    width: 350px;
+  }
+  .logo img {
+    width: 350px;
+  }
   /* Main
 --------------------*/
   section {
