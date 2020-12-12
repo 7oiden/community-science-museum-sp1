@@ -392,9 +392,11 @@ div.vision {
 }
 div.item-1 {
   font-family: var(--sofia);
+  font-size: 1.125rem;
   font-weight: 600;
   background-color: var(--blue);
   color: #fff;
+
   /* border-radius: 15px 0 0 0; */
 }
 div.vision p {
@@ -496,7 +498,7 @@ h4 {
   border-radius: 0 0 50px 0;
 }
 h5 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin-left: 5%;
   margin-bottom: 8px;
   margin-top: 0;
@@ -808,6 +810,9 @@ h6 {
   section {
     width: 90%;
   }
+  div.vision {
+    font-size: 1.125rem;
+  }
   .get-in-touch {
     width: 90%;
   }
@@ -975,14 +980,14 @@ border-right: 2px solid transparent; */
   h5 {
     font-size: 1.25rem;
   }
-  .item-1 p {
+  /* .item-1 p {
     font-size: 1.125rem;
   }
   .item-3,
   .item-4,
   .item-5 {
     font-size: 1.125rem;
-  }
+  } */
   .get-in-touch {
     flex-direction: row;
     align-items: baseline;
