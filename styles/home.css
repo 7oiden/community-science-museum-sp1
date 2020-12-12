@@ -1181,6 +1181,9 @@ h6 {
     bottom: 0;
     scale: 0.8;
   }
+  .bubble:hover {
+    scale: 0.9;
+  }
   #about {
     padding-bottom: 32px;
   }
@@ -1271,7 +1274,6 @@ h6 {
   }
   .bubble {
     margin-top: 100px;
-    scale: 1;
     left: 20px;
   }
   .clock {
@@ -1518,6 +1520,10 @@ border-right: 2px solid transparent; */
   }
   .bubble {
     margin-top: 150px;
+    scale: 1;
+  }
+  .bubble:hover {
+    scale: 1.1;
   }
   .clock {
     font-size: 1.5rem;

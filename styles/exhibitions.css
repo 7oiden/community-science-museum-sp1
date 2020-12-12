@@ -394,8 +394,16 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px 5%;
-  margin: 32px 5% 32px 0;
+  margin: 32px 5% 16px 0;
   border-radius: 0 0 50px 0;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-family: var(--sofia);
+  color: var(--dark-purple);
+  margin: 0 5%;
+  text-transform: capitalize;
 }
 h2 {
   text-align: center;
@@ -734,7 +742,10 @@ h6 {
 --------------------*/
   h1 {
     font-size: 1.875rem;
-    text-align: center;
+    /* text-align: center; */
+  }
+  h4 {
+    font-size: 1.5rem;
   }
   h2 {
     font-size: 2.25rem;
@@ -1036,6 +1047,9 @@ border-right: 2px solid transparent; */
   /* Main
 --------------------*/
   h1.mobile {
+    display: none;
+  }
+  h4 {
     display: none;
   }
   h1.large-screen {
