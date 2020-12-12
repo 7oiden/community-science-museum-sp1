@@ -53,6 +53,7 @@ a {
   border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
+  box-shadow: 6px 6px 12px 12px #00000029;
 }
 .search-header {
   z-index: 1000;
@@ -104,6 +105,7 @@ form {
   border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
+  box-shadow: 6px 6px 12px 12px #00000029;
 }
 .ticket-header {
   z-index: 1000;
@@ -147,12 +149,12 @@ button.ticket {
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  transition-property: opacity;
+  transition-property: scale;
   transition-duration: 0.5s;
-  opacity: 1;
+  scale: 1;
 }
 button.ticket:hover {
-  opacity: 0.65;
+  scale: 1.1;
 }
 #ticket-box {
   display: none;
@@ -182,6 +184,7 @@ button.ticket:hover {
   border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
+  box-shadow: 6px 6px 12px 12px #00000029;
 }
 .profile-header {
   z-index: 1000;
@@ -222,12 +225,12 @@ button.profile {
   margin: 16px auto 50px auto;
   border: none;
   border-radius: 15px;
-  transition-property: opacity;
+  transition-property: scale;
   transition-duration: 0.5s;
-  opacity: 1;
+  scale: 1;
 }
 button.profile:hover {
-  opacity: 0.65;
+  scale: 1.1;
 }
 #profile-box {
   display: none;
@@ -444,7 +447,7 @@ figure {
   color: #fff;
   font-size: 1.125rem;
   text-align: center;
-  border-radius: 0 25px 0 25px;
+  border-radius: 0 50px;
   display: flex;
   flex-direction: column;
   margin-top: 16px;
@@ -453,7 +456,7 @@ figure {
 .get-in-touch > p {
   font-family: var(--proxima);
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin: 16px 0;
 }
 p.button {
@@ -484,7 +487,7 @@ p.button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
-  margin-top: 32px;
+  margin-top: 64px;
   margin-bottom: 0;
 }
 .blur {
@@ -508,7 +511,7 @@ section.newsletter {
   display: block;
   font-family: var(--neue-haas);
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
   text-align: left;
   min-width: 328px;
@@ -647,6 +650,10 @@ h6 {
     font-size: 1.875rem;
     text-align: center;
   }
+  #item-3,
+  #item-6 {
+    min-height: 400px;
+  }
   section.newsletter {
     width: 70%;
   }
@@ -665,12 +672,12 @@ h6 {
   /* Header
 --------------------*/
   .logo {
-    width: 300px;
+    width: 400px;
     margin-left: 32px;
     margin-top: 16px;
   }
   .logo img {
-    width: 300px;
+    width: 400px;
   }
   .header-wrapper {
     width: 90%;
@@ -722,6 +729,7 @@ h6 {
   #item-3,
   #item-6 {
     min-width: 300px;
+    min-height: 450px;
     flex: 1;
     margin-top: 0;
   }
@@ -785,7 +793,7 @@ h6 {
 --------------------*/
   .logo {
     width: 500px;
-    margin-left: 128px;
+    margin-left: 5%;
   }
   .logo img {
     width: 500px;
@@ -863,6 +871,7 @@ border-right: 2px solid transparent; */
     border-right: 2px solid var(--dark-purple); */
     border-bottom: 8px solid var(--dark-purple);
     border-radius: 0 0 70px 0;
+    box-shadow: 6px 6px 12px 12px #00000029;
     visibility: hidden;
     opacity: 0;
     display: none;
@@ -949,13 +958,13 @@ border-right: 2px solid transparent; */
     font-size: 1.5rem;
   }
   p.button {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
   /* newsletter
 --------------------*/
   .newsletter-wrapper {
     width: 90%;
-    margin: 64px auto 32px auto;
+    margin: 128px auto 32px auto;
     border-radius: 0 0 50px 50px;
   }
   section.newsletter {
@@ -968,7 +977,6 @@ border-right: 2px solid transparent; */
   }
   .newsletter p {
     font-size: 1.25rem;
-    text-transform: uppercase;
     margin-top: 64px;
   }
   form.newsletter {
