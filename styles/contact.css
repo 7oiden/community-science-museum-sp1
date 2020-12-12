@@ -648,12 +648,12 @@ h6 {
   /* Header
 --------------------*/
   .logo {
-    width: 400px;
+    width: 350px;
     margin-left: 32px;
     margin-top: 16px;
   }
   .logo img {
-    width: 400px;
+    width: 350px;
   }
   .header-wrapper {
     width: 90%;
