@@ -41,7 +41,6 @@ span {
 .icons label {
   display: block;
 }
-/* search-dropdown */
 .search-label {
   cursor: pointer;
 }
@@ -54,8 +53,6 @@ span {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -106,8 +103,6 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -185,8 +180,6 @@ button.ticket:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -265,7 +258,6 @@ nav.icons {
   justify-content: space-around;
   width: 100%;
   margin: 16px 0;
-  /* background-color: aqua; */
 }
 .icon {
   color: var(--dark-purple);
@@ -279,11 +271,6 @@ nav.icons {
 .icons li {
   list-style: none;
 }
-/* .white-box {
-  background-color: #ffffff;
-  width: 100%;
-  height: 62px;
-} */
 nav.menu {
   position: sticky;
   top: 0;
@@ -306,7 +293,6 @@ header {
   font-size: 1.875rem;
 }
 ul.mobile-menu {
-  /* background-color: navy; */
   margin: 0 0 0 2rem;
   padding: 0;
 }
@@ -377,7 +363,6 @@ section.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 #card-wrapper-cosmology {
   margin-top: 32px;
@@ -395,7 +380,6 @@ h1 {
   color: #fff;
   padding: 12px 5%;
   margin: 8px 0 16px 0;
-  /* border-radius: 0 0 50px 0; */
 }
 h4 {
   font-size: 1.25rem;
@@ -468,13 +452,11 @@ div.card {
   border-radius: 25px;
   box-shadow: 0 6px 12px #00000029;
   margin-top: 64px;
-  /* padding-bottom: 16px; */
 }
 #card-wrapper-cosmology > .card {
   margin-top: 16px;
 }
 div.card p {
-  /* font-family: var(--neue-haas); */
   width: 90%;
   margin: 16px auto;
   font-size: 1rem;
@@ -505,7 +487,6 @@ div.background {
   background-size: 90%;
   background-repeat: no-repeat;
   background-position-x: center;
-  /* background-position-y: center; */
 }
 .cosmology {
   background-image: url(../images/icons/planet.png);
@@ -540,7 +521,6 @@ h3 {
   width: 150px;
   height: 150px;
   border-radius: 15px;
-  /* opacity: 0.65; */
 }
 .image-wrapper {
   width: 90%;
@@ -553,12 +533,6 @@ h3 {
 .image-wrapper figure {
   margin: 0;
 }
-/* .image-wrapper figure:active {
-  scale: 2;
-  opacity: 1;
-  z-index: 1000;
-  position: absolute;
-} */
 .image-wrapper div {
   border-radius: 15px;
 }
@@ -596,7 +570,6 @@ section.newsletter {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: green; */
 }
 .newsletter p {
   display: block;
@@ -669,7 +642,6 @@ footer {
 ul.connect {
   display: flex;
   width: 90%;
-  /* background-color: mediumvioletred; */
   margin-left: 0;
   padding-left: 0;
 }
@@ -740,9 +712,6 @@ h6 {
 
   /* Main
 --------------------*/
-  /* h1 {
-    font-size: 1.875rem;
-  } */
   h4 {
     font-size: 1.5rem;
   }
@@ -821,7 +790,6 @@ h6 {
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: lightblue; */
   }
   nav.icons {
     justify-content: flex-end;
@@ -854,9 +822,6 @@ h6 {
   }
   /* Main
 --------------------*/
-  /* h1 {
-    font-size: 2.25rem;
-  } */
   .card-wrapper {
     margin-bottom: 64px;
   }
@@ -865,14 +830,11 @@ h6 {
   }
   div.card {
     scale: 1;
-    /* margin-top: 32px; */
   }
   figure.card-large {
     scale: 1;
     margin-top: 32px;
     margin-bottom: 32px;
-    /* margin-bottom: 16px;
-    margin-bottom: 64px; */
   }
   figure.arrow-down {
     width: 75px;
@@ -996,8 +958,6 @@ h6 {
     width: 270px;
     padding: 16.5px;
     margin: 0;
-    /* border-left: 2px solid var(--dark-purple);
-border-right: 2px solid var(--dark-purple); */
     border-radius: 70px 0 70px 0;
     position: relative;
   }
@@ -1006,8 +966,6 @@ border-right: 2px solid var(--dark-purple); */
   }
   .inactive {
     background-color: transparent;
-    /* border-left: 2px solid transparent;
-border-right: 2px solid transparent; */
   }
   .inactive:hover {
     background-color: var(--dark-purple);
@@ -1021,8 +979,6 @@ border-right: 2px solid transparent; */
     color: #000;
     position: absolute;
     left: 0;
-    /* border-left: 2px solid var(--dark-purple);
-    border-right: 2px solid var(--dark-purple); */
     border-bottom: 8px solid var(--dark-purple);
     border-radius: 0 0 70px 0;
     box-shadow: 6px 6px 12px 12px #00000029;
@@ -1066,19 +1022,16 @@ border-right: 2px solid transparent; */
   .card-wrapper {
     flex-direction: row;
     justify-content: space-evenly;
-    /* background-color: lightblue; */
     margin: 96px auto;
   }
   div.card {
     min-width: 450px;
     height: 550px;
-    /* margin: 64px 5% 32px 5%; */
   }
   figure.card {
     display: block;
     min-width: 450px;
     height: 550px;
-    /* margin: 64px 5% 32px 5%; */
   }
   figure.card-large {
     display: none;
@@ -1112,7 +1065,6 @@ border-right: 2px solid transparent; */
   .photo-gallery img {
     width: 275px;
     height: 275px;
-    /* opacity: 0.65; */
   }
   .image-wrapper figure {
     transition-property: scale opacity;
@@ -1140,7 +1092,6 @@ border-right: 2px solid transparent; */
   }
   section.newsletter {
     width: 100%;
-    /* background-color: green; */
   }
   .blur {
     height: 200px;
@@ -1180,7 +1131,6 @@ border-right: 2px solid transparent; */
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-    /* background-color: green; */
   }
   ul.connect {
     flex-direction: column;

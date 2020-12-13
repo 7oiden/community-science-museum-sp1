@@ -21,7 +21,6 @@ body {
 .fa {
   color: var(--white);
   font-size: 2.5rem;
-  display: none;
 }
 figure {
   display: block;
@@ -51,8 +50,6 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -103,8 +100,6 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -182,8 +177,6 @@ button.ticket:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -262,7 +255,6 @@ nav.icons {
   justify-content: space-around;
   width: 100%;
   margin: 16px 0;
-  /* background-color: aqua; */
 }
 .icon {
   color: var(--dark-purple);
@@ -276,11 +268,6 @@ nav.icons {
 .icons li {
   list-style: none;
 }
-/* .white-box {
-  background-color: #ffffff;
-  width: 100%;
-  height: 62px;
-} */
 nav.menu {
   position: sticky;
   top: 0;
@@ -303,7 +290,6 @@ header {
   font-size: 1.875rem;
 }
 ul.mobile-menu {
-  /* background-color: navy; */
   margin: 0 0 0 2rem;
   padding: 0;
 }
@@ -376,7 +362,6 @@ h1 {
   color: #fff;
   padding: 12px 5%;
   margin: 8px 0 16px 0;
-  /* border-radius: 0 0 50px 0; */
 }
 h4 {
   font-size: 1.25rem;
@@ -408,9 +393,6 @@ p > a {
   font-weight: bold;
   text-decoration: underline;
 }
-/* div.map {
-  border: 10px solid grey;
-} */
 #street {
   font-weight: bold;
   font-size: 1.125rem;
@@ -439,10 +421,6 @@ div.facilities p {
   margin: 0 auto;
   padding-bottom: 16px;
 }
-/* #hours {
-  background-color: var(--purple);
-  color: #fff;
-} */
 .hours-wrapper_2 {
   display: flex;
   justify-content: flex-start;
@@ -454,9 +432,7 @@ div.facilities p {
 }
 .hours-wrapper_2 li {
   font-family: var(--sofia);
-
   list-style: none;
-  /* background-color: violet; */
 }
 figure.facilities {
   width: 100%;
@@ -478,11 +454,6 @@ figure.facilities {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* .facilities img {
-  width: 100%;
-  height: 250px;
-  margin: 0;
-} */
 #accessibility {
   background-color: var(--dark-blue);
 }
@@ -515,7 +486,6 @@ section.newsletter {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: green; */
 }
 .newsletter p {
   display: block;
@@ -588,7 +558,6 @@ footer {
 ul.connect {
   display: flex;
   width: 90%;
-  /* background-color: mediumvioletred; */
   margin-left: 0;
   padding-left: 0;
 }
@@ -657,12 +626,6 @@ h6 {
   }
   /* Main
 --------------------*/
-  /* h1 {
-    font-size: 1.875rem;
-  } */
-  /* h4 {
-    font-size: 1.5rem;
-  } */
   section {
     width: 70%;
   }
@@ -688,7 +651,6 @@ h6 {
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: lightblue; */
   }
   nav.icons {
     justify-content: flex-end;
@@ -893,8 +855,6 @@ h6 {
     width: 270px;
     padding: 16.5px;
     margin: 0;
-    /* border-left: 2px solid var(--dark-purple);
-border-right: 2px solid var(--dark-purple); */
     border-radius: 70px 0 70px 0;
     position: relative;
   }
@@ -903,8 +863,6 @@ border-right: 2px solid var(--dark-purple); */
   }
   .inactive {
     background-color: transparent;
-    /* border-left: 2px solid transparent;
-border-right: 2px solid transparent; */
   }
   .inactive:hover {
     background-color: var(--dark-purple);
@@ -918,8 +876,6 @@ border-right: 2px solid transparent; */
     color: #000;
     position: absolute;
     left: 0;
-    /* border-left: 2px solid var(--dark-purple);
-    border-right: 2px solid var(--dark-purple); */
     border-bottom: 8px solid var(--dark-purple);
     border-radius: 0 0 70px 0;
     box-shadow: 6px 6px 12px 12px #00000029;
@@ -957,9 +913,6 @@ border-right: 2px solid transparent; */
     text-align: center;
     border-radius: 0;
   }
-  /* section {
-    width: 85%;
-  } */
   section.info {
     font-size: 1.25rem;
   }
@@ -1005,7 +958,6 @@ border-right: 2px solid transparent; */
   }
   section.newsletter {
     width: 100%;
-    /* background-color: green; */
   }
   .blur {
     height: 200px;
@@ -1045,7 +997,6 @@ border-right: 2px solid transparent; */
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-    /* background-color: green; */
   }
   ul.connect {
     flex-direction: column;

@@ -10,9 +10,9 @@
   --teal: #3d6a6b;
   --light-grey: #f2f2f2;
   --white: #ffffff;
-  --sofia: "sofia pro";
-  --proxima: "proxima nova";
-  --proxima-soft: "proxima soft";
-  --neue-haas: "neue haas unica W1G";
+  --sofia: "sofia pro", "helvetica", "arial", "sans-serif";
+  --proxima: "proxima nova", "open sans", "corbel", "arial", "sans-serif";
+  --proxima-soft: "proxima soft", "helvetica", "arial", "sans-serif";
+  --neue-haas: "neue haas unica W1G", "helvetica", "arial", "sans-serif";
   --center-align: 0 auto 0 auto;
 }

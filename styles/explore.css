@@ -49,8 +49,6 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -101,8 +99,6 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -180,8 +176,6 @@ button.ticket:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -260,7 +254,6 @@ nav.icons {
   justify-content: space-around;
   width: 100%;
   margin: 16px 0;
-  /* background-color: aqua; */
 }
 .icon {
   color: var(--dark-purple);
@@ -274,11 +267,6 @@ nav.icons {
 .icons li {
   list-style: none;
 }
-/* .white-box {
-  background-color: #ffffff;
-  width: 100%;
-  height: 62px;
-} */
 nav.menu {
   position: sticky;
   top: 0;
@@ -301,7 +289,6 @@ header {
   font-size: 1.875rem;
 }
 ul.mobile-menu {
-  /* background-color: navy; */
   margin: 0 0 0 2rem;
   padding: 0;
 }
@@ -364,14 +351,11 @@ section.teachers {
 }
 div.blue {
   background-color: var(--blue);
-  /* font-family: var(--sofia); */
   font-size: 1.125rem;
   color: #fff;
 }
-/* font-style: italic; */
 .margins {
   width: 100%;
-  /* min-width: 400px; */
   background-color: var(--light-grey);
   margin-top: 16px;
   padding-left: 1rem;
@@ -390,7 +374,6 @@ h1 {
   color: #fff;
   padding: 12px 5%;
   margin: 8px 0 16px 0;
-  /* border-radius: 0 0 50px 0; */
 }
 h2,
 h3 {
@@ -437,11 +420,6 @@ figure {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* img {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-} */
 .get-in-touch {
   background-color: #7c68a6;
   color: #fff;
@@ -478,10 +456,6 @@ p.button {
 p.button:hover {
   scale: 1.1;
 }
-/* section.newsletter {
-  width: 100%;
-  background-color: transparent;
-} */
 .newsletter-wrapper {
   background-image: url(../images/newsletter_mobile.jpg);
   background-size: cover;
@@ -505,7 +479,6 @@ section.newsletter {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: green; */
 }
 .newsletter p {
   display: block;
@@ -577,7 +550,6 @@ footer {
 ul.connect {
   display: flex;
   width: 90%;
-  /* background-color: mediumvioletred; */
   margin-left: 0;
   padding-left: 0;
 }
@@ -646,10 +618,6 @@ h6 {
   }
   /* Main
 --------------------*/
-  /* h1 {
-    font-size: 1.875rem;
-    text-align: center;
-  } */
   #item-3,
   #item-6 {
     min-height: 400px;
@@ -679,7 +647,6 @@ h6 {
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: lightblue; */
   }
   nav.icons {
     justify-content: flex-end;
@@ -711,9 +678,6 @@ h6 {
   }
   /* Main
 --------------------*/
-  /* h1 {
-    font-size: 2.25rem;
-  } */
   #item-1,
   #item-2,
   #item-4,
@@ -845,8 +809,6 @@ h6 {
     width: 270px;
     padding: 16.5px;
     margin: 0;
-    /* border-left: 2px solid var(--dark-purple);
-border-right: 2px solid var(--dark-purple); */
     border-radius: 70px 0 70px 0;
     position: relative;
   }
@@ -855,8 +817,6 @@ border-right: 2px solid var(--dark-purple); */
   }
   .inactive {
     background-color: transparent;
-    /* border-left: 2px solid transparent;
-border-right: 2px solid transparent; */
   }
   .inactive:hover {
     background-color: var(--dark-purple);
@@ -870,8 +830,6 @@ border-right: 2px solid transparent; */
     color: #000;
     position: absolute;
     left: 0;
-    /* border-left: 2px solid var(--dark-purple);
-    border-right: 2px solid var(--dark-purple); */
     border-bottom: 8px solid var(--dark-purple);
     border-radius: 0 0 70px 0;
     box-shadow: 6px 6px 12px 12px #00000029;
@@ -920,10 +878,6 @@ border-right: 2px solid transparent; */
   h5 {
     font-size: 1.25rem;
   }
-
-  /* section.kids {
-    margin-top: 0;
-  } */
   .margins {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -974,7 +928,6 @@ border-right: 2px solid transparent; */
   }
   section.newsletter {
     width: 100%;
-    /* background-color: green; */
   }
   .blur {
     height: 200px;
@@ -1014,7 +967,6 @@ border-right: 2px solid transparent; */
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-    /* background-color: green; */
   }
   ul.connect {
     flex-direction: column;

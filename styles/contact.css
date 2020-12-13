@@ -21,7 +21,6 @@ body {
 .fa {
   color: var(--white);
   font-size: 2.5rem;
-  display: none;
 }
 figure {
   display: block;
@@ -38,7 +37,6 @@ a {
 .icons label {
   display: block;
 }
-/* search-dropdown */
 .search-label {
   cursor: pointer;
 }
@@ -51,8 +49,6 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -103,8 +99,6 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -182,8 +176,6 @@ button.ticket:hover {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* border-left: 2px solid var(--dark-purple);
-  border-right: 2px solid var(--dark-purple); */
   border-bottom: 8px solid var(--dark-purple);
   border-radius: 70px 0 70px 0;
   box-shadow: 6px 6px 12px 12px #00000029;
@@ -262,7 +254,6 @@ nav.icons {
   justify-content: space-around;
   width: 100%;
   margin: 16px 0;
-  /* background-color: aqua; */
 }
 .icon {
   color: var(--dark-purple);
@@ -276,11 +267,6 @@ nav.icons {
 .icons li {
   list-style: none;
 }
-/* .white-box {
-  background-color: #ffffff;
-  width: 100%;
-  height: 62px;
-} */
 nav.menu {
   position: sticky;
   top: 0;
@@ -303,7 +289,6 @@ header {
   font-size: 1.875rem;
 }
 ul.mobile-menu {
-  /* background-color: navy; */
   margin: 0 0 0 2rem;
   padding: 0;
 }
@@ -386,9 +371,6 @@ section > p {
   padding: 8px;
   list-style: square;
 }
-/* section p::before {
-  content: "⦿";
-} */
 .main-form {
   width: 100%;
 }
@@ -479,7 +461,6 @@ section.newsletter {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: green; */
 }
 .newsletter p {
   display: block;
@@ -551,7 +532,6 @@ footer {
 ul.connect {
   display: flex;
   width: 90%;
-  /* background-color: mediumvioletred; */
   margin-left: 0;
   padding-left: 0;
 }
@@ -656,7 +636,6 @@ h6 {
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: lightblue; */
   }
   nav.icons {
     justify-content: flex-end;
@@ -802,8 +781,6 @@ h6 {
     width: 270px;
     padding: 16.5px;
     margin: 0;
-    /* border-left: 2px solid var(--dark-purple);
-border-right: 2px solid var(--dark-purple); */
     border-radius: 70px 0 70px 0;
     position: relative;
   }
@@ -812,8 +789,6 @@ border-right: 2px solid var(--dark-purple); */
   }
   .inactive {
     background-color: transparent;
-    /* border-left: 2px solid transparent;
-border-right: 2px solid transparent; */
   }
   .inactive:hover {
     background-color: var(--dark-purple);
@@ -827,8 +802,6 @@ border-right: 2px solid transparent; */
     color: #000;
     position: absolute;
     left: 0;
-    /* border-left: 2px solid var(--dark-purple);
-    border-right: 2px solid var(--dark-purple); */
     border-bottom: 8px solid var(--dark-purple);
     border-radius: 0 0 70px 0;
     box-shadow: 6px 6px 12px 12px #00000029;
@@ -873,7 +846,6 @@ border-right: 2px solid transparent; */
   section.faq {
     width: 90%;
     text-align: left;
-    /* background-color: lightblue; */
   }
   .faq li {
     font-size: 1.25rem;
@@ -890,7 +862,6 @@ border-right: 2px solid transparent; */
   }
   section.newsletter {
     width: 100%;
-    /* background-color: green; */
   }
   .blur {
     height: 200px;
@@ -930,7 +901,6 @@ border-right: 2px solid transparent; */
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-    /* background-color: green; */
   }
   ul.connect {
     flex-direction: column;
@@ -948,6 +918,4 @@ border-right: 2px solid transparent; */
   .dropdown-info {
     width: 320px;
   }
-  /* Main
---------------------*/
 }
