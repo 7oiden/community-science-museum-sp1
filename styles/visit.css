@@ -44,7 +44,7 @@ a {
 .search-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 138px;
+  top: 137px;
   max-width: 90%;
   left: 0;
   display: flex;
@@ -95,7 +95,7 @@ form {
 .ticket-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 138px;
+  top: 137px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -171,7 +171,7 @@ button.ticket:hover {
 .profile-dropdown {
   position: absolute;
   z-index: 1000;
-  top: 138px;
+  top: 137px;
   width: 90%;
   right: 0;
   display: flex;
@@ -434,6 +434,11 @@ div.facilities p {
   font-family: var(--sofia);
   list-style: none;
 }
+#facilities {
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
 figure.facilities {
   width: 100%;
   height: 300px;
@@ -455,7 +460,7 @@ figure.facilities {
   background-repeat: no-repeat;
 }
 #accessibility {
-  background-color: var(--dark-blue);
+  background-color: #8c2639;
 }
 #food-drink {
   background-color: var(--dark-green);
