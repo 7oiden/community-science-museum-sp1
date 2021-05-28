@@ -319,19 +319,123 @@
           </figure>
         </div>
       </div>
+
       <div class="secondary-container">
-        <section class="news">
+        <section class="news-section">
           <div id="news-anchor"></div>
           <h4 id="special-event">NEWS: Special Events & Exhibitions</h4>
+
           <div class="container">
             <div class="carousel">
               <div class="slider">
-                <section>Content for section 1</section>
-                <section>Content for section 2</section>
-                <section>Content for section 3</section>
+                <section>
+                  <figure class="slider-image">
+                    <img
+                      class="slider-image"
+                      src="images\t-rex.jpg"
+                      alt="Close up photo of the head of a of gaping T-Rex sceleton, exposing all it's razorsharp teeth"
+                    />
+                  </figure>
+                  <div class="news">
+                    <div>
+                      <h5>Night in the Museum</h5>
+                      <p>
+                        Get your family together for an exciting night in the
+                        museum as you sleep over beside dinosaurs and science
+                        displays.
+                      </p>
+                      <p>
+                        Bring your own sleeping bag and get ready to rough it as
+                        we go exploring the wonders of science.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <figure class="slider-image">
+                    <img
+                      class="slider-image"
+                      src="images\aeronautic.jpg"
+                      alt="A jet pilot in full flight outfit sitting in a simulated cockpit facing the instruments"
+                    />
+                  </figure>
+
+                  <div class="news">
+                    <div>
+                      <h5>Visiting Professor Of Aeronautics</h5>
+                      <p>
+                        It is our pleasure to announce that Professor Sheila
+                        Widnall from the Massachusetts Institue of Technology
+                        will visit our museum.
+                      </p>
+                      <p>
+                        She will be delivering two lectures on the development
+                        of aeronautics, and where the future lies in this
+                        exciting space.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <figure class="slider-image">
+                    <img
+                      class="slider-image"
+                      src="images\energica.jpg"
+                      alt="Close up photo of a glowing red sphere with beams of electricity radiating from it"
+                    />
+                  </figure>
+                  <div class="news">
+                    <div>
+                      <h5>Energica Exhibition</h5>
+                      <p>
+                        On loan from the NEMO Science Museum in Amsterdam, the
+                        Energetica exhibition is coming to the Community Science
+                        Museum.
+                      </p>
+                      <p>
+                        It’s a series of installations that allow visitors to
+                        experience the power of the elements as we harness them.
+                        From solar energy powering lighting, to ‘Wind Island’
+                        that shows how turbines are able to use and control wind
+                        to create power.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="controls">
+                <figure id="left">
+                  <i id="arrow-left" class="fas fa-chevron-left"></i>
+                </figure>
+                <figure id="right">
+                  <i id="arrow-right" class="fas fa-chevron-right"></i>
+                </figure>
               </div>
             </div>
+            <div class="preview">
+              <img
+                id="preview1"
+                class="preview-image selected"
+                src="images\t-rex.jpg"
+                alt=""
+              />
+              <img
+                id="preview2"
+                class="preview-image"
+                src="images\aeronautic.jpg"
+                alt=""
+              />
+              <img
+                id="preview3"
+                class="preview-image"
+                src="images\energica.jpg"
+                alt=""
+              />
+            </div>
           </div>
+
           <!-- <label class="aeronautic-label" for="aeronautic">
             <div id="aeronautic-image">
               <img
@@ -592,5 +696,6 @@
       <p id="copyright">Community Science Museum 2020</p>
     </footer>
     <script src="js/in_common.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
