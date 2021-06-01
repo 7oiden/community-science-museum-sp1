@@ -49,81 +49,93 @@
           /></a>
         </figure>
         <nav aria-label="icons" class="icons">
-          <label class="search-label" for="search-box">
-            <span class="fa fa-search icon"></span>
-          </label>
-          <input type="checkbox" id="search-box" />
-          <div class="search-dropdown">
-            <p class="search-header">SEARCH RESULTS</p>
-            <form action="">
-              <label for="search" class="label">Search</label>
-              <input
-                type="text"
-                name="first-name"
-                placeholder="Start Writing..."
-                id="search"
-                class="box"
-              />
-            </form>
-            <p class="dropdown-text">
-              Sorry, No Result for Your Search, Please Try Something Else
-            </p>
+          <div class="dropdown-wrapper">
+            <i class="fa fa-search icon"></i>
+            <div class="search-dropdown">
+              <p class="search-header">search results</p>
+              <form action="" class="dropdown-form">
+                <label for="search" class="label">Search</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  placeholder="Start Writing..."
+                  id="search"
+                  class="box"
+                />
+              </form>
+              <p class="dropdown-text">
+                Sorry, no result for your search, please try something else
+              </p>
+            </div>
           </div>
-          <label class="ticket-label" for="ticket-box">
-            <span class="fa fa-ticket-alt icon"></span>
-          </label>
-          <input type="checkbox" id="ticket-box" />
-          <div class="ticket-dropdown">
-            <p class="ticket-header">BUY TICKET</p>
-            <p class="dropdown-text">
-              Please Choose the Desired Number of Tickets and Click Proceed in
-              order to finalize your purchase on www.ticketmaster.com
-            </p>
-            <p class="dropdown-text">
-              If your party consist of 6 people or more, you will be taken to
-              our contact form.
-            </p>
-            <form action="" class="ticket">
-              <label for="select">Tickets</label>
-              <select name="tickets" id="select">
-                <option value="1">1</option>
-                <option value="1">2</option>
-                <option value="1">3</option>
-                <option value="1">4</option>
-                <option value="1">5</option>
-                <option value="more">6 or more</option>
-              </select>
-            </form>
-            <button class="ticket">PROCEED</button>
+
+          <div class="dropdown-wrapper">
+            <i class="fa fa-ticket-alt icon"></i>
+            <div class="ticket-dropdown">
+              <p class="ticket-header">buy ticket</p>
+              <p class="dropdown-text">
+                Please Choose the Desired Number of Tickets and Click Proceed in
+                order to finalize your purchase on www.ticketmaster.com
+              </p>
+              <p class="dropdown-text">
+                If your party consist of 6 people or more, you will be taken to
+                our contact form.
+              </p>
+              <form action="" class="ticket dropdown-form">
+                <label for="select" class="ticket-label">Tickets</label>
+                <select name="tickets" id="select">
+                  <option class="option" value="1">1</option>
+                  <option class="option" value="1">2</option>
+                  <option class="option" value="1">3</option>
+                  <option class="option" value="1">4</option>
+                  <option class="option" value="1">5</option>
+                  <option class="option" value="more">6 or more</option>
+                </select>
+              </form>
+              <button class="ticket">PROCEED</button>
+            </div>
           </div>
-          <label class="profile-label" for="profile-box">
-            <span class="fa fa-user-circle icon"></span>
-          </label>
-          <input type="checkbox" id="profile-box" />
-          <div class="profile-dropdown">
-            <p class="profile-header">YOUR ACCOUNT</p>
-            <form action="login.php" method="GET">
-              <label for="email" class="label">E-mail</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="your@email.com"
-                id="email"
-                class="box"
-                required="required"
-              />
-            </form>
-            <form action="login.php" method="GET">
-              <label for="choose" class="label_2">Choose password</label>
-              <input
-                type="password"
-                name="choose"
-                placeholder="* * * * * * * *"
-                class="box password"
-                id="choose"
-              />
-            </form>
-            <button class="profile">SIGN IN</button>
+
+          <div class="dropdown-wrapper">
+            <i class="fa fa-user-circle icon"></i>
+            <div class="profile-dropdown">
+              <p class="profile-header">your account</p>
+              <form class="dropdown-form" id="profile-form">
+                <label for="email" class="label">E-mail</label>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="your@email.com"
+                  id="dropdown-email"
+                  class="box"
+                />
+                <div class="error-message" id="profile-email-error">
+                  Please enter a valid e-mail address
+                </div>
+
+                <label for="choose" class="label_2">Password</label>
+                <input
+                  type="password"
+                  name="choose"
+                  placeholder="Password"
+                  class="box password"
+                  id="dropdown-password"
+                />
+                <div class="error-message" id="profile-password-error">
+                  Must be at least 5 characters
+                </div>
+                <div id="success-message">
+                  Welcome back, you are now logged in
+                </div>
+                <button
+                  type="submit"
+                  id="profile-submit-button"
+                  class="profile"
+                >
+                  SIGN IN
+                </button>
+              </form>
+            </div>
           </div>
         </nav>
       </div>
@@ -140,64 +152,84 @@
           <li id="visit"><a href="visit.html">VISIT</a></li>
         </ul>
         <ul class="large-screen">
-          <li>
-            <a href="exhibitions.html" class="purple-box inactive"
+          <li id="exhibition-wrapper" class="info-wrapper">
+            <a href="exhibitions.html" class="link-box1 inactive"
               >EXHIBITIONS</a
             >
-            <div class="dropdown-info">
-              <p class="header">
-                Our more than 1000 unique exhibitions are divided into 5 main
-                spaces for you to explore
-              </p>
-              <p>These spaces include:</p>
-              <p>
-                Cosmology, Evolution, Biology & Medicine, Robotics & AI and
-                Ecology
-              </p>
-              <p>Click to Learn More...</p>
-            </div>
+            <a href="exhibitions.html">
+              <div id="exhibitions-dropdown" class="dropdown-info">
+                <p class="header">
+                  Our more than 1000 unique exhibitions are divided into 5 main
+                  spaces for you to explore:
+                </p>
+                <hr />
+                <ul class="dropdown-list">
+                  <li>Cosmology</li>
+                  <li>Evolution</li>
+                  <li>Biology & Medicine</li>
+                  <li>Robotics & AI</li>
+                  <li>Ecology</li>
+                </ul>
+                <!-- <p class="learn-more">Click to Learn More...</p> -->
+              </div>
+            </a>
           </li>
-          <li>
-            <a href="explore.html" class="purple-box inactive">EXPLORE</a>
-            <div class="dropdown-info">
-              <p class="header">
-                Here you can learn more about what we can offer, wheter you are:
-              </p>
-              <p>
-                A kid or a parent of a kid who would like to join one of our
-                clubs.
-              </p>
-              <p>
-                A teacher who would like to bring your students for a guided
-                tour.
-              </p>
-              <p>Or a researcher who would like to join our team.</p>
-              <p>Click to Learn More...</p>
-            </div>
+          <li id="explore-wrapper" class="info-wrapper">
+            <a href="explore.html" class="link-box2 inactive">EXPLORE</a>
+            <a href="explore.html">
+              <div id="explore-dropdown" class="dropdown-info">
+                <p class="header">
+                  Here you can learn more about what we can offer, wheter you
+                  are a:
+                </p>
+                <hr />
+                <ul class="dropdown-list">
+                  <li>Kid who would like to join one of our clubs.</li>
+                  <li>
+                    Teacher who would like to bring your students for a guided
+                    tour.
+                  </li>
+                  <li>Researcher who would like to join our team.</li>
+                </ul>
+                <!-- <p class="learn-more">Click to Learn More...</p> -->
+              </div>
+            </a>
           </li>
-          <li>
-            <a href="get_involved.html" class="purple-box inactive"
+          <li id="get-involved-wrapper" class="info-wrapper">
+            <a href="get_involved.html" class="link-box3 inactive"
               >GET INVOLVED</a
             >
-            <div class="dropdown-info">
-              <p class="header">
-                In order for us to create the best museum possible we need your
-                contribution.
-              </p>
-              <p>
-                You can support our museum through donations, volunteering and
-                intenships.
-              </p>
-              <p>Click to learn more...</p>
-            </div>
+            <a href="get_involved.html">
+              <div id="get-involved-dropdown" class="dropdown-info">
+                <p class="header">
+                  In order for us to create the best museum possible we need
+                  your contribution, support us through:
+                </p>
+                <hr />
+                <ul class="dropdown-list">
+                  <li>Donations</li>
+                  <li>Volunteering</li>
+                  <li>Intenships</li>
+                </ul>
+                <!-- <p class="learn-more">Click to learn more...</p> -->
+              </div>
+            </a>
           </li>
-          <li>
-            <a href="visit.html" class="purple-box inactive">VISIT</a>
-            <div class="dropdown-info">
-              <p class="header">All you need to know about:</p>
-              <p>Admission, location, opening hours and our facilities.</p>
-              <p>Click to learn more...</p>
-            </div>
+          <li id="visit-wrapper" class="info-wrapper">
+            <a href="visit.html" class="link-box4 inactive">VISIT</a>
+            <a href="visit.html">
+              <div id="visit-dropdown" class="dropdown-info">
+                <p class="header">All you need to know about:</p>
+                <hr />
+                <ul class="dropdown-list">
+                  <li>Admission</li>
+                  <li>Location</li>
+                  <li>Opening Hours</li>
+                  <li>Facilities</li>
+                </ul>
+                <!-- <p class="learn-more">Click to learn more...</p> -->
+              </div>
+            </a>
           </li>
         </ul>
       </nav>
@@ -318,28 +350,37 @@
           </div>
           <p class="tourguides">"We Hope to See You Soon"</p>
         </section>
-        <div class="newsletter-wrapper">
-          <div class="blur">
-            <section class="newsletter">
-              <p>
-                Sign up to our Newsletter and be the first to know about Our
-                exciting New stuff:
-              </p>
-              <form action="form-success.php" method="get" class="newsletter">
-                <input
-                  id="newsletter"
-                  type="text"
-                  name="email"
-                  placeholder="YOUR EMAIL"
-                />
-                <input
-                  id="sign-up"
-                  type="submit"
-                  name="subscribe"
-                  value="SIGN UP"
-                />
-              </form>
-            </section>
+        <div class="bottom-section">
+          <div class="newsletter-wrapper">
+            <div class="blur">
+              <section class="newsletter">
+                <label for="newsletter">
+                  Sign up to our Newsletter and be the first to know about Our
+                  exciting New stuff:
+                </label>
+                <div class="newsletter-success">
+                  Welcome! Please check your inbox
+                </div>
+                <form class="newsletter">
+                  <input
+                    id="newsletter"
+                    type="text"
+                    name="email"
+                    placeholder="YOUR EMAIL"
+                  />
+
+                  <input
+                    id="sign-up"
+                    type="submit"
+                    name="subscribe"
+                    value="SIGN UP"
+                  />
+                </form>
+                <p id="newsletter-error" class="error-message">
+                  Please enter a valid e-mail address
+                </p>
+              </section>
+            </div>
           </div>
         </div>
       </div>
@@ -419,5 +460,6 @@
       </div>
       <p id="copyright">Community Science Museum 2020</p>
     </footer>
+    <script src="js/in_common.js"></script>
   </body>
 </html>

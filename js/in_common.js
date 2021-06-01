@@ -240,7 +240,7 @@ const linkBox4 = document.querySelector(".link-box4");
 console.log(exhibitions);
 
 function exhibitionDropdown() {
-  setTimeout(function () {
+  //setTimeout(function () {
     exhibitions.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox1.classList.add("purple-box");
@@ -253,11 +253,11 @@ function exhibitionDropdown() {
     visit.classList.remove("show-info");
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-  }, 500);
+  //}, 500);
 }
 
 function exploreDropdown() {
-  setTimeout(function () {
+  //setTimeout(function () {
     explore.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox2.classList.add("purple-box");
@@ -270,11 +270,11 @@ function exploreDropdown() {
     visit.classList.remove("show-info");
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-  }, 500);
+  //}, 500);
 }
 
 function getInvolvedDropdown() {
-  setTimeout(function () {
+  //setTimeout(function () {
     getInvolved.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox3.classList.add("purple-box");
@@ -287,11 +287,11 @@ function getInvolvedDropdown() {
     visit.classList.remove("show-info");
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-  }, 500);
+  //}, 500);
 }
 
 function visitDropdown() {
-  setTimeout(function () {
+  //setTimeout(function () {
     visit.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox4.classList.add("purple-box");
@@ -304,7 +304,7 @@ function visitDropdown() {
     exhibitions.classList.remove("show-info");
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-  }, 500);
+  //}, 500);
 }
 
 exhibitionWrapper.addEventListener("mouseover", exhibitionDropdown);
@@ -314,7 +314,7 @@ getInvolvedWrapper.addEventListener("mouseover", getInvolvedDropdown);
 visitWrapper.addEventListener("mouseover", visitDropdown);
 
 function closeExhibitionDropdown(event) {
-  setTimeout(function () {
+  //setTimeout(function () {
     if (
       exhibitions.classList.contains("show-info") &&
       !event.target.matches(".exhibitionWrapper")
@@ -323,13 +323,13 @@ function closeExhibitionDropdown(event) {
       fadingBackground2.classList.remove("fb-show");
       linkBox1.classList.remove("purple-box");
     }
-  }, 500);
+  //}, 500);
 }
 
 document.addEventListener("mouseout", closeExhibitionDropdown);
 
 function closeExploreDropdown(event) {
-    setTimeout(function () {
+    //setTimeout(function () {
   if (
     explore.classList.contains("show-info") &&
     !event.target.matches(".exploreWrapper")
@@ -338,13 +338,13 @@ function closeExploreDropdown(event) {
     fadingBackground2.classList.remove("fb-show");
     linkBox2.classList.remove("purple-box");
   }
-   }, 500);
+   //}, 500);
 }
 
 document.addEventListener("mouseout", closeExploreDropdown);
 
 function closeGetInvolvedDropdown(event) {
-    setTimeout(function () {
+    //setTimeout(function () {
   if (
     getInvolved.classList.contains("show-info") &&
     !event.target.matches(".getInvolvedWrapper")
@@ -353,13 +353,13 @@ function closeGetInvolvedDropdown(event) {
     fadingBackground2.classList.remove("fb-show");
     linkBox3.classList.remove("purple-box");
   }
-   }, 500);
+   //}, 500);
 }
 
 document.addEventListener("mouseout", closeGetInvolvedDropdown);
 
 function closeVisitDropdown(event) {
-    setTimeout(function () {
+    //setTimeout(function () {
       if (
         visit.classList.contains("show-info") &&
         !event.target.matches(".visitWrapper")
@@ -368,7 +368,7 @@ function closeVisitDropdown(event) {
         fadingBackground2.classList.remove("fb-show");
         linkBox4.classList.remove("purple-box");
       }
-    }, 500);
+    //}, 500);
 }
 
 document.addEventListener("mouseout", closeVisitDropdown);
@@ -399,3 +399,45 @@ document.addEventListener("mouseout", closeVisitDropdown);
 // }
 
 // infoWrapper.addEventListener("onmouseover", toggleShow);
+
+const newsletterError = document.querySelector("#newsletter-error");
+const newsletterSuccess = document.querySelector(".newsletter-success");
+const newsletterInput = document.querySelector("#newsletter");
+const newsletterForm = document.querySelector(".newsletter");
+const signUpButton = document.querySelector("#sign-up");
+
+function validateNewsletterForm(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  if (validateEmail(newsletterInput.value)) {
+    newsletterError.style.visibility = "hidden";
+  } else {
+    newsletterError.style.visibility = "visible";
+  }
+
+  setTimeout(function () {
+  if (validateEmail(newsletterInput.value) === true) {
+    newsletterSuccess.style.display = "block";
+  } else {
+    newsletterSuccess.style.display = "none";
+  }
+  }, 500);
+}
+
+
+newsletterForm.addEventListener("submit", validateNewsletterForm);
+
+function checkLength(value, len) {
+  if (value.trim().length > len) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function validateEmail(newsletterInput) {
+  const regEx = /\S+@\S+\.\S+/;
+  const patternMatches = regEx.test(newsletterInput);
+  return patternMatches;
+}

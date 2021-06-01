@@ -307,28 +307,38 @@
           </ol>
         </section>
       </div>
-      <div class="newsletter-wrapper">
-        <div class="blur">
-          <section class="newsletter">
-            <p>
-              Sign up to our Newsletter and be the first to know about Our
-              exciting New stuff:
-            </p>
-            <form action="form-success.php" method="get" class="newsletter">
-              <input
-                id="newsletter"
-                type="text"
-                name="email"
-                placeholder="YOUR EMAIL"
-              />
-              <input
-                id="sign-up"
-                type="submit"
-                name="subscribe"
-                value="SIGN UP"
-              />
-            </form>
-          </section>
+      <div class="bottom-section">
+        <div class="newsletter-wrapper">
+          <div class="blur">
+            <section class="newsletter">
+              <label for="newsletter">
+                Sign up to our Newsletter and be the first to know about Our
+                exciting New stuff:
+              </label>
+              <div class="newsletter-success">
+                Welcome! Please check your inbox
+              </div>
+              <form class="newsletter">
+                <input
+                  id="newsletter"
+                  type="text"
+                  name="email"
+                  placeholder="YOUR EMAIL"
+                />
+
+                <input
+                  id="sign-up"
+                  type="submit"
+                  name="subscribe"
+                  value="SIGN UP"
+                />
+              </form>
+              <p id="newsletter-error" class="error-message">
+                Please enter a valid e-mail address
+              </p>
+              
+            </section>
+          </div>
         </div>
       </div>
     </main>

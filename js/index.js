@@ -1,6 +1,6 @@
 const slider = document.querySelector(".slider");
-const leftArrow = document.querySelector("#arrow-left");
-const rigthArrow = document.querySelector("#arrow-right");
+const leftArrow = document.querySelector("#left");
+const rigthArrow = document.querySelector("#right");
 const indicatorParents = document.querySelector(".preview");
 
 
