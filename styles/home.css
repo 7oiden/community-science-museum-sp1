@@ -207,7 +207,7 @@ div.ticketmaster {
   border-right: 40px solid transparent;
   border-bottom: 40px solid #fff;
   position: absolute;
-  bottom: 150px;
+  bottom: 170px;
   left: 170px;
 }
 .bubble {
@@ -218,10 +218,9 @@ div.ticketmaster {
   background-color: var(--white);
   color: var(--dark-purple);
   width: 300px;
-  width: 300px;
-  min-height: 150px;
+  min-height: 170px;
   margin: 0 auto 0 auto;
-  border-radius: 50px;
+  border-radius: 10px;
   transition-property: scale;
   transition-duration: 0.5s;
   box-shadow: 0 6px 12px #00000040;

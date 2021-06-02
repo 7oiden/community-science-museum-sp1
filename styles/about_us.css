@@ -1,7 +1,6 @@
 @import "variables.css";
 @import "in_common.css";
 
-
 /* main 
 --------------------*/
 main {
@@ -11,7 +10,6 @@ main {
   width: 100%;
   margin: 0 auto;
   background-color: white;
-  padding-top: 50px;
 }
 section {
   width: 90%;
@@ -24,7 +22,7 @@ h1 {
   text-transform: capitalize;
   background-color: var(--dark-purple);
   color: #fff;
-  margin: 32px 5% 32px 0;
+  margin: 25px 5% 32px 0;
   padding: 12px 32px;
   border-radius: 0 0 50px 0;
 }
@@ -171,7 +169,6 @@ p.tourguides {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 576px) {
-
   /* Main
 --------------------*/
   h1 {
@@ -186,7 +183,6 @@ p.tourguides {
   }
 }
 @media only screen and (min-width: 768px) {
-
   /* Main
 --------------------*/
   h1 {
@@ -206,7 +202,6 @@ p.tourguides {
   }
 }
 @media only screen and (min-width: 992px) {
- 
   /* Main
 --------------------*/
   section {
@@ -246,11 +241,13 @@ p.tourguides {
   }
 }
 @media only screen and (min-width: 1200px) {
- 
   /* Main
 --------------------*/
   .main-wrapper {
     width: 85%;
+  }
+  .main-wrapper {
+    padding-top: 50px;
   }
   img.mobile {
     display: none;
@@ -320,7 +317,6 @@ p.tourguides {
   }
 }
 @media only screen and (min-width: 1800px) {
-
   /* Main
 --------------------*/
   .item-1 p {

@@ -1,13 +1,12 @@
 @import "variables.css";
 @import "in_common.css";
 
-
 /* main 
 --------------------*/
 .main-wrapper {
   width: 85%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 0;
 }
 section.main-content {
   margin: 0 auto;
@@ -26,7 +25,8 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px 5%;
-  margin: 8px 0 16px 0;
+  margin: 25px 5% 0 0;
+  border-radius: 0 0 50px 0;
 }
 h4 {
   font-size: 1.25rem;
@@ -87,16 +87,11 @@ p.button {
 p.button:hover {
   scale: 1.1;
 }
+
 /* styles that change
 --------------------*/
-@media only screen and (min-width: 576px) {
 
-}
-@media only screen and (min-width: 768px) {
- 
-}
 @media only screen and (min-width: 992px) {
-
   /* Main
 --------------------*/
   section.main-content {
@@ -105,15 +100,15 @@ p.button:hover {
   }
 }
 @media only screen and (min-width: 1200px) {
-
   /* Main
 --------------------*/
-main {
-  background-color: var(--light-grey);
-}
-.main-wrapper {
-  background-color: white;
-}
+  main {
+    background-color: var(--light-grey);
+  }
+  .main-wrapper {
+    background-color: white;
+    padding-top: 50px;
+  }
   h1.mobile {
     display: none;
   }
@@ -151,7 +146,7 @@ main {
     font-size: 1.35rem;
   }
   .bottom-section {
-    padding-top: 100px;
+    width: 85%;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -162,4 +157,3 @@ main {
     gap: 32px;
   }
 }
-

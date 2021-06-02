@@ -9,7 +9,7 @@ main {
 .main-wrapper {
   width: 85%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 50px;
   background-color: white;
 }
@@ -43,7 +43,8 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px 5%;
-  margin: 8px 0 16px 0;
+  margin: 25px 5% 0 0;
+  border-radius: 0 0 50px 0;
 }
 h2,
 h3 {
@@ -161,14 +162,15 @@ p.button:hover {
     gap: 16px;
   }
 }
-@media only screen and (min-width: 992px) {
-}
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
   main {
     background-color: var(--light-grey);
     font-size: 1.125rem;
+  }
+  .main-wrapper {
+    padding-top: 50px;
   }
   h1.mobile {
     display: none;
