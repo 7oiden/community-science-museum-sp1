@@ -4,7 +4,7 @@
 /* main 
 --------------------*/
 main {
-  background-color: var(--light-grey);
+  background-color: #d8d8d8;
 }
 .main-wrapper {
   background-color: white;
@@ -45,7 +45,7 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px 5%;
-  margin-right: 1rem;
+  margin-right: 5%;
   border-radius: 0 0 50px 0;
 }
 h4 {
@@ -70,6 +70,7 @@ figure.arrow-down {
 }
 figure.arrow-left-right {
   display: none;
+  font-size: 4rem;
   margin: 0;
 }
 .purple {
@@ -127,7 +128,7 @@ figure.card {
   height: 465px;
   margin: 0;
   padding: 0;
-  border: 16px solid #fff;
+  border: 12px solid #fff;
   border-radius: 25px;
   box-shadow: 0 6px 12px #00000029;
 }
@@ -182,9 +183,10 @@ h3 {
 .image-wrapper {
   width: 90%;
   margin: 32px auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 16px;
 }
 .image-wrapper figure {
@@ -238,6 +240,7 @@ p.visit {
   }
   figure.card {
     display: none;
+    border: 16px solid #fff;
   }
   figure.card-large {
     display: block;
@@ -257,12 +260,12 @@ p.visit {
     background-size: 40%;
     margin-top: 32px;
   }
+   .image-wrapper {
+    gap: 32px;
+  }
   .photo-gallery img {
     width: 200px;
     height: 200px;
-  }
-  .image-wrapper {
-    gap: 32px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -282,6 +285,10 @@ p.visit {
   figure.arrow-down {
     margin: 32px auto 0 auto;
   }
+  .image-wrapper {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
 }
 @media only screen and (min-width: 992px) {
   /* Header
@@ -294,9 +301,6 @@ p.visit {
   }
   /* Main
 --------------------*/
-  .image-wrapper {
-    justify-content: flex-start;
-  }
   .photo-gallery img {
     width: 250px;
     height: 250px;
@@ -321,7 +325,7 @@ p.visit {
     margin: 0 auto;
     text-transform: capitalize;
     text-align: center;
-    border-radius: 0;
+    border-radius: 0 0 50px 0;
   }
   #card-wrapper-cosmology {
     margin-top: 32px;
@@ -350,7 +354,6 @@ p.visit {
   }
   figure.arrow-left-right {
     display: block;
-    font-size: 3rem;
   }
   div.background {
     background-size: contain;
@@ -367,26 +370,31 @@ p.visit {
     order: 2;
   }
   h3 {
+    width: 90%;
     margin: 64px auto 16px auto;
     font-size: 2rem;
     text-align: center;
   }
+  .image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .photo-gallery img {
-    width: 275px;
-    height: 275px;
+    width: 200px;
+    height: 200px;
   }
   .image-wrapper figure {
     transition-property: scale opacity;
     transition-duration: 0.5s;
     scale: 1;
-    opacity: 0.75;
   }
   .image-wrapper figure:hover {
-    scale: 1.3;
+    scale: 1.2;
     opacity: 1;
     z-index: 100;
   }
   p.visit {
+    width: 90%;
     margin: 16px auto 64px auto;
     font-size: 1.5rem;
     text-align: center;

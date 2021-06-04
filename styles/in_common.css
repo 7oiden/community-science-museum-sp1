@@ -18,7 +18,7 @@ body {
 }
 .fa {
   color: var(--white);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   display: inline-block;
 }
 figure {
@@ -243,7 +243,6 @@ nav.icons {
   display: flex;
   justify-content: space-around;
   margin: 1rem 0;
-  /* background-color: blueviolet; */
 }
 .icon {
   color: var(--dark-blue);
@@ -719,10 +718,10 @@ h6 {
     margin: 0;
     border-radius: 70px 0 70px 0;
     position: relative;
-    background-color: var(--dark-blue);
+    text-decoration: underline;
   }
   .inactive {
-    background-color: transparent;
+    text-decoration: none;
   }
   .purple-box {
     text-decoration: underline;
@@ -736,7 +735,7 @@ h6 {
     color: #000;
     position: absolute;
     left: 0;
-    border-bottom: 8px solid var(--dark-purple);
+    border-bottom: 8px solid var(--dark-blue);
     border-radius: 0 0 70px 0;
     box-shadow: 6px 6px 12px 12px #00000029;
     display: none;

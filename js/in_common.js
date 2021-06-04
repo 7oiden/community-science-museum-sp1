@@ -240,7 +240,7 @@ const linkBox4 = document.querySelector(".link-box4");
 console.log(exhibitions);
 
 function exhibitionDropdown() {
-  //setTimeout(function () {
+  let timer = setTimeout(function () {
     exhibitions.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox1.classList.add("purple-box");
@@ -253,11 +253,15 @@ function exhibitionDropdown() {
     visit.classList.remove("show-info");
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-  //}, 500);
+  }, 700);
+  function exhibitionDropdownStop() {
+    clearTimeout(timer);
+  }
+  exhibitionWrapper.addEventListener("mouseleave", exhibitionDropdownStop);
 }
 
 function exploreDropdown() {
-  //setTimeout(function () {
+  let timer = setTimeout(function () {
     explore.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox2.classList.add("purple-box");
@@ -270,11 +274,15 @@ function exploreDropdown() {
     visit.classList.remove("show-info");
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-  //}, 500);
+  }, 700);
+  function exhibitionDropdownStop() {
+    clearTimeout(timer);
+  }
+  exploreWrapper.addEventListener("mouseleave", exhibitionDropdownStop);
 }
 
 function getInvolvedDropdown() {
-  //setTimeout(function () {
+  let timer = setTimeout(function () {
     getInvolved.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox3.classList.add("purple-box");
@@ -287,11 +295,15 @@ function getInvolvedDropdown() {
     visit.classList.remove("show-info");
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-  //}, 500);
+  }, 700);
+  function exhibitionDropdownStop() {
+    clearTimeout(timer);
+  }
+  getInvolvedWrapper.addEventListener("mouseleave", exhibitionDropdownStop);
 }
 
 function visitDropdown() {
-  //setTimeout(function () {
+  let timer = setTimeout(function () {
     visit.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox4.classList.add("purple-box");
@@ -304,17 +316,20 @@ function visitDropdown() {
     exhibitions.classList.remove("show-info");
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-  //}, 500);
+  }, 700);
+  function exhibitionDropdownStop() {
+    clearTimeout(timer);
+  }
+  visitWrapper.addEventListener("mouseleave", exhibitionDropdownStop);
 }
 
 exhibitionWrapper.addEventListener("mouseover", exhibitionDropdown);
-
 exploreWrapper.addEventListener("mouseover", exploreDropdown);
 getInvolvedWrapper.addEventListener("mouseover", getInvolvedDropdown);
 visitWrapper.addEventListener("mouseover", visitDropdown);
 
 function closeExhibitionDropdown(event) {
-  //setTimeout(function () {
+  setTimeout(function () {
     if (
       exhibitions.classList.contains("show-info") &&
       !event.target.matches(".exhibitionWrapper")
@@ -323,82 +338,56 @@ function closeExhibitionDropdown(event) {
       fadingBackground2.classList.remove("fb-show");
       linkBox1.classList.remove("purple-box");
     }
-  //}, 500);
+  }, 700);
 }
 
 document.addEventListener("mouseout", closeExhibitionDropdown);
 
 function closeExploreDropdown(event) {
-    //setTimeout(function () {
-  if (
-    explore.classList.contains("show-info") &&
-    !event.target.matches(".exploreWrapper")
-  ) {
-    explore.classList.remove("show-info");
-    fadingBackground2.classList.remove("fb-show");
-    linkBox2.classList.remove("purple-box");
-  }
-   //}, 500);
+  setTimeout(function () {
+    if (
+      explore.classList.contains("show-info") &&
+      !event.target.matches(".exploreWrapper")
+    ) {
+      explore.classList.remove("show-info");
+      fadingBackground2.classList.remove("fb-show");
+      linkBox2.classList.remove("purple-box");
+    }
+  }, 700);
 }
 
 document.addEventListener("mouseout", closeExploreDropdown);
 
 function closeGetInvolvedDropdown(event) {
-    //setTimeout(function () {
-  if (
-    getInvolved.classList.contains("show-info") &&
-    !event.target.matches(".getInvolvedWrapper")
-  ) {
-    getInvolved.classList.remove("show-info");
-    fadingBackground2.classList.remove("fb-show");
-    linkBox3.classList.remove("purple-box");
-  }
-   //}, 500);
+  setTimeout(function () {
+    if (
+      getInvolved.classList.contains("show-info") &&
+      !event.target.matches(".getInvolvedWrapper")
+    ) {
+      getInvolved.classList.remove("show-info");
+      fadingBackground2.classList.remove("fb-show");
+      linkBox3.classList.remove("purple-box");
+    }
+  }, 700);
 }
 
 document.addEventListener("mouseout", closeGetInvolvedDropdown);
 
 function closeVisitDropdown(event) {
-    //setTimeout(function () {
-      if (
-        visit.classList.contains("show-info") &&
-        !event.target.matches(".visitWrapper")
-      ) {
-        visit.classList.remove("show-info");
-        fadingBackground2.classList.remove("fb-show");
-        linkBox4.classList.remove("purple-box");
-      }
-    //}, 500);
+  setTimeout(function () {
+    if (
+      visit.classList.contains("show-info") &&
+      !event.target.matches(".visitWrapper")
+    ) {
+      visit.classList.remove("show-info");
+      fadingBackground2.classList.remove("fb-show");
+      linkBox4.classList.remove("purple-box");
+    }
+  }, 700);
 }
 
 document.addEventListener("mouseout", closeVisitDropdown);
 
-// console.log(infoWrapper);
-
-// infoWrapper.forEach(toggleShow);
-
-// infoWrapper.forEach(myFunction);
-
-// function myFunction(item) {
-//   item.onmouseover = function (event) {
-//       console.log("tommy");
-//   }
-// }
-
-// for (let i = 0; i < infoWrapper.length; i++) {
-//   console.log(infoWrapper[i]);
-//   infoWrapper[i].onmouseover = function (event) {
-//     exhibitions.classList.toggle("show-info");
-//     explore.classList.toggle("show-info");
-//   };
-// }
-
-// function toggleShow(event) {
-//   dropdownContent.classlist.toggle("show");
-//   console.log("hi");
-// }
-
-// infoWrapper.addEventListener("onmouseover", toggleShow);
 
 const newsletterError = document.querySelector("#newsletter-error");
 const newsletterSuccess = document.querySelector(".newsletter-success");
@@ -417,14 +406,13 @@ function validateNewsletterForm(event) {
   }
 
   setTimeout(function () {
-  if (validateEmail(newsletterInput.value) === true) {
-    newsletterSuccess.style.display = "block";
-  } else {
-    newsletterSuccess.style.display = "none";
-  }
-  }, 500);
+    if (validateEmail(newsletterInput.value) === true) {
+      newsletterSuccess.style.display = "block";
+    } else {
+      newsletterSuccess.style.display = "none";
+    }
+  }, 700);
 }
-
 
 newsletterForm.addEventListener("submit", validateNewsletterForm);
 

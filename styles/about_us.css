@@ -4,7 +4,7 @@
 /* main 
 --------------------*/
 main {
-  background-color: var(--light-grey);
+  background-color: #d8d8d8;
 }
 .main-wrapper {
   width: 100%;
@@ -12,7 +12,7 @@ main {
   background-color: white;
 }
 section {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 h1 {
@@ -22,7 +22,7 @@ h1 {
   text-transform: capitalize;
   background-color: var(--dark-purple);
   color: #fff;
-  margin: 25px 5% 32px 0;
+  margin: 25px 7.5% 32px 0;
   padding: 12px 32px;
   border-radius: 0 0 50px 0;
 }
@@ -70,7 +70,7 @@ img.large-screen {
   display: none;
 }
 .get-in-touch {
-  width: 90%;
+  width: 85%;
   margin: 16px auto;
   background-color: #7c68a6;
   color: #fff;
@@ -193,12 +193,6 @@ p.tourguides {
   }
   h1::after {
     font-size: 2.25rem;
-  }
-  section {
-    width: 70%;
-  }
-  .get-in-touch {
-    width: 70%;
   }
 }
 @media only screen and (min-width: 992px) {

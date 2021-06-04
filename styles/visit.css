@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 section {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,8 @@ h1 {
   background-color: var(--dark-purple);
   color: #fff;
   padding: 12px 5%;
-  margin: 8px 0 16px 0;
+  margin: 25px 5% 0 0;
+  border-radius: 0 0 50px 0;
 }
 h4 {
   font-size: 1.25rem;
@@ -88,11 +89,12 @@ div.facilities p {
 .hours-wrapper_2 {
   display: flex;
   justify-content: flex-start;
+  margin-left: 5%;
 }
 .hours-wrapper_2 ul {
   font-size: 1.25rem;
   padding: 0;
-  margin: 0 0 0 5%;
+  margin-right: 5%;
 }
 .hours-wrapper_2 li {
   font-family: var(--sofia);
@@ -138,18 +140,12 @@ figure.facilities {
 @media only screen and (min-width: 576px) {
   /* Main
 --------------------*/
-  section {
-    width: 70%;
-  }
 }
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
-  section.info {
-    width: 90%;
-  }
+
   section.facilities {
-    width: 90%;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
@@ -225,12 +221,15 @@ figure.facilities {
   /* Main
 --------------------*/
   main {
-    background-color: var(--light-grey);
+    background-color: #d8d8d8;
   }
   .main-wrapper {
     width: 85%;
     background-color: white;
     padding-top: 50px;
+  }
+  section {
+    width: 90%;
   }
   h1.mobile {
     display: none;
@@ -259,9 +258,6 @@ figure.facilities {
   .facilities p {
     font-size: 1.25rem;
   }
-  .hours-wrapper_2 li {
-    font-size: 1.5rem;
-  }
   #street,
   #postal {
     font-size: 1.25rem;
@@ -286,6 +282,9 @@ figure.facilities {
   }
 }
 @media only screen and (min-width: 1600px) {
+  .hours-wrapper_2 li {
+    font-size: 1.5rem;
+  }
   div.facilities {
     height: 350px;
   }

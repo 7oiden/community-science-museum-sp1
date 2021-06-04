@@ -162,7 +162,7 @@
                   Our more than 1000 unique exhibitions are divided into 5 main
                   spaces for you to explore:
                 </p>
-                <hr />
+                <!-- <hr /> -->
                 <ul class="dropdown-list">
                   <li>Cosmology</li>
                   <li>Evolution</li>
@@ -182,7 +182,7 @@
                   Here you can learn more about what we can offer, wheter you
                   are a:
                 </p>
-                <hr />
+                <!-- <hr /> -->
                 <ul class="dropdown-list">
                   <li>Kid who would like to join one of our clubs.</li>
                   <li>
@@ -205,7 +205,7 @@
                   In order for us to create the best museum possible we need
                   your contribution, support us through:
                 </p>
-                <hr />
+                <!-- <hr /> -->
                 <ul class="dropdown-list">
                   <li>Donations</li>
                   <li>Volunteering</li>
@@ -220,7 +220,7 @@
             <a href="visit.html">
               <div id="visit-dropdown" class="dropdown-info">
                 <p class="header">All you need to know about:</p>
-                <hr />
+                <!-- <hr /> -->
                 <ul class="dropdown-list">
                   <li>Admission</li>
                   <li>Location</li>
@@ -236,11 +236,11 @@
     </header>
 
     <main>
-      <h1>Contact & FAQ</h1>
       <div class="margins">
+        <h1>Contact & FAQ</h1>
         <div class="main-wrapper">
           <section class="contact">
-            <p>If you need to get in touch with us, Please use this form:</p>
+            <p>If you need to get in touch with us, please use this form:</p>
             <ul class="contact-form">
               <li>
                 Submit your inquiry, and we will get back to you as soon as
@@ -248,58 +248,68 @@
               </li>
               <li>Please also see our FAQ before submitting a question.</li>
             </ul>
-            <form action="" method="GET" class="main-form">
-              <label for="name" class="label">Name</label>
-              <input
-                type="text"
-                id="name"
-                class="form"
-                placeholder="Firstname Lastname"
-                required="required"
-              />
+
+            <form class="main-form">
+              <div class="main-form">
+                <label for="name" class="label"
+                  >Name (must be at least 5 characters)</label
+                >
+                <input type="text" id="name" class="form" placeholder="Name" />
+              </div>
+              <div id="name-error" class="error-message">
+                Must be at least 5 characters
+              </div>
+              <div class="main-form">
+                <label for="email_2" class="label">E-mail</label>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="your@email.com"
+                  id="email_2"
+                  class="form"
+                />
+              </div>
+              <div id="email_2-error" class="error-message">
+                Please enter a valid e-mail address
+              </div>
+              <div class="main-form">
+                <label for="option" class="label"
+                  >Subject (Please choose from dropdown)</label
+                >
+                <select name="tickets" id="option" class="form">
+                  <option value="1">I would like to book a group tour</option>
+                  <option value="1">I have a question</option>
+                  <option value="1">Join a childrens club</option>
+                  <option value="1">I want to donate</option>
+                  <option value="1">
+                    I'm a teacher who want to bring my students
+                  </option>
+                  <option value="1">
+                    I'm a reasearcher and want to get in touch
+                  </option>
+                  <option value="1">I would like to join as a volunteer</option>
+                  <option value="1">
+                    I would like to join on a internship
+                  </option>
+                  <option value="more">Other</option>
+                </select>
+              </div>
+              <div id="message-form" class="main-form">
+                <label for="text"
+                  >Message (must be at least 15 characters)</label
+                >
+                <textarea
+                  id="message"
+                  class="form"
+                  placeholder="Write your message here..."
+                ></textarea>
+              </div>
+              <div id="message-error" class="error-message">
+                Must be at least 15 characters
+              </div>
+              <div id="success">Your message has been submitted</div>
+              <button id="faq" type="submit">SUBMIT</button>
             </form>
-            <form action="login.php" method="GET" class="main-form">
-              <label for="email_2" class="label">E-mail</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="your@email.com"
-                id="email_2"
-                class="form"
-                required="required"
-              />
-            </form>
-            <form action="" class="main-form">
-              <label for="option" class="label">My inquiry</label>
-              <select name="tickets" id="option" class="form">
-                <option value="1">I would like to book a group tour</option>
-                <option value="1">I have a question</option>
-                <option value="1">Join a childrens club</option>
-                <option value="1">I want to donate</option>
-                <option value="1">
-                  I'm a teacher who want to bring my students
-                </option>
-                <option value="1">
-                  I'm a reasearcher and want to get in touch
-                </option>
-                <option value="1">I would like to join as a volunteer</option>
-                <option value="1">I would like to join on a internship</option>
-                <option value="more">Other</option>
-              </select>
-            </form>
-            <form action="" class="main-form">
-              <label for="text">Message</label>
-              <textarea
-                name=""
-                id="text"
-                cols="30"
-                rows="10"
-                class="form"
-                required="required"
-                placeholder="Write your message here..."
-              ></textarea>
-            </form>
-            <button id="faq">SUBMIT</button>
           </section>
           <section class="faq">
             <h2>Frequently Asked Questions</h2>
@@ -456,5 +466,6 @@
       <p id="copyright">Community Science Museum 2020</p>
     </footer>
     <script src="js/in_common.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
