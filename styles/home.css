@@ -219,7 +219,7 @@ div.ticketmaster {
   color: var(--dark-purple);
   width: 300px;
   min-height: 170px;
-  margin: 0 auto 0 auto;
+  margin: 120px auto 0 auto;
   border-radius: 10px;
   transition-property: scale;
   transition-duration: 0.5s;

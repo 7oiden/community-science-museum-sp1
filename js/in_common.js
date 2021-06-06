@@ -8,8 +8,6 @@ const profileDropdow = document.querySelector(".profile-dropdown");
 
 const fadingBackground = document.querySelector(".fading-background_1");
 
-console.log("hi");
-
 function searchDropdown() {
   if (searchDropdow.style.display === "block") {
     searchDropdow.style.display = "none";
@@ -265,7 +263,6 @@ function exploreDropdown() {
     explore.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox2.classList.add("purple-box");
-    //fadingBackground.style.zIndex = "40";
     linkBox1.classList.remove("purple-box");
     linkBox3.classList.remove("purple-box");
     linkBox4.classList.remove("purple-box");
@@ -286,7 +283,6 @@ function getInvolvedDropdown() {
     getInvolved.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox3.classList.add("purple-box");
-    //fadingBackground.style.zIndex = "40";
     linkBox1.classList.remove("purple-box");
     linkBox2.classList.remove("purple-box");
     linkBox4.classList.remove("purple-box");
@@ -307,7 +303,6 @@ function visitDropdown() {
     visit.classList.add("show-info");
     fadingBackground2.classList.add("fb-show");
     linkBox4.classList.add("purple-box");
-    //fadingBackground.style.zIndex = "40";
     linkBox1.classList.remove("purple-box");
     linkBox2.classList.remove("purple-box");
     linkBox3.classList.remove("purple-box");
