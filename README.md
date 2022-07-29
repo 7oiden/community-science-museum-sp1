@@ -34,7 +34,7 @@ The project should reflect the student's creative and technical knowledge and sk
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:7oiden/mercury-shoes.git
+git clone git@github.com:7oiden/community-science-museum-sp1.git
 ```
 
 ## Contact
