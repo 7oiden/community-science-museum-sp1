@@ -5,3 +5,5 @@
 _Screenshot of the projects hero at the homepage_
 
 ## Description
+
+This project was an assignment from Noroff's Frontend course first year and was delivered in December 2020. The time frame was 4 weeks, and the project requirements are listed in the next section.
