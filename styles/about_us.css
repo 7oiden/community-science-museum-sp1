@@ -6,15 +6,18 @@
 main {
   background-color: #d8d8d8;
 }
+
 .main-wrapper {
   width: 100%;
   margin: 0 auto;
   background-color: white;
 }
+
 section {
   width: 85%;
   margin: 0 auto;
 }
+
 h1 {
   font-family: var(--proxima);
   font-size: 1.5rem;
@@ -30,10 +33,12 @@ h1::before {
   content: "“";
   font-size: 1.5rem;
 }
+
 h1::after {
   content: "”";
   font-size: 1.5rem;
 }
+
 section.vision {
   display: flex;
   flex-direction: column;
@@ -43,6 +48,7 @@ div.vision {
   width: 100%;
   background-color: var(--light-grey);
   padding-top: 16px;
+  border-radius: 5px;
 }
 div.item-1 {
   font-family: var(--sofia);
@@ -237,18 +243,21 @@ p.tourguides {
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
-  .main-wrapper {
+  /* .main-wrapper {
     width: 85%;
-  }
-  .main-wrapper {
+  } */
+  /* .main-wrapper {
     padding-top: 50px;
-  }
+  } */
+
   img.mobile {
     display: none;
   }
+
   img.large-screen {
     display: block;
   }
+  
   h1 {
     width: 90%;
     font-size: 2.5rem;

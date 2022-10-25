@@ -20,7 +20,7 @@ body {
 
 .fa {
   color: var(--white);
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   display: inline-block;
 }
 
@@ -262,13 +262,13 @@ button.profile:hover {
 
 .logo {
   display: block;
-  width: 300px;
+  width: 250px;
   margin: 1rem auto 0 auto;
 }
 
 .logo img {
   display: block;
-  width: 300px;
+  width: 250px;
 }
 
 nav.icons {
@@ -307,6 +307,14 @@ nav.menu {
   margin-bottom: 0;
 }
 
+.menu-link {
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
 header {
   display: inline;
 }
@@ -314,10 +322,11 @@ header {
 /* mobile menu */
 .fa-bars {
   font-size: 1.875rem;
+  padding: 1rem 0;
 }
 
 ul.mobile-menu {
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 5%;
   padding: 0;
 }
 
@@ -328,7 +337,7 @@ ul.mobile-menu {
   margin: 0;
 }
 
-ul.large-screen {
+ul.large-screen-menu {
   display: none;
 }
 
@@ -419,6 +428,13 @@ ul li {
 
 /* Main
 --------------------*/
+
+.main-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 .bottom-section {
   width: 100%;
   background-color: white;
@@ -432,6 +448,7 @@ ul li {
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
+  margin-top: 2rem;
   margin-bottom: 0;
   border-radius: 100px 0 0 0;
 }
@@ -458,11 +475,10 @@ section.newsletter {
 
 .newsletter label {
   display: block;
-  font-family: var(--neue-haas);
+  font-family: var(--sofia);
   font-size: 0.875rem;
   font-weight: 800;
   text-align: center;
-  text-transform: uppercase;
   text-align: left;
   min-width: 328px;
   padding-top: 16px;
@@ -523,10 +539,27 @@ form.newsletter {
   padding: 5px;
 }
 
+.info-box {
+  background-color: #7c68a640;
+  color: var(--dark-purple);
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: 5px;
+}
+
+.image-box {
+  border-radius: 5px;
+}
+
+.info-box-heading {
+  font-family: var(--proxima-soft);
+  margin: 0;
+  padding: 0;
+}
+
 /* footer 
 --------------------*/
 footer {
-  font-family: var(--neue-haas);
+  font-family: var(--sofia);
 }
 
 .footer-wrapper {
@@ -754,14 +787,14 @@ h6 {
   /* Header
 --------------------*/
   .logo {
-    width: 350px;
-    margin-left: 5%;
+    width: 300px;
+    /* margin-left: 5%; */
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
   .logo img {
-    width: 350px;
+    width: 300px;
   }
 
   .fading-background_1,
@@ -781,6 +814,10 @@ h6 {
     top: 70px;
   }
 
+  .main-wrapper {
+    width: 90%;
+  }
+
   /* Footer
 --------------------*/
   .footer-wrapper {
@@ -798,9 +835,7 @@ h6 {
   nav.menu {
     height: 60px;
     align-items: center;
-    justify-content: space-around;
-    border-right: 8px solid var(--dark-purple);
-    border-radius: 0 100px 0 0;
+    margin: 0 auto;
   }
 
   .fading-background_1,
@@ -812,17 +847,20 @@ h6 {
     display: none;
   }
 
-  ul.large-screen {
+  ul.large-screen-menu {
     display: flex;
     justify-content: flex-start;
-    width: 90%;
+    width: 85%;
+    gap: 4rem;
+    margin: 0 auto;
+    padding: 0;
   }
 
-  .large-screen li {
+  /* .large-screen li {
     position: relative;
-  }
+  } */
 
-  .link-box1,
+  /* .link-box1,
   .link-box2,
   .link-box3,
   .link-box4 {
@@ -834,7 +872,7 @@ h6 {
     border-radius: 70px 0 70px 0;
     position: relative;
     text-decoration: underline;
-  }
+  } */
 
   .inactive {
     text-decoration: none;
@@ -903,7 +941,7 @@ h6 {
   /* Main
 --------------------*/
   .newsletter-wrapper {
-    margin: 0 auto 0 auto;
+    margin: 4rem auto 0 auto;
   }
 
   section.newsletter {

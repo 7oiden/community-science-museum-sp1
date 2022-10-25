@@ -1,6 +1,6 @@
 const slider = document.querySelector(".slider");
 const leftArrow = document.querySelector("#left");
-const rigthArrow = document.querySelector("#right");
+const rightArrow = document.querySelector("#right");
 const indicatorParents = document.querySelector(".preview");
 
 
@@ -24,7 +24,7 @@ leftArrow.addEventListener("click", function () {
   slider.style.transform = "translate(" + sectionIndex * -33.33 + "%)";
 });
 
-rigthArrow.addEventListener("click", function () {
+rightArrow.addEventListener("click", function () {
     console.log("hiy");
   sectionIndex = sectionIndex < 2 ? sectionIndex + 1 : 2;
   document.querySelector(".selected").classList.remove("selected");

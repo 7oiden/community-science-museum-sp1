@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Community Science Museum - Bergen: Are you a young person looking to learn
-      more about science in a fun way?
-    </title>
-    <meta
-      name="description"
-      content="
+
+<head>
+  <title>
+    Community Science Museum - Bergen: Are you a young person looking to learn
+    more about science in a fun way?
+  </title>
+  <meta name="description" content="
       Come on down to our new museum in Bergen and make us a visit. There is plenty to see and do; 
       and you can also join one of our clubs that offer an experiment driven exploring in weekends and holidays.
       As community-drive museum, we also want to work with schools to create places of learning and exploring.
-      And there is also ways for you to work with us if you are a researcher or academic"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/fbd3401b24.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
-    <link rel="stylesheet" href="styles/explore.css" />
-    <link
-      rel="shortcut icon"
-      type="image"
-      href="images/icons/CSM favicon.png"
-    />
-    <!-- Hotjar Tracking Code for https://cms-bergen.netlify.app/ -->
-    <!-- <script>
+      And there is also ways for you to work with us if you are a researcher or academic" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/fbd3401b24.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/cgz4jxk.css" />
+  <link rel="stylesheet" href="styles/explore.css" />
+  <link rel="shortcut icon" type="image" href="images/icons/CSM favicon.png" />
+  <!-- Hotjar Tracking Code for https://cms-bergen.netlify.app/ -->
+  <!-- <script>
       (function (h, o, t, j, a, r) {
         h.hj =
           h.hj ||
@@ -41,210 +32,117 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script> -->
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div class="header-wrapper">
-        <figure class="logo">
-          <a href="index.html"
-            ><img src="images\cms-logo.png" alt="Community Science Museum logo"
-          /></a>
-        </figure>
-        <nav aria-label="icons" class="icons">
-          <div class="dropdown-wrapper">
-            <i class="fa fa-search icon"></i>
-            <div class="search-dropdown">
-              <p class="search-header">search results</p>
-              <form action="" class="dropdown-form">
-                <label for="search" class="label">Search</label>
-                <input
-                  type="text"
-                  name="first-name"
-                  placeholder="Start Writing..."
-                  id="search"
-                  class="box"
-                />
-              </form>
-              <p class="dropdown-text">
-                Sorry, no result for your search, please try something else
-              </p>
-            </div>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <figure class="logo">
+        <a href="index.html"><img src="images\cms-logo.png" alt="Community Science Museum logo" /></a>
+      </figure>
+      <nav aria-label="icons" class="icons">
+        <div class="dropdown-wrapper">
+          <i class="fa fa-search icon"></i>
+          <div class="search-dropdown">
+            <p class="search-header">search results</p>
+            <form action="" class="dropdown-form">
+              <label for="search" class="label">Search</label>
+              <input type="text" name="first-name" placeholder="Start Writing..." id="search" class="box" />
+            </form>
+            <p class="dropdown-text">
+              Sorry, no result for your search, please try something else
+            </p>
           </div>
+        </div>
 
-          <div class="dropdown-wrapper">
-            <i class="fa fa-ticket-alt icon"></i>
-            <div class="ticket-dropdown">
-              <p class="ticket-header">buy ticket</p>
-              <p class="dropdown-text">
-                Please Choose the Desired Number of Tickets and Click Proceed in
-                order to finalize your purchase on www.ticketmaster.com
-              </p>
-              <p class="dropdown-text">
-                If your party consist of 6 people or more, you will be taken to
-                our contact form.
-              </p>
-              <form action="" class="ticket dropdown-form">
-                <label for="select" class="ticket-label">Tickets</label>
-                <select name="tickets" id="select">
-                  <option class="option" value="1">1</option>
-                  <option class="option" value="1">2</option>
-                  <option class="option" value="1">3</option>
-                  <option class="option" value="1">4</option>
-                  <option class="option" value="1">5</option>
-                  <option class="option" value="more">6 or more</option>
-                </select>
-              </form>
-              <button class="ticket">PROCEED</button>
-            </div>
+        <div class="dropdown-wrapper">
+          <i class="fa fa-ticket-alt icon"></i>
+          <div class="ticket-dropdown">
+            <p class="ticket-header">buy ticket</p>
+            <p class="dropdown-text">
+              Please Choose the Desired Number of Tickets and Click Proceed in
+              order to finalize your purchase on www.ticketmaster.com
+            </p>
+            <p class="dropdown-text">
+              If your party consist of 6 people or more, you will be taken to
+              our contact form.
+            </p>
+            <form action="" class="ticket dropdown-form">
+              <label for="select" class="ticket-label">Tickets</label>
+              <select name="tickets" id="select">
+                <option class="option" value="1">1</option>
+                <option class="option" value="1">2</option>
+                <option class="option" value="1">3</option>
+                <option class="option" value="1">4</option>
+                <option class="option" value="1">5</option>
+                <option class="option" value="more">6 or more</option>
+              </select>
+            </form>
+            <button class="ticket">PROCEED</button>
           </div>
+        </div>
 
-          <div class="dropdown-wrapper">
-            <i class="fa fa-user-circle icon"></i>
-            <div class="profile-dropdown">
-              <p class="profile-header">your account</p>
-              <form class="dropdown-form" id="profile-form">
-                <label for="email" class="label">E-mail</label>
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="your@email.com"
-                  id="dropdown-email"
-                  class="box"
-                />
-                <div class="error-message" id="profile-email-error">
-                  Please enter a valid e-mail address
-                </div>
+        <div class="dropdown-wrapper">
+          <i class="fa fa-user-circle icon"></i>
+          <div class="profile-dropdown">
+            <p class="profile-header">your account</p>
+            <form class="dropdown-form" id="profile-form">
+              <label for="email" class="label">E-mail</label>
+              <input type="text" name="email" placeholder="your@email.com" id="dropdown-email" class="box" />
+              <div class="error-message" id="profile-email-error">
+                Please enter a valid e-mail address
+              </div>
 
-                <label for="choose" class="label_2">Password</label>
-                <input
-                  type="password"
-                  name="choose"
-                  placeholder="Password"
-                  class="box password"
-                  id="dropdown-password"
-                />
-                <div class="error-message" id="profile-password-error">
-                  Must be at least 5 characters
-                </div>
-                <div id="success-message">
-                  Welcome back, you are now logged in
-                </div>
-                <button
-                  type="submit"
-                  id="profile-submit-button"
-                  class="profile"
-                >
-                  SIGN IN
-                </button>
-              </form>
-            </div>
+              <label for="choose" class="label_2">Password</label>
+              <input type="password" name="choose" placeholder="Password" class="box password" id="dropdown-password" />
+              <div class="error-message" id="profile-password-error">
+                Must be at least 5 characters
+              </div>
+              <div id="success-message">
+                Welcome back, you are now logged in
+              </div>
+              <button type="submit" id="profile-submit-button" class="profile">
+                SIGN IN
+              </button>
+            </form>
           </div>
-        </nav>
-      </div>
-      <nav aria-label="menu" class="menu">
-        <ul class="mobile-menu">
-          <label class="hamburger-label" for="hamburger-menu"
-            ><span class="fa fa-bars"></span>
-            <p id="menu">MENU</p></label
-          >
-          <input type="checkbox" id="hamburger-menu" />
-          <li><a href="exhibitions.html">EXHIBITIONS</a></li>
-          <li><a href="explore.html">EXPLORE</a></li>
-          <li><a href="get_involved.html">GET INVOLVED</a></li>
-          <li id="visit"><a href="visit.html">VISIT</a></li>
-        </ul>
-        <ul class="large-screen">
-          <li id="exhibition-wrapper" class="info-wrapper">
-            <a href="exhibitions.html" class="link-box1 inactive"
-              >EXHIBITIONS</a
-            >
-            <a href="exhibitions.html">
-              <div id="exhibitions-dropdown" class="dropdown-info">
-                <p class="header">
-                  Our more than 1000 unique exhibitions are divided into 5 main
-                  spaces for you to explore:
-                </p>
-                <!-- <hr /> -->
-                <ul class="dropdown-list">
-                  <li>Cosmology</li>
-                  <li>Evolution</li>
-                  <li>Biology & Medicine</li>
-                  <li>Robotics & AI</li>
-                  <li>Ecology</li>
-                </ul>
-                <!-- <p class="learn-more">Click to Learn More...</p> -->
-              </div>
-            </a>
-          </li>
-          <li id="explore-wrapper" class="info-wrapper">
-            <a href="explore.html" class="link-box2">EXPLORE</a>
-            <a href="explore.html">
-              <div id="explore-dropdown" class="dropdown-info">
-                <p class="header">
-                  Here you can learn more about what we can offer, whether you
-                  are a:
-                </p>
-                <!-- <hr /> -->
-                <ul class="dropdown-list">
-                  <li>Kid who would like to join one of our clubs.</li>
-                  <li>
-                    Teacher who would like to bring your students for a guided
-                    tour.
-                  </li>
-                  <li>Researcher who would like to join our team.</li>
-                </ul>
-                <!-- <p class="learn-more">Click to Learn More...</p> -->
-              </div>
-            </a>
-          </li>
-          <li id="get-involved-wrapper" class="info-wrapper">
-            <a href="get_involved.html" class="link-box3 inactive"
-              >GET INVOLVED</a
-            >
-            <a href="get_involved.html">
-              <div id="get-involved-dropdown" class="dropdown-info">
-                <p class="header">
-                  In order for us to create the best museum possible we need
-                  your contribution, support us through:
-                </p>
-                <!-- <hr /> -->
-                <ul class="dropdown-list">
-                  <li>Donations</li>
-                  <li>Volunteering</li>
-                  <li>Internships</li>
-                </ul>
-                <!-- <p class="learn-more">Click to learn more...</p> -->
-              </div>
-            </a>
-          </li>
-          <li id="visit-wrapper" class="info-wrapper">
-            <a href="visit.html" class="link-box4 inactive">VISIT</a>
-            <a href="visit.html">
-              <div id="visit-dropdown" class="dropdown-info">
-                <p class="header">All you need to know about:</p>
-                <!-- <hr /> -->
-                <ul class="dropdown-list">
-                  <li>Admission</li>
-                  <li>Location</li>
-                  <li>Opening Hours</li>
-                  <li>Facilities</li>
-                </ul>
-                <!-- <p class="learn-more">Click to learn more...</p> -->
-              </div>
-            </a>
-          </li>
-        </ul>
+        </div>
       </nav>
-    </header>
+    </div>
+    <nav aria-label="menu" class="menu">
+      <ul class="mobile-menu">
+        <label class="hamburger-label" for="hamburger-menu"><span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="hamburger-menu" />
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="get_involved.html">Get involved</a></li>
+        <li id="visit"><a href="visit.html">Visit</a></li>
+      </ul>
+      <ul class="large-screen-menu">
+        <li>
+          <a href="exhibitions.html" class="menu-link">Exhibitions</a>
+        </li>
+        <li>
+          <a href="explore.html" class="menu-link">Explore</a>
+        </li>
+        <li>
+          <a href="get_involved.html" class="menu-link">Get involved</a>
+        </li>
+        <li>
+          <a href="visit.html" class="menu-link">Visit</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <h1 class="mobile">Explore</h1>
-      <div class="main-wrapper">
-        <h1 class="large-screen">More To Explore</h1>
+  <main>
+    <div class="main-wrapper">
+      <div class="content-container">
+        <h1>More To Explore</h1>
         <section class="kids">
-          <div class="blue margins" id="item-1">
-            <h2>For Kids</h2>
+          <div class="blue info-box" id="item-1">
+            <h2 class="info-box-heading">For Kids</h2>
             <p>
               Are you a young person looking to learn more about science? Come
               on down to our museum, there’s plenty to see and do.
@@ -259,9 +157,9 @@
             </p>
             <p>You can also join one of our popular science clubs.</p>
           </div>
-          <div class="margins" id="item-2">
+          <div class="info-box" id="item-2">
             <div id="club-anchor"></div>
-            <h4 class="club">Join a Children's Club</h4>
+            <h4 class="info-box-heading">Join a Children's Club</h4>
             <h5>Young Stars Club</h5>
             <p>
               We also have the <em>Young Stars Club</em> which meets once a week
@@ -279,17 +177,18 @@
               and how you can join, send us a message.
             </p>
           </div>
-          <div class="margins" id="item-3">
+          <div class="image-box" id="item-3">
             <!-- <img src="images\kids-cartoon.jpg" alt="" /> -->
           </div>
         </section>
-        <div class="margins get-in-touch">
-          <p>Do You Want to join one of our clubs?</p>
-          <a href="contact.html"><p class="button">GET IN TOUCH</p></a>
+        <div class="get-in-touch" id="get-in-touch-1">
+          <p>Do you want to join one of our clubs?</p>
+          <a href="contact.html" class="button">Get in touch
+          </a>
         </div>
         <section class="teachers">
-          <div class="margins" id="item-4">
-            <h3>For Teachers</h3>
+          <div class="info-box" id="item-4">
+            <h3 class="info-box-heading">For Teachers</h3>
             <p>
               As a community-driven museum, we want to work with schools to
               create places of learning and exploring. .
@@ -305,8 +204,8 @@
               for a visit.
             </p>
           </div>
-          <div class="margins" id="item-5">
-            <h3>For Researchers</h3>
+          <div class="info-box" id="item-5">
+            <h3 class="info-box-heading">For Researchers</h3>
             <p>
               Are you looking to get involved with our team of researchers and
               academics?
@@ -318,126 +217,110 @@
               the country.
             </p>
           </div>
-          <figure class="margins" id="item-6">
+          <figure id="item-6">
             <!-- <img src="images\researcher-cartoon_large.jpg" alt="" /> -->
           </figure>
         </section>
-        <div class="margins get-in-touch">
-          <p>Are you a Teacher or a Researcher?</p>
-          <a href="contact.html"><p class="button">GET IN TOUCH</p></a>
+        <div class="get-in-touch" id="get-in-touch-2">
+          <p>Are you a teacher or a researcher?</p>
+          <a href="contact.html" class="button">Get in touch</a>
         </div>
       </div>
-      <div class="bottom-section">
-        <div class="newsletter-wrapper">
-          <div class="blur">
-            <section class="newsletter">
-              <label for="newsletter">
-                Sign up to our Newsletter and be the first to know about Our
-                exciting New stuff:
-              </label>
-              <div class="newsletter-success">
-                Welcome! Please check your inbox
-              </div>
-              <form class="newsletter">
-                <input
-                  id="newsletter"
-                  type="text"
-                  name="email"
-                  placeholder="YOUR EMAIL"
-                />
-
-                <input
-                  id="sign-up"
-                  type="submit"
-                  name="subscribe"
-                  value="SIGN UP"
-                />
-              </form>
-              <p id="newsletter-error" class="error-message">
-                Please enter a valid e-mail address
-              </p>
-            </section>
-          </div>
+      <div class="newsletter-wrapper">
+        <div class="blur">
+          <section class="newsletter">
+            <label for="newsletter">
+              Sign up to our <em>newsletter</em> and be the first to know about our
+              exciting <em>new stuff</em>:
+            </label>
+            <div class="newsletter-success">
+              Welcome! Please check your inbox
+            </div>
+            <form class="newsletter">
+              <input id="newsletter" type="text" name="email" placeholder="your e-mail" />
+              <input id="sign-up" type="submit" name="subscribe" value="SIGN UP" />
+            </form>
+            <p id="newsletter-error" class="error-message">
+              Please enter a valid e-mail address
+            </p>
+          </section>
         </div>
       </div>
-      <div class="fading-background_1"></div>
-      <div class="fading-background_2"></div>
-    </main>
+    </div>
+    <div class="fading-background_1"></div>
+    <div class="fading-background_2"></div>
+  </main>
 
-    <footer>
-      <div class="footer-wrapper">
-        <div class="footer-container fi1">
-          <h6>CONNECT:</h6>
-          <ul class="connect">
-            <li>
-              <a href="https://www.facebook.com/"
-                ><span class="fa fa-facebook-f"></span
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/"
-                ><span class="fa fa-instagram"></span
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com"
-                ><span class="fa fa-youtube"></span
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com"
-                ><span class="fa fa-twitter"></span
-              ></a>
-            </li>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-container fi1">
+        <h6>CONNECT:</h6>
+        <ul class="connect">
+          <li>
+            <a href="https://www.facebook.com/"><span class="fa fa-facebook-f"></span></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com"><span class="fa fa-youtube"></span></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com"><span class="fa fa-twitter"></span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-container fi2">
+        <h6>HOURS:</h6>
+        <div class="hours-wrapper">
+          <ul class="hours">
+            <li>Monday:</li>
+            <li>Tuesday:</li>
+            <li>Wednesday:</li>
+            <li>Thursday:</li>
+            <li>Friday:</li>
+            <li>Saturday:</li>
+            <li>Sunday:</li>
           </ul>
-        </div>
-        <div class="footer-container fi2">
-          <h6>HOURS:</h6>
-          <div class="hours-wrapper">
-            <ul class="hours">
-              <li>Monday:</li>
-              <li>Tuesday:</li>
-              <li>Wednesday:</li>
-              <li>Thursday:</li>
-              <li>Friday:</li>
-              <li>Saturday:</li>
-              <li>Sunday:</li>
-            </ul>
-            <ul>
-              <li>Closed</li>
-              <li>10:00 - 16:00</li>
-              <li>10:00 - 16:00</li>
-              <li>10:00 - 16:00</li>
-              <li>10:00 - 19:00</li>
-              <li>09:00 - 16:00</li>
-              <li>09:00 - 13:00</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-container fi3">
-          <div>
-            <h6>LOCATION:</h6>
-            <p>Nygårdsgaten 112</p>
-            <p>5008 Bergen, Norway</p>
-          </div>
-          <a href="visit.html#map" class="location"
-            ><span class="fa fa-map-marker-alt"></span>
-            <p>Getting Here</p></a
-          >
-        </div>
-        <div class="footer-container fi4">
-          <h6>CONTACT & SUPPORT:</h6>
-          <ul class="contact">
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="visit.html#facilities">Facilities</a></li>
-            <li><a href="contact.html">Contact & FAQ</a></li>
-            <li><p>Email: contact@cms.com</p></li>
-            <li><p>Phone: 500 55 555</p></li>
+          <ul>
+            <li>Closed</li>
+            <li>10:00 - 16:00</li>
+            <li>10:00 - 16:00</li>
+            <li>10:00 - 16:00</li>
+            <li>10:00 - 19:00</li>
+            <li>09:00 - 16:00</li>
+            <li>09:00 - 13:00</li>
           </ul>
         </div>
       </div>
-      <p id="copyright">Community Science Museum 2020</p>
-    </footer>
-    <script src="js/in_common.js"></script>
-  </body>
+      <div class="footer-container fi3">
+        <div>
+          <h6>LOCATION:</h6>
+          <p>Nygårdsgaten 112</p>
+          <p>5008 Bergen, Norway</p>
+        </div>
+        <a href="visit.html#map" class="location"><span class="fa fa-map-marker-alt"></span>
+          <p>Getting Here</p>
+        </a>
+      </div>
+      <div class="footer-container fi4">
+        <h6>CONTACT & SUPPORT:</h6>
+        <ul class="contact">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="visit.html#facilities">Facilities</a></li>
+          <li><a href="contact.html">Contact & FAQ</a></li>
+          <li>
+            <p>Email: contact@cms.com</p>
+          </li>
+          <li>
+            <p>Phone: 500 55 555</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p id="copyright">Community Science Museum 2020</p>
+  </footer>
+  <script src="js/in_common.js"></script>
+</body>
+
 </html>

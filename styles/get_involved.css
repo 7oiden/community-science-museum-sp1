@@ -8,26 +8,30 @@
   margin: 0 auto;
   padding-top: 0;
 }
+
 section.main-content {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
+
 h1.large-screen {
   display: none;
 }
+
 h1 {
   font-family: var(--proxima);
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: left;
-  background-color: var(--dark-purple);
-  color: #fff;
-  padding: 12px 5%;
+  /* background-color: var(--dark-purple); */
+  color: var(--dark-purple);
+  padding: 1rem 5%;
   margin: 25px 5% 0 0;
-  border-radius: 0 0 50px 0;
+  border-radius: 5px;
 }
+
 h4 {
   font-size: 1.25rem;
   font-weight: 800;
@@ -36,22 +40,27 @@ h4 {
   margin: 8px 5% 32px 5%;
   text-transform: capitalize;
 }
-h2 {
+
+/* h2 {
   margin-left: 5%;
   font-family: var(--proxima);
   font-size: 1.5rem;
-}
+} */
+
 div.support {
   width: 100%;
   background-color: var(--light-grey);
   margin-bottom: 16px;
   padding-bottom: 16px;
+  border-radius: 5px;
 }
-div.support p {
+
+/* div.support p {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 16px;
-}
+} */
+
 .get-in-touch {
   margin: 0 auto;
   background-color: #7c68a6;
@@ -96,7 +105,7 @@ p.button:hover {
 --------------------*/
   section.main-content {
     flex-direction: row;
-    gap: 16px;
+    gap: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -123,10 +132,12 @@ p.button:hover {
     text-transform: capitalize;
     text-align: center;
   }
-  h2 {
+
+  /* h2 {
     font-size: 1.875rem;
     margin-bottom: 16px;
-  }
+  } */
+
   section.main-content {
     width: 90%;
     font-size: 1.125rem;

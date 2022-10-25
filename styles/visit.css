@@ -49,6 +49,7 @@ div.info {
   background-color: var(--light-grey);
   margin-bottom: 16px;
   padding-bottom: 16px;
+  border-radius: 5px;
 }
 #map {
   padding-bottom: 0;
@@ -80,6 +81,11 @@ div.facilities {
   margin-bottom: 16px;
   margin-top: 0;
 }
+
+.facilities {
+  border-radius: 5px;
+}
+
 div.info p,
 div.facilities p {
   width: 90%;
@@ -196,12 +202,12 @@ figure.facilities {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-  .logo {
+  /* .logo {
     width: 350px;
   }
   .logo img {
     width: 350px;
-  }
+  } */
   section.info {
     flex-direction: row;
     gap: 16px;
@@ -223,11 +229,11 @@ figure.facilities {
   main {
     background-color: #d8d8d8;
   }
-  .main-wrapper {
+  /* .main-wrapper {
     width: 85%;
     background-color: white;
     padding-top: 50px;
-  }
+  } */
   section {
     width: 90%;
   }

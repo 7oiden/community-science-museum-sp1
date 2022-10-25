@@ -6,45 +6,52 @@
 main {
   background-color: white;
 }
+
 .main-wrapper {
-  width: 85%;
-  margin: 0 auto;
-  padding-top: 25px;
-  padding-bottom: 50px;
-  background-color: white;
+  padding-top: 2rem;
 }
+
+.content-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 section.kids,
 section.teachers {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
+
 div.blue {
   background-color: var(--blue);
   font-size: 1.125rem;
   color: #fff;
 }
-.margins {
+
+/* .margins {
   width: 100%;
   background-color: var(--light-grey);
   margin-top: 16px;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-h1.large-screen {
-  display: none;
-}
+  border-radius: 5px;
+} */
+
 h1 {
   font-family: var(--proxima);
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase;
   text-align: left;
   background-color: var(--dark-purple);
   color: #fff;
+  margin: 0;
   padding: 12px 5%;
-  margin: 25px 5% 0 0;
-  border-radius: 0 0 50px 0;
+  border-radius: 25px 25px 0 0;
 }
 h2,
 h3 {
@@ -71,26 +78,31 @@ h5 {
   top: -75px;
   visibility: hidden;
 }
-#item-2 p {
+/* #item-2 p {
   margin-top: 8px;
-}
+} */
+
 figure {
   width: 100%;
   margin: 0;
   padding: 0;
 }
+
 #item-3 {
   height: 300px;
   background-image: url(../images/kids-cartoon_large.jpg);
   background-size: cover;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
+
 #item-6 {
   height: 300px;
   background-image: url(../images/researcher-cartoon_large.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .get-in-touch {
   background-color: #7c68a6;
   color: #fff;
@@ -99,32 +111,41 @@ figure {
   border-radius: 0 50px;
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
-  margin-bottom: 32px;
+  gap: 1rem;
+  padding: 1rem 0;
 }
+
+#get-in-touch-1 {
+  border-radius: 5px;
+}
+
+#get-in-touch-2 {
+  border-radius: 0 0 25px 25px;
+}
+
 .get-in-touch > p {
   font-family: var(--proxima);
   font-weight: bold;
-  text-transform: uppercase;
-  margin: 16px 0;
+  margin: 0;
+  padding: 0;
 }
-p.button {
+
+.button {
   font-family: var(--sofia);
   display: inline-block;
+  align-self: center;
   text-align: center;
   border-radius: 15px;
   background-color: var(--magenta);
   color: var(--white);
-  padding: 8px 32px;
-  margin-top: 0;
-  margin-bottom: 16px;
-  border-bottom: 3px solid #fff;
-  border-right: 2px solid #fff;
+  padding: 0.5rem 2rem;
+  margin: 0;
   transition-property: scale;
   transition-duration: 0.5s;
   scale: 1;
 }
-p.button:hover {
+
+.button:hover {
   scale: 1.1;
 }
 
@@ -133,33 +154,33 @@ p.button:hover {
 @media only screen and (min-width: 576px) {
   /* Main
 --------------------*/
-  #item-3,
+  /* #item-3,
   #item-6 {
     min-height: 400px;
-  }
+  } */
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
   #item-1,
   #item-2,
+  #item-3,
   #item-4,
-  #item-5 {
-    min-width: 45%;
+  #item-5,
+  #item-6 {
     flex: 1;
   }
+
   #item-3,
   #item-6 {
-    min-width: 300px;
-    min-height: 450px;
-    flex: 1;
-    margin-top: 0;
+    height: auto;
   }
+
   section.kids,
   section.teachers {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -169,96 +190,91 @@ p.button:hover {
     background-color: #d8d8d8;
     font-size: 1.125rem;
   }
-  .main-wrapper {
-    padding-top: 50px;
-  }
+
   h1.mobile {
     display: none;
   }
-  h1.large-screen {
-    width: 90%;
-    display: block;
-    margin: 0 auto 16px auto;
+
+  h1 {
     font-size: 2.5rem;
-    text-transform: capitalize;
     text-align: center;
   }
+
   h2,
   h3 {
     font-size: 1.75rem;
   }
+
   h4 {
     font-size: 1.5rem;
     margin-top: 24px;
   }
+
   h5 {
     font-size: 1.25rem;
   }
   section.kids,
   section.teachers {
-    width: 90%;
+    
   }
-  .margins {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .margins img {
-    height: 480px;
-  }
+  
   div.blue {
     font-size: 1.25rem;
   }
-  #item-3 {
+  /* #item-3 {
     background-image: url(../images/kids-cartoon_vertical.jpg);
   }
   #item-6 {
     background-image: url(../images/researcher-cartoon_vertical.jpg);
-  }
-  #item-1,
+  } */
+  /* #item-1,
   #item-2,
   #item-4,
   #item-5 {
     min-width: auto;
-  }
-  #item-3,
+  } */
+  /* #item-3,
   #item-6 {
     height: auto;
     margin-top: 16px;
-  }
+  } */
   .get-in-touch {
-    width: 90%;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
-    margin: 16px auto 0 auto;
-    gap: 64px;
-    padding-top: 12px;
+    gap: 4rem;
   }
+
   .get-in-touch p {
     font-size: 1.5rem;
   }
+
   p.button {
     font-size: 1.35rem;
-  }
-  .bottom-section {
-    width: 85%;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  #item-3 {
+  /* #item-3 {
     background-image: url(../images/kids-cartoon_large.jpg);
   }
   #item-6 {
     background-image: url(../images/researcher-cartoon_large.jpg);
-  }
+  } */
 }
 @media only screen and (min-width: 1800px) {
   /* Main
 --------------------*/
 
-  #item-3,
-  #item-6 {
+  #item-1,
+  #item-2,
+  #item-4,
+  #item-5 {
     flex: 2;
+  }
+
+  #item-3,
+  #item-6 { 
+    flex: 3;
   }
 }
