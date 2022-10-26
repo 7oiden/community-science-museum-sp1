@@ -3,142 +3,143 @@
 
 /* main 
 --------------------*/
-.main-wrapper {
-  width: 100%;
-  margin: 0 auto;
+
+#item-1 {
+  grid-area: admission;
 }
-section {
-  width: 85%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+
+#item-2 {
+  grid-area: location;
 }
-h1.large-screen {
-  display: none;
+
+#item-3 {
+  grid-area: hours;
 }
-h1 {
-  font-family: var(--proxima);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: left;
-  background-color: var(--dark-purple);
-  color: #fff;
-  padding: 12px 5%;
-  margin: 25px 5% 0 0;
-  border-radius: 0 0 50px 0;
+
+.info-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "admission"
+    "location"
+    "hours";
 }
-h4 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  font-family: var(--proxima);
-  color: var(--dark-purple);
-  margin: 8px 5% 32px 5%;
-  text-transform: capitalize;
+
+.item-1 {
+  grid-area: accessability;
 }
-h2,
-h3 {
-  margin-left: 5%;
-  font-family: var(--proxima);
-  font-size: 1.5rem;
-  padding-top: 16px;
-  margin-top: 0;
+
+.item-2 {
+  grid-area: image-1;
 }
-div.info {
-  width: 100%;
-  background-color: var(--light-grey);
-  margin-bottom: 16px;
-  padding-bottom: 16px;
-  border-radius: 5px;
+
+.item-3 {
+  grid-area: food-drink;
 }
-#map {
-  padding-bottom: 0;
+
+.item-4 {
+  grid-area: image-2;
 }
+
+.item-5 {
+  grid-area: shop;
+}
+
+.item-6 {
+  grid-area: image-3;
+}
+
+.facilities-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+      "accessability"
+      "image-1"
+      "food-drink"
+      "image-2"
+      "shop"
+      "image-3";
+}
+
 p > a {
   color: var(--dark-purple);
   font-weight: bold;
   text-decoration: underline;
 }
+
 #street {
   font-weight: bold;
   font-size: 1.125rem;
   padding: 0;
 }
+
 #postal {
   font-weight: bold;
   font-size: 1.125rem;
   margin-bottom: 32px;
 }
+
 iframe {
   width: 100%;
-  border: 6px solid grey;
-}
-div.facilities {
-  font-size: 1.125rem;
-  width: 100%;
-  height: 250px;
-  color: #fff;
-  margin-bottom: 16px;
-  margin-top: 0;
+  border: none;
 }
 
-.facilities {
-  border-radius: 5px;
-}
-
-div.info p,
-div.facilities p {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 16px;
-}
 .hours-wrapper_2 {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 5%;
+  gap: 2rem;
 }
+
 .hours-wrapper_2 ul {
-  font-size: 1.25rem;
   padding: 0;
-  margin-right: 5%;
 }
+
 .hours-wrapper_2 li {
   font-family: var(--sofia);
   list-style: none;
 }
-#facilities {
-  position: relative;
-  top: -80px;
-  visibility: hidden;
-}
-figure.facilities {
-  width: 100%;
+
+.item-2 {
   height: 300px;
-  margin: 0 auto;
-}
-.item-1 {
-  background-image: url(../images/handicap.jpg);
+  width: auto;
+  background-image: url(../images/handicap_large.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
-.item-3 {
-  background-image: url(../images/cafe.jpg);
+
+.item-4 {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/cafe_large.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
-.item-5 {
-  background-image: url(../images/shop.jpg);
+
+.item-6 {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/shop_large.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
+
 #accessibility {
   background-color: #8c2639;
+  color: white;
 }
+
 #food-drink {
   background-color: var(--dark-green);
+  color: white;
 }
+
 #shop {
   background-color: var(--blue);
+  color: white;
 }
 
 /* styles that change
@@ -150,151 +151,52 @@ figure.facilities {
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
+.info-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "admission admission"
+    "location hours";
+  }
 
-  section.facilities {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  section > .facilities {
-    height: 325px;
-    margin: 0;
-  }
-  .facilities img {
-    height: 325px;
-  }
-  .item-1 {
-    flex: 30%;
-    order: 1;
-  }
-  .item-2 {
-    flex: 30%;
-    order: 4;
-  }
-  .item-3 {
-    flex: 30%;
-    order: 5;
-  }
-  .item-4 {
-    flex: 30%;
-    order: 2;
-  }
-  .item-5 {
-    flex: 30%;
-    order: 3;
-  }
-  .item-6 {
-    flex: 30%;
-    order: 6;
-  }
-  #location {
-    margin-left: 32px;
-  }
-  iframe {
-    width: 50%;
-    margin-right: 5%;
-  }
-  #map {
-    display: flex;
-    justify-content: space-between;
+.facilities-section{
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "accessability image-1"
+    "image-2 food-drink"
+    "shop image-3";  
   }
 }
+
 @media only screen and (min-width: 992px) {
-  /* Main
---------------------*/
-  /* .logo {
-    width: 350px;
-  }
-  .logo img {
-    width: 350px;
-  } */
-  section.info {
-    flex-direction: row;
-    gap: 16px;
-  }
-  #map {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  #location {
-    margin-left: 0;
-  }
-  iframe {
-    width: 100%;
-  }
+
 }
+
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
-  main {
-    background-color: #d8d8d8;
+.info-section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "admission location hours";
   }
-  /* .main-wrapper {
-    width: 85%;
-    background-color: white;
-    padding-top: 50px;
-  } */
-  section {
-    width: 90%;
+
+  .facilities-section {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "accessability image-2 shop"
+        "image-1 food-drink image-3"
+    }
   }
-  h1.mobile {
-    display: none;
-  }
-  h4 {
-    display: none;
-  }
-  h1.large-screen {
-    width: 90%;
-    display: block;
-    margin: 0 auto 16px auto;
-    font-size: 2rem;
-    text-transform: capitalize;
-    text-align: center;
-  }
-  section.info {
-    font-size: 1.125rem;
-  }
-  section.facilities {
-    font-size: 1.125rem;
-  }
-  h2,
-  h3 {
-    font-size: 1.5rem;
-  }
-  .facilities p {
-    font-size: 1.25rem;
-  }
+ 
   #street,
   #postal {
     font-size: 1.25rem;
   }
-  .item-1 {
-    background-image: url(../images/handicap_large.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .item-3 {
-    background-image: url(../images/cafe_large.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .item-5 {
-    background-image: url(../images/shop_large.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .bottom-section {
-    padding-top: 100px;
-  }
-}
+
 @media only screen and (min-width: 1600px) {
-  .hours-wrapper_2 li {
-    font-size: 1.5rem;
-  }
-  div.facilities {
-    height: 350px;
-  }
-  figure.facilities {
-    height: 350px;
-  }
+  
 }
