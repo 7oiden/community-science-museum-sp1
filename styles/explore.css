@@ -3,9 +3,9 @@
 
 /* main 
 --------------------*/
-main {
+/* main {
   background-color: white;
-}
+} */
 
 /* .main-wrapper {
   padding-top: 2rem;
@@ -67,14 +67,14 @@ h4 {
   margin-top: 16px;
   margin-bottom: 0;
 }
-
+/* 
 h5 {
   font-family: var(--proxima-soft);
   font-size: 1rem;
   text-transform: uppercase;
   margin-top: 24px;
   margin-bottom: 0;
-}
+} */
 
 #club-anchor {
   position: relative;
@@ -209,13 +209,9 @@ figure {
     margin-top: 24px;
   }
 
-  h5 {
+  /* h5 {
     font-size: 1.25rem;
-  }
-  section.kids,
-  section.teachers {
-    
-  }
+  } */
   
   div.blue {
     font-size: 1.25rem;
