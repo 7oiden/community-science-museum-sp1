@@ -37,6 +37,79 @@ a {
   color: #fff;
 }
 
+/* new code */
+.main-wrapper {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.content-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-heading {
+  font-family: var(--proxima);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  background-color: var(--dark-purple);
+  color: #fff;
+  margin: 0;
+  padding: 12px 5%;
+  border-radius: 25px 25px 0 0;
+}
+
+.section-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.get-in-touch {
+  background-color: #7c68a6;
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+  border-radius: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.get-in-touch>p {
+  font-family: var(--proxima);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  font-family: var(--sofia);
+  display: inline-block;
+  align-self: center;
+  text-align: center;
+  border-radius: 15px;
+  background-color: var(--magenta);
+  color: var(--white);
+  padding: 0.5rem 2rem;
+  margin: 0;
+  transition-property: scale;
+  transition-duration: 0.5s;
+  scale: 1;
+}
+
+.button:hover {
+  scale: 1.1;
+}
+
 /* header 
 --------------------*/
 
@@ -429,11 +502,11 @@ ul li {
 /* Main
 --------------------*/
 
-.main-wrapper {
+/* .main-wrapper {
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
-}
+} */
 
 .bottom-section {
   width: 100%;
@@ -784,6 +857,14 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) {
+
+  /* new code */
+  .section-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
   /* Header
 --------------------*/
   .logo {
@@ -830,6 +911,24 @@ h6 {
 }
 
 @media only screen and (min-width: 1200px) {
+
+  /* new code */
+  .main-heading {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+  .get-in-touch {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+    }
+  
+    .get-in-touch p {
+      font-size: 1.5rem;
+    }
+
   /* Header
 --------------------*/
   nav.menu {

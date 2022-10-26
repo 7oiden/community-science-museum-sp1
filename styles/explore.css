@@ -7,7 +7,7 @@ main {
   background-color: white;
 }
 
-.main-wrapper {
+/* .main-wrapper {
   padding-top: 2rem;
 }
 
@@ -17,15 +17,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
+} */
 
-section.kids,
-section.teachers {
+/* .section-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
+} */
 
 div.blue {
   background-color: var(--blue);
@@ -42,7 +41,7 @@ div.blue {
   border-radius: 5px;
 } */
 
-h1 {
+/* .main-heading {
   font-family: var(--proxima);
   font-size: 1.5rem;
   font-weight: bold;
@@ -52,13 +51,15 @@ h1 {
   margin: 0;
   padding: 12px 5%;
   border-radius: 25px 25px 0 0;
-}
+} */
+
 h2,
 h3 {
   font-family: var(--proxima);
   font-size: 1.5rem;
   margin-bottom: 0;
 }
+
 h4 {
   font-family: var(--proxima);
   text-transform: uppercase;
@@ -66,6 +67,7 @@ h4 {
   margin-top: 16px;
   margin-bottom: 0;
 }
+
 h5 {
   font-family: var(--proxima-soft);
   font-size: 1rem;
@@ -73,11 +75,13 @@ h5 {
   margin-top: 24px;
   margin-bottom: 0;
 }
+
 #club-anchor {
   position: relative;
   top: -75px;
   visibility: hidden;
 }
+
 /* #item-2 p {
   margin-top: 8px;
 } */
@@ -103,7 +107,7 @@ figure {
   background-repeat: no-repeat;
 }
 
-.get-in-touch {
+/* .get-in-touch {
   background-color: #7c68a6;
   color: #fff;
   font-size: 1.25rem;
@@ -113,7 +117,7 @@ figure {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 0;
-}
+} */
 
 #get-in-touch-1 {
   border-radius: 5px;
@@ -123,14 +127,14 @@ figure {
   border-radius: 0 0 25px 25px;
 }
 
-.get-in-touch > p {
+/* .get-in-touch > p {
   font-family: var(--proxima);
   font-weight: bold;
   margin: 0;
   padding: 0;
-}
+} */
 
-.button {
+/* .button {
   font-family: var(--sofia);
   display: inline-block;
   align-self: center;
@@ -147,7 +151,7 @@ figure {
 
 .button:hover {
   scale: 1.1;
-}
+} */
 
 /* styles that change
 --------------------*/
@@ -176,12 +180,11 @@ figure {
     height: auto;
   }
 
-  section.kids,
-  section.teachers {
+  /* .section-container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-  }
+  } */
 }
 @media only screen and (min-width: 1200px) {
   /* Main
@@ -191,14 +194,10 @@ figure {
     font-size: 1.125rem;
   }
 
-  h1.mobile {
-    display: none;
-  }
-
-  h1 {
+  /* .main-heading {
     font-size: 2.5rem;
     text-align: center;
-  }
+  } */
 
   h2,
   h3 {
@@ -238,7 +237,7 @@ figure {
     height: auto;
     margin-top: 16px;
   } */
-  .get-in-touch {
+  /* .get-in-touch {
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -247,11 +246,7 @@ figure {
 
   .get-in-touch p {
     font-size: 1.5rem;
-  }
-
-  p.button {
-    font-size: 1.35rem;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1600px) {
