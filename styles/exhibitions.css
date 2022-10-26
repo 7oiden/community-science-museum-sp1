@@ -3,18 +3,11 @@
 
 /* main 
 --------------------*/
-main {
-  background-color: #d8d8d8;
-}
-.main-wrapper {
-  background-color: white;
-  margin: 0 auto;
-  padding-top: 2rem;
-}
-section.main-content {
+
+/* section.main-content {
   width: 90%;
   margin: 0 auto;
-}
+} */
 
 #cosmology-anchor,
 #evolution-anchor,
@@ -25,18 +18,22 @@ section.main-content {
   top: -80px;
   visibility: hidden;
 }
+
 .card-wrapper {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #card-wrapper-cosmology {
   margin-top: 32px;
 }
-h1.large-screen {
+
+/* h1.large-screen {
   display: none;
-}
-h1 {
+} */
+/* h1 {
   font-family: var(--proxima);
   font-size: 1.5rem;
   font-weight: bold;
@@ -47,7 +44,8 @@ h1 {
   padding: 12px 5%;
   margin-right: 5%;
   border-radius: 0 0 50px 0;
-}
+} */
+
 h4 {
   font-size: 1.25rem;
   font-weight: 800;
@@ -56,6 +54,7 @@ h4 {
   margin: 8px 5% 32px 5%;
   text-transform: capitalize;
 }
+
 h2 {
   text-align: center;
   font-size: 1.5rem;
@@ -64,45 +63,58 @@ h2 {
   padding: 12px;
   margin: 0;
 }
+
 figure.arrow-down {
   font-size: 3rem;
   margin: 32px auto;
 }
+
 figure.arrow-left-right {
   display: none;
   font-size: 4rem;
   margin: 0;
 }
+
 .purple {
   color: var(--purple);
 }
+
 .blue {
   color: var(--blue);
 }
+
 .dark-green {
   color: var(--dark-green);
 }
+
 .orange {
   color: var(--orange);
 }
+
 .magenta {
   color: var(--magenta);
 }
+
 #cosmology {
   background-color: var(--purple);
 }
+
 #evolution {
   background-color: var(--blue);
 }
+
 #biology {
   background-color: var(--dark-green);
 }
+
 #robotics {
   background-color: var(--orange);
 }
+
 #ecology {
   background-color: var(--magenta);
 }
+
 div.card {
   background-color: #fff;
   width: 310px;
@@ -111,18 +123,22 @@ div.card {
   box-shadow: 0 6px 12px #00000029;
   margin-top: 64px;
 }
+
 #card-wrapper-cosmology > .card {
   margin-top: 16px;
 }
+
 div.card p {
   width: 90%;
   margin: 16px auto;
   font-size: 1rem;
   padding-top: 0;
 }
+
 figure.card-large {
   display: none;
 }
+
 figure.card {
   width: 310px;
   height: 465px;
@@ -132,6 +148,7 @@ figure.card {
   border-radius: 25px;
   box-shadow: 0 6px 12px #00000029;
 }
+
 figure.card img,
 figure.card-large img {
   display: block;
@@ -140,21 +157,26 @@ figure.card-large img {
   margin: 0 auto;
   border-radius: 10px;
 }
+
 div.background {
   height: 400px;
   background-size: 80%;
   background-repeat: no-repeat;
   background-position-x: center;
 }
+
 .cosmology {
   background-image: url(../images/icons/planet.png);
 }
+
 .evolution {
   background-image: url(../images/icons/dna.png);
 }
+
 .biology {
   background-image: url(../images/icons/microscope.png);
 }
+
 .robotics {
   background-image: url(../images/icons/robot.png);
 }
@@ -165,7 +187,7 @@ section.photo-gallery {
   width: 100%;
   margin: 0 auto;
 }
-h3 {
+/* h3 {
   font-family: var(--proxima);
   font-size: 1.25rem;
   background-color: var(--dark-purple);
@@ -173,39 +195,42 @@ h3 {
   padding: 12px 16px;
   margin: 32px 16px 16px 0;
   border-radius: 0 0 50px 0;
-}
+} */
+
 .photo-gallery img {
   display: block;
   width: 150px;
   height: 150px;
   border-radius: 15px;
 }
+
 .image-wrapper {
-  width: 90%;
-  margin: 32px auto;
+  margin: 2rem auto;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
 }
+
 .image-wrapper figure {
   margin: 0;
 }
+
 .image-wrapper div {
   border-radius: 15px;
 }
+
 p.visit {
   font-family: var(--sofia);
   font-size: 1.125rem;
   font-style: italic;
   background-color: var(--purple);
   color: #fff;
-  padding: 12px 16px;
-  margin-bottom: 16px;
-  margin-right: 16px;
+  padding: 1rem 2rem;
   border-radius: 0 50px 0 0;
 }
+
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 576px) {
@@ -217,20 +242,24 @@ p.visit {
   h2 {
     font-size: 2rem;
   }
-  h3 {
+  /* h3 {
     font-size: 2rem;
     text-align: center;
-  }
+  } */
+
   p.visit {
     font-size: 1.5rem;
     text-align: center;
   }
+
   #card-wrapper-cosmology > .card {
     margin-top: 0;
   }
+
   div.card p {
     font-size: 1.25rem;
   }
+
   div.card {
     width: 675px;
     height: 450px;
@@ -309,24 +338,11 @@ p.visit {
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
-  .main-wrapper {
-    width: 85%;
-  }
-  h1.mobile {
-    display: none;
-  }
+ 
   h4 {
     display: none;
   }
-  h1.large-screen {
-    width: 90%;
-    display: block;
-    font-size: 2.5rem;
-    margin: 0 auto;
-    text-transform: capitalize;
-    text-align: center;
-    border-radius: 0 0 50px 0;
-  }
+ 
   #card-wrapper-cosmology {
     margin-top: 32px;
   }
@@ -349,80 +365,94 @@ p.visit {
   figure.card-large {
     display: none;
   }
+
   figure.arrow-down {
     display: none;
   }
+
   figure.arrow-left-right {
     display: block;
   }
+
   div.background {
     background-size: contain;
     height: 250px;
     margin-top: 32px;
   }
+
   div.reverse {
     order: 3;
   }
+
   figure.reverse {
     order: 1;
   }
+
   .reverse-arrow {
     order: 2;
   }
-  h3 {
+  /* h3 {
     width: 90%;
     margin: 64px auto 16px auto;
     font-size: 2rem;
     text-align: center;
-  }
+  } */
+
   .image-wrapper {
     display: flex;
     flex-wrap: wrap;
   }
+
   .photo-gallery img {
     width: 200px;
     height: 200px;
   }
+
   .image-wrapper figure {
     transition-property: scale opacity;
     transition-duration: 0.5s;
     scale: 1;
   }
+
   .image-wrapper figure:hover {
     scale: 1.2;
     opacity: 1;
     z-index: 100;
   }
+
   p.visit {
-    width: 90%;
-    margin: 16px auto 64px auto;
     font-size: 1.5rem;
-    text-align: center;
   }
 }
+
 @media only screen and (min-width: 1700px) {
   /* Main
 --------------------*/
   figure.card {
     display: none;
   }
+
   /* .card-wrapper {
     align-items: center;
   } */
+
   figure.card-large {
     display: block;
     width: 600px;
     height: 400px;
   }
+
   div.card {
     width: 600px;
     height: 400px;
     scale: 1;
   }
+
   div.card p {
     font-size: 1.125rem;
   }
 }
+
 @media only screen and (min-width: 1800px) {
   /* Header
 --------------------*/
