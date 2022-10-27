@@ -62,7 +62,7 @@ a {
   font-family: var(--proxima);
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   background-color: var(--dark-purple);
   color: #fff;
   margin: 0;
@@ -97,11 +97,14 @@ a {
 }
 
 .button {
+  cursor: pointer;
   font-family: var(--sofia);
+  font-size: 1.125rem;
   display: inline-block;
   align-self: center;
   text-align: center;
-  border-radius: 15px;
+  border: none;
+  border-radius: 5px;
   background-color: var(--magenta);
   color: var(--white);
   padding: 0.5rem 2rem;
@@ -156,7 +159,6 @@ a {
 form {
   width: 85%;
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 
 .dropdown-text {
@@ -287,26 +289,32 @@ button.ticket:hover {
 }
 
 label {
-  font-family: var(--neue-haas);
-  font-weight: bold;
+  /* font-family: var(--neue-haas); */
+  /* font-weight: bold; */
 }
 
-input.box {
+input, select, textarea {
   display: inline-block;
   width: 100%;
   font-size: 1rem;
   color: #172940;
   border-radius: 0;
   border: 3px solid #0030574d;
-  padding: 10px 10px 10px 10px;
-  margin: 0 auto 0 auto;
+  padding: 0.75rem;
+  margin: 0 auto;
   transition-property: border;
   transition-duration: 0.3s;
 }
 
-input.box:focus {
+input:focus {
   outline: none;
   border: 3px solid #003057;
+}
+
+textarea {
+  font-family: var(--sofia);
+  padding: 0.75rem;
+  height: 250px;
 }
 
 button.profile {
@@ -481,7 +489,7 @@ ul li {
 }
 
 .error-message {
-  visibility: hidden;
+  display: none;
 }
 
 #success-message {
@@ -870,6 +878,10 @@ h6 {
       flex-wrap: wrap;
     }
 
+   .button {
+    font-size: 1.25rem;
+   } 
+
   /* Header
 --------------------*/
   .logo {
@@ -920,7 +932,7 @@ h6 {
   /* new code */
   .main-heading {
       font-size: 2.5rem;
-      text-align: center;
+      /* text-align: center; */
     }
 
   .get-in-touch {

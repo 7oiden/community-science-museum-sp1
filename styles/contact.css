@@ -3,116 +3,48 @@
 
 /* main 
 --------------------*/
-main {
-  background-color: white;
-}
-.margins {
-  width: 85%;
-  margin: 0 auto;
-  padding-top: 50px;
-  background-color: white;
-}
-.main-wrapper {
-  background-color: var(--light-grey);
+.contact-section,
+.faq-section {
   width: 100%;
   margin: 0 auto;
-  margin-top: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-h1 {
-  font-family: var(--proxima);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: var(--dark-purple);
-  color: #fff;
-  margin: 0 auto;
-  padding: 12px 32px;
-  border-radius: 0 0 50px 0;
-}
-section.contact,
-section.faq {
-  width: 90%;
-  margin: 0 auto;
-}
+
 section > p {
-  font-family: var(--sofia);
   font-weight: bold;
 }
-.contact-form li {
+
+.form-info {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.form-info li {
   font-size: 1.125rem;
-  padding: 8px;
+  margin: 0;
+  padding: 0 0 0.5rem 0;
   list-style: disc;
 }
-.main-form {
-  width: 100%;
-  padding: 0;
-}
-#message-form {
-  margin-top: 2rem;
-}
+
 .form {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 100%;
-  font-size: 1.125rem;
-  border-radius: 0;
-  border: 3px solid #0030574d;
-  transition-property: border;
-  transition-duration: 0.5s;
-  outline: none;
+  margin: 2rem 0;
+  padding: 2rem;
 }
-.form:focus {
-  border-color: var(--magenta);
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
-.form option,
-textarea {
-  font-family: var(--neue-haas);
-  font-size: 1.125rem;
+
+#submit-button {
+  align-self: flex-start;
+  margin-top: 1rem;
 }
-.error-message {
-  margin-bottom: 8px;
-}
-#message {
-  height: 300px;
-  padding: 12px;
-}
-#email_2 {
-  padding: 8px 12px;
-  font-family: var(--neue-haas);
-}
-#name {
-  padding: 8px 12px;
-  font-family: var(--neue-haas);
-}
-#option {
-  padding: 8px 12px;
-  font-family: var(--neue-haas);
-  font-size: 1rem;
-}
-#text {
-  font-family: var(--neue-haas);
-  padding: 8px 12px;
-}
-button {
-  display: block;
-  font-family: var(--sofia);
-  font-size: 1.25rem;
-  background-color: var(--magenta);
-  color: #fff;
-  padding: 8px 50px;
-  margin: 16px auto 50px auto;
-  border-bottom: 3px solid #fff;
-  border-right: 2px solid #fff;
-  border-radius: 15px;
-  transition-property: scale;
-  transition-duration: 0.5s;
-  cursor: pointer;
-  scale: 1;
-}
-button:hover {
-  scale: 1.1;
-}
+
 #success {
   text-align: center;
   font-size: 1.125rem;
@@ -123,16 +55,21 @@ button:hover {
   padding: 5px;
   display: none;
 }
+
 h2 {
   font-family: var(--proxima);
   font-size: 1.25rem;
   text-decoration: underline;
+  margin: 0;
+  padding: 0;
 }
+
 .faq > li {
   font-family: var(--sofia);
   font-weight: bold;
   font-size: 1.125rem;
 }
+
 li > P {
   font-family: var(--neue-haas);
   font-size: 0.875rem;
@@ -143,76 +80,70 @@ li > P {
 }
 /* styles that change
 --------------------*/
-@media only screen and (min-width: 576px) {
-  /* Main
---------------------*/
 
-  h1 {
-    font-size: 1.875rem;
-  }
-}
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
-  h1 {
-    width: 70%;
-    font-size: 2.25rem;
-  }
-  .main-wrapper {
-    width: 70%;
-  }
-  section.contact,
-  section.faq {
+  .contact-section,
+  .faq-section {
     width: 85%;
   }
 }
+
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-  main {
-    background-color: #d8d8d8;
+.contact-section,
+  .faq-section {
+    width: 80%;
   }
-  .bottom-section {
-    width: 85%;
-  }
+
+ .form {
+  padding: 3rem;
+  gap: 1.5rem;
+ } 
 }
+
 @media only screen and (min-width: 1200px) {
   /* main 
 --------------------*/
-  .main-wrapper {
-    width: 60%;
-    padding-bottom: 50px;
-  }
-  h1 {
-    width: 60%;
-  }
+
+.contact-section,
+.faq-section {
+  width: 75%;
+}
+
   section > p {
     font-size: 1.25rem;
   }
+
   h2 {
     font-size: 1.5rem;
   }
-  section.faq {
+
+  /* section.faq {
     width: 90%;
     text-align: left;
-  }
+  } */
+
   .faq li {
     font-size: 1.25rem;
   }
+
   li > p {
     font-size: 1.125rem;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  h1 {
+  /* h1 {
     width: 50%;
   }
   .main-wrapper {
     width: 50%;
     padding-bottom: 50px;
-  }
-  section.contact {
+  } */
+  .contact-section, .faq-section {
     width: 70%;
   }
 }
