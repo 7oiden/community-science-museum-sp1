@@ -121,11 +121,6 @@ li > P {
     font-size: 1.5rem;
   }
 
-  /* section.faq {
-    width: 90%;
-    text-align: left;
-  } */
-
   .faq li {
     font-size: 1.25rem;
   }
@@ -136,13 +131,6 @@ li > P {
 }
 
 @media only screen and (min-width: 1600px) {
-  /* h1 {
-    width: 50%;
-  }
-  .main-wrapper {
-    width: 50%;
-    padding-bottom: 50px;
-  } */
   .contact-section, .faq-section {
     width: 70%;
   }
