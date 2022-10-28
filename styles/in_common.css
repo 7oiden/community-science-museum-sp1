@@ -134,7 +134,7 @@ a {
 /* search-dropdown */
 .search-dropdown {
   position: absolute;
-  top: 146px;
+  top: 130px;
   width: 100%;
   left: 0;
   z-index: 1000;
@@ -182,7 +182,7 @@ form {
 /* ticket-dropdown */
 .ticket-dropdown {
   position: absolute;
-  top: 146px;
+  top: 130px;
   width: 100%;
   left: 0;
   z-index: 1000;
@@ -262,7 +262,7 @@ button.ticket:hover {
 /* profile-dropdown */
 .profile-dropdown {
   position: absolute;
-  top: 146px;
+  top: 130px;
   width: 100%;
   left: 0;
   z-index: 1000;
@@ -345,8 +345,13 @@ button.profile:hover {
   scale: 1.1;
 }
 
+header {
+  display: inline;
+  /* background-color: var(--navbar-color); */
+}
+
 .header-wrapper {
-  background-color: white;
+  /* background-color: var(--navbar-color); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -409,9 +414,9 @@ nav.menu {
   text-decoration: underline;
 }
 
-header {
+/* header {
   display: inline;
-}
+} */
 
 /* mobile menu */
 .fa-bars {
@@ -514,7 +519,7 @@ ul li {
   width: 100%;
   height: 4000px;
   display: none;
-  top: 146px;
+  top: 130px;
 }
 
 .fb-show {
@@ -566,7 +571,7 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 3rem 2rem 4rem 2rem;
+  padding: 3rem 0 4rem 0;
 }
 
 .newsletter-section p {
@@ -767,9 +772,9 @@ h6 {
   }
   /* Main
 --------------------*/
-  section.newsletter {
+  /* section.newsletter {
     width: 70%;
-  }
+  } */
 
   #newsletter {
     font-size: 1.125rem;
@@ -834,9 +839,9 @@ h6 {
     min-width: 400px;
   }
 
-  section.newsletter {
+  /* section.newsletter {
     width: 50%;
-  }
+  } */
   /* Main
 --------------------*/
   .newsletter-wrapper {
@@ -1046,9 +1051,9 @@ h6 {
   /* Main
 --------------------*/
 
-  .newsletter-section {
+  /* .newsletter-section {
     width: 100%;
-  }
+  } */
 
   .newsletter label {
     font-size: 1.25rem;

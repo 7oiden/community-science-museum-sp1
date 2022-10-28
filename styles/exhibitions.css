@@ -4,11 +4,6 @@
 /* main 
 --------------------*/
 
-/* section.main-content {
-  width: 90%;
-  margin: 0 auto;
-} */
-
 #cosmology-anchor,
 #evolution-anchor,
 #biology-anchor,
@@ -19,33 +14,6 @@
   visibility: hidden;
 }
 
-.card-wrapper {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#card-wrapper-cosmology {
-  margin-top: 32px;
-}
-
-/* h1.large-screen {
-  display: none;
-} */
-/* h1 {
-  font-family: var(--proxima);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: left;
-  background-color: var(--dark-purple);
-  color: #fff;
-  padding: 12px 5%;
-  margin-right: 5%;
-  border-radius: 0 0 50px 0;
-} */
-
 h4 {
   font-size: 1.25rem;
   font-weight: 800;
@@ -53,26 +21,6 @@ h4 {
   color: var(--dark-purple);
   margin: 8px 5% 32px 5%;
   text-transform: capitalize;
-}
-
-h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #fff;
-  border-radius: 25px 25px 0 0;
-  padding: 12px;
-  margin: 0;
-}
-
-figure.arrow-down {
-  font-size: 3rem;
-  margin: 32px auto;
-}
-
-figure.arrow-left-right {
-  display: none;
-  font-size: 4rem;
-  margin: 0;
 }
 
 .purple {
@@ -115,57 +63,48 @@ figure.arrow-left-right {
   background-color: var(--magenta);
 }
 
-div.card {
+#special-events {
+  background-color: #003057;
+}
+
+.card-wrapper {
+  /* margin: 0 auto; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.card {
   background-color: #fff;
-  width: 310px;
-  height: 465px;
-  border-radius: 25px;
+  border-radius: 5px;
   box-shadow: 0 6px 12px #00000029;
-  margin-top: 64px;
 }
 
-#card-wrapper-cosmology > .card {
-  margin-top: 16px;
-}
-
-div.card p {
-  width: 90%;
-  margin: 16px auto;
-  font-size: 1rem;
-  padding-top: 0;
-}
-
-figure.card-large {
-  display: none;
-}
-
-figure.card {
-  width: 310px;
-  height: 465px;
+.card-heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.5rem;
   margin: 0;
-  padding: 0;
-  border: 12px solid #fff;
-  border-radius: 25px;
-  box-shadow: 0 6px 12px #00000029;
 }
 
-figure.card img,
-figure.card-large img {
-  display: block;
+.card-image, .card-image img  {
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 5px 5px 0 0;
 }
 
-div.background {
-  height: 400px;
+.card-body {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position-x: center;
+  padding: 0.5rem 1rem;
 }
 
-.cosmology {
+/* .cosmology {
   background-image: url(../images/icons/planet.png);
 }
 
@@ -182,20 +121,12 @@ div.background {
 }
 .ecology {
   background-image: url(../images/icons/tellus.png);
-}
+} */
+
 section.photo-gallery {
   width: 100%;
   margin: 0 auto;
 }
-/* h3 {
-  font-family: var(--proxima);
-  font-size: 1.25rem;
-  background-color: var(--dark-purple);
-  color: #fff;
-  padding: 12px 16px;
-  margin: 32px 16px 16px 0;
-  border-radius: 0 0 50px 0;
-} */
 
 .photo-gallery img {
   display: block;
@@ -239,59 +170,24 @@ p.visit {
   h4 {
     font-size: 1.5rem;
   }
-  h2 {
-    font-size: 2rem;
+
+  .card-heading {
+    font-size: 1.75rem;
   }
-  /* h3 {
-    font-size: 2rem;
-    text-align: center;
-  } */
 
   p.visit {
     font-size: 1.5rem;
     text-align: center;
   }
 
-  #card-wrapper-cosmology > .card {
-    margin-top: 0;
-  }
-
-  div.card p {
-    font-size: 1.25rem;
-  }
-
-  div.card {
-    width: 675px;
-    height: 450px;
-    scale: 0.8;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  figure.card {
-    display: none;
-    border: 16px solid #fff;
-  }
-  figure.card-large {
-    display: block;
-    width: 675px;
-    height: 450px;
-    scale: 0.8;
-    margin: 0;
-    padding: 0;
-    border: 16px solid #fff;
-    border-radius: 25px;
-    box-shadow: 0 6px 12px #00000029;
-  }
-  figure.arrow-down {
-    margin: 0 auto;
-  }
-  div.background {
+  .card-body {
     background-size: 40%;
-    margin-top: 32px;
   }
+
    .image-wrapper {
     gap: 32px;
   }
+
   .photo-gallery img {
     width: 200px;
     height: 200px;
@@ -300,34 +196,15 @@ p.visit {
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
-  .card-wrapper {
-    margin-bottom: 64px;
-  }
-  div.card {
-    scale: 1;
-  }
-  figure.card-large {
-    scale: 1;
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
-  figure.arrow-down {
-    margin: 32px auto 0 auto;
-  }
+  
   .image-wrapper {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
   }
 }
+
 @media only screen and (min-width: 992px) {
-  /* Header
---------------------*/
-  /* .logo {
-    width: 350px;
-  }
-  .logo img {
-    width: 350px;
-  } */
+ 
   /* Main
 --------------------*/
   .photo-gallery img {
@@ -335,6 +212,7 @@ p.visit {
     height: 250px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
@@ -343,60 +221,10 @@ p.visit {
     display: none;
   }
  
-  #card-wrapper-cosmology {
-    margin-top: 32px;
-  }
   .card-wrapper {
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
   }
-  div.card {
-    width: 450px;
-    height: 550px;
-    scale: 0.9;
-  }
-  figure.card {
-    display: block;
-    width: 450px;
-    height: 550px;
-    scale: 0.9;
-  }
-  figure.card-large {
-    display: none;
-  }
-
-  figure.arrow-down {
-    display: none;
-  }
-
-  figure.arrow-left-right {
-    display: block;
-  }
-
-  div.background {
-    background-size: contain;
-    height: 250px;
-    margin-top: 32px;
-  }
-
-  div.reverse {
-    order: 3;
-  }
-
-  figure.reverse {
-    order: 1;
-  }
-
-  .reverse-arrow {
-    order: 2;
-  }
-  /* h3 {
-    width: 90%;
-    margin: 64px auto 16px auto;
-    font-size: 2rem;
-    text-align: center;
-  } */
 
   .image-wrapper {
     display: flex;
@@ -428,37 +256,15 @@ p.visit {
 @media only screen and (min-width: 1700px) {
   /* Main
 --------------------*/
-  figure.card {
-    display: none;
-  }
-
-  /* .card-wrapper {
-    align-items: center;
-  } */
-
-  figure.card-large {
-    display: block;
-    width: 600px;
-    height: 400px;
-  }
-
-  div.card {
-    width: 600px;
-    height: 400px;
-    scale: 1;
-  }
-
-  div.card p {
-    font-size: 1.125rem;
-  }
 }
 
 @media only screen and (min-width: 1800px) {
   /* Header
 --------------------*/
-  .purple-box {
+  /* .purple-box {
     width: 320px;
-  }
+  } */
+
   .dropdown-info {
     width: 320px;
   }

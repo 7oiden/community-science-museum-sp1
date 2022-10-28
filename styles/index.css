@@ -286,22 +286,32 @@ h2 {
   gap: 1rem;
 }
 
+.category-planet-icon {
+  width: 3rem;
+  margin: 0 auto;
+}
+
+.category-icon {
+  font-size: 2.5rem;
+}
 
 .category-box figcaption {
   font-size: 1.125rem;
   font-weight: bold;
 }
 
-#planet {
+/* #planet {
   width: 40px;
   height: 40px;
   margin: 0 auto;
-}
+} */
 
-#planet img {
+
+
+/* #planet img {
   width: 100%;
   height: 100%;
-}
+} */
 
 #cosmology {
   background-color: #470c68;
@@ -571,10 +581,10 @@ h6 {
     font-size: 1.5rem;
   }
 
-  #planet {
+  /* #planet {
     width: 48px;
     height: 48px;
-  }
+  } */
 
   .categories-section {
     gap: 1.5rem;
@@ -584,11 +594,15 @@ h6 {
     padding: 2rem;
   }
 
-  .category-box-icon {
+  .category-planet-icon {
+    font-size: 3.5rem;
+  }
+
+  .category-icon {
     font-size: 3rem;
   }
 
-  .category-box-caption {
+  .category-caption {
     font-size: 1.25rem;
   }
 
@@ -803,21 +817,26 @@ h6 {
     font-size: 1.5rem;
   }
 
-  #planet {
+  /* #planet {
     width: 56px;
     height: 56px;
-  }
+  } */
 
   .categories-section {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem
   }
 
-  .category-box-icon {
+  .category-planet-icon {
+    width: 4rem;
+  }
+
+  .category-icon {
     font-size: 3.5rem;
   }
 
-  .category-box-caption {
+  .category-caption {
     font-size: 1.35rem;
   }
 
@@ -884,6 +903,10 @@ h6 {
   div.news p {
     font-size: 1.125rem;
   }
+
+  .categories-section {
+    gap: 1.5rem
+  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -897,16 +920,15 @@ h6 {
      right: 25%;
   }
   
-  #planet {
-    width: 64px;
-    height: 64px;
+  .category-planet-icon {
+    width: 4.5rem;
   }
 
-  .category-box-icon {
+  .category-icon {
     font-size: 4rem;
   }
 
-  .category-box-caption {
+  .category-caption {
     font-size: 1.5rem;
     padding-top: 1rem;
   }
