@@ -34,385 +34,396 @@
 </head>
 
 <body>
-  <header>
-    <div class="header-wrapper">
-      <figure class="logo">
-        <a href="index.html"><img src="images\cms-logo.png" alt="Community Science Museum logo" /></a>
-      </figure>
-      <nav aria-label="icons" class="icons">
-        <div class="dropdown-wrapper">
-          <i class="fa fa-search icon"></i>
-          <div class="search-dropdown">
-            <p class="search-header">search results</p>
-            <form action="" class="dropdown-form">
-              <label for="search" class="label">Search</label>
-              <input type="text" name="first-name" placeholder="Start Writing..." id="search" class="box" />
-            </form>
-            <p class="dropdown-text">
-              Sorry, no result for your search, please try something else
-            </p>
-          </div>
-        </div>
-
-        <div class="dropdown-wrapper">
-          <i class="fa fa-ticket-alt icon"></i>
-          <div class="ticket-dropdown">
-            <p class="ticket-header">buy ticket</p>
-            <p class="dropdown-text">
-              Please Choose the Desired Number of Tickets and Click Proceed in
-              order to finalize your purchase on www.ticketmaster.com
-            </p>
-            <p class="dropdown-text">
-              If your party consist of 6 people or more, you will be taken to
-              our contact form.
-            </p>
-            <form action="" class="ticket dropdown-form">
-              <label for="select" class="ticket-label">Tickets</label>
-              <select name="tickets" id="select">
-                <option class="option" value="1">1</option>
-                <option class="option" value="1">2</option>
-                <option class="option" value="1">3</option>
-                <option class="option" value="1">4</option>
-                <option class="option" value="1">5</option>
-                <option class="option" value="more">6 or more</option>
-              </select>
-            </form>
-            <button class="ticket">PROCEED</button>
-          </div>
-        </div>
-
-        <div class="dropdown-wrapper">
-          <i class="fa fa-user-circle icon"></i>
-          <div class="profile-dropdown">
-            <p class="profile-header">your account</p>
-            <form class="dropdown-form" id="profile-form">
-              <label for="email" class="label">E-mail</label>
-              <input type="text" name="email" placeholder="your@email.com" id="dropdown-email" class="box" />
-              <div class="error-message" id="profile-email-error">
-                Please enter a valid e-mail address
-              </div>
-
-              <label for="choose" class="label_2">Password</label>
-              <input type="password" name="choose" placeholder="Password" class="box password" id="dropdown-password" />
-              <div class="error-message" id="profile-password-error">
-                Must be at least 5 characters
-              </div>
-              <div id="success-message">
-                Welcome back, you are now logged in
-              </div>
-              <button type="submit" id="profile-submit-button" class="profile">
-                SIGN IN
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <nav aria-label="menu" class="menu">
-      <ul class="mobile-menu">
-        <label class="hamburger-label" for="hamburger-menu"><span class="fa fa-bars"></span>
-        </label>
-        <input type="checkbox" id="hamburger-menu" />
-        <li><a href="exhibitions.html">Exhibitions</a></li>
-        <li><a href="explore.html">Explore</a></li>
-        <li><a href="get_involved.html">Get involved</a></li>
-        <li id="visit"><a href="visit.html">Visit</a></li>
-      </ul>
-      <ul class="large-screen-menu">
-        <li>
-          <a href="exhibitions.html" class="menu-link">Exhibitions</a>
-        </li>
-        <li>
-          <a href="explore.html" class="menu-link">Explore</a>
-        </li>
-        <li>
-          <a href="get_involved.html" class="menu-link">Get involved</a>
-        </li>
-        <li>
-          <a href="visit.html" class="menu-link">Visit</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="main-wrapper">
-      <div class="content-container">
-        <h1 class="main-heading">Exhibitions</h1>
-        <section class="section-container">
-          <div id="cosmology-anchor"></div>
-          <div class="card-wrapper" id="card-wrapper-cosmology">
-            <div class="card">
-              <h2 id="cosmology">COSMOLOGY</h2>
-              <div class="cosmology background">
-                <p>
-                  Explore the wonders of our cosmos. Our fantastic exhibition,
-                  ‘The Sky Above Us’, explores the night sky and what we can see
-                  and know about the universe around us. We’ll locate the
-                  various constellations and galaxies that can be seen and learn
-                  a bit about the early navigators who used the stars to travel
-                  by.
-                </p>
-                <p>
-                  Follow the journey of our solar exploration: from early Arab
-                  traders, to Galileo’s telescope, to the latest exploration of
-                  the planets in our solar system.
-                </p>
-              </div>
+  <div class="flex-wrapper">
+    <header>
+      <div class="header-wrapper">
+        <figure class="logo">
+          <a href="index.html"><img src="images\cms-logo.png" alt="Community Science Museum logo" /></a>
+        </figure>
+        <nav aria-label="icons" class="icons">
+          <div class="dropdown-wrapper">
+            <i class="fa fa-search icon"></i>
+            <div class="search-dropdown">
+              <p class="search-header">search results</p>
+              <form action="" class="dropdown-form">
+                <label for="search" class="label">Search</label>
+                <input type="text" name="first-name" placeholder="Start Writing..." id="search" class="box" />
+              </form>
+              <p class="dropdown-text">
+                Sorry, no result for your search, please try something else
+              </p>
             </div>
-            <figure class="arrow-down">
-              <!-- <img
+          </div>
+
+          <div class="dropdown-wrapper">
+            <i class="fa fa-ticket-alt icon"></i>
+            <div class="ticket-dropdown">
+              <p class="ticket-header">buy ticket</p>
+              <p class="dropdown-text">
+                Please Choose the Desired Number of Tickets and Click Proceed in
+                order to finalize your purchase on www.ticketmaster.com
+              </p>
+              <p class="dropdown-text">
+                If your party consist of 6 people or more, you will be taken to
+                our contact form.
+              </p>
+              <form action="" class="ticket dropdown-form">
+                <label for="select" class="ticket-label">Tickets</label>
+                <select name="tickets" id="select">
+                  <option class="option" value="1">1</option>
+                  <option class="option" value="1">2</option>
+                  <option class="option" value="1">3</option>
+                  <option class="option" value="1">4</option>
+                  <option class="option" value="1">5</option>
+                  <option class="option" value="more">6 or more</option>
+                </select>
+              </form>
+              <button class="ticket">PROCEED</button>
+            </div>
+          </div>
+
+          <div class="dropdown-wrapper">
+            <i class="fa fa-user-circle icon"></i>
+            <div class="profile-dropdown">
+              <p class="profile-header">your account</p>
+              <form class="dropdown-form" id="profile-form">
+                <label for="email" class="label">E-mail</label>
+                <input type="text" name="email" placeholder="your@email.com" id="dropdown-email" class="box" />
+                <div class="error-message" id="profile-email-error">
+                  Please enter a valid e-mail address
+                </div>
+
+                <label for="choose" class="label_2">Password</label>
+                <input type="password" name="choose" placeholder="Password" class="box password"
+                  id="dropdown-password" />
+                <div class="error-message" id="profile-password-error">
+                  Must be at least 5 characters
+                </div>
+                <div id="success-message">
+                  Welcome back, you are now logged in
+                </div>
+                <button type="submit" id="profile-submit-button" class="profile">
+                  SIGN IN
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <nav aria-label="menu" class="menu">
+        <ul class="mobile-menu">
+          <label class="hamburger-label" for="hamburger-menu"><span class="fa fa-bars"></span>
+            <span id="menu" class="menu-link">Menu</span>
+          </label>
+          <input type="checkbox" id="hamburger-menu" />
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="get_involved.html">Get involved</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="about_us.html">About us</a></li>
+        </ul>
+        <ul class="large-screen-menu">
+          <li>
+            <a href="exhibitions.html" class="menu-link">Exhibitions</a>
+          </li>
+          <li>
+            <a href="explore.html" class="menu-link">Explore</a>
+          </li>
+          <li>
+            <a href="get_involved.html" class="menu-link">Get involved</a>
+          </li>
+          <li>
+            <a href="visit.html" class="menu-link">Visit</a>
+          </li>
+          <li>
+            <a href="about_us.html" class="menu-link">About us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-wrapper">
+        <div class="content-container">
+          <h1 class="main-heading">Exhibitions</h1>
+          <section class="section-container">
+            <div id="cosmology-anchor"></div>
+            <div class="card-wrapper" id="card-wrapper-cosmology">
+              <div class="card">
+                <h2 id="cosmology">COSMOLOGY</h2>
+                <div class="cosmology background">
+                  <p>
+                    Explore the wonders of our cosmos. Our fantastic exhibition,
+                    ‘The Sky Above Us’, explores the night sky and what we can see
+                    and know about the universe around us. We’ll locate the
+                    various constellations and galaxies that can be seen and learn
+                    a bit about the early navigators who used the stars to travel
+                    by.
+                  </p>
+                  <p>
+                    Follow the journey of our solar exploration: from early Arab
+                    traders, to Galileo’s telescope, to the latest exploration of
+                    the planets in our solar system.
+                  </p>
+                </div>
+              </div>
+              <figure class="arrow-down">
+                <!-- <img
                 src="images\icons\arrow-circle-down-purple.png"
                 alt=""
                 class="arrow-down"
               /> -->
-              <i class="purple fas fa-arrow-circle-down"></i>
-            </figure>
-            <figure class="purple arrow-left-right">
-              <!-- <img
+                <i class="purple fas fa-arrow-circle-down"></i>
+              </figure>
+              <figure class="purple arrow-left-right">
+                <!-- <img
                 src="images\icons\arrow-circle-right-purple.png"
                 alt=""
                 class="arrow-left-right"
               /> -->
-              <i class="fas fa-arrow-circle-right"></i>
-            </figure>
-            <figure class="card">
-              <img src="images\cosmology.jpg"
-                alt="Full size exhbit of the moonlanding with an astronaut standing in front of the Lunar Module" />
-            </figure>
-            <figure class="card-large" id="astronaut">
-              <img src="images\cosmology_large.jpg"
-                alt="Full size exhbit of the moonlanding with an astronaut standing in front of the Lunar Module" />
-            </figure>
-          </div>
-          <div id="evolution-anchor"></div>
-          <div class="card-wrapper">
-            <div class="card reverse">
-              <h2 id="evolution">EVOLUTION</h2>
-              <div class="evolution background">
-                <p>
-                  For centuries, philosophers and scientists have wrestled with
-                  the question of our origins. Where do we come from and how did
-                  we get here? Since Darwin proposed his theory of evolution we
-                  have had a framework for exploring and understanding our place
-                  in this world.
-                </p>
-                <p>
-                  Discover the origins of life on this planet and how the
-                  species we know today have evolved. Also meet a few of the
-                  creatures who didn’t survive, including our Woolly Mammoth,
-                  and a number of dinosaurs.
-                </p>
-              </div>
+                <i class="fas fa-arrow-circle-right"></i>
+              </figure>
+              <figure class="card">
+                <img src="images\cosmology.jpg"
+                  alt="Full size exhbit of the moonlanding with an astronaut standing in front of the Lunar Module" />
+              </figure>
+              <figure class="card-large" id="astronaut">
+                <img src="images\cosmology_large.jpg"
+                  alt="Full size exhbit of the moonlanding with an astronaut standing in front of the Lunar Module" />
+              </figure>
             </div>
-            <figure class="arrow-down">
-              <!-- <img
+            <div id="evolution-anchor"></div>
+            <div class="card-wrapper">
+              <div class="card reverse">
+                <h2 id="evolution">EVOLUTION</h2>
+                <div class="evolution background">
+                  <p>
+                    For centuries, philosophers and scientists have wrestled with
+                    the question of our origins. Where do we come from and how did
+                    we get here? Since Darwin proposed his theory of evolution we
+                    have had a framework for exploring and understanding our place
+                    in this world.
+                  </p>
+                  <p>
+                    Discover the origins of life on this planet and how the
+                    species we know today have evolved. Also meet a few of the
+                    creatures who didn’t survive, including our Woolly Mammoth,
+                    and a number of dinosaurs.
+                  </p>
+                </div>
+              </div>
+              <figure class="arrow-down">
+                <!-- <img
                 src="images\icons\arrow-circle-down-blue.png"
                 alt=""
                 class="arrow-down"
               /> -->
-              <i class="blue fas fa-arrow-circle-down"></i>
-            </figure>
-            <figure class="blue arrow-left-right reverse-arrow">
-              <!-- <img
+                <i class="blue fas fa-arrow-circle-down"></i>
+              </figure>
+              <figure class="blue arrow-left-right reverse-arrow">
+                <!-- <img
                 src="images\icons\arrow-circle-left-blue.png"
                 alt=""
                 class="arrow-left-right"
               /> -->
-              <i class="fas fa-arrow-circle-left"></i>
-            </figure>
-            <figure class="card">
-              <img src="images\evolution.jpg" alt="Exhibit of a full mammuth sceleton" />
-            </figure>
-            <figure class="card-large reverse">
-              <img src="images\evolution_large.jpg" alt="Exhibit of a full mammuth sceleton" />
-            </figure>
-          </div>
-          <div id="biology-anchor"></div>
-          <div class="card-wrapper">
-            <div class="card">
-              <h2 id="biology">BIOLOGY & MEDICINE</h2>
-              <div class="biology background">
-                <p>
-                  From micro-organisms to the human body, major breakthroughs in
-                  biology are offering us unique insights into the great wonders
-                  of the tiny world.
-                </p>
-                <p>
-                  For many people their life expectancy is much longer and their
-                  quality of life much improved, thanks to the growth of our
-                  understanding of medicine. Over a series of exhibits we
-                  explore the history of medicine and take a look at some major
-                  breakthroughs including the discovery of penicillin and the
-                  first heart transplant.
-                </p>
-              </div>
+                <i class="fas fa-arrow-circle-left"></i>
+              </figure>
+              <figure class="card">
+                <img src="images\evolution.jpg" alt="Exhibit of a full mammuth sceleton" />
+              </figure>
+              <figure class="card-large reverse">
+                <img src="images\evolution_large.jpg" alt="Exhibit of a full mammuth sceleton" />
+              </figure>
             </div>
-            <figure class="arrow-down">
-              <!-- <img
+            <div id="biology-anchor"></div>
+            <div class="card-wrapper">
+              <div class="card">
+                <h2 id="biology">BIOLOGY & MEDICINE</h2>
+                <div class="biology background">
+                  <p>
+                    From micro-organisms to the human body, major breakthroughs in
+                    biology are offering us unique insights into the great wonders
+                    of the tiny world.
+                  </p>
+                  <p>
+                    For many people their life expectancy is much longer and their
+                    quality of life much improved, thanks to the growth of our
+                    understanding of medicine. Over a series of exhibits we
+                    explore the history of medicine and take a look at some major
+                    breakthroughs including the discovery of penicillin and the
+                    first heart transplant.
+                  </p>
+                </div>
+              </div>
+              <figure class="arrow-down">
+                <!-- <img
                 src="images\icons\arrow-circle-down-dark_green.png"
                 alt=""
                 class="arrow-down"
               /> -->
-              <i class="dark-green fas fa-arrow-circle-down"></i>
-            </figure>
-            <figure class="arrow-left-right">
-              <!-- <img
+                <i class="dark-green fas fa-arrow-circle-down"></i>
+              </figure>
+              <figure class="arrow-left-right">
+                <!-- <img
                 src="images\icons\arrow-circle-right-dark_green.png"
                 alt=""
                 class="arrow-left-right"
               /> -->
-              <i class="dark-green fas fa-arrow-circle-right"></i>
-            </figure>
-            <figure class="card">
-              <img src="images\biology.jpg" alt="A young girl is studing a sample with a microscope" />
-            </figure>
-            <figure class="card-large">
-              <img src="images\biology_large.jpg" alt="A young girl is studing a sample with a microscope" />
-            </figure>
-          </div>
-          <div id="robotics-anchor"></div>
-          <div class="card-wrapper">
-            <div class="card reverse">
-              <h2 id="robotics">ROBOTICS & AI</h2>
-              <div class="robotics background">
-                <p>
-                  The information revolution is here and robotics and artificial
-                  intelligence are the science of the future.
-                </p>
-                <p>
-                  From useful home applications of AI to industrial uses of
-                  robotics, the future is here. You can even say hello and shake
-                  the hand of Pepper the Robot.
-                </p>
-                <p>
-                  Pepper that you already have met on the front page, is human
-                  size, state of the art robot eager to say hello.
-                </p>
-              </div>
+                <i class="dark-green fas fa-arrow-circle-right"></i>
+              </figure>
+              <figure class="card">
+                <img src="images\biology.jpg" alt="A young girl is studing a sample with a microscope" />
+              </figure>
+              <figure class="card-large">
+                <img src="images\biology_large.jpg" alt="A young girl is studing a sample with a microscope" />
+              </figure>
             </div>
-            <figure class="arrow-down">
-              <!-- <img
+            <div id="robotics-anchor"></div>
+            <div class="card-wrapper">
+              <div class="card reverse">
+                <h2 id="robotics">ROBOTICS & AI</h2>
+                <div class="robotics background">
+                  <p>
+                    The information revolution is here and robotics and artificial
+                    intelligence are the science of the future.
+                  </p>
+                  <p>
+                    From useful home applications of AI to industrial uses of
+                    robotics, the future is here. You can even say hello and shake
+                    the hand of Pepper the Robot.
+                  </p>
+                  <p>
+                    Pepper that you already have met on the front page, is human
+                    size, state of the art robot eager to say hello.
+                  </p>
+                </div>
+              </div>
+              <figure class="arrow-down">
+                <!-- <img
                 src="images\icons\arrow-circle-down-orange.png"
                 alt="arrow pointing downwards"
                 class="arrow-down"
               /> -->
-              <i class="orange fas fa-arrow-circle-down"></i>
-            </figure>
-            <figure class="orange arrow-left-right reverse-arrow">
-              <!-- <img
+                <i class="orange fas fa-arrow-circle-down"></i>
+              </figure>
+              <figure class="orange arrow-left-right reverse-arrow">
+                <!-- <img
                 src="images\icons\arrow-circle-left-orange.png"
                 alt="arrow pointing left"
                 class="arrow-left-right"
               /> -->
-              <i class="fas fa-arrow-circle-left"></i>
-            </figure>
-            <figure class="card">
-              <img src="images\robotics.jpg"
-                alt="Image of Rob the Robot, who is looking into the camera with his right arm raised." />
-            </figure>
-            <figure class="card-large reverse">
-              <img src="images\robotics_large.jpg"
-                alt="Image of Rob the Robot, who is looking into the camera with his right arm raised." />
-            </figure>
-          </div>
-          <div id="ecology-anchor"></div>
-          <div class="card-wrapper">
-            <div class="card">
-              <h2 id="ecology">ECOLOGY</h2>
-              <div class="ecology background">
-                <p>
-                  As we learn more and more of the impact humans are having on
-                  the planet, the more important it becomes that scientists
-                  explore how to create a sustainable future not just for humans
-                  but for the whole planet.
-                </p>
-                <p>
-                  From January 4th 2021 we will have the Energetica exhibition
-                  on loan from the NEMO Science Museum in Amsterdam. This is a
-                  series of installations that allow visitors to experience the
-                  power of the elements as we harness them.
-                </p>
-              </div>
+                <i class="fas fa-arrow-circle-left"></i>
+              </figure>
+              <figure class="card">
+                <img src="images\robotics.jpg"
+                  alt="Image of Rob the Robot, who is looking into the camera with his right arm raised." />
+              </figure>
+              <figure class="card-large reverse">
+                <img src="images\robotics_large.jpg"
+                  alt="Image of Rob the Robot, who is looking into the camera with his right arm raised." />
+              </figure>
             </div>
-            <figure class="arrow-down">
-              <!-- <img
+            <div id="ecology-anchor"></div>
+            <div class="card-wrapper">
+              <div class="card">
+                <h2 id="ecology">ECOLOGY</h2>
+                <div class="ecology background">
+                  <p>
+                    As we learn more and more of the impact humans are having on
+                    the planet, the more important it becomes that scientists
+                    explore how to create a sustainable future not just for humans
+                    but for the whole planet.
+                  </p>
+                  <p>
+                    From January 4th 2021 we will have the Energetica exhibition
+                    on loan from the NEMO Science Museum in Amsterdam. This is a
+                    series of installations that allow visitors to experience the
+                    power of the elements as we harness them.
+                  </p>
+                </div>
+              </div>
+              <figure class="arrow-down">
+                <!-- <img
                 src="images\icons\arrow-circle-down-magenta.png"
                 alt="arrow pointing down"
                 class="arrow-down"
               /> -->
-              <i class="magenta fas fa-arrow-circle-down"></i>
-            </figure>
-            <figure class="arrow-left-right">
-              <!-- <img
+                <i class="magenta fas fa-arrow-circle-down"></i>
+              </figure>
+              <figure class="arrow-left-right">
+                <!-- <img
                 src="images\icons\arrow-circle-right-magenta.png"
                 alt="arrow pointing right"
                 class="arrow-left-right"
               /> -->
-              <i class="magenta fas fa-arrow-circle-right"></i>
-            </figure>
-            <figure class="card">
-              <img src="images\ecology.jpg" alt="Exhibit of an interactive model of the planet Earths weather system" />
-            </figure>
-            <figure class="card-large">
-              <img src="images\ecology_large.jpg"
-                alt="Exhibit of an interactive model of the planet Earths weather system" />
-            </figure>
-          </div>
-        </section>
-        <section class="photo-gallery">
-          <h3 class="main-heading">Come Visit Us and Continue Your Exploration</h3>
-          <div class="image-wrapper">
-            <figure>
-              <img src="../images/gallery-1.jpg"
-                alt="A teenage boy with virtual reality headset is holding a paintbrush" />
-            </figure>
-            <figure>
-              <img src="../images/gallery-2.jpg" alt="A model of a human body with the inner organs exposed" />
-            </figure>
-            <figure>
-              <img src="../images/gallery-3.jpg"
-                alt="Excited schoolgirl with safetyglasses is soldering on a small part for a machine model" />
-            </figure>
-            <figure>
-              <img src="../images/gallery-4.jpg" alt="Model of a human hearth" />
-            </figure>
-            <figure>
-              <img src="../images/gallery-5.jpg"
-                alt="a woman in lab equipment is operating a huge sylinder shaped machine" />
-            </figure>
-            <figure>
-              <img src="../images/gallery-6.jpg" alt="a kid with virtual reality headset" />
-            </figure>
-          </div>
-          <p class="visit">"More Than 1000 Unique Exhibits to Explore"</p>
-        </section>
-      </div>
-      <div class="newsletter-wrapper">
-        <div class="blur">
-          <section class="newsletter">
-            <label for="newsletter">
-              Sign up to our <em>newsletter</em> and be the first to know about our
-              exciting <em>new stuff</em>:
-            </label>
-            <div class="newsletter-success">
-              Welcome! Please check your inbox
+                <i class="magenta fas fa-arrow-circle-right"></i>
+              </figure>
+              <figure class="card">
+                <img src="images\ecology.jpg"
+                  alt="Exhibit of an interactive model of the planet Earths weather system" />
+              </figure>
+              <figure class="card-large">
+                <img src="images\ecology_large.jpg"
+                  alt="Exhibit of an interactive model of the planet Earths weather system" />
+              </figure>
             </div>
-            <form class="newsletter">
-              <input id="newsletter" type="text" name="email" placeholder="your e-mail" />
-              <input id="sign-up" type="submit" name="subscribe" value="SIGN UP" />
-            </form>
-            <p id="newsletter-error" class="error-message">
-              Please enter a valid e-mail address
-            </p>
+          </section>
+          <section class="photo-gallery">
+            <h3 class="main-heading">Come Visit Us and Continue Your Exploration</h3>
+            <div class="image-wrapper">
+              <figure>
+                <img src="../images/gallery-1.jpg"
+                  alt="A teenage boy with virtual reality headset is holding a paintbrush" />
+              </figure>
+              <figure>
+                <img src="../images/gallery-2.jpg" alt="A model of a human body with the inner organs exposed" />
+              </figure>
+              <figure>
+                <img src="../images/gallery-3.jpg"
+                  alt="Excited schoolgirl with safetyglasses is soldering on a small part for a machine model" />
+              </figure>
+              <figure>
+                <img src="../images/gallery-4.jpg" alt="Model of a human hearth" />
+              </figure>
+              <figure>
+                <img src="../images/gallery-5.jpg"
+                  alt="a woman in lab equipment is operating a huge sylinder shaped machine" />
+              </figure>
+              <figure>
+                <img src="../images/gallery-6.jpg" alt="a kid with virtual reality headset" />
+              </figure>
+            </div>
+            <p class="visit">"More Than 1000 Unique Exhibits to Explore"</p>
           </section>
         </div>
+        <div class="newsletter-wrapper">
+          <div class="blur">
+            <section class="newsletter-section">
+              <p for="newsletter">
+                Sign up to our <em>newsletter</em> and be the first to know about our
+                exciting <em>new stuff</em>:
+              </p>
+              <div class="newsletter-success">
+                Welcome! Please check your inbox
+              </div>
+              <form class="newsletter-form">
+                <label for="newsletter-input">E-mail</label>
+                <div class="input-wrapper">
+                  <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
+                  <button id="sign-up-button" type="submit" name="subscribe" value="SIGN UP">Sign up</button>
+                </div>
+              </form>
+              <p id="newsletter-error" class="error-message">
+                Please enter a valid e-mail address
+              </p>
+            </section>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="fading-background_1"></div>
-    <div class="fading-background_2"></div>
-  </main>
-
+      <div class="fading-background_1"></div>
+      <div class="fading-background_2"></div>
+    </main>
+  </div>
   <footer>
     <div class="footer-wrapper">
       <div class="footer-container fi1">
