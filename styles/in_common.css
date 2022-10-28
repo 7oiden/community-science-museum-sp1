@@ -73,7 +73,7 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  background-color: var(--dark-purple);
+  background-color: var(--heading-bg);
   color: #fff;
   margin: 0;
   padding: 0.75rem;

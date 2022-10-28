@@ -432,12 +432,10 @@ div.image-wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
-#clubs {
-  background-color: var(--purple);
-  margin: 0;
-}
 
 figure.clubs {
   transition-property: opacity scale;
@@ -461,12 +459,13 @@ figure.clubs img:hover {
   opacity: 0.7;
 }
 
-figcaption.clubs {
+.clubs-caption {
   font-family: var(--proxima);
   font-size: 1.25rem;
   color: var(--dark-purple);
   text-decoration: underline;
   font-weight: bold;
+  text-align: center;
   margin-bottom: 24px;
   margin-top: 16px;
 }
@@ -593,9 +592,9 @@ h6 {
     font-size: 1.25rem;
   }
 
-  div.image-wrapper {
+  /* div.image-wrapper {
     width: 600px;
-  }
+  } */
 
   figcaption.clubs {
   font-size: 1.375rem;
@@ -753,10 +752,8 @@ h6 {
   }
 
   div.image-wrapper {
-    width: 80%;
-    margin: 32px auto 0 auto;
     flex-direction: row;
-    gap: 64px;
+    gap: 3rem;
   }
 
   figure.clubs:last-child {
@@ -846,11 +843,11 @@ h6 {
     font-size: 1.25rem;
   }
 
-  figure.clubs img {
+  /* figure.clubs img {
     margin-top: 2rem;
     border-radius: 25px;
     max-width: 600px;
-  }
+  } */
 
   .clubs p {
     margin: 0 auto;
