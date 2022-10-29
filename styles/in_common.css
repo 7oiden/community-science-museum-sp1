@@ -132,7 +132,7 @@ a {
 --------------------*/
 
 /* search-dropdown */
-.search-dropdown {
+/* .search-dropdown {
   position: absolute;
   top: 130px;
   width: 100%;
@@ -172,12 +172,11 @@ form {
 }
 
 .dropdown-text {
-  font-family: var(--neue-haas);
   font-size: 1.125rem;
   width: 85%;
   margin: 0 auto;
   padding-bottom: 32px;
-}
+} */
 
 /* ticket-dropdown */
 .ticket-dropdown {
@@ -368,30 +367,13 @@ header {
   width: 250px;
 }
 
-.nav-icons-wrapper {
-  display: flex;
-  justify-content: space-around;
-  margin: 1rem 0;
-}
 
-.nav-icon {
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--dark-blue);
-  transition-property: scale;
-  transition-duration: 0.5s;
-  scale: 1;
-}
 
-.nav-icon:hover {
-  scale: 1.2;
-}
-
-.nav-icons-wrapper li {
+/* .nav-icons-wrapper li {
   list-style: none;
-}
+} */
 
-nav.menu {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -419,30 +401,74 @@ nav.menu {
 } */
 
 /* mobile menu */
-.fa-bars {
+/* .fa-bars {
   font-size: 1.875rem;
-  padding: 1rem 0;
-}
+} */
 
 .mobile-menu {
-  margin: 0 0 0 5%;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.mobile-menu-list {
   padding: 0;
+  margin: 0;  
 }
 
-.mobile-menu li:last-child {
-  padding-bottom: 1rem;
-}
-
-.mobile-menu label p {
+/* .mobile-menu-list label p {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
   margin: 0;
-}
+} */
 
-ul.large-screen-menu {
-  display: none;
-}
+.navbar-menu {
+   display: flex;
+   justify-content: space-between;
+   /* align-items: center; */
+   width: 85%;
+   margin: 0 auto;
+   padding: 0.75rem 0;
+ }
+
+ .navbar-menu-list {
+   display: none;
+   justify-content: flex-start;
+   gap: 4rem;
+   margin: 0;
+   padding: 0;
+ }
+
+ .navbar-icon-wrapper {
+  display: flex;
+  gap: 2rem;
+ }
+
+ .nav-icons-wrapper {
+   display: flex;
+   justify-content: space-around;
+   margin: 1rem 0;
+ }
+
+ .navbar-icon {
+   font-size: 2rem;
+   cursor: pointer;
+   color: #fff;
+   transition-property: scale;
+   transition-duration: 0.5s;
+   scale: 1;
+ }
+
+ .navbar-icon:hover {
+   scale: 1.2;
+ }
+
+ .menu-icon {
+  font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+ }
 
 ul li {
   list-style: none;
@@ -452,20 +478,25 @@ ul li {
   margin-bottom: 20px;
 } */
 
-.mobile-menu li {
+.mobile-menu-list li {
   display: block;
-  float: left;
-  clear: left;
   font-size: 1.25rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
 }
+
+.mobile-menu-list li:first-of-type {
+ padding-top: 1rem;
+}
+
+/* .mobile-menu-list li:last-child {
+  padding-bottom: 1rem;
+} */
 
 .hamburger-label {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -515,11 +546,12 @@ ul li {
 .fading-background_2 {
   background-color: #00000099;
   position: absolute;
+  top: 0;
   z-index: 600;
   width: 100%;
   height: 4000px;
   display: none;
-  top: 130px;
+  /* top: 130px; */
 }
 
 .fb-show {
@@ -852,14 +884,14 @@ footer {
     position: relative;
   }
 
-  .fading-background_1,
+  /* .fading-background_1,
   .fading-background_2 {
     top: 74px;
-  }
+  } */
 
-  .dropdown-wrapper {
+  /* .dropdown-wrapper {
     margin-left: 3rem;
-  }
+  } */
 
   .search-dropdown {
     top: 59px;
@@ -912,9 +944,10 @@ footer {
     font-size: 1.25rem;
    } 
 
-    .nav-icon {
+     
+
+    .navbar-icon {
       font-size: 2.5rem;
-      
     }
 
   /* Header
@@ -929,10 +962,10 @@ footer {
     width: 300px;
   }
 
-  .fading-background_1,
+  /* .fading-background_1,
   .fading-background_2 {
     top: 97px;
-  }
+  } */
 
   .search-dropdown {
     top: 70px;
@@ -979,28 +1012,21 @@ footer {
 
   /* Header
 --------------------*/
-  nav.menu {
-    height: 60px;
+  .navbar-menu {
     align-items: center;
-    margin: 0 auto;
   }
 
-  .fading-background_1,
+  .navbar-menu-list {
+    display: flex;
+  }
+
+  /* .fading-background_1,
   .fading-background_2 {
     border-radius: 0 60px 0 0;
-  }
+  } */
 
-  ul.mobile-menu {
+  .mobile-menu-list {
     display: none;
-  }
-
-  ul.large-screen-menu {
-    display: flex;
-    justify-content: flex-start;
-    width: 85%;
-    gap: 4rem;
-    margin: 0 auto;
-    padding: 0;
   }
 
   .inactive {

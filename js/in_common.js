@@ -1,37 +1,37 @@
-const searchIcon = document.querySelector(".fa-search");
+// const searchIcon = document.querySelector(".fa-search");
 const ticketIcon = document.querySelector(".fa-ticket-alt");
 const profileIcon = document.querySelector(".fa-user-circle");
 
-const searchDropdow = document.querySelector(".search-dropdown");
+// const searchDropdow = document.querySelector(".search-dropdown");
 const ticketDropdow = document.querySelector(".ticket-dropdown");
 const profileDropdow = document.querySelector(".profile-dropdown");
 
 const fadingBackground = document.querySelector(".fading-background_1");
 
-function searchDropdown() {
-  if (searchDropdow.style.display === "block") {
-    searchDropdow.style.display = "none";
-    fadingBackground.style.display = "none";
-    document.body.style.position = "static";
-    document.body.style.paddingRight = 0;
-    searchIcon.style.scale = null;
-    ticketIcon.style.scale = null;
-    profileIcon.style.scale = null;
-  } else {
-    searchDropdow.style.display = "block";
-    ticketDropdow.style.display = "none";
-    profileDropdow.style.display = "none";
-    fadingBackground.style.display = "block";
-    document.body.style.position = "fixed";
-    document.body.style.paddingRight = "17px";
-    profileIcon.style.paddingLeft = "1px";
-    searchIcon.style.scale = "1.2";
-    ticketIcon.style.scale = null;
-    profileIcon.style.scale = null;
-  }
-}
+// function searchDropdown() {
+//   if (searchDropdow.style.display === "block") {
+//     searchDropdow.style.display = "none";
+//     fadingBackground.style.display = "none";
+//     document.body.style.position = "static";
+//     document.body.style.paddingRight = 0;
+//     searchIcon.style.scale = null;
+//     ticketIcon.style.scale = null;
+//     profileIcon.style.scale = null;
+//   } else {
+//     searchDropdow.style.display = "block";
+//     ticketDropdow.style.display = "none";
+//     profileDropdow.style.display = "none";
+//     fadingBackground.style.display = "block";
+//     document.body.style.position = "fixed";
+//     document.body.style.paddingRight = "17px";
+//     profileIcon.style.paddingLeft = "1px";
+//     searchIcon.style.scale = "1.2";
+//     ticketIcon.style.scale = null;
+//     profileIcon.style.scale = null;
+//   }
+// }
 
-console.log(searchDropdown);
+// console.log(searchDropdown);
 
 function ticketDropdown() {
   if (ticketDropdow.style.display === "block") {
@@ -39,18 +39,18 @@ function ticketDropdown() {
     fadingBackground.style.display = "none";
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-    searchIcon.style.scale = null;
+    // searchIcon.style.scale = null;
     ticketIcon.style.scale = null;
     profileIcon.style.scale = null;
   } else {
-    searchDropdow.style.display = "none";
+    // searchDropdow.style.display = "none";
     ticketDropdow.style.display = "block";
     profileDropdow.style.display = "none";
     fadingBackground.style.display = "block";
     document.body.style.position = "fixed";
     document.body.style.paddingRight = "17px";
     profileIcon.style.paddingLeft = "1px";
-    searchIcon.style.scale = null;
+    // searchIcon.style.scale = null;
     ticketIcon.style.scale = "1.2";
     profileIcon.style.scale = null;
   }
@@ -62,47 +62,47 @@ function profileDropdown() {
     fadingBackground.style.display = "none";
     document.body.style.position = "static";
     document.body.style.paddingRight = 0;
-    searchIcon.style.scale = null;
+    // searchIcon.style.scale = null;
     ticketIcon.style.scale = null;
     profileIcon.style.scale = null;
   } else {
-    searchDropdow.style.display = "none";
+    // searchDropdow.style.display = "none";
     ticketDropdow.style.display = "none";
     profileDropdow.style.display = "block";
     fadingBackground.style.display = "block";
     document.body.style.position = "fixed";
     document.body.style.paddingRight = "17px";
     profileIcon.style.paddingLeft = "1px";
-    searchIcon.style.scale = null;
+    // searchIcon.style.scale = null;
     ticketIcon.style.scale = null;
     profileIcon.style.scale = "1.2";
   }
 }
 
-searchIcon.addEventListener("click", searchDropdown);
+// searchIcon.addEventListener("click", searchDropdown);
 ticketIcon.addEventListener("click", ticketDropdown);
 profileIcon.addEventListener("click", profileDropdown);
 
-function closeSearchDropdown(event) {
-  if (
-    searchDropdow.style.display === "block" &&
-    !event.target.matches(".search-dropdown") &&
-    !event.target.matches(".fa-search") &&
-    !event.target.matches(".search-header") &&
-    !event.target.matches(".dropdown-text") &&
-    !event.target.matches(".dropdown-form") &&
-    !event.target.matches(".box") &&
-    !event.target.matches(".label")
-  ) {
-    searchDropdow.style.display = "none";
-    fadingBackground.style.display = "none";
-    searchIcon.style.scale = null;
-    document.body.style.position = "static";
-    document.body.style.paddingRight = 0;
-  }
-}
+// function closeSearchDropdown(event) {
+//   if (
+//     searchDropdow.style.display === "block" &&
+//     !event.target.matches(".search-dropdown") &&
+//     !event.target.matches(".fa-search") &&
+//     !event.target.matches(".search-header") &&
+//     !event.target.matches(".dropdown-text") &&
+//     !event.target.matches(".dropdown-form") &&
+//     !event.target.matches(".box") &&
+//     !event.target.matches(".label")
+//   ) {
+//     searchDropdow.style.display = "none";
+//     fadingBackground.style.display = "none";
+//     searchIcon.style.scale = null;
+//     document.body.style.position = "static";
+//     document.body.style.paddingRight = 0;
+//   }
+// }
 
-document.addEventListener("click", closeSearchDropdown);
+// document.addEventListener("click", closeSearchDropdown);
 
 function closeTicketDropdown(event) {
   if (
