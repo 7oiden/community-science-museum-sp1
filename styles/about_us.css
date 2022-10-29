@@ -4,51 +4,6 @@
 /* main 
 --------------------*/
 
-
-/* .main-wrapper {
-  width: 100%;
-  margin: 0 auto;
-  background-color: white;
-}  */
-
-/* section {
-  width: 85%;
-  margin: 0 auto;
-} */
-
-/* h1 {
-  font-family: var(--proxima);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  background-color: var(--dark-purple);
-  color: #fff;
-  margin: 25px 7.5% 32px 0;
-  padding: 12px 32px;
-  border-radius: 0 0 50px 0;
-} */
-/* h1::before {
-  content: "“";
-  font-size: 1.5rem;
-}
-
-h1::after {
-  content: "”";
-  font-size: 1.5rem;
-} */
-
-/* section.vision {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-} */
-/* div.vision {
-  width: 100%;
-  background-color: var(--light-grey);
-  padding-top: 16px;
-  border-radius: 5px;
-} */
-
 div.item-1 {
   font-family: var(--sofia);
   font-size: 1.125rem;
@@ -62,69 +17,25 @@ div.vision p {
   margin: 0 auto;
   padding-bottom: 16px;
 }
-
-/* figure.vision {
-  width: 100%;
-  height: 100%;
-  margin: auto auto;
-} */
-
 .vision-img {
   width: 100%;
   height: auto;
   margin: 0;
 }
 
-/* img.large-screen {
-  display: none;
-} */
-
 #get-in-touch-1 {
   border-radius: 0 0 25px 25px;
 }
 
-/* .get-in-touch {
-  width: 85%;
-  margin: 16px auto;
-  background-color: #7c68a6;
-  color: #fff;
-  font-size: 1.25rem;
-  text-align: center;
-  border-radius: 0 50px;
-  display: flex;
-  flex-direction: column;
+.gallery-wrapper {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
-
-.get-in-touch > p {
-  font-family: var(--proxima);
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 16px 0;
-}
-
-p.button {
-  font-family: var(--sofia);
-  display: inline-block;
-  text-align: center;
-  border-radius: 15px;
-  background-color: var(--magenta);
-  color: var(--white);
-  padding: 8px 32px;
-  margin-top: 0;
-  margin-bottom: 16px;
-  border-bottom: 3px solid #fff;
-  border-right: 2px solid #fff;
-  transition-property: scale;
-  transition-duration: 0.5s;
-  scale: 1;
-}
-p.button:hover {
-  scale: 1.1;
-} */
-
-/* section.tourguides {
-  width: 100%;
-} */
 
 .image-wrapper {
   width: 95%;
@@ -136,24 +47,6 @@ p.button:hover {
   gap: 1rem;
 }
 
-/* figure.tourguides {
-  display: block;
-  width: 150px;
-  justify-self: start;
-  margin: 0;
-  padding: 0;
-  border-radius: 15px;
-} */
-
-.tourguide img {
-  display: block;
-  width: 125px;
-  justify-self: start;
-  margin: 0;
-  padding: 0;
-  border-radius: 10px;
-}
-
 figcaption {
   font-family: var(--proxima-soft);
   text-align: center;
@@ -161,76 +54,30 @@ figcaption {
   padding-top: 8px;
 }
 
-/* h4 {
-  font-family: var(--sofia);
-  font-size: 1.25rem;
-  background-color: var(--dark-purple);
-  color: #fff;
-  padding: 12px 16px;
-  margin: 32px 5% 0 0;
-  border-radius: 0 0 50px 0;
-} */
-
-/* h5 {
-  font-size: 1.125rem;
-  margin-left: 5%;
-  margin-bottom: 8px;
-  margin-top: 0;
-} */
-
-.tourguide-quote {
-  width: 100%;
-  font-family: var(--sofia);
-  font-size: 1.125rem;
-  font-style: italic;
-  text-align: center;
-  background-color: var(--purple);
-  color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 50px 0 0 0;
-}
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 576px) {
   /* Main
 --------------------*/
-  /* h1 {
-    font-size: 1.875rem;
-    text-align: center;
+.gallery-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
   }
-  h1::before {
-    font-size: 1.875rem;
-  }
-  h1::after {
-    font-size: 1.875rem;
-  } */
 }
+
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
-  /* h1 {
-    font-size: 2.25rem;
+.gallery-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
   }
-  h1::before {
-    font-size: 2.25rem;
-  }
-  h1::after {
-    font-size: 2.25rem;
-  } */
 }
+
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-  /* section {
-    width: 90%;
-  } */
-  /* div.vision {
-    font-size: 1.125rem;
-  } */
-
-  /* .get-in-touch {
-    width: 90%;
-  } */
   .item-1 {
     grid-area: introduction;
   }
@@ -252,10 +99,8 @@ figcaption {
     grid-area: paragraph-3;
   }
 
-  section.vision {
+  .vision-section {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto auto auto; */
     grid-template-areas:
       "introduction introduction paragraph-1 paragraph-1"
       "image image paragraph-1 paragraph-1"
@@ -268,71 +113,8 @@ figcaption {
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
-  /* .main-wrapper {
-    width: 85%;
-  } */
-  /* .main-wrapper {
-    padding-top: 50px;
-  } */
-
-  /* img.mobile {
-    display: none;
-  }
-
-  img.large-screen {
-    display: block;
-    height: 100%;
-  } */
-  
-  /* h1 {
-    width: 90%;
-    font-size: 2.5rem;
-    margin: 0 auto 32px auto;
-    text-transform: capitalize;
-    text-align: center;
-    border-radius: 0;
-  }
-
-  h1::before {
-    font-size: 2.5rem;
-  }
-
-  h1::after {
-    font-size: 2.5rem;
-  } */
-
-  /* h5 {
-    font-size: 1.25rem;
-  } */
-
-  /* .get-in-touch {
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-    gap: 64px;
-    padding-top: 12px;
-  }
-  .get-in-touch p {
-    font-size: 1.35rem;
-  } */
-
-  /* h4 {
-    width: 90%;
-    margin: 64px auto 16px auto;
-    font-size: 2rem;
-    text-align: center;
-  } */
-
-  .tourguide img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .tourguides-quote {
-    font-size: 1.5rem;
-    text-align: center;
-  }
 }
+
 @media only screen and (min-width: 1600px) {
   /* Main
 --------------------*/
