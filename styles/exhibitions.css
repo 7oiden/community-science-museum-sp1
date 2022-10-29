@@ -86,7 +86,7 @@ h4 {
 .card-heading {
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #fff;
   padding: 0.5rem;
   margin: 0;
@@ -123,37 +123,30 @@ h4 {
   background-image: url(../images/icons/tellus.png);
 } */
 
-section.photo-gallery {
+.gallery-section {
   width: 100%;
   margin: 0 auto;
 }
 
-.photo-gallery img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  border-radius: 15px;
-}
-
-.image-wrapper {
+.gallery-wrapper {
   margin: 2rem auto;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
 }
 
-.image-wrapper figure {
+.gallery-wrapper figure, .gallery-wrapper img {
+  display: block;
+  width: 100%;
   margin: 0;
-}
-
-.image-wrapper div {
+  padding: 0;
   border-radius: 15px;
 }
 
-p.visit {
-  font-family: var(--sofia);
+.gallery-quote {
   font-size: 1.125rem;
   font-style: italic;
   background-color: var(--purple);
@@ -167,49 +160,39 @@ p.visit {
 @media only screen and (min-width: 576px) {
   /* Main
 --------------------*/
-  h4 {
+  /* h4 {
+    font-size: 1.5rem;
+  } */
+
+  .card-heading {
     font-size: 1.5rem;
   }
 
-  .card-heading {
-    font-size: 1.75rem;
-  }
-
-  p.visit {
+  .gallery-quote {
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .card-body {
-    background-size: 40%;
-  }
-
-   .image-wrapper {
-    gap: 32px;
-  }
-
-  .photo-gallery img {
-    width: 200px;
-    height: 200px;
+   .gallery-wrapper {
+    gap: 2rem;
   }
 }
+
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
   
-  .image-wrapper {
-    grid-template-columns: auto auto auto;
+  .gallery-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
   }
 }
 
 @media only screen and (min-width: 992px) {
- 
   /* Main
 --------------------*/
-  .photo-gallery img {
-    width: 250px;
-    height: 250px;
+  .card-body {
+    padding: 0.5rem 1.5rem;
   }
 }
 
@@ -217,45 +200,16 @@ p.visit {
   /* Main
 --------------------*/
  
-  h4 {
-    display: none;
-  }
- 
   .card-wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
   }
 
-  .image-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  .gallery-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
   }
-
-  .photo-gallery img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .image-wrapper figure {
-    transition-property: scale opacity;
-    transition-duration: 0.5s;
-    scale: 1;
-  }
-
-  .image-wrapper figure:hover {
-    scale: 1.2;
-    opacity: 1;
-    z-index: 100;
-  }
-
-  p.visit {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 1700px) {
-  /* Main
---------------------*/
 }
 
 @media only screen and (min-width: 1800px) {
@@ -265,7 +219,7 @@ p.visit {
     width: 320px;
   } */
 
-  .dropdown-info {
+  /* .dropdown-info {
     width: 320px;
-  }
+  } */
 }
