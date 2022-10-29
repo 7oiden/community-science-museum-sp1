@@ -879,7 +879,7 @@ h6 {
 
   /* Footer
 --------------------*/
-  .footer-wrapper {
+  /* .footer-wrapper {
     font-size: 1.125rem;
     flex-wrap: nowrap;
   }
@@ -888,15 +888,15 @@ h6 {
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
-  }
+  } */
 
-  ul.connect {
+  /* ul.connect {
     flex-direction: column;
   }
 
   .connect li {
     padding: 8px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1300px) {
