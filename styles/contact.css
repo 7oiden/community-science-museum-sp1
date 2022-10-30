@@ -34,12 +34,6 @@ section > p {
   padding: 2rem;
 }
 
-.form-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
 #submit-button {
   align-self: flex-start;
   margin-top: 1rem;
