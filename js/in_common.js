@@ -1,4 +1,4 @@
-const ticketButton = document.querySelector(".navbar-ticket-button");
+const ticketButton = document.querySelector(".ticket-button");
 const ticketModal = document.querySelector("#ticket-modal");
 const fadingBackground = document.querySelector(".fading-background");
 const navbar = document.querySelector(".navbar");
@@ -8,9 +8,13 @@ function ticketDropdown(event) {
   if (ticketModal.style.display === "block") {
     ticketModal.style.display = "none";
     fadingBackground.style.display = "none";
+    navbar.style.position = "sticky";
+    document.body.style.position = "static";
   } else {
     ticketModal.style.display = "block";
     fadingBackground.style.display = "block";
+    navbar.style.position = "static";
+    document.body.style.position = "fixed";
   }
 }
 
@@ -24,6 +28,7 @@ function closeTicketDropdown(event) {
     !event.target.matches(".modal") &&
     !event.target.matches(".modal-body") &&
     !event.target.matches(".fa-ticket-alt") &&
+    !event.target.matches(".form-block") &&
     !event.target.matches(".modal-header") &&
     !event.target.matches(".modal-heading") &&
     !event.target.matches(".modal-text") &&
@@ -31,11 +36,13 @@ function closeTicketDropdown(event) {
     !event.target.matches(".dropdown-form") &&
     !event.target.matches("#select") &&
     !event.target.matches(".modal-button") &&
+    !event.target.matches("#date") &&
     !event.target.matches(".option")
   ) {
     ticketModal.style.display = "none";
     fadingBackground.style.display = "none";
-    // navbar.style.position = "sticky";
+    navbar.style.position = "sticky";
+    document.body.style.position = "static";
   }
 }
 

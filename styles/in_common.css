@@ -133,23 +133,32 @@ a {
 .modal {
   position: absolute;
   width: 95%;
-  max-width: 500px;
-  bottom: 0;
+  max-width: 400px;
+  top: 0.5rem;
   right: 2.5%;
-  transform: translateY(100%);
   display: flex;
   flex-direction: column;
   background-color: white;
   color: #000;
-  border-radius: 0 0 5px 5px;
+  border-radius: 3px;
   display: none;
   z-index: 1000;
-  animation-name: animate-dropdown;
+  animation-name: animate-modal;
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
 }
 
-@keyframes animate-dropdown {
+@keyframes animate-modal {
+  from {
+    scale: 0;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes animate-backdrop {
   from {
     opacity: 0;
   }
@@ -162,16 +171,15 @@ a {
 .modal-header {
   position: relative;
   width: 100%;
-  /* background-color: var(--navbar-color); */
-  color: #252525;
-  font-family: var(--proxima-soft);
+  background-color: var(--navbar-color);
+  color: #fff;
+  font-family: var(--main-heading);
   font-size: 1.5rem;
   text-transform: capitalize;
   text-align: center;
   margin: 0;
   padding: 0.75rem;
-  border-bottom: 2px solid var(--navbar-color);
-  /* border-radius: 5px 5px 0 0; */
+  border-radius: 3px 3px 0 0;
 }
 
 .modal-body {
@@ -194,7 +202,12 @@ a {
 
 .modal-button {
   margin-top: 1rem;
-  align-self: flex-end;
+  width: 100%;
+  background-color: var(--dark-blue);
+}
+
+.modal-button:hover {
+  scale: 1;
 }
 
 .close-icon {
@@ -203,28 +216,29 @@ a {
   top: 0.75rem;
   right: 0.75rem;
   cursor: pointer;
+  color: #fff;
 }
 
 
-#select {
+/* #select {
   font-family: var(--proxima-soft);
   font-size: 1.125rem;
   font-weight: bold;
   border: 3px solid #0030574d;
   padding: 10px;
-}
+} */
 
-#select:focus {
+/* #select:focus {
   border: 3px solid #003057;
-}
+} */
 
-#select option {
+/* #select option {
   font-family: var(--proxima-soft);
   font-size: 1.125rem;
   font-weight: bold;
   border: 2px solid var(--dark-purple);
   background-color: var(--light-grey);
-}
+} */
 
 label {
   font-size: 1rem;
@@ -234,13 +248,15 @@ input, select, textarea {
   display: inline-block;
   width: 100%;
   font-size: 1rem;
+  background-color: #fff;
   color: #172940;
   border-radius: 0;
   border: 3px solid #0030574d;
-  padding: 0.75rem;
+  padding: 0.5rem;
   margin: 0 auto;
   transition-property: border;
   transition-duration: 0.3s;
+  font-family: var(--body-text);
 }
 
 input:focus {
@@ -266,25 +282,54 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   gap: 0.5rem;
+}
+
+.header-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem 1.5rem;
+  align-self: flex-end;
+}
+
+.header-search-form {
+  display: flex;
+}
+
+.header-search-form input {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.header-search-button {
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  padding: 0.75rem;
+  background-color: var(--dark-blue);
 }
 
 .header-time-wrapper {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  align-self: flex-end;
 }
 
-#header-time-icon {
+#header-time-icon, #header-search-icon {
   color: var(--dark-blue);
   font-size: 1.5rem;
 }
 
+#header-search-icon {
+  color: #fff;
+  font-size: 1.375rem;
+}
+
 #header-time-text {
   color: var(--dark-blue);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -295,6 +340,7 @@ header {
   display: block;
   width: 250px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .logo img {
@@ -367,7 +413,7 @@ header {
    margin: 1rem 0;
  }
 
- .navbar-ticket-button {
+ .ticket-button {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -382,14 +428,21 @@ header {
   cursor: pointer;
   scale: 1;
   transition: scale 0.3s ease;
+  justify-self: flex-end;
  }
 
- .navbar-ticket-button:hover {
-  scale: 1.1;
+ .ticket-button:hover {
+  scale: 1.05;
  }
 
- .navbar-ticket-icon {
+ .ticket-icon {
   font-size: 1.75rem;
+ }
+
+ .ticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
  }
 
  .navbar-icon {
@@ -406,9 +459,9 @@ header {
  }
 
  .menu-icon {
-  font-size: 2rem;
-    cursor: pointer;
-    color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
  }
 
 ul li {
@@ -474,7 +527,7 @@ ul li {
   z-index: 60;
   width: 100%;
   display: none;
-  animation-name: animate-dropdown;
+  animation-name: animate-backdrop;
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
   /* top: 130px; */
@@ -756,12 +809,14 @@ footer {
 @media only screen and (min-width: 576px) {
   /* Header
 --------------------*/
-  /* .search-dropdown,
-  .ticket-dropdown,
-  .profile-dropdown {
-    width: 70%;
-    left: 15%;
-  } */
+  .header-content-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .modal {
+    right: 0.5rem;
+  }
   /* Main
 --------------------*/
   /* section.newsletter {

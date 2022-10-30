@@ -27,29 +27,49 @@
         <figure class="logo">
           <a href="index.html"><img src="images/cms-logo.png" alt="Community Science Museum logo" /></a>
         </figure>
-        <div class="header-time-wrapper">
-          <span class="fa fa-clock" id="header-time-icon"></span>
-          <p id="header-time-text">Open today: 10:00 — 16:00</p>
+        <div class="header-content-wrapper">
+          <div class="header-time-wrapper">
+            <span class="fa fa-clock" id="header-time-icon"></span>
+            <p id="header-time-text">Open today 10:00 — 16:00</p>
+          </div>
+          <button class="ticket-button"><span>Buy tickets</span><span
+              class="fa fa-ticket-alt ticket-icon"></span></button>
         </div>
-        <!-- <div class="dropdown-wrapper">
-            <i class="fa fa-search nav-icon"></i>
-            <div class="search-dropdown">
-              <p class="search-header">search results</p>
-              <form action="" class="dropdown-form">
-                <label for="search" class="label">Search</label>
-                <input type="text" name="first-name" placeholder="Start Writing..." id="search" class="box" />
-              </form>
-              <p class="dropdown-text">
-                Sorry, no result for your search, please try something else
-              </p>
-            </div>
-          </div> -->
+        <div class="modal" id="ticket-modal">
+          <div class="modal-header"><span class="modal-heading">Buy tickets</span><i
+              class="fas fa-times close-icon"></i>
+          </div>
+          <div class="modal-body">
+            <p class="modal-text">
+              Please choose the desired number of tickets and click proceed in
+              order to finalize your purchase on www.ticketmaster.com
+            </p>
+            <form action="" class="ticket-form">
+              <div class="form-block">
+                <label for="select" class="modal-label">Number of tickets</label>
+                <select name="tickets" id="select">
+                  <option class="option" value="1">1</option>
+                  <option class="option" value="1">2</option>
+                  <option class="option" value="1">3</option>
+                  <option class="option" value="1">4</option>
+                  <option class="option" value="1">5</option>
+                  <option class="option" value="more">6 or more</option>
+                </select>
+              </div>
+              <div class="form-block">
+                <label for="date" class="modal-label">Pick a date</label>
+                <input type="date" id="date" name="date" value="2020-11-10" min="2020-11-10" max="2020-12-31">
+              </div>
+            </form>
+            <button class="button modal-button">Checkout</button>
+          </div>
+        </div>
       </div>
       <nav aria-label="menu" class="navbar">
         <div class="navbar-menu">
           <ul class="mobile-menu-list">
             <label class="hamburger-label" for="hamburger-menu"><span class="fa fa-bars menu-icon"></span>
-              <!-- <span id="menu" class="menu-link">Menu</span> -->
+              <span id="menu" class="menu-link">Menu</span>
             </label>
             <input type="checkbox" id="hamburger-menu" />
             <li><a href="exhibitions.html">Exhibitions</a></li>
@@ -76,56 +96,9 @@
               <a href="about_us.html" class="menu-link">About us</a>
             </li>
           </ul>
-          <div class="navbar-icon-wrapper">
 
-            <!-- <i class="fa fa-search navbar-icon"></i>
-            <div class="modal" id="search-modal">
-              <div class="modal-heading"><span>Search results</span><i class="fas fa-times close-icon"></i></div>
-              <div class="modal-body">
-                <form action="" class="dropdown-form">
-                  <div class="form-block">
-                    <label for="search">Search</label>
-                    <input type="text" name="first-name" placeholder="Start Writing..." id="search" class="box" />
-                  </div>
-                </form>
-                <p class="modal-text">
-                  Sorry, no result for your search, please try something else
-                </p>
-              </div>
-            </div> -->
-            <button class="navbar-ticket-button"><span>Buy tickets</span><span
-                class="fa fa-ticket-alt navbar-ticket-icon"></span></button>
-          </div>
         </div>
-        <div class="modal" id="ticket-modal">
-          <div class="modal-header"><span class="modal-heading">Buy tickets</span><i
-              class="fas fa-times close-icon"></i>
-          </div>
-          <div class="modal-body">
-            <p class="modal-text">
-              Please choose the desired number of tickets and click proceed in
-              order to finalize your purchase on www.ticketmaster.com
-            </p>
-            <!-- <p class="modal-text">
-              If your party consist of 6 people or more, you will be taken to
-              our contact form.
-            </p> -->
-            <form action="" class="ticket dropdown-form">
-              <div class="form-block">
-                <label for="select" class="modal-label">Tickets</label>
-                <select name="tickets" id="select">
-                  <option class="option" value="1">1</option>
-                  <option class="option" value="1">2</option>
-                  <option class="option" value="1">3</option>
-                  <option class="option" value="1">4</option>
-                  <option class="option" value="1">5</option>
-                  <option class="option" value="more">6 or more</option>
-                </select>
-              </div>
-            </form>
-            <button class="button modal-button">Proceed</button>
-          </div>
-        </div>
+
       </nav>
     </header>
     <main>
