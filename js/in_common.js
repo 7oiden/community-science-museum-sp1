@@ -1,127 +1,41 @@
-const searchIcon = document.querySelector(".fa-search");
-const ticketIcon = document.querySelector(".fa-ticket-alt");
-// const profileIcon = document.querySelector(".fa-user-circle");
-
-const searchModal = document.querySelector("#search-modal");
+const ticketButton = document.querySelector(".navbar-ticket-button");
 const ticketModal = document.querySelector("#ticket-modal");
-// const profileModal = document.querySelector(".profile-modal");
+const fadingBackground = document.querySelector(".fading-background");
+const navbar = document.querySelector(".navbar");
 
-const fadingBackground = document.querySelector(".fading-background_1");
-
-function searchDropdown() {
-  if (searchModal.style.display === "block") {
-    searchModal.style.display = "none";
-    fadingBackground.style.display = "none";
-    document.body.style.position = "static";
-    // document.body.style.paddingRight = 0;
-    searchIcon.style.scale = null;
-    ticketIcon.style.scale = null;
-    // profileIcon.style.scale = null;
-  } else {
-    searchModal.style.display = "block";
-    ticketModal.style.display = "none";
-    // profileModal.style.display = "none";
-    fadingBackground.style.display = "block";
-    document.body.style.position = "fixed";
-    // document.body.style.paddingRight = "17px";
-    // profileIcon.style.paddingLeft = "1px";
-    searchIcon.style.scale = "1.2";
-    ticketIcon.style.scale = null;
-    // profileIcon.style.scale = null;
-  }
-}
-
-console.log(searchDropdown);
-
-function ticketDropdown() {
+function ticketDropdown(event) {
+  event.stopPropagation();
   if (ticketModal.style.display === "block") {
     ticketModal.style.display = "none";
     fadingBackground.style.display = "none";
-    document.body.style.position = "static";
-    // document.body.style.paddingRight = 0;
-    searchIcon.style.scale = null;
-    ticketIcon.style.scale = null;
-    // profileIcon.style.scale = null;
   } else {
-    searchModal.style.display = "none";
     ticketModal.style.display = "block";
-    // profileModal.style.display = "none";
     fadingBackground.style.display = "block";
-    document.body.style.position = "fixed";
-    // document.body.style.paddingRight = "17px";
-    // profileIcon.style.paddingLeft = "1px";
-    searchIcon.style.scale = null;
-    ticketIcon.style.scale = "1.2";
-    // profileIcon.style.scale = null;
   }
 }
 
-// function profileDropdown() {
-//   if (profileModal.style.display === "block") {
-//     profileModal.style.display = "none";
-//     fadingBackground.style.display = "none";
-//     document.body.style.position = "static";
-//     document.body.style.paddingRight = 0;
-//     searchIcon.style.scale = null;
-//     ticketIcon.style.scale = null;
-//     profileIcon.style.scale = null;
-//   } else {
-//     searchModal.style.display = "none";
-//     ticketModal.style.display = "none";
-//     profileModal.style.display = "block";
-//     fadingBackground.style.display = "block";
-//     document.body.style.position = "fixed";
-//     document.body.style.paddingRight = "17px";
-//     profileIcon.style.paddingLeft = "1px";
-//     searchIcon.style.scale = null;
-//     ticketIcon.style.scale = null;
-//     profileIcon.style.scale = "1.2";
-//   }
-// }
-
-searchIcon.addEventListener("click", searchDropdown);
-ticketIcon.addEventListener("click", ticketDropdown);
-// profileIcon.addEventListener("click", profileDropdown);
-
-function closeSearchDropdown(event) {
-  if (
-    searchModal.style.display === "block" &&
-    !event.target.matches(".search-dropdown") &&
-    !event.target.matches(".fa-search") &&
-    !event.target.matches(".search-header") &&
-    !event.target.matches(".dropdown-text") &&
-    !event.target.matches(".dropdown-form") &&
-    !event.target.matches(".box") &&
-    !event.target.matches(".label")
-  ) {
-    searchModal.style.display = "none";
-    fadingBackground.style.display = "none";
-    searchIcon.style.scale = null;
-    document.body.style.position = "static";
-    document.body.style.paddingRight = 0;
-  }
-}
-
-document.addEventListener("click", closeSearchDropdown);
+ticketButton.addEventListener("click", ticketDropdown);
 
 function closeTicketDropdown(event) {
+  // event.stopPropagation();
+
   if (
     ticketModal.style.display === "block" &&
-    !event.target.matches(".ticket-dropdown") &&
+    !event.target.matches(".modal") &&
+    !event.target.matches(".modal-body") &&
     !event.target.matches(".fa-ticket-alt") &&
-    !event.target.matches(".ticket-header") &&
-    !event.target.matches(".dropdown-text") &&
+    !event.target.matches(".modal-header") &&
+    !event.target.matches(".modal-heading") &&
+    !event.target.matches(".modal-text") &&
+    !event.target.matches(".modal-label") &&
     !event.target.matches(".dropdown-form") &&
     !event.target.matches("#select") &&
-    !event.target.matches(".ticket-label") &&
-    !event.target.matches(".ticket") &&
+    !event.target.matches(".modal-button") &&
     !event.target.matches(".option")
   ) {
     ticketModal.style.display = "none";
     fadingBackground.style.display = "none";
-    ticketIcon.style.scale = null;
-    document.body.style.position = "static";
-    document.body.style.paddingRight = 0;
+    // navbar.style.position = "sticky";
   }
 }
 
@@ -216,26 +130,26 @@ function validateEmail(newsletterEmail) {
   return patternMatches;
 }
 
-const dropdownContent = document.querySelector(".dropdown-info");
-const infoWrapper = document.querySelectorAll(".info-wrapper");
-const fadingBackground2 = document.querySelector(".fading-background_2");
+// const dropdownContent = document.querySelector(".dropdown-info");
+// const infoWrapper = document.querySelectorAll(".info-wrapper");
+// const fadingBackground2 = document.querySelector(".fading-background_2");
 
-const exhibitionWrapper = document.querySelector("#exhibition-wrapper");
-const exploreWrapper = document.querySelector("#explore-wrapper");
-const getInvolvedWrapper = document.querySelector("#get-involved-wrapper");
-const visitWrapper = document.querySelector("#visit-wrapper");
+// const exhibitionWrapper = document.querySelector("#exhibition-wrapper");
+// const exploreWrapper = document.querySelector("#explore-wrapper");
+// const getInvolvedWrapper = document.querySelector("#get-involved-wrapper");
+// const visitWrapper = document.querySelector("#visit-wrapper");
 
-const exhibitions = document.querySelector("#exhibitions-dropdown");
-const explore = document.querySelector("#explore-dropdown");
-const getInvolved = document.querySelector("#get-involved-dropdown");
-const visit = document.querySelector("#visit-dropdown");
+// const exhibitions = document.querySelector("#exhibitions-dropdown");
+// const explore = document.querySelector("#explore-dropdown");
+// const getInvolved = document.querySelector("#get-involved-dropdown");
+// const visit = document.querySelector("#visit-dropdown");
 
-const linkBox1 = document.querySelector(".link-box1");
-const linkBox2 = document.querySelector(".link-box2");
-const linkBox3 = document.querySelector(".link-box3");
-const linkBox4 = document.querySelector(".link-box4");
+// const linkBox1 = document.querySelector(".link-box1");
+// const linkBox2 = document.querySelector(".link-box2");
+// const linkBox3 = document.querySelector(".link-box3");
+// const linkBox4 = document.querySelector(".link-box4");
 
-console.log(exhibitions);
+// console.log(exhibitions);
 
 // function exhibitionDropdown() {
 //   let timer = setTimeout(function () {
@@ -382,7 +296,6 @@ console.log(exhibitions);
 // }
 
 // document.addEventListener("mouseout", closeVisitDropdown);
-
 
 const newsletterError = document.querySelector("#newsletter-error");
 const newsletterSuccess = document.querySelector(".newsletter-success");
