@@ -311,7 +311,7 @@ header {
   background-color: var(--dark-blue);
 }
 
-.header-time-wrapper {
+.time-wrapper {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -391,7 +391,7 @@ header {
    align-items: flex-start;
    width: 85%;
    margin: 0 auto;
-   padding: 0.75rem 0;
+   padding: 1rem 0;
  }
 
  .navbar-menu-list {
@@ -995,6 +995,7 @@ footer {
 --------------------*/
   .navbar-menu {
     align-items: center;
+    padding: 0.75rem 0;
   }
 
   .navbar-menu-list {
