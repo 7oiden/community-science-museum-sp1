@@ -1,7 +1,7 @@
 const slider = document.querySelector(".slider");
 const leftArrow = document.querySelector("#left");
 const rightArrow = document.querySelector("#right");
-const indicatorParents = document.querySelector(".preview");
+const indicatorParents = document.querySelector(".slider-preview");
 
 
 let sectionIndex = 0;
