@@ -70,8 +70,9 @@ a {
 
 .main-heading-wrapper {
   /* width: 90%; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: flex;
+  margin-bottom: 1rem;
   /* align-items: center; */
 }
 
@@ -85,7 +86,7 @@ a {
 
 .main-heading {
   font-family: var(--main-heading);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   /* background-color: var(--light-purple); */
   /* text-decoration: underline; */
