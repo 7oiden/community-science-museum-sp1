@@ -17,6 +17,7 @@ div.vision p {
   margin: 0 auto;
   padding-bottom: 16px;
 }
+
 .vision-img {
   width: 100%;
   height: auto;
@@ -25,6 +26,10 @@ div.vision p {
 
 #get-in-touch-1 {
   border-radius: 0 0 25px 25px;
+}
+
+.gallery-section {
+  margin-top: 3rem;
 }
 
 .gallery-wrapper {
@@ -110,15 +115,11 @@ figcaption {
   }
 }
 
+
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
-}
-
-@media only screen and (min-width: 1600px) {
-  /* Main
---------------------*/
-  section.vision {
+  .vision-section {
     grid-template-areas:
         "introduction introduction paragraph-1 paragraph-1"
         "image image paragraph-1 paragraph-1"
@@ -128,10 +129,11 @@ figcaption {
         "image image paragraph-3 paragraph-3";
     }
 }
-@media only screen and (min-width: 1800px) {
+
+@media only screen and (min-width: 1600px) {
   /* Main
 --------------------*/
-  .item-1 p {
+  /* .item-1 p {
     font-size: 1.25rem;
   }
 
@@ -139,5 +141,5 @@ figcaption {
   .item-4,
   .item-5 {
     font-size: 1.25rem;
-  }
+  } */
 }

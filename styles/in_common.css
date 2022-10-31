@@ -74,11 +74,11 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  background-color: var(--heading-bg);
-  color: #fff;
+  background-color: #7c68a640;
+  color: var(--dark-purple);
   margin: 0;
-  padding: 0.75rem;
-  border-radius: 25px 25px 0 0;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .section-container {
