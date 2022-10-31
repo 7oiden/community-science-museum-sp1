@@ -131,16 +131,20 @@ h4 {
 
 .card-heading {
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.375rem;
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   margin: 0;
 }
 
 .card-image, .card-image img  {
   width: 100%;
   border-radius: 5px 5px 0 0;
+}
+
+.card-heading {
+  padding: 0.5rem 1rem;
 }
 
 .card-body {
@@ -237,7 +241,8 @@ h4 {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-  .card-body {
+
+  .card-heading, .card-body {
     padding: 0.5rem 1.5rem;
   }
 }

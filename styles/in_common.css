@@ -57,6 +57,7 @@ a {
   background-color: #fff;
   margin: 0 auto;
   padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .content-container {
@@ -198,6 +199,11 @@ a {
   font-size: 1rem;
   padding: 0;
   margin: 0;
+}
+
+.modal-text a {
+  color: var(--dark-purple);
+  text-decoration: underline;
 }
 
 .modal-button {
@@ -409,13 +415,13 @@ header {
   font-size: 1.125rem;
   text-transform: uppercase;
   cursor: pointer;
-  scale: 1;
-  transition: scale 0.3s ease;
+  opacity: 1;
+  transition: opacity 0.3s ease;
   justify-self: flex-end;
  }
 
  .ticket-button:hover {
-  scale: 1.05;
+  opacity: 0.75;
  }
 
  .ticket-icon {
@@ -550,7 +556,6 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 3rem;
   padding: 3rem 0 4rem 0;
 }
 
@@ -640,6 +645,12 @@ ul li {
   font-size: 1.25rem;
   margin: 0;
   padding: 0;
+}
+
+.info-box-sub-heading {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 1rem 0 0 0;
 }
 
 .gallery-section {

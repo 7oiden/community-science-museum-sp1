@@ -250,7 +250,7 @@
 }
 
 .categories-wrapper {
-  width: 95%;
+  width: 100%;
   font-family: var(--proxima-soft);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -273,7 +273,7 @@
   color: var(--white);
   text-align: center;
   border-radius: 15px;
-  padding: 2rem 1rem;
+  padding: 1.5rem 0.75rem;
 }
 
 .category-box a {
@@ -302,8 +302,8 @@
   font-size: 2.5rem;
 }
 
-.category-box figcaption {
-  font-size: 1.125rem;
+.category-caption {
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -495,25 +495,6 @@
 @media only screen and (min-width: 576px) {
   /* Main
 --------------------*/
-  /* .container {
-    width: 500px;
-  }
-
-  .slider {
-    width: 1500px;
-  } */
-
-  .slider-controls {
-    top: 30%;
-  }
-
-  /* #right {
-    left: 463px;
-  } */
-
-  /* .preview {
-    bottom: 615px;
-  } */
 
   .hero-container {
     background-image: url(../images/robot-main_tablet.jpg);
@@ -535,14 +516,19 @@
     font-size: 1.25rem;
   }
 
+  .slider-controls {
+    top: 30%;
+  }
+
   .categories-wrapper {
+    width: 95%;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
 
   .clubs-caption {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   } 
 }
 
@@ -563,15 +549,15 @@
   }
 
   .category-box {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .category-planet-icon {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .category-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .category-caption {
@@ -624,13 +610,9 @@
     font-size: 2rem;
   }
 
-  .category-box-content {
-    gap: 1.5rem;
-  }
-
-  div.circle-wrapper {
+  /* div.circle-wrapper {
     display: none;
-  }
+  } */
 
   .news-wrapper {
     width: 90%;
@@ -704,15 +686,15 @@
   }
 
   .category-planet-icon {
-    width: 4rem;
+    width: 3.5rem;
   }
 
   .category-icon {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .category-caption {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   .info-container {
@@ -722,15 +704,6 @@
   .info-heading {
     font-size: 1.25rem;
   }
-
-  /* img.large-screen {
-    display: block;
-    width: 100px;
-  } */
-
-  /* img.medium {
-    display: none;
-  } */
 
   .slider-wrapper {
     padding-bottom: 5rem;
@@ -780,16 +753,15 @@
   }
   
   .category-planet-icon {
-    width: 4.5rem;
+    width: 4rem;
   }
 
   .category-icon {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .category-caption {
-    font-size: 1.5rem;
-    padding-top: 1rem;
+    font-size: 1.375rem;
   }
 
   .slider-wrapper {

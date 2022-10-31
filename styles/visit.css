@@ -22,8 +22,8 @@
   grid-template-columns: 1fr;
   grid-template-areas:
     "admission"
-    "location"
-    "hours";
+    "hours"
+    "location";
 }
 
 .item-1 {
@@ -63,41 +63,55 @@
       "image-3";
 }
 
-p > a {
+.info-list {
+  padding-left: 1.5rem;
+}
+
+.info-list li {
+  list-style: disc;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.info-list a {
   color: var(--dark-purple);
   font-weight: bold;
   text-decoration: underline;
 }
 
-#street {
-  font-weight: bold;
-  font-size: 1.125rem;
-  padding: 0;
+.location-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 0;
 }
 
-#postal {
-  font-weight: bold;
-  font-size: 1.125rem;
-  margin-bottom: 32px;
+.location-wrapper p {
+  margin: 0;
+  padding: 0;
 }
 
 iframe {
   width: 100%;
   border: none;
+  border-radius: 3px;
 }
 
-.hours-wrapper_2 {
-  display: flex;
-  gap: 2rem;
+table {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-collapse: collapse;
+    border-spacing: 0;
 }
 
-.hours-wrapper_2 ul {
-  padding: 0;
+th, td {
+  padding: 0.25rem;
+  text-align: left;
 }
 
-.hours-wrapper_2 li {
-  font-family: var(--sofia);
-  list-style: none;
+tr.even {
+  background-color: #7c68a640;
 }
 
 .item-2 {
@@ -191,12 +205,4 @@ iframe {
         "image-1 food-drink image-3"
     }
   }
- 
-  #street,
-  #postal {
-    font-size: 1.25rem;
-  }
 
-@media only screen and (min-width: 1600px) {
-  
-}

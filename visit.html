@@ -31,10 +31,12 @@
             <span class="fa fa-clock" id="header-time-icon"></span>
             <p id="header-time-text">Open today 10:00 — 16:00</p>
           </div>
-          <button class="ticket-button"><span>Buy tickets</span><span class="fa fa-ticket-alt ticket-icon"></span></button>
+          <button class="ticket-button"><span>Buy tickets</span><span
+              class="fa fa-ticket-alt ticket-icon"></span></button>
         </div>
         <div class="modal" id="ticket-modal">
-          <div class="modal-header"><span class="modal-heading">Buy tickets</span><i class="fas fa-times close-icon"></i>
+          <div class="modal-header"><span class="modal-heading">Buy tickets</span><i
+              class="fas fa-times close-icon"></i>
           </div>
           <div class="modal-body">
             <p class="modal-text">
@@ -105,36 +107,40 @@
           <section class="info-section">
             <div class="info-box" id="item-1">
               <h2 class="info-box-heading">Admission</h2>
-              <p><strong>The entrance is free for all.</strong></p>
-              <p>
-                There are guided tours of the museum that leave every hour. These
-                tours are <em>70 NOK per person</em> and include a handy printed
-                guide of the museum.
-              </p>
-              <p>
-                If you would like to organize a guided tour for your group of 6 or
-                more people, please <a href="contact.html">contact</a> us to
-                arrange the tour.
-              </p>
-              <p>
-                Tickets may be bought through Our partnership with Ticketmaster,
-                or at the site.
-              </p>
-              <p>
-                If you want to book a place in a special event or join a children's
-                club, please <a href="contact.html">contact</a> us.
-              </p>
-              <p>
-                If you have any question, please read our
-                <a href="contact.html#faq">FAQ</a>, or send us a question using
-                this
-                <a href="contact.html">contact-form</a>
-              </p>
+              <p><strong>Tickets can be bought online as well as at the site.</strong></p>
+              <ul class="info-list">
+                <li>
+                  Admission tickets are <em>100 NOK per person</em>
+                </li>
+                <li>
+                  Children under the <em>age of 5</em> have <em>free admission</em>
+                </li>
+                <li>
+                  There are guided tours of the museum that leave every hour. These
+                  tours are <em>150 NOK per person</em> and include a handy printed
+                  guide of the museum.
+                </li>
+                <li>
+                  If you would like to organize a guided tour for your group of 6 or
+                  more people, please <a href="contact.html">contact</a> us to
+                  arrange the tour.
+                </li>
+                <li>
+                  If you want to book a place in a special event or join a children's
+                  club, please <a href="contact.html">contact</a> us.
+                </li>
+                <li>
+                  If you have any question, please read our
+                  <a href="contact.html#faq">FAQ</a>, or send us a question using
+                  the
+                  <a href="contact.html">contact form</a>
+                </li>
+              </ul>
             </div>
             <div class="info-box" id="item-2">
-              <div id="location">
-                <h2 class="info-box-heading">Location</h2>
-                <p>The Museum is Located at:</p>
+              <h2 class="info-box-heading">Location</h2>
+              <div class="location-wrapper">
+                <p>The museum is located at:</p>
                 <p id="street">Nygårdsgaten 112</p>
                 <p id="postal">5008 Bergen</p>
               </div>
@@ -144,26 +150,55 @@
             </div>
             <div class="info-box" id="item-3">
               <h2 class="info-box-heading">Hours:</h2>
-              <div class="hours-wrapper_2">
-                <ul>
-                  <li>Monday:</li>
-                  <li>Tuesday:</li>
-                  <li>Wednesday:</li>
-                  <li>Thursday:</li>
-                  <li>Friday:</li>
-                  <li>Saturday:</li>
-                  <li>Sunday</li>
-                </ul>
-                <ul>
-                  <li>Closed</li>
-                  <li>10:00 - 16:00</li>
-                  <li>10:00 - 16:00</li>
-                  <li>10:00 - 16:00</li>
-                  <li>10:00 - 19:00</li>
-                  <li>09:00 - 16:00</li>
-                  <li>09:00 - 13:00</li>
-                </ul>
-              </div>
+              <table>
+                <tr>
+                  <th scope="row">Monday:</th>
+                  <td>Closed</td>
+                </tr>
+                <tr class="even">
+                  <th scope="row">Tuesday:</th>
+                  <td>10:00 — 16:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Wednesday:</th>
+                  <td>10:00 — 16:00</td>
+                </tr>
+                <tr class="even">
+                  <th scope="row">Thursday:</th>
+                  <td>10:00 — 16:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Friday:</th>
+                  <td>10:00 — 19:00</td>
+                </tr>
+                <tr class="even">
+                  <th scope="row">Saturday:</th>
+                  <td>09:00 — 16:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sunday:</th>
+                  <td>09:00 — 13:00</td>
+                </tr>
+              </table>
+              <h2 class="info-box-heading">Prices:</h2>
+              <table>
+                <tr>
+                  <th scope="row">Children under 5:</th>
+                  <td>Free</td>
+                </tr>
+                <tr class="even">
+                  <th scope="row">Children over 5:</th>
+                  <td>100 NOK</td>
+                </tr>
+                <tr>
+                  <th scope="row">Adults:</th>
+                  <td>100 NOK</td>
+                </tr>
+                <tr class="even">
+                  <th scope="row">Guided tour:</th>
+                  <td>150 NOK</td>
+                </tr>
+              </table>
             </div>
           </section>
           <!-- <div id="facilities"></div> -->
@@ -196,28 +231,26 @@
             <div class="image-box item-6"></div>
           </section>
         </div>
-        <div class="newsletter-wrapper">
-          <div class="blur">
-            <section class="newsletter-section">
-              <p for="newsletter">
-                Sign up to our <em>newsletter</em> and be the first to know about our
-                exciting <em>new stuff</em>:
-              </p>
-              <div class="newsletter-success">
-                Welcome! Please check your inbox
-              </div>
-              <form class="newsletter-form">
-                <label for="newsletter-input">E-mail</label>
-                <div class="input-wrapper">
-                  <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
-                  <button id="sign-up-button" type="submit" name="subscribe" value="SIGN UP">Sign up</button>
-                </div>
-              </form>
-              <p id="newsletter-error" class="error-message">
-                Please enter a valid e-mail address
-              </p>
-            </section>
-          </div>
+      </div>
+      <div class="newsletter-wrapper">
+        <div class="blur">
+          <section class="newsletter-section">
+            <label class="newsletter-label" for="newsletter">
+              Sign up to our <em>newsletter</em> and be the first to know about our
+              exciting <em>new stuff</em>:
+            </label>
+            <div class="newsletter-success">
+              Welcome! Please check your inbox
+            </div>
+            <form class="newsletter-form">
+              <!-- <label for="newsletter-input">E-mail</label> -->
+              <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
+              <button id="sign-up-button" type="submit" name="subscribe">Sign up</button>
+            </form>
+            <p id="newsletter-error" class="error-message">
+              Please enter a valid e-mail address
+            </p>
+          </section>
         </div>
       </div>
     </main>

@@ -3,88 +3,17 @@
 
 /* main 
 --------------------*/
-/* main {
-  background-color: white;
-} */
-
-/* .main-wrapper {
-  padding-top: 2rem;
-}
-
-.content-container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-} */
-
-/* .section-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-} */
-
 div.blue {
   background-color: var(--blue);
   font-size: 1.125rem;
   color: #fff;
 }
 
-/* .margins {
-  width: 100%;
-  background-color: var(--light-grey);
-  margin-top: 16px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 5px;
-} */
-
-/* .main-heading {
-  font-family: var(--proxima);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: left;
-  background-color: var(--dark-purple);
-  color: #fff;
-  margin: 0;
-  padding: 12px 5%;
-  border-radius: 25px 25px 0 0;
-} */
-
-h2,
-h3 {
-  font-family: var(--proxima);
-  font-size: 1.5rem;
-  margin-bottom: 0;
-}
-
-h4 {
-  font-family: var(--proxima);
-  text-transform: uppercase;
-  font-size: 1.25rem;
-  margin-top: 16px;
-  margin-bottom: 0;
-}
-/* 
-h5 {
-  font-family: var(--proxima-soft);
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-top: 24px;
-  margin-bottom: 0;
-} */
-
 #club-anchor {
   position: relative;
   top: -75px;
   visibility: hidden;
 }
-
-/* #item-2 p {
-  margin-top: 8px;
-} */
 
 figure {
   width: 100%;
@@ -107,18 +36,6 @@ figure {
   background-repeat: no-repeat;
 }
 
-/* .get-in-touch {
-  background-color: #7c68a6;
-  color: #fff;
-  font-size: 1.25rem;
-  text-align: center;
-  border-radius: 0 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem 0;
-} */
-
 #get-in-touch-1 {
   border-radius: 5px;
 }
@@ -127,42 +44,9 @@ figure {
   border-radius: 0 0 25px 25px;
 }
 
-/* .get-in-touch > p {
-  font-family: var(--proxima);
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .button {
-  font-family: var(--sofia);
-  display: inline-block;
-  align-self: center;
-  text-align: center;
-  border-radius: 15px;
-  background-color: var(--magenta);
-  color: var(--white);
-  padding: 0.5rem 2rem;
-  margin: 0;
-  transition-property: scale;
-  transition-duration: 0.5s;
-  scale: 1;
-}
-
-.button:hover {
-  scale: 1.1;
-} */
-
 /* styles that change
 --------------------*/
-@media only screen and (min-width: 576px) {
-  /* Main
---------------------*/
-  /* #item-3,
-  #item-6 {
-    min-height: 400px;
-  } */
-}
+
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
@@ -179,13 +63,8 @@ figure {
   #item-6 {
     height: auto;
   }
-
-  /* .section-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-  } */
 }
+
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
@@ -193,11 +72,6 @@ figure {
     background-color: #d8d8d8;
     font-size: 1.125rem;
   }
-
-  /* .main-heading {
-    font-size: 2.5rem;
-    text-align: center;
-  } */
 
   h2,
   h3 {
@@ -208,41 +82,10 @@ figure {
     font-size: 1.5rem;
     margin-top: 24px;
   }
-
-  /* h5 {
-    font-size: 1.25rem;
-  } */
   
   div.blue {
     font-size: 1.25rem;
   }
-  /* #item-3 {
-    background-image: url(../images/kids-cartoon_vertical.jpg);
-  }
-  #item-6 {
-    background-image: url(../images/researcher-cartoon_vertical.jpg);
-  } */
-  /* #item-1,
-  #item-2,
-  #item-4,
-  #item-5 {
-    min-width: auto;
-  } */
-  /* #item-3,
-  #item-6 {
-    height: auto;
-    margin-top: 16px;
-  } */
-  /* .get-in-touch {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-  }
-
-  .get-in-touch p {
-    font-size: 1.5rem;
-  } */
 }
 
 @media only screen and (min-width: 1600px) {

@@ -29,10 +29,12 @@
             <span class="fa fa-clock" id="header-time-icon"></span>
             <p id="header-time-text">Open today 10:00 — 16:00</p>
           </div>
-          <button class="ticket-button"><span>Buy tickets</span><span class="fa fa-ticket-alt ticket-icon"></span></button>
+          <button class="ticket-button"><span>Buy tickets</span><span
+              class="fa fa-ticket-alt ticket-icon"></span></button>
         </div>
         <div class="modal" id="ticket-modal">
-          <div class="modal-header"><span class="modal-heading">Buy tickets</span><i class="fas fa-times close-icon"></i>
+          <div class="modal-header"><span class="modal-heading">Buy tickets</span><i
+              class="fas fa-times close-icon"></i>
           </div>
           <div class="modal-body">
             <p class="modal-text">
@@ -147,28 +149,26 @@
             </a>
           </div>
         </div>
-        <div class="newsletter-wrapper">
-          <div class="blur">
-            <section class="newsletter-section">
-              <p for="newsletter">
-                Sign up to our <em>newsletter</em> and be the first to know about our
-                exciting <em>new stuff</em>:
-              </p>
-              <div class="newsletter-success">
-                Welcome! Please check your inbox
-              </div>
-              <form class="newsletter-form">
-                <label for="newsletter-input">E-mail</label>
-                <div class="input-wrapper">
-                  <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
-                  <button id="sign-up-button" type="submit" name="subscribe" value="SIGN UP">Sign up</button>
-                </div>
-              </form>
-              <p id="newsletter-error" class="error-message">
-                Please enter a valid e-mail address
-              </p>
-            </section>
-          </div>
+      </div>
+      <div class="newsletter-wrapper">
+        <div class="blur">
+          <section class="newsletter-section">
+            <label class="newsletter-label" for="newsletter">
+              Sign up to our <em>newsletter</em> and be the first to know about our
+              exciting <em>new stuff</em>:
+            </label>
+            <div class="newsletter-success">
+              Welcome! Please check your inbox
+            </div>
+            <form class="newsletter-form">
+              <!-- <label for="newsletter-input">E-mail</label> -->
+              <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
+              <button id="sign-up-button" type="submit" name="subscribe">Sign up</button>
+            </form>
+            <p id="newsletter-error" class="error-message">
+              Please enter a valid e-mail address
+            </p>
+          </section>
         </div>
       </div>
     </main>
