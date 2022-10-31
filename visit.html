@@ -19,41 +19,31 @@
 </head>
 
 <body>
+  <div class="fading-background"></div>
   <div class="flex-wrapper">
     <header>
       <div class="header-wrapper">
         <figure class="logo">
-          <a href="index.html"><img src="images\cms-logo.png" alt="Community Science Museum logo" /></a>
+          <a href="index.html"><img src="images/cms-logo.png" alt="Community Science Museum logo" /></a>
         </figure>
-        <nav aria-label="icons" class="nav-icons-wrapper">
-          <div class="dropdown-wrapper">
-            <i class="fa fa-search nav-icon"></i>
-            <div class="search-dropdown">
-              <p class="search-header">search results</p>
-              <form action="" class="dropdown-form">
-                <label for="search" class="label">Search</label>
-                <input type="text" name="first-name" placeholder="Start Writing..." id="search" class="box" />
-              </form>
-              <p class="dropdown-text">
-                Sorry, no result for your search, please try something else
-              </p>
-            </div>
+        <div class="header-content-wrapper">
+          <div class="time-wrapper">
+            <span class="fa fa-clock" id="header-time-icon"></span>
+            <p id="header-time-text">Open today 10:00 — 16:00</p>
           </div>
-
-          <div class="dropdown-wrapper">
-            <i class="fa fa-ticket-alt nav-icon"></i>
-            <div class="ticket-dropdown">
-              <p class="ticket-header">buy ticket</p>
-              <p class="dropdown-text">
-                Please Choose the Desired Number of Tickets and Click Proceed in
-                order to finalize your purchase on www.ticketmaster.com
-              </p>
-              <p class="dropdown-text">
-                If your party consist of 6 people or more, you will be taken to
-                our contact form.
-              </p>
-              <form action="" class="ticket dropdown-form">
-                <label for="select" class="ticket-label">Tickets</label>
+          <button class="ticket-button"><span>Buy tickets</span><span class="fa fa-ticket-alt ticket-icon"></span></button>
+        </div>
+        <div class="modal" id="ticket-modal">
+          <div class="modal-header"><span class="modal-heading">Buy tickets</span><i class="fas fa-times close-icon"></i>
+          </div>
+          <div class="modal-body">
+            <p class="modal-text">
+              Please choose the desired number of tickets and click proceed in
+              order to finalize your purchase on www.ticketmaster.com
+            </p>
+            <form action="" class="ticket-form">
+              <div class="form-block">
+                <label for="select" class="modal-label">Number of tickets</label>
                 <select name="tickets" id="select">
                   <option class="option" value="1">1</option>
                   <option class="option" value="1">2</option>
@@ -62,68 +52,47 @@
                   <option class="option" value="1">5</option>
                   <option class="option" value="more">6 or more</option>
                 </select>
-              </form>
-              <button class="ticket">PROCEED</button>
-            </div>
+              </div>
+              <div class="form-block">
+                <label for="date" class="modal-label">Pick a date</label>
+                <input type="date" id="date" name="date" value="2020-11-10" min="2020-11-10" max="2020-12-31">
+              </div>
+            </form>
+            <button class="button modal-button">Checkout</button>
           </div>
-
-          <div class="dropdown-wrapper">
-            <i class="fa fa-user-circle nav-icon"></i>
-            <div class="profile-dropdown">
-              <p class="profile-header">your account</p>
-              <form class="dropdown-form" id="profile-form">
-                <label for="email" class="label">E-mail</label>
-                <input type="text" name="email" placeholder="your@email.com" id="dropdown-email" class="box" />
-                <div class="error-message" id="profile-email-error">
-                  Please enter a valid e-mail address
-                </div>
-
-                <label for="choose" class="label_2">Password</label>
-                <input type="password" name="choose" placeholder="Password" class="box password"
-                  id="dropdown-password" />
-                <div class="error-message" id="profile-password-error">
-                  Must be at least 5 characters
-                </div>
-                <div id="success-message">
-                  Welcome back, you are now logged in
-                </div>
-                <button type="submit" id="profile-submit-button" class="profile">
-                  SIGN IN
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
+        </div>
       </div>
-      <nav aria-label="menu" class="menu">
-        <ul class="mobile-menu">
-          <label class="hamburger-label" for="hamburger-menu"><span class="fa fa-bars"></span>
-            <span id="menu" class="menu-link">Menu</span>
-          </label>
-          <input type="checkbox" id="hamburger-menu" />
-          <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="explore.html">Explore</a></li>
-          <li><a href="get_involved.html">Get involved</a></li>
-          <li><a href="visit.html">Visit</a></li>
-          <li><a href="about_us.html">About us</a></li>
-        </ul>
-        <ul class="large-screen-menu">
-          <li>
-            <a href="exhibitions.html" class="menu-link">Exhibitions</a>
-          </li>
-          <li>
-            <a href="explore.html" class="menu-link">Explore</a>
-          </li>
-          <li>
-            <a href="get_involved.html" class="menu-link">Get involved</a>
-          </li>
-          <li>
-            <a href="visit.html" class="menu-link">Visit</a>
-          </li>
-          <li>
-            <a href="about_us.html" class="menu-link">About us</a>
-          </li>
-        </ul>
+      <nav aria-label="menu" class="navbar">
+        <div class="navbar-menu">
+          <ul class="mobile-menu-list">
+            <label class="hamburger-label" for="hamburger-menu"><span class="fa fa-bars menu-icon"></span>
+              <span id="menu" class="menu-link">Menu</span>
+            </label>
+            <input type="checkbox" id="hamburger-menu" />
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="get_involved.html">Get involved</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="about_us.html">About us</a></li>
+          </ul>
+          <ul class="navbar-menu-list">
+            <li>
+              <a href="exhibitions.html" class="menu-link">Exhibitions</a>
+            </li>
+            <li>
+              <a href="explore.html" class="menu-link">Explore</a>
+            </li>
+            <li>
+              <a href="get_involved.html" class="menu-link">Get involved</a>
+            </li>
+            <li>
+              <a href="visit.html" class="menu-link menu-link-active">Visit</a>
+            </li>
+            <li>
+              <a href="about_us.html" class="menu-link">About us</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -250,10 +219,7 @@
             </section>
           </div>
         </div>
-
       </div>
-      <div class="fading-background_1"></div>
-      <div class="fading-background_2"></div>
     </main>
   </div>
   <footer>

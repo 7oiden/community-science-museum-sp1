@@ -655,11 +655,11 @@
     border-bottom: 12px solid var(--dark-blue);
   }
 
-  #large-text p {
+  /* #large-text p {
     font-size: 1.125rem;
-  }
+  } */
 
-  img.mobile {
+  /* img.mobile {
     display: none;
   }
 
@@ -669,7 +669,7 @@
 
   img.medium {
     display: block;
-  }
+  } */
 
   .clubs-section {
     width: 100%;

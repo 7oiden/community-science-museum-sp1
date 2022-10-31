@@ -23,7 +23,7 @@ h4 {
   text-transform: capitalize;
 }
 
-.purple {
+/* .purple {
   color: var(--purple);
 }
 
@@ -41,6 +41,14 @@ h4 {
 
 .magenta {
   color: var(--magenta);
+} */
+
+.cosmology {
+  background-color: #470c6820;
+}
+
+.cosmology p {
+  color: var(--purple);
 }
 
 #cosmology {
@@ -51,20 +59,59 @@ h4 {
   background-color: var(--blue);
 }
 
+.evolution {
+  background-color: #00729820;
+}
+
+.evolution p {
+  color: var(--blue)
+}
+
 #biology {
   background-color: var(--dark-green);
+}
+
+.biology {
+  background-color: #03463820;
+}
+
+.biology p {
+  color: var(--dark-green);
 }
 
 #robotics {
   background-color: var(--orange);
 }
 
+.robotics {
+  background-color: #dc440520;
+}
+
+.robotics p {
+  color: var(--orange);
+}
+
 #ecology {
   background-color: var(--magenta);
 }
 
+.ecology {
+  background-color: #a2006720;
+}
+
+.ecology p {
+  color: var(--magenta);
+}
+
 #special-events {
   background-color: #003057;
+}
+
+.special-events {
+  background-color: #00305720;
+}
+.special-events p {
+  color: #003057;
 }
 
 .card-wrapper {
@@ -78,7 +125,6 @@ h4 {
 }
 
 .card {
-  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 6px 12px #00000029;
 }
@@ -98,9 +144,9 @@ h4 {
 }
 
 .card-body {
-  background-size: 80%;
+  /* background-size: 80%;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: center; */
   padding: 0.5rem 1rem;
 }
 
