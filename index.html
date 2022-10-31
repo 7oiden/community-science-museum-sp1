@@ -195,19 +195,20 @@
       <div class="main-wrapper">
         <div class="content-container">
           <section class="news-section">
-            <div id="news-anchor"></div>
+            <!-- <div id="news-anchor"></div> -->
             <h2 id="special-event" class="main-heading">News & special events</h2>
-            <div class="container">
-              <div class="carousel">
-                <div class="slider">
-                  <section>
-                    <figure class="slider-image">
-                      <img class="slider-image" src="images\t-rex.jpg"
-                        alt="Close up photo of the head of a of gaping T-Rex skeleton, exposing all it's razor-sharp teeth" />
-                    </figure>
-                    <div class="news">
-                      <div>
-                        <h5 class="news-heading">Night in the Museum</h5>
+            <div class="wrapper">
+              <div class="container">
+                <div class="carousel">
+                  <div class="slider">
+
+                    <div class="slide">
+                      <figure class="slide-image">
+                        <img class="slide-image" src="images\t-rex.jpg"
+                          alt="Close up photo of the head of a of gaping T-Rex skeleton, exposing all it's razor-sharp teeth" />
+                      </figure>
+                      <div class="slide-body">
+                        <h5 class="slide-heading">Night in the Museum</h5>
                         <p>
                           Get your family together for an exciting night in the
                           museum as you sleep over beside dinosaurs and science
@@ -219,17 +220,14 @@
                         </p>
                       </div>
                     </div>
-                  </section>
 
-                  <section>
-                    <figure class="slider-image">
-                      <img class="slider-image" src="images\aeronautic.jpg"
-                        alt="A jet pilot in full flight outfit sitting in a simulated cockpit facing the instruments" />
-                    </figure>
-
-                    <div class="news">
-                      <div>
-                        <h5 class="news-heading">Visiting Professor Of Aeronautics</h5>
+                    <div class="slide">
+                      <figure class="slide-image">
+                        <img class="slide-image" src="images\aeronautic.jpg"
+                          alt="A jet pilot in full flight outfit sitting in a simulated cockpit facing the instruments" />
+                      </figure>
+                      <div class="slide-body">
+                        <h5 class="slide-heading">Visiting Professor Of Aeronautics</h5>
                         <p>
                           It is our pleasure to announce that Professor Sheila
                           Widnall from the Massachusetts Institute of Technology
@@ -242,16 +240,14 @@
                         </p>
                       </div>
                     </div>
-                  </section>
 
-                  <section>
-                    <figure class="slider-image">
-                      <img class="slider-image" src="images\energica.jpg"
-                        alt="Close up photo of a glowing red sphere with beams of electricity radiating from it" />
-                    </figure>
-                    <div class="news">
-                      <div>
-                        <h5 class="news-heading">Energica Exhibition</h5>
+                    <div class="slide">
+                      <figure class="slide-image">
+                        <img class="slide-image" src="images\energica.jpg"
+                          alt="Close up photo of a glowing red sphere with beams of electricity radiating from it" />
+                      </figure>
+                      <div class="slide-body">
+                        <h5 class="slide-heading">Energica Exhibition</h5>
                         <p>
                           On loan from the NEMO Science Museum in Amsterdam, the
                           Energetica exhibition is coming to the Community Science
@@ -266,15 +262,13 @@
                         </p>
                       </div>
                     </div>
-                  </section>
+                  </div>
                 </div>
-                <div class="controls">
-                  <figure id="left">
-                    <i id="arrow-left" class="fas fa-chevron-left"></i>
-                  </figure>
-                  <figure id="right">
-                    <i id="arrow-right" class="fas fa-chevron-right"></i>
-                  </figure>
+                <div id="left" class="controls">
+                  <i id="arrow-left" class="fas fa-chevron-left"></i>
+                </div>
+                <div id="right" class="controls">
+                  <i id="arrow-right" class="fas fa-chevron-right"></i>
                 </div>
               </div>
               <div class="preview">
@@ -284,6 +278,7 @@
               </div>
             </div>
           </section>
+
           <section class="clubs-section">
             <h3 id="clubs" class="main-heading">Join one of our children clubs</h3>
             <div class="clubs-wrapper">

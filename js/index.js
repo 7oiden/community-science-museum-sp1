@@ -13,7 +13,7 @@ document
       sectionIndex = index;
       document.querySelector(".selected").classList.remove("selected");
       indicator.classList.add("selected");
-      slider.style.transform = "translate(" + sectionIndex * -33.33 + "%)";
+      slider.style.transform = "translate(" + sectionIndex * -33.3333 + "%)";
     });
   });
 
@@ -21,7 +21,7 @@ leftArrow.addEventListener("click", function () {
   sectionIndex = sectionIndex > 0 ? sectionIndex - 1 : 0;
   document.querySelector(".selected").classList.remove("selected");
   indicatorParents.children[sectionIndex].classList.add("selected")
-  slider.style.transform = "translate(" + sectionIndex * -33.33 + "%)";
+  slider.style.transform = "translate(" + sectionIndex * -33.3333 + "%)";
 });
 
 rightArrow.addEventListener("click", function () {
@@ -29,5 +29,5 @@ rightArrow.addEventListener("click", function () {
   sectionIndex = sectionIndex < 2 ? sectionIndex + 1 : 2;
   document.querySelector(".selected").classList.remove("selected");
   indicatorParents.children[sectionIndex].classList.add("selected");
-  slider.style.transform = "translate(" + sectionIndex * -33.33 + "%)";
+  slider.style.transform = "translate(" + sectionIndex * -33.3333 + "%)";
 });
