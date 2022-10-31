@@ -157,11 +157,11 @@ figure {
   font-style: italic;
 }
 
-.hero-sub-heading::before {
+/* .hero-sub-heading::before {
   content: "“";
   font-size: 3rem;
   padding-right: 5px;
-}
+} */
 
 .hero-button {
   align-self: start;
@@ -399,7 +399,7 @@ figure {
   visibility: hidden;
 }
 
-h5 {
+.news-heading {
   text-align: left;
   font-family: var(--proxima);
   font-size: 1.125rem;
@@ -431,8 +431,7 @@ div.selected {
   background-color: white;
 }
 
-div.image-wrapper {
-  width: 85%;
+.clubs-wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -440,42 +439,46 @@ div.image-wrapper {
   padding: 2rem 0;
 }
 
-
-figure.clubs {
+.clubs {
+  display: block;
+  position: relative;
   transition-property: opacity scale;
   transition-duration: 0.5s;
   opacity: 1;
 }
 
-figure.clubs img {
+.clubs:hover {
+  opacity: 0.7;
+}
+
+.clubs img {
   width: 100%;
-  border-top: 2px solid var(--dark-purple);
-  border-left: 2px solid var(--dark-purple);
-  border-right: 4px solid var(--dark-purple);
-  border-bottom: 8px solid var(--dark-purple);
+  border-top: 2px solid var(--dark);
+  border-left: 2px solid var(--dark);
+  border-right: 4px solid var(--dark);
+  border-bottom: 8px solid var(--dark);
   border-radius: 15px;
   position: relative;
   transition: all;
   transition-duration: 0.5s;
 }
 
-figure.clubs img:hover {
-  opacity: 0.7;
-}
-
 .clubs-caption {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   font-family: var(--proxima);
   font-size: 1.25rem;
-  color: var(--dark-purple);
-  text-decoration: underline;
+  color: var(--dark);
   font-weight: bold;
   text-align: center;
-  margin-bottom: 24px;
-  margin-top: 16px;
-}
-
-h6 {
-  font-size: 1rem;
+  background-color: #ffffffbf;
+  padding: 0.75rem;
+  border-left: 2px solid var(--dark);
+  border-right: 4px solid var(--dark);
+  border-bottom: 8px solid var(--dark);
+  border-radius: 0 0 15px 15px;
 }
 
 /* styles that change
@@ -516,19 +519,7 @@ h6 {
     font-size: 1.5rem;
   }
 
-  /* .clock {
-    font-size: 1.25rem;
-  }
-
-  p.button {
-    font-size: 1.5rem;
-  }
-
-  .fa-clock {
-    font-size: 1.75rem;
-  } */
-
-  h5 {
+  .news-heading {
     font-size: 1.25rem;
   }
 
@@ -537,6 +528,10 @@ h6 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
+
+  .clubs-caption {
+    font-size: 1.375rem;
+  } 
 }
 
 @media only screen and (min-width: 768px) {
@@ -571,15 +566,6 @@ h6 {
     left: 10%;
   }
 
-  h5 {
-    font-size: 1.5rem;
-  }
-
-  /* #planet {
-    width: 48px;
-    height: 48px;
-  } */
-
   .categories-wrapper {
     gap: 1.5rem;
   }
@@ -600,43 +586,28 @@ h6 {
     font-size: 1.25rem;
   }
 
-  /* div.image-wrapper {
-    width: 600px;
-  } */
+  .news-heading {
+    font-size: 1.5rem;
+  }
 
-  figcaption.clubs {
-  font-size: 1.375rem;
+  .clubs-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  
 }
 
-}
 @media only screen and (min-width: 992px) {
-  /* Header
---------------------*/
-  /* .fading-background_1,
-  .fading-background_2 {
-    top: 97px;
-  } */
-
-  /* .search-dropdown {
-    top: 70px;
-  }
-
-  .ticket-dropdown {
-    top: 70px;
-  }
-
-  .profile-dropdown {
-    top: 70px;
-  } */
 
   /* Main
 --------------------*/
-    .hero-content {
-      width: 50%;
-      margin-left: 10%;
-      padding-top: 4rem;
-      font-family: var(--sofia);
-    }
+  .hero-content {
+    width: 50%;
+    margin-left: 10%;
+    padding-top: 4rem;
+    font-family: var(--sofia);
+  }
 
   /* carousel */
   h5 {
@@ -691,22 +662,6 @@ h6 {
     font-size: 2rem;
   }
 
-  /* .clock {
-    font-size: 1.25rem;
-  }
-
-  .fa-clock {
-    font-size: 2rem;
-  }
-
-  p.button {
-    font-size: 1.5rem;
-  } */
-
-  h5 {
-    margin-top: 0;
-  }
-
   .category-box-content {
     gap: 1.5rem;
   }
@@ -759,15 +714,11 @@ h6 {
     padding-top: 50px;
   }
 
-  div.image-wrapper {
-    flex-direction: row;
+  .clubs-wrapper {
     gap: 3rem;
   }
+}
 
-  figure.clubs:last-child {
-  margin-top: 0;
-}
-}
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
@@ -797,31 +748,9 @@ h6 {
     font-size: 1.375rem;
   }
 
-  /* h2 {
-    font-size: 2.25rem;
-    font-weight: 500;
-  } */
-
   .speech-bubble {
     right: 15%;
   }
-
-  /* .clock {
-    font-size: 1.5rem;
-  }
-
-  .fa-clock {
-    font-size: 2rem;
-  } */
-
-  /* p.button {
-    font-size: 1.5rem;
-  } */
-
-  /* #planet {
-    width: 56px;
-    height: 56px;
-  } */
 
   .categories-wrapper {
     grid-template-rows: 1fr;
@@ -871,41 +800,9 @@ h6 {
     font-size: 1.25rem;
   }
 
-  /* figure.clubs img {
-    margin-top: 2rem;
-    border-radius: 25px;
-    max-width: 600px;
-  } */
-
-  .clubs p {
-    margin: 0 auto;
-    font-size: 1.75rem;
+  .clubs-caption {
+    font-size: 1.5rem;
   }
-
-  figcaption.clubs {
-    font-size: 1.875rem;
-  }
-
-  /* Footer
---------------------*/
-  /* .footer-wrapper {
-    font-size: 1.125rem;
-    flex-wrap: nowrap;
-  }
-
-  .footer-container {
-    width: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-  } */
-
-  /* ul.connect {
-    flex-direction: column;
-  }
-
-  .connect li {
-    padding: 8px;
-  } */
 }
 
 @media only screen and (min-width: 1300px) {
