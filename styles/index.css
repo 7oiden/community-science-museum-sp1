@@ -71,6 +71,18 @@
   color: #b8abd4; 
 }
 
+#slide-heading-1 {
+  color: #F2BC57;
+}
+
+#slide-heading-2 {
+  color: #58b8d2;
+}
+
+#slide-heading-3 {
+  color: #F98379;
+}
+
 .slide-body {
   padding: 1.5rem 1rem;  
 }
@@ -87,6 +99,8 @@
   top: 1rem;
   cursor: pointer;
   gap: 1.5rem;
+  /* background-color: #00000040;
+  padding: 1rem; */
 }
 
 .indicator {
@@ -95,6 +109,7 @@
   background-color: #ffffffbf;
   border-radius: 50%;
   opacity: 0.75;
+  box-shadow: 3px 3px 6px #00000040;
 }
 
 .slider-controls {
@@ -205,10 +220,10 @@
   font-size: 1.125rem;
   background-color: var(--white);
   color: var(--dark-purple);
-  border-radius: 25px;
+  border-radius: 5px 5px 25px 5px;
   transition-property: all;
   transition-duration: 0.5s;
-  box-shadow: 0 6px 12px #00000040;
+  box-shadow: 3px 6px 12px #00000040;
   scale: 1;
   display: flex;
   flex-direction: column;
@@ -224,19 +239,14 @@
   display: inline-block;
 }
 
-.speech-bubble-caption {
+.speech-bubble-text {
   margin: 0;
   padding: 0;
 }
 
-.speech-bubble-caption::before {
-  content: "“";
-  font-size: 2rem;
-  padding-right: 2px;
-}
-
 .speech-bubble-icon {
   align-self: flex-end;
+  font-size: 1.5rem;
 }
 
 .speech-bubble-arrow {
@@ -429,26 +439,6 @@
   visibility: hidden;
 }
 
-
-
-/* div.circle-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.circle-wrapper div {
-  width: 20px;
-  height: 20px;
-  margin: 10px;
-  border-radius: 50%;
-  border: 3px solid var(--dark-blue);
-  background-color: #fff;
-} */
-
-/* div.selected {
-  background-color: var(--dark-blue);
-} */
-
 .clubs-section {
   width: 100%;
   margin: 0 auto;
@@ -533,8 +523,8 @@
     font-size: 1.25rem;
   }
 
-  .slider-controls {
-    top: 30%;
+  .slide-body {
+    padding: 1.5rem;
   }
 
   .categories-wrapper {
@@ -610,15 +600,6 @@
     padding: 1.5rem 1.5rem;
   }
 
-  .slider-controls {
-    top: 50%;
-  }
-
-  /* .preview-image {
-    width: 75px;
-    height: 50.25px;
-  } */
-
   .hero-container {
     background-image: url(../images/robot-main_large.jpg);
   }
@@ -657,22 +638,6 @@
     border-right: none;
     border-bottom: 12px solid var(--dark-blue);
   }
-
-  /* #large-text p {
-    font-size: 1.125rem;
-  } */
-
-  /* img.mobile {
-    display: none;
-  }
-
-  img.large-screen {
-    display: none;
-  }
-
-  img.medium {
-    display: block;
-  } */
 
   .clubs-section {
     width: 100%;
@@ -747,6 +712,10 @@
     top: auto; 
   }
 
+  .slider-controls {
+    top: 50%;
+  }
+
   .clubs-wrapper {
     width: 85%;
   }
@@ -793,3 +762,4 @@
     width: 75%;
   }
 }
+
