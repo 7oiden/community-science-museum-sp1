@@ -98,7 +98,7 @@ iframe {
 }
 
 table {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
   width: 100%;
   border-collapse: collapse;
@@ -156,12 +156,6 @@ tr.even {
   color: white;
 }
 
-/* styles that change
---------------------*/
-@media only screen and (min-width: 576px) {
-  /* Main
---------------------*/
-}
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
@@ -181,10 +175,6 @@ tr.even {
     "image-2 food-drink"
     "shop image-3";  
   }
-}
-
-@media only screen and (min-width: 992px) {
-
 }
 
 @media only screen and (min-width: 1200px) {
