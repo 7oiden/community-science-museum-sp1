@@ -479,8 +479,8 @@ ul li {
 .mobile-menu-list li {
   display: block;
   font-size: 1.25rem;
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mobile-menu-list li:first-of-type {
@@ -593,7 +593,7 @@ ul li {
 #newsletter-input {
   flex: 3;
   font-size: 1rem;
-  border: 3px solid var(--button-color);
+  border: 3px solid #0030574d;
   border-radius: 0 5px 5px 0;
   padding-left: 1rem;
   outline: none;
@@ -605,7 +605,7 @@ ul li {
 }
 
 #newsletter-input:focus {
-  border-color: var(--magenta);
+  border-color: #02AAB0;
 }
 
 #sign-up-button {
@@ -616,7 +616,7 @@ ul li {
   flex: 1;
   font-family: var(--sofia);
   font-size: 1.125rem;
-  background-color: var(--button-color);
+  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
   border: none;
   border-radius: 0 5px 5px 0;
   color: #fff;
