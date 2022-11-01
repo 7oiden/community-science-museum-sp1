@@ -50,13 +50,13 @@ section > p {
   display: none;
 }
 
-h2 {
+/* h2 {
   font-family: var(--proxima);
   font-size: 1.25rem;
   text-decoration: underline;
   margin: 0;
   padding: 0;
-}
+} */
 
 .faq > li {
   font-family: var(--sofia);
@@ -111,9 +111,9 @@ li > P {
     font-size: 1.25rem;
   }
 
-  h2 {
+  /* h2 {
     font-size: 1.5rem;
-  }
+  } */
 
   .faq li {
     font-size: 1.25rem;

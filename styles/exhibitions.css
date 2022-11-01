@@ -4,7 +4,7 @@
 /* main 
 --------------------*/
 
-#cosmology-anchor,
+/* #cosmology-anchor,
 #evolution-anchor,
 #biology-anchor,
 #robotics-anchor,
@@ -12,106 +12,30 @@
   position: relative;
   top: -80px;
   visibility: hidden;
-}
-
-h4 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  font-family: var(--proxima);
-  color: var(--dark-purple);
-  margin: 8px 5% 32px 5%;
-  text-transform: capitalize;
-}
-
-/* .purple {
-  color: var(--purple);
-}
-
-.blue {
-  color: var(--blue);
-}
-
-.dark-green {
-  color: var(--dark-green);
-}
-
-.orange {
-  color: var(--orange);
-}
-
-.magenta {
-  color: var(--magenta);
 } */
 
-.cosmology {
-  background-color: #470c6820;
-}
-
-.cosmology p {
-  color: var(--purple);
-}
-
 #cosmology {
-  background-color: var(--purple);
+  background-color:  var(--purple);
 }
 
 #evolution {
   background-color: var(--blue);
 }
 
-.evolution {
-  background-color: #00729820;
-}
-
-.evolution p {
-  color: var(--blue)
-}
-
 #biology {
   background-color: var(--dark-green);
-}
-
-.biology {
-  background-color: #03463820;
-}
-
-.biology p {
-  color: var(--dark-green);
 }
 
 #robotics {
   background-color: var(--orange);
 }
 
-.robotics {
-  background-color: #dc440520;
-}
-
-.robotics p {
-  color: var(--orange);
-}
-
 #ecology {
   background-color: var(--magenta);
 }
 
-.ecology {
-  background-color: #a2006720;
-}
-
-.ecology p {
-  color: var(--magenta);
-}
-
 #special-events {
   background-color: #003057;
-}
-
-.special-events {
-  background-color: #00305720;
-}
-.special-events p {
-  color: #003057;
 }
 
 .card-wrapper {
@@ -125,16 +49,24 @@ h4 {
 }
 
 .card {
+  position: relative;
   border-radius: 5px;
   box-shadow: 0 6px 12px #00000029;
+  background-color: var(--dark);
+  color: #fff;
 }
 
 .card-heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--proxima-soft);
   text-transform: uppercase;
-  /* text-align: center; */
-  font-size: 1.375rem;
-  color: #fff;
-  padding: 0.5rem 1rem;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 6px 6px 12px #000000bf;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  padding: 0.5rem 3rem 0.5rem 2rem;
   margin: 0;
 }
 
@@ -143,15 +75,9 @@ h4 {
   border-radius: 5px 5px 0 0;
 }
 
-.card-heading {
-  padding: 0.5rem 1rem;
-}
-
 .card-body {
-  /* background-size: 80%;
-  background-repeat: no-repeat;
-  background-position-x: center; */
-  padding: 0.5rem 1rem;
+  position: relative;
+  padding: 2rem 1rem 0.5rem 1rem;
 }
 
 /* .cosmology {
@@ -173,11 +99,6 @@ h4 {
   background-image: url(../images/icons/tellus.png);
 } */
 
-/* .gallery-section {
-  width: 100%;
-  margin: 0 auto;
-} */
-
 .gallery-wrapper {
   margin: 2rem auto;
   display: grid;
@@ -188,41 +109,12 @@ h4 {
   gap: 1rem;
 }
 
-/* .gallery-wrapper figure, .gallery-wrapper img {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border-radius: 15px;
-}
-
-.gallery-quote {
-  font-size: 1.125rem;
-  font-style: italic;
-  background-color: var(--purple);
-  color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 0 50px 0 0;
-} */
-
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 576px) {
+
   /* Main
 --------------------*/
-  /* h4 {
-    font-size: 1.5rem;
-  } */
-
-  .card-heading {
-    font-size: 1.5rem;
-  }
-
-  /* .gallery-quote {
-    font-size: 1.5rem;
-    text-align: center;
-  } */
-
    .gallery-wrapper {
     gap: 2rem;
   }
@@ -242,8 +134,13 @@ h4 {
   /* Main
 --------------------*/
 
-  .card-heading, .card-body {
-    padding: 0.5rem 1.5rem;
+  .card-body {
+    padding: 2rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  .card-heading {
+    font-size: 1.375rem;
+    padding: 0.75rem 3rem 0.75rem 2rem;
   }
 }
 
@@ -256,6 +153,10 @@ h4 {
     grid-template-rows: auto auto auto;
   }
 
+  /* .card-heading {
+    font-size: 1.5rem;
+  } */
+
   .gallery-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -263,11 +164,3 @@ h4 {
   }
 }
 
-@media only screen and (min-width: 1800px) {
-  /* Header
---------------------*/
-
-  /* .dropdown-info {
-    width: 320px;
-  } */
-}
