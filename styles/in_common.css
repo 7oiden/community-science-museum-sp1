@@ -137,13 +137,11 @@ a {
   color: var(--white);
   padding: 0.75rem 2rem;
   margin: 0;
-  transition-property: scale;
-  transition-duration: 0.5s;
-  scale: 1;
+  transition: 0.5s;
 }
 
 .button:hover {
-  scale: 1.1;
+  background-position: right center;
 }
 
 /* header 
@@ -425,7 +423,6 @@ header {
   gap: 1rem;
   padding: 0.5rem 1rem;
   background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
-    /* box-shadow: 0 0 20px #eee; */
     background-size: 200% auto;
   color: #fff;
   font-family: var(--button-text);
@@ -434,13 +431,12 @@ header {
   font-size: 1.125rem;
   /* text-transform: uppercase; */
   cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: 0.5s;
   justify-self: flex-end;
  }
 
  .ticket-button:hover {
-  opacity: 0.75;
+  background-position: right center;
  }
 
  .ticket-icon {
@@ -617,17 +613,18 @@ ul li {
   font-family: var(--sofia);
   font-size: 1.125rem;
   background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
+  background-size: 200% auto;
   border: none;
   border-radius: 0 5px 5px 0;
   color: #fff;
   cursor: pointer;
   padding: 0 1rem;
-  transition: opacity 0.3s ease;
-  opacity: 1;
+  transition: 0.5s;
+  
 }
 
 #sign-up-button:hover {
-  opacity: 0.75;
+  background-position: right center;
 }
 
 #newsletter-error {

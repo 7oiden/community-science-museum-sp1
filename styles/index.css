@@ -391,13 +391,14 @@
 }
 
 .info-container {
-  width: 95%;
+  width: 90%;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   font-size: 1rem;
+  /* background-color: pink; */
 }
 
 .info-heading {
@@ -413,8 +414,13 @@
 
 .info-list li {
   list-style-type: disc;
-  padding-top: 0.375rem;
-  margin-left: 2.5rem;
+  padding-top: 0.75rem;
+  margin-left: 1rem;
+}
+
+
+.info-icon {
+  font-size: 1.5rem;
 }
 
 #news-anchor {
@@ -580,7 +586,7 @@
   }
 
   .slider-wrapper {
-     width: 75%;
+     width: 80%;
   }
 
   .clubs-wrapper {
@@ -625,9 +631,9 @@
     font-size: 2rem;
   }
 
-  /* div.circle-wrapper {
-    display: none;
-  } */
+  .info-icon {
+    font-size: 2rem;
+  }
 
   .news-wrapper {
     width: 90%;
@@ -729,7 +735,7 @@
   
   .slide-image {
     flex: 3;
-    border-radius: 15px 0 0 15px;
+    border-radius: 3px 0 0 3px;
   }
   
   .slide-body {
@@ -784,6 +790,6 @@
   }
 
   .slider-wrapper {
-    width: 70%;
+    width: 75%;
   }
 }
