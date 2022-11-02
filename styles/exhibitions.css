@@ -44,7 +44,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto;
   gap: 3rem;
-  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 

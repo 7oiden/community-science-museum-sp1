@@ -4,6 +4,10 @@
 /* main 
 --------------------*/
 
+.info-section {
+  padding-bottom: 3rem;
+}
+
 #item-1 {
   grid-area: admission;
 }

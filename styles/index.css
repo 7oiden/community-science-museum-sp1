@@ -17,7 +17,7 @@
   width: 100%;
   position: relative;
   margin: 0 auto;
-  padding: 2rem 0 4rem 0;
+  padding: 2rem 0 3rem 0;
 }
 
 .slider-outer-container {
@@ -26,6 +26,7 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 15px;
+  box-shadow: 0 6px 12px #00000029;
 }
 
 .slider-inner-container {
@@ -128,29 +129,11 @@
   border-radius: 5px 0 0 5px;
 }
 
-/* .preview-image {
-  display: block;
-  width: 50px;
-  height: 33.5px;
-  opacity: 0.7;
-  transition: all 0.3s;
-  border-left: 1px solid var(--dark);
-  border-right: 3px solid var(--dark);
-  border-top: 1px solid var(--dark);
-  border-bottom: 3px solid var(--dark);
-  border-radius: 5px;
-} */
-
 .selected {
   transform: scale(1.2);
   opacity: 1;
   background-color: #fff;
 }
-
-/* figure {
-  margin: 0;
-  padding: 0;
-} */
 
 .hero-container {
   position: relative;
@@ -185,17 +168,12 @@
 
 .hero-sub-heading {
   font-weight: 500;
-  font-family: var(--main-heading);
+  font-family: var(--main-sub-heading);
   margin: 1rem 0 0 0;
   padding: 0; 
   font-style: italic;
 }
 
-/* .hero-sub-heading::before {
-  content: "“";
-  font-size: 3rem;
-  padding-right: 5px;
-} */
 
 .hero-button {
   align-self: start;
@@ -469,6 +447,7 @@
   border-right: 4px solid var(--dark);
   border-bottom: 8px solid var(--dark);
   border-radius: 15px;
+  box-shadow: 0 6px 12px #00000029;
   position: relative;
   transition: all;
   transition-duration: 0.5s;
@@ -527,6 +506,10 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+  }
+
+  .clubs-wrapper {
+    width: 85%;
   }
 
   .clubs-caption {
@@ -687,7 +670,6 @@
 
   .slider-wrapper {
     width: 100%;
-    padding-bottom: 5rem;
   }
 
   .slide {
@@ -706,13 +688,13 @@
   .indicator-container {
     /* bottom: 1.5rem;  */
     top: auto;
-    bottom: 2rem; 
+    bottom: 2.5rem; 
     transform: translateY(50%);
   }
 
   .slider-controls {
     top: auto;
-    bottom: 2rem;
+    bottom: 50%;
     transform: translateY(50%);
   }
 
@@ -759,7 +741,11 @@
   }
 
   .slider-wrapper {
-    width: 75%;
+    width: 80%;
+  }
+
+  .clubs-wrapper {
+    width: 80%;
   }
 }
 

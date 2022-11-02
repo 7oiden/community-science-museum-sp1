@@ -14,12 +14,14 @@
   --teal: #3d6a6b;
   --light-grey: #e8e8e8;
   --white: #ffffff;
-  --sofia: "sofia pro", "helvetica", "arial", "sans-serif";
-  --proxima: "proxima nova", "open sans", "corbel", "arial", "sans-serif";
-  --proxima-soft: "proxima soft", "helvetica", "arial", "sans-serif";
+  --sofia: "sofia-pro", "helvetica", "arial", "sans-serif";
+  --proxima: "proxima-nova", "open sans", "corbel", "arial", "sans-serif";
+  --proxima-soft: "proxima-soft", "helvetica", "arial", "sans-serif";
   /* --neue-haas: "open sans", "helvetica", "arial", "sans-serif"; */
   --center-align: 0 auto 0 auto;
-  --body-text: "sofia pro", "helvetica", "arial", "sans-serif";
-  --main-heading: "proxima soft", "helvetica", "arial", "sans-serif";
-  --button-text: "proxima soft", "helvetica", "arial", "sans-serif";
+  --body-text: "sofia-pro", "helvetica", "arial", "sans-serif";
+  --main-heading: "proxima-nova", "helvetica", "arial", "sans-serif";
+  --main-sub-heading: "chaparral-pro",
+    serif;
+  --button-text: "proxima-soft", "helvetica", "arial", "sans-serif";
 }
