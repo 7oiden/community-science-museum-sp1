@@ -26,10 +26,6 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 15px;
-  /* border-left: 2px solid var(--dark);
-  border-right: 4px solid var(--dark);
-  border-top: 2px solid var(--dark);
-  border-bottom: 8px solid var(--dark); */
 }
 
 .slider-inner-container {
@@ -96,11 +92,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  top: 1rem;
+  top: 2rem;
+  transform: translateY(-50%);
   cursor: pointer;
   gap: 1.5rem;
-  /* background-color: #00000040;
-  padding: 1rem; */
 }
 
 .indicator {
@@ -116,7 +111,7 @@
   font-size: 1.5rem;
   color: white;
   position: absolute;
-  top: 25%;
+  top: 2rem;
   transform: translateY(-50%);
   cursor: pointer;
   background-color: #25252599;
@@ -691,6 +686,7 @@
   }
 
   .slider-wrapper {
+    width: 100%;
     padding-bottom: 5rem;
   }
 
@@ -708,12 +704,16 @@
   }
 
   .indicator-container {
-    bottom: 1.5rem; 
-    top: auto; 
+    /* bottom: 1.5rem;  */
+    top: auto;
+    bottom: 2rem; 
+    transform: translateY(50%);
   }
 
   .slider-controls {
-    top: 50%;
+    top: auto;
+    bottom: 2rem;
+    transform: translateY(50%);
   }
 
   .clubs-wrapper {
