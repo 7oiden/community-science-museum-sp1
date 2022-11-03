@@ -32,9 +32,9 @@ main {
   background-color: #d8d8d8;
 }
 
-section {
-  padding-top: 2rem;
-}
+/* hr {
+  width: 100%;
+} */
 
 .fa {
   color: var(--white);
@@ -58,7 +58,7 @@ a {
 /* new code */
 .main-wrapper {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--main-bg);
   margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -80,7 +80,7 @@ a {
 }
 
 .main-heading-left {
-  width: 1rem;
+  width: 0.75rem;
   background-color: var(--navbar-color);
   flex-shrink: 0;
   margin: -1rem 0 -1rem 0;
@@ -95,15 +95,21 @@ a {
   padding: 0;
 }
 
+.sub-heading-box {
+  background-color: rgb(241, 241, 241);
+  color: white;
+  padding: 1rem;
+}
+
 .main-sub-heading {
   margin: 0 0 1rem 0;
-  padding: 0;
+  /* padding: 0; */
   font-family: var(--main-sub-heading);
   font-weight: 600;
   font-size: 1.125rem;
   color: var(--dark);
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   border-radius: 0 25px 25px 0;
   font-style: italic;
 }
@@ -115,24 +121,38 @@ a {
   gap: 1rem;
 }
 
-.get-in-touch {
-  background-color: var(--dark);
-  color: #fff;
-  font-size: 1.25rem;
-  text-align: center;
-  border-radius: 0 50px;
+.cta-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  text-align: center;
+  /* background-color: var(--dark); */
+  color: var(--dark);
+  font-size: 1.25rem;
   padding: 1rem 0;
 }
 
-.get-in-touch>p {
+.cta-wrapper p {
   font-family: var(--proxima);
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
+
+/* .cta-left, .cta-right {
+  height: 0.25rem;
+  background-color: var(--navbar-color);
+  flex-shrink: 1;
+} */
+
+/* .test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+} */
 
 .button {
   cursor: pointer;
@@ -199,10 +219,11 @@ a {
 .modal-header {
   position: relative;
   width: 100%;
-  background-color: var(--navbar-color);
+  background-image: linear-gradient(to right, #C33764 0%, #1D2671 100%);
   color: #fff;
   font-family: var(--main-heading);
   font-size: 1.5rem;
+  font-weight: 600;
   text-transform: capitalize;
   text-align: center;
   margin: 0;
@@ -329,23 +350,22 @@ header {
   gap: 0.5rem;
 }
 
-#header-time-icon, #header-search-icon {
+#header-time-icon {
   color: var(--dark-blue);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
-#header-search-icon {
+/* #header-search-icon {
   color: #fff;
-  font-size: 1.375rem;
-}
+  font-size: 1.5rem;
+} */
 
 #header-time-text {
   color: var(--dark-blue);
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: bold;
   margin: 0;
   padding: 0;
-  /* text-decoration: underline; */
 }
 
 .logo {
@@ -366,7 +386,7 @@ header {
   z-index: 100;
   padding: 0;
   margin: 0;
-  background-color: var(--navbar-color);
+  background-image: linear-gradient(to right, #C33764 0%, #1D2671 100%);
   color: var(--white);
   font-family: var(--proxima-soft);
   font-size: 1.5rem;
@@ -374,6 +394,28 @@ header {
   justify-content: flex-start;
   margin-bottom: 0;
 }
+
+         
+         .btn-grad {
+            background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
 
 .menu-link {
   text-decoration: none;
@@ -631,7 +673,7 @@ ul li {
   border-radius: 0 5px 5px 0;
   color: #fff;
   cursor: pointer;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   transition: 0.5s;
   
 }
@@ -661,7 +703,7 @@ ul li {
 .info-box {
   background-color: #05778b30;
   color: #01272e;
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 1rem;
   border-radius: 5px;
 }
 
@@ -890,6 +932,14 @@ footer {
       font-size: 2.5rem;
     }
 
+  #header-time-icon {
+    font-size: 1.375rem;
+  }
+  
+  #header-time-text { 
+    font-size: 1rem;
+  }
+
   /* Main
 --------------------*/
   .main-wrapper {
@@ -907,6 +957,12 @@ footer {
   
   .button {
     font-size: 1.25rem;
+  }
+
+  .cta-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
   }
 
   /* Footer
@@ -959,14 +1015,7 @@ footer {
     font-size: 1.375rem;
   }
   
-  .get-in-touch {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-  }
-  
-  .get-in-touch p {
+  .cta-wrapper p {
     font-size: 1.5rem;
   }
 

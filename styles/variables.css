@@ -13,6 +13,7 @@
   --orange: #dc4405;
   --teal: #3d6a6b;
   --light-grey: #e8e8e8;
+  --main-bg: #FFFFFB;
   --white: #ffffff;
   --sofia: "sofia-pro", "helvetica", "arial", "sans-serif";
   --proxima: "proxima-nova", "open sans", "corbel", "arial", "sans-serif";
@@ -21,7 +22,7 @@
   --center-align: 0 auto 0 auto;
   --body-text: "sofia-pro", "helvetica", "arial", "sans-serif";
   --main-heading: "proxima-nova", "helvetica", "arial", "sans-serif";
-  --main-sub-heading: "chaparral-pro",
+  --main-sub-heading: "proxima-soft",
     serif;
   --button-text: "proxima-soft", "helvetica", "arial", "sans-serif";
 }
