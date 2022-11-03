@@ -4,8 +4,6 @@
 /* main 
 --------------------*/
 
-
-
 div.item-1 {
   font-family: var(--sofia);
   font-size: 1.125rem;
@@ -54,11 +52,25 @@ div.vision p {
   gap: 1rem;
 }
 
+.tourguide {
+  position: relative;
+  max-width: 200px;
+}
+
+.tourguide img {
+  
+}
+
 figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.375rem 1rem;
+  background-color: #ffffffbf;
   font-family: var(--proxima-soft);
   text-align: center;
   font-weight: bold;
-  padding-top: 8px;
+  border-radius: 0 0 15px 15px;
 }
 
 /* styles that change
@@ -72,15 +84,6 @@ figcaption {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  /* Main
---------------------*/
-.gallery-wrapper {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 1rem;
-  }
-}
 
 @media only screen and (min-width: 992px) {
   /* Main
@@ -124,24 +127,17 @@ figcaption {
   .vision-section {
     grid-template-areas:
         "introduction introduction paragraph-1 paragraph-1"
+        "introduction introduction paragraph-1 paragraph-1"
         "image image paragraph-1 paragraph-1"
         "image image paragraph-2 paragraph-2"
         "image image paragraph-2 paragraph-2"
         "image image paragraph-3 paragraph-3"
         "image image paragraph-3 paragraph-3";
     }
+
+  .gallery-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }  
 }
 
-@media only screen and (min-width: 1600px) {
-  /* Main
---------------------*/
-  /* .item-1 p {
-    font-size: 1.25rem;
-  }
-
-  .item-3,
-  .item-4,
-  .item-5 {
-    font-size: 1.25rem;
-  } */
-}

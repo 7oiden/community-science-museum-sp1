@@ -60,7 +60,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-family: var(--proxima-soft);
+  font-family: var(--main-heading);
   text-transform: uppercase;
   border-radius: 0 3px 3px 0;
   box-shadow: 6px 6px 12px #000000bf;
