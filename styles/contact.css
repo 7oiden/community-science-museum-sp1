@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+.main-sub-heading {
+  margin-top: 0.5rem; 
+}
+
 section > p {
   font-weight: bold;
 }

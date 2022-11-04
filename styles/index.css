@@ -315,6 +315,7 @@
 
 #evolution {
   background-color: #007298;
+  background-color: #a20067;
   transition-property: background-color scale;
   transition-duration: 0.5s;
   scale: 1;
@@ -327,13 +328,14 @@
 
 #biology {
   background-color: #034638;
+  background-color: #007298;
   transition-property: background-color scale;
   transition-duration: 0.5s;
   scale: 1;
 }
 
 #biology:hover {
-  background-color: #034638a6;
+  /* background-color: #034638a6; */
   scale: 1.05;
 }
 
@@ -345,12 +347,13 @@
 }
 
 #robotics:hover {
-  background-color: #dc4405a6;
+  /* background-color: #dc4405a6; */
   scale: 1.05;
 }
 
 #ecology {
   background-color: #a20067;
+  background-color: #397b18;
   transition-property: background-color scale;
   transition-duration: 0.5s;
   scale: 1;
@@ -362,7 +365,7 @@
 }
 
 #events {
-  background-color: #003057;
+  background-color: #0f355b;
   transition-property: background-color scale;
   transition-duration: 0.5s;
   scale: 1;

@@ -52,21 +52,23 @@
   position: relative;
   border-radius: 5px;
   box-shadow: 0 6px 12px #00000029;
-  background-color: var(--dark);
-  color: #fff;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 .card-heading {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  width: 80%;
   font-family: var(--main-heading);
+  color: var(--white);
   text-transform: uppercase;
-  border-radius: 0 3px 3px 0;
-  box-shadow: 6px 6px 12px #000000bf;
-  transform: translateY(-50%);
+  box-shadow: 0 6px 12px #00000029;
+  transform: translate(-50%, -50%);
   font-size: 1.25rem;
   padding: 0.5rem 3rem 0.5rem 2rem;
+  text-align: center;
   margin: 0;
 }
 
@@ -134,6 +136,11 @@
   /* Main
 --------------------*/
 
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
   .card-body {
     padding: 2rem 1.5rem 0.5rem 1.5rem;
   }
@@ -148,10 +155,7 @@
   /* Main
 --------------------*/
  
-  .card-wrapper {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-  }
+  
 
   /* .card-heading {
     font-size: 1.5rem;

@@ -99,7 +99,7 @@ a {
   position: relative;
   width: 100%;
   background-image: linear-gradient(to right, #C33764 0%, #1D2671 100%);
-  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 100%);
+  /* background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 100%); */
   color: #fff;
   font-family: var(--main-heading);
   font-size: 1.5rem;
@@ -498,16 +498,15 @@ ul li {
 } */
 
 .main-sub-heading {
-  margin: 0 0 1rem 0;
-  /* padding: 0; */
   font-family: var(--main-sub-heading);
   font-weight: 600;
   font-size: 1.125rem;
-  color: var(--dark);
-  margin: 1.5rem 0 0 0;
-  /* padding: 0; */
-  border-radius: 0 25px 25px 0;
-  /* font-style: italic; */
+  background: rgb(60,60,60);
+  background: linear-gradient(129deg, rgba(60,60,60,1) 0%, rgba(37,37,37,1) 100%);
+  color: var(--white);
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 1rem;
+  box-shadow: 0 6px 12px #1D2671bf;
 }
 
 .section-container {
@@ -573,8 +572,8 @@ ul li {
 
 .newsletter-wrapper {
   width: 100%;
-  background: rgb(37, 37, 37);
-  background: linear-gradient(129deg, rgba(37, 37, 37, 1) 0%, rgba(60, 60, 60, 1) 100%);
+  background: rgb(60,60,60);
+  background: linear-gradient(129deg, rgba(60,60,60,1) 0%, rgba(37,37,37,1) 100%);
   /* background-color: var(--dark); */
   /* background-image: url(../images/newsletter_mobile.jpg);
   background-size: cover;
@@ -674,6 +673,12 @@ ul li {
   margin-top: 1rem;
   padding: 5px;
 }
+
+/* .heading-box {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 1rem;
+} */
 
 .info-box {
   background-color: #1D267120;
