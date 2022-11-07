@@ -23,7 +23,7 @@
 
 .secondary-heading {
   font-size: 1.25rem;
-  margin: 0;
+  margin: 0 auto 2rem auto;
   padding: 0;
 }
 
@@ -34,7 +34,7 @@
 .clubs-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   background-color: var(--dark);
   color: var(--white);
 }
@@ -44,6 +44,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem 2rem;
+  margin: 0 auto;
 }
 
 .clubs-gallery {
@@ -108,6 +109,11 @@ figure, figure img {
   .sec2 {
     padding: 2rem;
   }
+
+  .clubs-wrapper {
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -116,6 +122,11 @@ figure, figure img {
   /* .kids-container {
     
   } */
+
+  .clubs-wrapper {
+    flex-direction: row;
+    width: 85%;
+  }
 
   .secondary-heading {
     font-size: 1.375rem;
@@ -148,9 +159,15 @@ figure, figure img {
     font-size: 1.5rem;
   }
 
-  .clubs-container {
+  /* .clubs-container {
     flex-direction: row;
-  }
+    gap: 5rem;
+  } */
+
+  /* .clubs-wrapper {
+    flex-direction: row;
+    width: 85%;
+  } */
 
   /* .clubs-wrapper-2::before {
     content: "";
@@ -181,8 +198,13 @@ figure, figure img {
 }
 
 @media only screen and (min-width: 1600px) {
+  .sec2 {
+    width: 80%;
+  }
+
   .clubs-wrapper {
-    flex-direction: row;
+    width: 70%;
+    gap: 4rem;
   }
 
   .clubs-gallery {

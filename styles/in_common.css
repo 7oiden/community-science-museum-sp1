@@ -498,15 +498,17 @@ ul li {
 } */
 
 .main-sub-heading {
+  display: inline;
+  width: auto;
+  align-self: flex-start;
   font-family: var(--main-sub-heading);
   font-weight: 600;
   font-size: 1.125rem;
   background: rgb(60,60,60);
   background: linear-gradient(129deg, rgba(60,60,60,1) 0%, rgba(37,37,37,1) 100%);
   color: var(--white);
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 0 0 1.5rem 0;
   padding: 1rem;
-  /* box-shadow: 0 6px 12px #1D2671bf; */
 }
 
 .section-container {
