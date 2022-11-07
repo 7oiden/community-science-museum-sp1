@@ -993,6 +993,9 @@ footer {
 
   /* Main
 --------------------*/
+  .main-wrapper {
+    width: 85%;
+  }
 
   .main-heading {
     font-size: 2.5rem;
