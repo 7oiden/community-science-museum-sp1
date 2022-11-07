@@ -19,7 +19,7 @@
 }
 
 #evolution {
-  background-color: var(--blue);
+  background-color: var(--magenta);
 }
 
 #biology {
@@ -31,7 +31,7 @@
 }
 
 #ecology {
-  background-color: var(--magenta);
+  background-color: #397b18;
 }
 
 #special-events {
@@ -64,9 +64,10 @@
   font-family: var(--main-heading);
   color: var(--white);
   text-transform: uppercase;
-  box-shadow: 0 6px 12px #00000029;
+  border-radius: 3px;
+  /* box-shadow: 0 6px 12px #00000029; */
   transform: translate(-50%, -50%);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   padding: 0.5rem 3rem 0.5rem 2rem;
   text-align: center;
   margin: 0;
@@ -79,7 +80,7 @@
 
 .card-body {
   position: relative;
-  padding: 2rem 1rem 0.5rem 1rem;
+  padding: 2rem 1rem 1.5rem 1rem;
 }
 
 /* .cosmology {
@@ -125,6 +126,10 @@
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
+
+  .card-heading {
+    font-size: 1.25rem;
+  }
   
   .gallery-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
@@ -142,7 +147,7 @@
   }
 
   .card-body {
-    padding: 2rem 1.5rem 0.5rem 1.5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
   }
 
   .card-heading {
