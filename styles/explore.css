@@ -3,11 +3,76 @@
 
 /* main 
 --------------------*/
-div.blue {
+
+.sec2 {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 1rem;
+}
+
+.kids-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.kids-container p {
+  font-size: 1rem;
+}
+
+.secondary-heading {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.item-1, .item-2 {
+  flex: 1;
+}
+
+.clubs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.clubs-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+}
+
+.clubs-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.clubs-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.info-box-sub-heading {
+  padding: 0;
+}
+
+.cta-wrapper {
+  width: 100%;
+}
+
+/* div.blue {
   background-color: var(--blue);
   font-size: 1.125rem;
   color: #fff;
-}
+} */
 
 #club-anchor {
   position: relative;
@@ -15,19 +80,19 @@ div.blue {
   visibility: hidden;
 }
 
-figure {
+figure, figure img {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-#item-3 {
+/* #item-3 {
   height: 300px;
   background-image: url(../images/kids-cartoon_large.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
+} */
 
 #item-6 {
   height: 300px;
@@ -37,24 +102,25 @@ figure {
   background-position: center center;
 }
 
-/* #get-in-touch-1 {
-
-  border-radius: 5px;
-}
-
-#get-in-touch-2 {
-  border-radius: 0 0 25px 25px;
-} */
-
 /* styles that change
 --------------------*/
+@media only screen and (min-width: 768px) {
+  .sec2 {
+    padding: 2rem;
+  }
+}
 
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-  #item-1,
-  #item-2,
-  #item-3,
+  /* .kids-container {
+    
+  } */
+
+  .secondary-heading {
+    font-size: 1.375rem;
+  }
+
   #item-4,
   #item-5,
   #item-6 {
@@ -70,12 +136,36 @@ figure {
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
-  main {
-    background-color: #d8d8d8;
+  .kids-container {
+    flex-direction: row;
+  }
+
+  .kids-container p {
     font-size: 1.125rem;
   }
 
-  h2,
+  .secondary-heading {
+    font-size: 1.5rem;
+  }
+
+  .clubs-container {
+    flex-direction: row;
+  }
+
+  /* .clubs-wrapper-2::before {
+    content: "";
+    height: 100px;
+    width: 1px;
+    background-color: white;
+  } */
+
+  
+  /* main {
+    background-color: #d8d8d8;
+    font-size: 1.125rem;
+  } */
+
+  /* h2,
   h3 {
     font-size: 1.75rem;
   }
@@ -83,33 +173,35 @@ figure {
   h4 {
     font-size: 1.5rem;
     margin-top: 24px;
-  }
+  } */
   
-  div.blue {
+  /* div.blue {
     font-size: 1.25rem;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1600px) {
+  .clubs-wrapper {
+    flex-direction: row;
+  }
+
+  .clubs-gallery {
+    gap: 0.5rem;
+  }
   /* #item-3 {
     background-image: url(../images/kids-cartoon_large.jpg);
-  }
-  #item-6 {
-    background-image: url(../images/researcher-cartoon_large.jpg);
   } */
 }
+
 @media only screen and (min-width: 1800px) {
   /* Main
 --------------------*/
 
-  #item-1,
-  #item-2,
   #item-4,
   #item-5 {
     flex: 2;
   }
 
-  #item-3,
   #item-6 { 
     flex: 3;
   }
