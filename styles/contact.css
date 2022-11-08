@@ -4,7 +4,7 @@
 /* main 
 --------------------*/
 .contact-section,
-.faq-section, .main-heading-wrapper, .main-sub-heading {
+.faq-section {
   width: 100%;
   margin: 0 auto;
 }
@@ -17,7 +17,7 @@ section > p {
   font-weight: bold;
 }
 
-.form-info {
+/* .form-info {
   margin: 0;
   padding-left: 1rem;
 }
@@ -27,7 +27,7 @@ section > p {
   margin: 0;
   padding: 0 0 0.5rem 0;
   list-style: disc;
-}
+} */
 
 .form {
   display: flex;
