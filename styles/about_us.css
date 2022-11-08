@@ -65,7 +65,8 @@ div.vision p {
 } */
 
 .gallery-wrapper {
-  margin: 2rem auto;
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
@@ -116,6 +117,13 @@ figcaption {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .vision-grid {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 
 @media only screen and (min-width: 992px) {
   /* Main
@@ -123,8 +131,6 @@ figcaption {
   /* .item-1 {
     grid-area: introduction;
   } */
-
-  
 
   .vision-grid {
     display: grid;

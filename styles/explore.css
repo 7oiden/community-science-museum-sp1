@@ -3,14 +3,14 @@
 
 /* main 
 --------------------*/
-.content-container {
+/* .content-container {
   width: 100%;
-}
+} */
 
-.header, .info-box, .image-box, #research-cta-wrapper {
+/* .header, .info-box, .image-box, #research-cta-wrapper {
   width: 90%;
   margin: 0 auto;
-}
+} */
 
 .kids-container {
   display: flex;
@@ -123,11 +123,26 @@
   opacity: 0.5;
 }
 
+#item-4 {
+  grid-area: teacher;
+}
+
+#item-5 {
+  grid-area: researcher;
+}
+
+#item-6 {
+  grid-area: cta;
+}
+
 .research-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
-  margin-bottom: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "teacher"
+    "researcher"
+    "cta";
 }
 
 .info-box-sub-heading {
@@ -169,13 +184,13 @@ figure, figure img {
   padding: 0;
 }
 
-#item-6 {
+/* #item-6 {
   height: 300px;
   background-image: url(../images/researcher-cartoon_large.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
+} */
 
 /* styles that change
 --------------------*/
@@ -192,6 +207,10 @@ figure, figure img {
     width: 90%;
     margin: 0 auto;
   } */
+  .kids-container, .research-grid {
+    width: 90%;
+    margin: 0 auto;
+  }
 
   .clubs-wrapper {
     width: 100%;
@@ -234,21 +253,30 @@ figure, figure img {
     flex-direction: row;
     width: 85%;
   }
+
+  .research-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "teacher researcher"
+      "cta cta";
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
   
-  .kids-container {
+  /* .kids-container {
     width: 100%;
-  }
+  } */
 
   .kids-container p {
     font-size: 1.125rem;
   }
 
-  .header, .info-box, .kids-text, #research-cta-wrapper {
+  /* .header, .info-box, .kids-text, #research-cta-wrapper {
     width: 100%;
     margin: 0 auto;
   }
@@ -256,11 +284,10 @@ figure, figure img {
   .kids-section, .clubs-section, .research-section {
     width: 90%;
     margin: 0 auto 2rem auto;
-  }
+  } */
 
-  .clubs-container {
-    width: 75%;
-    gap: 3rem;
+  .clubs-section, .kids-container {
+    width: 85%;
   }
 
   .clubs-heading {
@@ -273,14 +300,16 @@ figure, figure img {
 }
 
 @media only screen and (min-width: 1600px) {
-  
-  .clubs-container {
+  .clubs-section, .kids-container {
+    width: 75%;
+  }
+  /* .content-container {
     width: 75%;
     gap: 4rem;
-  }
+  } */
 
-  .clubs-gallery {
+  /* .clubs-gallery {
     gap: 0.5rem;
-  }
+  } */
 }
 

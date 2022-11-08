@@ -52,6 +52,8 @@
 }
 
 .facilities-grid {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
@@ -177,6 +179,11 @@ tr.even {
     "admission admission"
     "location hours";
   }
+
+.info-grid {
+  width: 90%;
+  margin: 0 auto;
+}  
 
 .facilities-grid {
   grid-template-columns: 1fr 1fr;

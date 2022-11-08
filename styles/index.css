@@ -17,7 +17,6 @@
   width: 100%;
   position: relative;
   margin: 0 auto;
-  padding: 2rem 0 3rem 0;
 }
 
 .slider-outer-container {
@@ -422,11 +421,11 @@
 }
 
 .clubs-wrapper {
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 0;
 }
 
 .clubs {
@@ -493,7 +492,7 @@
   }
 
   .slider-wrapper {
-    width: 85%;
+    width: 90%;
   }
 
   .slide-heading {
@@ -511,9 +510,9 @@
     gap: 1rem;
   }
 
-  .clubs-wrapper {
+  /* .clubs-wrapper {
     width: 85%;
-  }
+  } */
 
   .clubs-caption {
     font-size: 1.25rem;
@@ -672,7 +671,7 @@
   }
 
   .slider-wrapper {
-    width: 100%;
+    width: 90%;
   }
 
   .slide {
@@ -701,9 +700,9 @@
     transform: translateY(50%);
   }
 
-  .clubs-wrapper {
+  /* .clubs-wrapper {
     width: 85%;
-  }
+  } */
 
   .clubs-caption {
     font-size: 1.5rem;
@@ -747,8 +746,8 @@
     width: 80%;
   }
 
-  .clubs-wrapper {
+  /* .clubs-wrapper {
     width: 80%;
-  }
+  } */
 }
 

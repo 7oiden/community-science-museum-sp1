@@ -104,7 +104,8 @@
 } */
 
 .gallery-wrapper {
-  margin: 2rem auto;
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
