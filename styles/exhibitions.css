@@ -38,13 +38,12 @@
   background-color: #003057;
 }
 
-.card-wrapper {
+.card-grid {
   /* margin: 0 auto; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto;
   gap: 3rem;
-  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
@@ -143,7 +142,7 @@
   /* Main
 --------------------*/
 
-  .card-wrapper {
+  .card-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
   }

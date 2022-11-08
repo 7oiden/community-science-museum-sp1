@@ -11,6 +11,38 @@
   background-color: var(--blue);
   color: #fff;
 } */
+.item-1 {
+  grid-area: image;
+  height: 100%;
+}
+
+.item-2 {
+  grid-area: paragraph-1;
+}
+
+.item-3 {
+  grid-area: paragraph-2;
+}
+
+.item-4 {
+  grid-area: paragraph-3;
+}
+
+.item-5 {
+  grid-area: cta;
+}
+
+.vision-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr ;
+  grid-template-areas:
+    "image"
+    "paragraph-1"
+    "paragraph-2"
+    "paragraph-3"
+    "cta";
+}
 
 div.vision p {
   width: 90%;
@@ -28,9 +60,9 @@ div.vision p {
   border-radius: 0 0 25px 25px;
 } */
 
-.gallery-section {
+/* .gallery-section {
   margin-top: 3rem;
-}
+} */
 
 .gallery-wrapper {
   margin: 2rem auto;
@@ -92,30 +124,16 @@ figcaption {
     grid-area: introduction;
   } */
 
-  .item-1 {
-    grid-area: image;
-    height: 100%;
-  }
+  
 
-  .item-2 {
-    grid-area: paragraph-1;
-  }
-
-  .item-3 {
-    grid-area: paragraph-2;
-  }
-
-  .item-4 {
-    grid-area: paragraph-3;
-  }
-
-  .vision-section {
+  .vision-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "image image paragraph-3 paragraph-3"
       "paragraph-1 paragraph-1 paragraph-1 paragraph-1"
-      "paragraph-2 paragraph-2 paragraph-2 paragraph-2";
+      "paragraph-2 paragraph-2 paragraph-2 paragraph-2"
+      "cta cta cta cta";
   }
 }
 
@@ -123,11 +141,12 @@ figcaption {
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
-  .vision-section {
+  .vision-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "image image image image paragraph-1 paragraph-1 paragraph-1"
-      "paragraph-3 paragraph-3 paragraph-3 paragraph-3 paragraph-2 paragraph-2 paragraph-2";
+      "paragraph-3 paragraph-3 paragraph-3 paragraph-3 paragraph-2 paragraph-2 paragraph-2"
+      "cta cta cta cta cta cta cta";
   }
   /* .vision-section {
     grid-template-areas:
@@ -143,13 +162,14 @@ figcaption {
 }
 
 @media only screen and (min-width: 1800px) {
-  .vision-section {
+  .vision-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "image image   paragraph-1 paragraph-1"
-      "image image   paragraph-2 paragraph-2"
-      "image image   paragraph-3 paragraph-3";
+      "image image  paragraph-1 paragraph-1"
+      "image image  paragraph-2 paragraph-2"
+      "image image  paragraph-3 paragraph-3"
+      "cta cta cta cta";
   }
 }
 
