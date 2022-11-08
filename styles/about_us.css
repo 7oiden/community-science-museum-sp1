@@ -4,13 +4,13 @@
 /* main 
 --------------------*/
 
-div.item-1 {
+/* div.item-1 {
   font-family: var(--sofia);
   font-size: 1.125rem;
   font-weight: 600;
   background-color: var(--blue);
   color: #fff;
-}
+} */
 
 div.vision p {
   width: 90%;
@@ -88,35 +88,34 @@ figcaption {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-  .item-1 {
+  /* .item-1 {
     grid-area: introduction;
-  }
+  } */
 
-  .item-2 {
+  .item-1 {
     grid-area: image;
     height: 100%;
   }
 
-  .item-3 {
+  .item-2 {
     grid-area: paragraph-1;
   }
 
-  .item-4 {
+  .item-3 {
     grid-area: paragraph-2;
   }
 
-  .item-5 {
+  .item-4 {
     grid-area: paragraph-3;
   }
 
   .vision-section {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "introduction introduction paragraph-1 paragraph-1"
-      "image image paragraph-1 paragraph-1"
       "image image paragraph-3 paragraph-3"
-      "paragraph-2 paragraph-2 paragraph-3 paragraph-3"
-      "paragraph-2 paragraph-2 paragraph-3 paragraph-3";
+      "paragraph-1 paragraph-1 paragraph-1 paragraph-1"
+      "paragraph-2 paragraph-2 paragraph-2 paragraph-2";
   }
 }
 
@@ -125,19 +124,32 @@ figcaption {
   /* Main
 --------------------*/
   .vision-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "introduction introduction paragraph-1 paragraph-1"
-        "introduction introduction paragraph-1 paragraph-1"
-        "image image paragraph-1 paragraph-1"
-        "image image paragraph-2 paragraph-2"
-        "image image paragraph-2 paragraph-2"
+      "image image image image paragraph-1 paragraph-1 paragraph-1"
+      "paragraph-3 paragraph-3 paragraph-3 paragraph-3 paragraph-2 paragraph-2 paragraph-2";
+  }
+  /* .vision-section {
+    grid-template-areas:
         "image image paragraph-3 paragraph-3"
-        "image image paragraph-3 paragraph-3";
-    }
+        "image image paragraph-1 paragraph-1"
+        "image image paragraph-2 paragraph-2";
+    } */
 
   .gallery-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
   }  
+}
+
+@media only screen and (min-width: 1800px) {
+  .vision-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "image image   paragraph-1 paragraph-1"
+      "image image   paragraph-2 paragraph-2"
+      "image image   paragraph-3 paragraph-3";
+  }
 }
 
