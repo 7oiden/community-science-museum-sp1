@@ -83,10 +83,6 @@
   padding: 1.5rem 1rem;  
 }
 
-.slide-body:last-child {
-  padding-bottom: 0.25rem;
-}
-
 .indicator-container {
   position: absolute;
   width: 100%;
@@ -155,7 +151,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* background-color: pink; */
 }
 
 .hero-heading {
@@ -383,7 +378,6 @@
   align-items: center;
   gap: 1rem;
   font-size: 1rem;
-  /* background-color: pink; */
 }
 
 .info-heading {
@@ -509,10 +503,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
-
-  /* .clubs-wrapper {
-    width: 85%;
-  } */
 
   .clubs-caption {
     font-size: 1.25rem;
@@ -688,7 +678,6 @@
   }
 
   .indicator-container {
-    /* bottom: 1.5rem;  */
     top: auto;
     bottom: 2.5rem; 
     transform: translateY(50%);
@@ -699,10 +688,6 @@
     bottom: 50%;
     transform: translateY(50%);
   }
-
-  /* .clubs-wrapper {
-    width: 85%;
-  } */
 
   .clubs-caption {
     font-size: 1.5rem;
@@ -745,9 +730,5 @@
   .slider-wrapper {
     width: 80%;
   }
-
-  /* .clubs-wrapper {
-    width: 80%;
-  } */
 }
 

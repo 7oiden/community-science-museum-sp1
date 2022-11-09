@@ -3,68 +3,27 @@
 
 /* main 
 --------------------*/
-/* .content-container {
-  width: 100%;
-} */
-
-/* .header, .info-box, .image-box, #research-cta-wrapper {
-  width: 90%;
-  margin: 0 auto;
-} */
-
 .kids-container {
   display: flex;
   flex-direction: column;
-  /* margin-top: 1rem;
-  margin-bottom: 2rem; */
 }
 
 #info-box-kids {
   background-color: var(--blue);
   color: var(--white);
-  /* border-left: 10px solid var(--dark); */
   border-radius: 0;
-}
-
-#image-box-kids {
-  /* border: 8px solid var(--dark); */
 }
 
 #image-box-kids, #image-box-kids img {
   border-radius: 0;
 }
 
-/* .kids-container p:first-child {
-  font-size: 1.125rem;
-  font-weight: bold;
-  margin-top: 0;
-  padding-top: 0;
-} */
-
-/* .kids-container p {
-  font-size: 1rem;
-} */
-
-/* .secondary-heading {
-  font-size: 1.25rem;
-  margin: 0 auto 2rem auto;
-  padding: 0;
-} */
-
-/* .item-1, .item-2 {
-  flex: 1;
-} */
-
-/* .kids-text p:first-child {
-  margin-top: 0;
-} */
-
 .clubs-section {
   background-color: var(--dark);
   color: var(--white);
   padding: 2rem 1rem;
   margin: 0 auto 2rem auto;
-  /* background: url(../images/kids-cartoon_large.jpg); */
+  box-shadow: 0 6px 12px #00000029;
 }
 
 .clubs-wrapper {
@@ -72,7 +31,6 @@
   flex-direction: column;
   background-color: var(--dark);
   color: var(--white);
-  /* background-color: pink; */
 }
 
 .clubs-container {
@@ -80,7 +38,6 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem 3rem;
-  /* background-color: lightblue; */
 }
 
 .clubs-heading {
@@ -162,16 +119,6 @@
   color: var(--white);
 }
 
-/* #research-cta-wrapper p {
-  color: var(--dark);
-} */
-
-/* div.blue {
-  background-color: var(--blue);
-  font-size: 1.125rem;
-  color: #fff;
-} */
-
 #club-anchor {
   position: relative;
   top: -75px;
@@ -184,14 +131,6 @@ figure, figure img {
   padding: 0;
 }
 
-/* #item-6 {
-  height: 300px;
-  background-image: url(../images/researcher-cartoon_large.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
-
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 576px) {
@@ -203,13 +142,21 @@ figure, figure img {
 
 @media only screen and (min-width: 768px) {
  
-  /* .kids-figure {
+  .research-grid, .kids-container {
     width: 90%;
     margin: 0 auto;
-  } */
-  .kids-container, .research-grid {
-    width: 90%;
-    margin: 0 auto;
+  }
+
+  #info-box-kids {
+    border-radius: 0 0 5px 5px;
+  }
+
+  #image-box-kids {
+    border-radius: 5px 5px 0 0;
+  }
+
+  #image-box-kids img {
+    border-radius: 5px 5px 0 0;
   }
 
   .clubs-wrapper {
@@ -236,17 +183,21 @@ figure, figure img {
   /* Main
 --------------------*/
   .kids-container {
-    width: 90%;
     flex-direction: row-reverse;
-    margin: 0 auto;
   }
 
   #info-box-kids {
     flex: 2;
+    border-radius: 5px 0 0 5px;
   }
 
   #image-box-kids {
     flex: 3;
+    border-radius: 0 5px 5px 0;
+  }
+
+  #image-box-kids img {
+    border-radius: 0 5px 5px 0;
   }
 
   .clubs-container {
@@ -267,26 +218,12 @@ figure, figure img {
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
-  
-  /* .kids-container {
-    width: 100%;
-  } */
 
   .kids-container p {
     font-size: 1.125rem;
   }
 
-  /* .header, .info-box, .kids-text, #research-cta-wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .kids-section, .clubs-section, .research-section {
-    width: 90%;
-    margin: 0 auto 2rem auto;
-  } */
-
-  .clubs-section, .kids-container {
+  .clubs-section {
     width: 85%;
   }
 
@@ -300,16 +237,8 @@ figure, figure img {
 }
 
 @media only screen and (min-width: 1600px) {
-  .clubs-section, .kids-container {
+  .clubs-section {
     width: 75%;
   }
-  /* .content-container {
-    width: 75%;
-    gap: 4rem;
-  } */
-
-  /* .clubs-gallery {
-    gap: 0.5rem;
-  } */
 }
 

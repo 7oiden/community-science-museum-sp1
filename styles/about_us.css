@@ -3,17 +3,15 @@
 
 /* main 
 --------------------*/
-
-/* div.item-1 {
-  font-family: var(--sofia);
-  font-size: 1.125rem;
-  font-weight: 600;
-  background-color: var(--blue);
-  color: #fff;
-} */
 .item-1 {
   grid-area: image;
   height: 100%;
+  min-height: 400px;
+  width: 100%;
+  background-image: url(../images/together_large.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-2 {
@@ -33,6 +31,7 @@
 }
 
 .vision-grid {
+  /* background-color: var(--dark); */
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr ;
@@ -55,14 +54,6 @@ div.vision p {
   height: auto;
   margin: 0;
 }
-
-/* #get-in-touch-1 {
-  border-radius: 0 0 25px 25px;
-} */
-
-/* .gallery-section {
-  margin-top: 3rem;
-} */
 
 .gallery-wrapper {
   width: 90%;
@@ -88,10 +79,6 @@ div.vision p {
 .tourguide {
   position: relative;
   max-width: 200px;
-}
-
-.tourguide img {
-  
 }
 
 figcaption {
@@ -128,9 +115,6 @@ figcaption {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-  /* .item-1 {
-    grid-area: introduction;
-  } */
 
   .vision-grid {
     display: grid;
@@ -154,12 +138,6 @@ figcaption {
       "paragraph-3 paragraph-3 paragraph-3 paragraph-3 paragraph-2 paragraph-2 paragraph-2"
       "cta cta cta cta cta cta cta";
   }
-  /* .vision-section {
-    grid-template-areas:
-        "image image paragraph-3 paragraph-3"
-        "image image paragraph-1 paragraph-1"
-        "image image paragraph-2 paragraph-2";
-    } */
 
   .gallery-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

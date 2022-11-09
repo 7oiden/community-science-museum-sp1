@@ -17,18 +17,6 @@ section > p {
   font-weight: bold;
 }
 
-/* .form-info {
-  margin: 0;
-  padding-left: 1rem;
-}
-
-.form-info li {
-  font-size: 1.125rem;
-  margin: 0;
-  padding: 0 0 0.5rem 0;
-  list-style: disc;
-} */
-
 .form {
   display: flex;
   flex-direction: column;
@@ -54,14 +42,6 @@ section > p {
   display: none;
 }
 
-/* h2 {
-  font-family: var(--proxima);
-  font-size: 1.25rem;
-  text-decoration: underline;
-  margin: 0;
-  padding: 0;
-} */
-
 .faq > li {
   font-family: var(--sofia);
   font-weight: bold;
@@ -85,6 +65,11 @@ li > P {
   .contact-section,
   .faq-section, .main-heading-wrapper, .main-sub-heading {
     width: 85%;
+  }
+
+  .form {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -114,10 +99,6 @@ li > P {
   section > p {
     font-size: 1.25rem;
   }
-
-  /* h2 {
-    font-size: 1.5rem;
-  } */
 
   .faq li {
     font-size: 1.25rem;
