@@ -23,7 +23,7 @@
   color: var(--white);
   padding: 2rem 1rem;
   margin: 0 auto 2rem auto;
-  box-shadow: 0 6px 12px #00000029;
+  box-shadow: 0 6px 12px #00000040;
 }
 
 .clubs-wrapper {
@@ -223,9 +223,13 @@ figure, figure img {
     font-size: 1.125rem;
   }
 
-  .clubs-section {
+  .clubs-wrapper {
     width: 85%;
   }
+
+  /* .clubs-section {
+    width: 85%;
+  } */
 
   .clubs-heading {
     font-size: 1.5rem;
@@ -237,8 +241,8 @@ figure, figure img {
 }
 
 @media only screen and (min-width: 1600px) {
-  .clubs-section {
-    width: 75%;
+  .clubs-wrapper {
+    width: 80%;
   }
 }
 

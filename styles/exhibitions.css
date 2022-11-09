@@ -3,6 +3,72 @@
 
 /* main 
 --------------------*/
+.space-section {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 4rem 0;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 6px 12px #00000040;
+}
+
+.space-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.space-container {
+  /* width: 90%;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.space-container > figure, .space-container > div {
+  flex: 1;
+}
+
+.space-heading {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-heading);
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
+/* #club-1-heading {
+  color: #F98379;
+  text-decoration: underline;
+}
+
+#club-2-heading {
+  color: #F2BC57;
+  text-decoration: underline;
+} */
+
+.space-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.space-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.space-divider {
+  background-color: var(white);
+  height: 1px;
+  width: 100%;
+  margin: 3rem 0;
+  opacity: 0.5;
+}
 
 /* #cosmology-anchor,
 #evolution-anchor,
@@ -14,7 +80,7 @@
   visibility: hidden;
 } */
 
-#cosmology {
+ /* #cosmology {
   background-color:  var(--purple);
 }
 
@@ -36,71 +102,6 @@
 
 #special-events {
   background-color: #003057;
-}
-
-.card-grid {
-  /* margin: 0 auto; */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto auto;
-  gap: 3rem;
-  padding-bottom: 3rem;
-}
-
-.card {
-  position: relative;
-  /* max-width: 500px; */
-  /* border-radius: 5px; */
-  /* box-shadow: 0 6px 12px #00000029; */
-  background-color: var(--dark);
-  color: var(--white);
-}
-
-.card-heading {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 80%;
-  max-width: 400px;
-  font-family: var(--main-heading);
-  color: var(--white);
-  text-transform: uppercase;
-  border-radius: 3px;
-  /* box-shadow: 0 6px 12px #00000029; */
-  transform: translate(-50%, -50%);
-  font-size: 1.125rem;
-  padding: 0.5rem 3rem 0.5rem 2rem;
-  text-align: center;
-  margin: 0;
-}
-
-.card-image, .card-image img  {
-  width: 100%;
-  border-radius: 5px 5px 0 0;
-}
-
-.card-body {
-  position: relative;
-  padding: 2rem 1rem 1.5rem 1rem;
-}
-
-/* .cosmology {
-  background-image: url(../images/icons/planet.png);
-}
-
-.evolution {
-  background-image: url(../images/icons/dna.png);
-}
-
-.biology {
-  background-image: url(../images/icons/microscope.png);
-}
-
-.robotics {
-  background-image: url(../images/icons/robot.png);
-}
-.ecology {
-  background-image: url(../images/icons/tellus.png);
 } */
 
 .gallery-wrapper {
@@ -120,19 +121,25 @@
 
   /* Main
 --------------------*/
+  .space-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
    .gallery-wrapper {
     gap: 2rem;
   }
 }
 
+
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
+.space-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 
-  .card-heading {
-    font-size: 1.25rem;
-  }
-  
   .gallery-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
@@ -142,31 +149,33 @@
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-
-  .card-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+  .space-wrapper {
+    width: 90%;
   }
 
-  .card-body {
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  .space-container {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
   }
 
-  .card-heading {
-    font-size: 1.375rem;
-    padding: 0.75rem 3rem 0.75rem 2rem;
+  .reverse {
+    flex-direction: row-reverse;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   /* Main
 --------------------*/
- 
-  
 
-  /* .card-heading {
+
+  .space-section {
+    width: 90%;
+  }
+
+  .space-heading {
     font-size: 1.5rem;
-  } */
+  }
 
   .gallery-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -174,4 +183,5 @@
     gap: 1.5rem;
   }
 }
+
 
