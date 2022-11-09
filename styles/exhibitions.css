@@ -6,7 +6,7 @@
 .space-section {
   background-color: var(--dark);
   color: var(--white);
-  padding: 4rem 0;
+  padding: 2rem 0;
   margin: 0 auto 2rem auto;
   box-shadow: 0 6px 12px #00000040;
 }
@@ -33,23 +33,59 @@
   flex: 1;
 }
 
+.space-container div p:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.space-container div p {
+  font-size: 1rem;
+}
+
 .space-heading {
+  display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 2rem 0.5rem 0;
   font-family: var(--main-heading);
   font-size: 1.25rem;
-  text-decoration: underline;
+  text-transform: uppercase;
 }
 
-/* #club-1-heading {
-  color: #F98379;
-  text-decoration: underline;
+#cosmology-heading {
+  background: rgb(37,37,37);
+  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(71,12,104,1) 100%);
+  box-shadow: 3px 0 1px rgba(71,12,104,1); 
 }
 
-#club-2-heading {
-  color: #F2BC57;
-  text-decoration: underline;
-} */
+#evolution-heading {
+  background: rgb(37,37,37);
+  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(162,0,103,1) 100%);
+  box-shadow: 3px 0 1px rgba(162,0,103,1); 
+}
+
+#biology-heading {
+  background: rgb(37,37,37);
+  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(0,114,152,1) 100%);
+  box-shadow: 3px 0 1px rgba(0,114,152,1);
+}
+
+#robotics-heading {
+  background: rgb(37,37,37);
+  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(220,68,5,1) 100%);
+  box-shadow: 3px 0 1px rgba(220,68,5,1);
+}
+
+#ecology-heading {
+  background: rgb(37,37,37);
+  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(57,123,24,1) 100%);
+  box-shadow: 3px 0 1px rgba(57,123,24,1); 
+}
+
+#special-heading {
+  background: rgb(37,37,37);
+  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(15,53,91,1) 100%);
+  box-shadow: 3px 0 1px rgba(15,53,91,1); 
+}
 
 .space-gallery {
   display: grid;
@@ -72,38 +108,14 @@
   opacity: 0.5;
 }
 
-/* #cosmology-anchor,
-#evolution-anchor,
-#biology-anchor,
-#robotics-anchor,
-#ecology-anchor {
+/* #cosmology-space,
+#evolution-space,
+#biology-space,
+#robotics-space,
+#ecology-space {
   position: relative;
   top: -80px;
   visibility: hidden;
-} */
-
- /* #cosmology {
-  background-color:  var(--purple);
-}
-
-#evolution {
-  background-color: var(--magenta);
-}
-
-#biology {
-  background-color: var(--dark-green);
-}
-
-#robotics {
-  background-color: var(--orange);
-}
-
-#ecology {
-  background-color: #397b18;
-}
-
-#special-events {
-  background-color: #003057;
 } */
 
 .gallery-wrapper {
@@ -151,6 +163,11 @@
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
+
+  .space-section {
+    padding: 3rem 0;
+  }
+
   .space-wrapper {
     width: 90%;
   }
@@ -177,6 +194,10 @@
 
   .space-heading {
     font-size: 1.5rem;
+  }
+
+  .space-container div p {
+    font-size: 1.125rem;
   }
 
   .gallery-wrapper {

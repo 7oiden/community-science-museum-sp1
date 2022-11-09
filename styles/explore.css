@@ -14,7 +14,12 @@
   border-radius: 0;
 }
 
-#image-box-kids, #image-box-kids img {
+#image-box-kids {
+  width: 100%;
+  min-height: 400px;
+  background: url(../images/museum-1.jpg);
+  background-position: center center;
+  background-size: cover;
   border-radius: 0;
 }
 
@@ -46,6 +51,18 @@
   text-transform: uppercase;
   margin: 0 0 2rem 0;
   padding: 0;
+}
+
+.clubs-container p {
+  font-size: 1rem;
+}
+
+#club-1-heading, #club-2-heading {
+  text-decoration: underline;
+  font-family: var(--main-heading);
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0 0 1rem 0;
 }
 
 #club-1-heading {
@@ -155,10 +172,6 @@ figure, figure img {
     border-radius: 5px 5px 0 0;
   }
 
-  #image-box-kids img {
-    border-radius: 5px 5px 0 0;
-  }
-
   .clubs-wrapper {
     width: 100%;
   }
@@ -187,16 +200,12 @@ figure, figure img {
   }
 
   #info-box-kids {
-    flex: 2;
+    flex: 1;
     border-radius: 5px 0 0 5px;
   }
 
   #image-box-kids {
-    flex: 3;
-    border-radius: 0 5px 5px 0;
-  }
-
-  #image-box-kids img {
+    flex: 1;
     border-radius: 0 5px 5px 0;
   }
 
@@ -233,6 +242,14 @@ figure, figure img {
 
   .clubs-heading {
     font-size: 1.5rem;
+  }
+
+  #club-1-heading, #club-2-heading {
+    font-size: 1.375rem;
+  }
+
+  .clubs-container p {
+    font-size: 1.125rem;
   }
 
   .research-grid {
