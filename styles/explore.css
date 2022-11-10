@@ -49,6 +49,7 @@
   font-family: var(--main-heading);
   font-size: 1.25rem;
   text-transform: uppercase;
+  text-decoration: underline;
   margin: 0 0 2rem 0;
   padding: 0;
 }
@@ -57,22 +58,21 @@
   font-size: 1rem;
 }
 
-#club-1-heading, #club-2-heading {
-  text-decoration: underline;
+.club-heading {
+  text-transform: uppercase;
+  /* text-decoration: underline; */
   font-family: var(--main-heading);
   font-size: 1.25rem;
   padding: 0;
   margin: 0 0 1rem 0;
 }
 
-#club-1-heading {
+.red {
   color: #F98379;
-  text-decoration: underline;
 }
 
-#club-2-heading {
+.yellow {
   color: #F2BC57;
-  text-decoration: underline;
 }
 
 .clubs-gallery {
