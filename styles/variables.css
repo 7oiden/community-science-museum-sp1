@@ -12,8 +12,11 @@
   --blue: #007298;
   --orange: #dc4405;
   --footer-color: #3d6a6b;
-  --light-grey: #e8e8e8;
+  /* --light-grey: #e8e8e8; */
   --main-bg: #FFFFFB;
+  --navbar-color: #05778b;
+  --info-box-bg: #DAE0E8;
+  --footer-bg: #3d6a6b;
   --white: #ffffff;
   --sofia: "sofia-pro", "helvetica", "arial", "sans-serif";
   --proxima: "proxima-nova", "open sans", "corbel", "arial", "sans-serif";

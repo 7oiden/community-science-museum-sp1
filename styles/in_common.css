@@ -506,14 +506,16 @@ ul li {
   font-size: 1.125rem;
   font-weight: 600;
   /* font-style: italic; */
-  margin: 0;
-  padding-top: 0.5rem;
-  padding-right: 5%;
+  margin-top: 2rem;
+  padding: 0.75rem 1rem;
   /* padding: 0.5rem 1rem; */
   /* background-color: #a2006740; */
   /* background: linear-gradient(90deg, rgba(37,37,37,1) 75%, rgba(255,255,255,1) 100%); */
   /* box-shadow: 3px 6px 12px rgba(162,0,103,1); */
-  color: var(--dark);
+  /* background-color: var(--info-box-bg); */
+  background-color: #C33764;
+  color: var(--white);
+  /* opacity: 0.5; */
   /* border-top: 2px solid #C33764; */
 }
 
@@ -535,16 +537,17 @@ ul li {
   gap: 1rem;
   text-align: center;
   padding: 1rem;
+  /* background: linear-gradient(270deg, rgba(60,60,60,1) 0%, rgba(37,37,37,1) 100%); */
 }
 
 .cta-wrapper p {
-  font-family: var(--proxima);
+  font-family: var(--main-sub-heading);
   font-size: 1.125rem;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  color: var(--dark);
+  color: var(--dark)
 }
 
 .button {
@@ -683,9 +686,11 @@ ul li {
 } */
 
 .info-box {
-  background-color: #f1f1f1;
-  background-color: #DAE0E8;
-  color: var(--dark);
+  /* background-color: var(--info-box-bg); */
+  /* background: rgb(241,241,241);
+  background: radial-gradient(circle, rgba(241,241,241,1) 50%, rgba(220,220,220,1) 100%); */
+  background: rgb(241,241,241);
+  background: radial-gradient(circle, rgba(241,241,241,1) 50%, rgba(220,220,220,1) 100%);
   padding: 1rem 5%;
   /* border-radius: 5px; */
 }
@@ -695,6 +700,7 @@ ul li {
   font-size: 1.25rem;
   margin: 0;
   padding: 0;
+  color: var(--dark);
 }
 
 /* .info-box-sub-heading {
@@ -705,6 +711,7 @@ ul li {
 
 .info-box p {
   font-size: 1rem;
+  color: var(--dark);
 }
 
 .gallery-section {
@@ -744,7 +751,7 @@ ul li {
 --------------------*/
 footer {
   flex-shrink: 0;
-  background-color: var(--footer-color);
+  background-color: var(--footer-bg);
   /* font-family: var(--sofia); */
 }
 
@@ -772,7 +779,7 @@ footer {
 }
 
 .footer-heading {
-  font-family: var(--proxima);
+  font-family: var(--main-heading);
   font-weight: bold;
   font-size: 1.125rem;
   margin: 0;
@@ -1022,6 +1029,7 @@ footer {
   }
 
   .main-heading-lead {
+    max-width: 700px;
     font-size: 1.25rem;
     padding-right: 3rem;
   }
