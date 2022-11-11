@@ -29,7 +29,7 @@
             <span class="fa fa-clock" id="header-time-icon"></span>
             <p id="header-time-text">Open today 10:00 — 16:00</p>
           </div>
-          <button class="ticket-button"><span>Buy tickets</span><span
+          <button id="ticket-button" class="button"><span>Buy tickets</span><span
               class="fa fa-ticket-alt ticket-icon"></span></button>
         </div>
         <div class="modal" id="ticket-modal">
@@ -58,7 +58,7 @@
                 <input type="date" id="date" name="date" value="2020-11-10" min="2020-11-10" max="2020-12-31">
               </div>
             </form>
-            <button class="button modal-button">Checkout</button>
+            <button class="button" id="modal-button">Checkout</button>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
             <li><a href="explore.html">Explore</a></li>
             <li><a href="get_involved.html">Get involved</a></li>
             <li><a href="about_us.html">About us</a></li>
-            <li><a href="visit.html">Visit</a></li>      
+            <li><a href="visit.html">Visit</a></li>
           </ul>
           <ul class="navbar-menu-list">
             <li>
@@ -90,7 +90,7 @@
             </li>
             <li>
               <a href="visit.html" class="menu-link">Visit</a>
-            </li>    
+            </li>
           </ul>
         </div>
       </nav>
@@ -115,8 +115,7 @@
             </div>
             <div class="vision-grid">
               <div class="image-box item-1">
-                <!-- <img class="vision-img image-box" src="images\together_large.jpg"
-                  alt="A 10 year old white boy and a black girl who is a couple of years younger is studying an mechanical exhibit in a glass cabinet. They are both holding their hands towards the glass, and the boy is point to something of interest." /> -->
+                <!-- background image -->
               </div>
               <div class="info-box item-2">
                 <h3 class="info-box-heading">Science should be Fun</h3>
@@ -205,7 +204,6 @@
         </div>
       </div>
       <div class="newsletter-wrapper">
-        <div class="blur">
           <section class="newsletter-section">
             <label class="newsletter-label" for="newsletter">
               Sign up to our <em>newsletter</em> and be the first to know about our
@@ -217,20 +215,19 @@
             <form class="newsletter-form">
               <!-- <label for="newsletter-input">E-mail</label> -->
               <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
-              <button id="sign-up-button" type="submit" name="subscribe">Sign up</button>
+              <button class="button" id="sign-up-button" type="submit" name="subscribe">Sign up</button>
             </form>
             <p id="newsletter-error" class="error-message">
               Please enter a valid e-mail address
             </p>
           </section>
-        </div>
       </div>
     </main>
   </div>
   <footer>
     <div class="footer-wrapper">
-      <div class="footer-container fi1">
-        <h6 class="footer-heading">CONNECT:</h6>
+      <div>
+        <h4 class="footer-heading">CONNECT:</h4>
         <ul class="footer-icon-list">
           <li>
             <a href="https://www.facebook.com/"><span class="fa fa-facebook-f footer-icon"></span></a>
@@ -246,8 +243,8 @@
           </li>
         </ul>
       </div>
-      <div class="footer-container">
-        <h6 class="footer-heading">HOURS:</h6>
+      <div>
+        <h4 class="footer-heading">HOURS:</h4>
         <div class="footer-hours-wrapper">
           <ul class="footer-list">
             <li>Monday:</li>
@@ -269,22 +266,23 @@
           </ul>
         </div>
       </div>
-      <div class="footer-container">
+      <div>
         <div>
-          <h6 class="footer-heading">LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
+          <h4 class="footer-heading">LOCATION:</h4>
+          <p><em>Nygårdsgaten 112</em></p>
+          <p><em>5008 Bergen, Norway</em></p>
         </div>
-        <a href="visit.html#location" class="footer-location-wrapper"><span class="fa fa-map-marker-alt footer-icon"></span>
+        <a href="visit.html#location" class="footer-location-wrapper"><span
+            class="fa fa-map-marker-alt footer-icon"></span>
           <span id="location-link">Getting Here</span>
         </a>
       </div>
-      <div class="footer-container">
-        <h6 class="footer-heading">USEFUL LINKS:</h6>
-        <ul class="footer-list">
+      <div>
+        <h4 class="footer-heading">USEFUL LINKS:</h4>
+        <ul class="footer-list footer-links-list">
           <li><a href="contact.html#contact-section">Contact</a></li>
           <li><a href="about_us.html">About Us</a></li>
-          <li><a href="visit.html#facilities-section">Facilities</a></li>  
+          <li><a href="visit.html#facilities-section">Facilities</a></li>
           <li><a href="contact.html#faq-section">FAQ</a></li>
           <li><a href="visit.html#prices">Prices</a></li>
         </ul>

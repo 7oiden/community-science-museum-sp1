@@ -32,7 +32,7 @@
             <span class="fa fa-clock" id="header-time-icon"></span>
             <p id="header-time-text">Open today 10:00 — 16:00</p>
           </div>
-          <button class="ticket-button"><span>Buy tickets</span><span
+          <button class="button" id="ticket-button"><span>Buy tickets</span><span
               class="fa fa-ticket-alt ticket-icon"></span></button>
         </div>
         <div class="modal" id="ticket-modal">
@@ -62,7 +62,7 @@
                 <input type="date" id="date" name="date" value="2020-11-10" min="2020-11-10" max="2020-12-31">
               </div>
             </form>
-            <button class="button modal-button">Checkout</button>
+            <button class="button" id="modal-button">Checkout</button>
           </div>
         </div>
       </div>
@@ -295,13 +295,13 @@
             </div>
             <div class="clubs-wrapper">
               <figure class="clubs">
-                <a href="explore.html#club-anchor"><img src="images\club_1.jpg"
+                <a href="explore.html#young-stars-club"><img src="images\club_1.jpg"
                     alt="A group of five children aged 8-9 is watching a chemistry experiment involving expanding blue scum, with great excitement." />
                   <figcaption class="clubs-caption">The Young Stars Club</figcaption>
                 </a>
               </figure>
               <figure class="clubs">
-                <a href="explore.html#club-anchor"><img src="images\club_2.jpg"
+                <a href="explore.html#holiday-club"><img src="images\club_2.jpg"
                     alt="A boy and a girl aged 12 are in full concentration when they are collaborating to build a small robot-machine on wheels." />
                   <figcaption class="clubs-caption">The Holiday Club</figcaption>
                 </a>
@@ -312,31 +312,29 @@
         </div>
       </div>
       <div class="newsletter-wrapper">
-        <div class="blur">
-          <section class="newsletter-section">
-            <label class="newsletter-label" for="newsletter">
-              Sign up to our <em>newsletter</em> and be the first to know about our
-              exciting <em>new stuff</em>:
-            </label>
-            <div class="newsletter-success">
-              Welcome! Please check your inbox
-            </div>
-            <form class="newsletter-form">
-              <!-- <label for="newsletter-input">E-mail</label> -->
-              <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
-              <button id="sign-up-button" type="submit" name="subscribe">Sign up</button>
-            </form>
+        <section class="newsletter-section">
+          <label class="newsletter-label" for="newsletter">
+            Sign up to our <em>newsletter</em> and be the first to know about our
+            exciting <em>new stuff</em>:
+          </label>
+          <div class="newsletter-success">
+            Welcome! Please check your inbox
+          </div>
+          <form class="newsletter-form">
+            <!-- <label for="newsletter-input">E-mail</label> -->
+            <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
+            <button class="button" id="sign-up-button" type="submit" name="subscribe">Sign up</button>
             <p id="newsletter-error" class="error-message">
               Please enter a valid e-mail address
             </p>
-          </section>
-        </div>
+          </form>
+        </section>
       </div>
     </main>
   </div>
   <footer>
     <div class="footer-wrapper">
-      <div class="footer-container fi1">
+      <div>
         <h6 class="footer-heading">CONNECT:</h6>
         <ul class="footer-icon-list">
           <li>
@@ -353,7 +351,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer-container">
+      <div>
         <h6 class="footer-heading">HOURS:</h6>
         <div class="footer-hours-wrapper">
           <ul class="footer-list">
@@ -376,22 +374,23 @@
           </ul>
         </div>
       </div>
-      <div class="footer-container">
+      <div>
         <div>
           <h6 class="footer-heading">LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
+          <p><em>Nygårdsgaten 112</em></p>
+          <p><em>5008 Bergen, Norway</em></p>
         </div>
-        <a href="visit.html#location" class="footer-location-wrapper"><span class="fa fa-map-marker-alt footer-icon"></span>
+        <a href="visit.html#location" class="footer-location-wrapper"><span
+            class="fa fa-map-marker-alt footer-icon"></span>
           <span id="location-link">Getting Here</span>
         </a>
       </div>
-      <div class="footer-container">
+      <div>
         <h6 class="footer-heading">USEFUL LINKS:</h6>
-        <ul class="footer-list">
+        <ul class="footer-list footer-links-list">
           <li><a href="contact.html#contact-section">Contact</a></li>
           <li><a href="about_us.html">About Us</a></li>
-          <li><a href="visit.html#facilities-section">Facilities</a></li>  
+          <li><a href="visit.html#facilities-section">Facilities</a></li>
           <li><a href="contact.html#faq-section">FAQ</a></li>
           <li><a href="visit.html#prices">Prices</a></li>
         </ul>

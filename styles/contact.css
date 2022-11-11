@@ -81,6 +81,10 @@ li > P {
     width: 80%;
   }
 
+  .faq > li {
+    margin-left: 5%;
+  }
+
  .form {
   padding: 3rem;
   gap: 1.5rem;

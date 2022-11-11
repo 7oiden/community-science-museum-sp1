@@ -1,4 +1,4 @@
-const ticketButton = document.querySelector(".ticket-button");
+const ticketButton = document.querySelector("#ticket-button");
 const ticketModal = document.querySelector("#ticket-modal");
 const fadingBackground = document.querySelector(".fading-background");
 const navbar = document.querySelector(".navbar");
@@ -306,18 +306,18 @@ function validateEmail(newsletterEmail) {
 
 const newsletterError = document.querySelector("#newsletter-error");
 const newsletterSuccess = document.querySelector(".newsletter-success");
-const newsletterInput = document.querySelector("#newsletter");
-const newsletterForm = document.querySelector(".newsletter");
-const signUpButton = document.querySelector("#sign-up");
+const newsletterInput = document.querySelector("#newsletter-input");
+const newsletterForm = document.querySelector(".newsletter-form");
+const signUpButton = document.querySelector("#sign-up-button");
 
 function validateNewsletterForm(event) {
   event.preventDefault();
   event.stopPropagation();
 
   if (validateEmail(newsletterInput.value)) {
-    newsletterError.style.visibility = "hidden";
+    newsletterError.style.display = "none";
   } else {
-    newsletterError.style.visibility = "visible";
+    newsletterError.style.display = "block";
   }
 
   setTimeout(function () {

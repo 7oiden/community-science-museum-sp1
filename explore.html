@@ -31,7 +31,7 @@
             <span class="fa fa-clock" id="header-time-icon"></span>
             <p id="header-time-text">Open today 10:00 — 16:00</p>
           </div>
-          <button class="ticket-button"><span>Buy tickets</span><span
+          <button id="ticket-button" class="button"><span>Buy tickets</span><span
               class="fa fa-ticket-alt ticket-icon"></span></button>
         </div>
         <div class="modal" id="ticket-modal">
@@ -60,7 +60,7 @@
                 <input type="date" id="date" name="date" value="2020-11-10" min="2020-11-10" max="2020-12-31">
               </div>
             </form>
-            <button class="button modal-button">Checkout</button>
+            <button class="button" id="modal-button">Checkout</button>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
               <!-- <hr class="clubs-divider" /> -->
               <div class="clubs-container">
                 <div>
-                  <h4 class="club-heading red">Young Stars Club</h4>
+                  <h4 class="club-heading red" id="young-stars-club">Young Stars Club</h4>
                   <p>
                     We have the <strong class="red">Young Stars Club</strong> which meets once a week
                     on a <em>Saturday between 10:00 and 13:00</em> where you’ll get to explore
@@ -152,23 +152,23 @@
                 </div>
                 <div class="clubs-gallery">
                   <figure class="clubs-image">
-                    <img src="images/gallery-1.jpg" class="clubs-image" />
+                    <img src="images/star-club-1.jpg" class="clubs-image" />
                   </figure>
                   <figure class="clubs-image">
-                    <img src="images/gallery-2.jpg" class="clubs-image" />
+                    <img src="images/star-club-2.jpg" class="clubs-image" />
                   </figure>
                   <figure class="clubs-image">
-                    <img src="images/gallery-3.jpg" class="clubs-image" />
+                    <img src="images/star-club-3.jpg" class="clubs-image" />
                   </figure>
                   <figure class="clubs-image">
-                    <img src="images/gallery-4.jpg" class="clubs-image" />
+                    <img src="images/star-club-4.jpg" class="clubs-image" />
                   </figure>
                 </div>
               </div>
               <hr class="clubs-divider" />
               <div class="clubs-container" id="holiday-club">
                 <div>
-                  <h4 class="club-heading yellow">The Holiday Club</h4>
+                  <h4 class="club-heading yellow" id="holiday-club">The Holiday Club</h4>
                   <p>
                     During the school holidays we run <strong class="yellow">The Holiday Club</strong> where
                     you can join other children your age to go on a journey of
@@ -181,16 +181,16 @@
                 </div>
                 <div class="clubs-gallery">
                   <figure class="clubs-image">
-                    <img src="images/gallery-1.jpg" class="clubs-image" />
+                    <img src="images/holiday-club-1.jpg" class="clubs-image" />
                   </figure>
                   <figure class="clubs-image">
-                    <img src="images/gallery-2.jpg" class="clubs-image" />
+                    <img src="images/holiday-club-2.jpg" class="clubs-image" />
                   </figure>
                   <figure class="clubs-image">
-                    <img src="images/gallery-3.jpg" class="clubs-image" />
+                    <img src="images/holiday-club-3.jpg" class="clubs-image" />
                   </figure>
                   <figure class="clubs-image">
-                    <img src="images/gallery-4.jpg" class="clubs-image" />
+                    <img src="images/holiday-club-4.jpg" class="clubs-image" />
                   </figure>
                 </div>
               </div>
@@ -257,7 +257,6 @@
         </div>
       </div>
       <div class="newsletter-wrapper">
-        <div class="blur">
           <section class="newsletter-section">
             <label class="newsletter-label" for="newsletter">
               Sign up to our <em>newsletter</em> and be the first to know about our
@@ -269,19 +268,18 @@
             <form class="newsletter-form">
               <!-- <label for="newsletter-input">E-mail</label> -->
               <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
-              <button id="sign-up-button" type="submit" name="subscribe">Sign up</button>
+              <button class="button" id="sign-up-button" type="submit" name="subscribe">Sign up</button>
             </form>
             <p id="newsletter-error" class="error-message">
               Please enter a valid e-mail address
             </p>
           </section>
-        </div>
       </div>
     </main>
   </div>
   <footer>
     <div class="footer-wrapper">
-      <div class="footer-container fi1">
+      <div>
         <h6 class="footer-heading">CONNECT:</h6>
         <ul class="footer-icon-list">
           <li>
@@ -298,7 +296,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer-container">
+      <div>
         <h6 class="footer-heading">HOURS:</h6>
         <div class="footer-hours-wrapper">
           <ul class="footer-list">
@@ -321,22 +319,23 @@
           </ul>
         </div>
       </div>
-      <div class="footer-container">
+      <div>
         <div>
           <h6 class="footer-heading">LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
+          <p><em>Nygårdsgaten 112</em></p>
+          <p><em>5008 Bergen, Norway</em></p>
         </div>
-        <a href="visit.html#location" class="footer-location-wrapper"><span class="fa fa-map-marker-alt footer-icon"></span>
+        <a href="visit.html#location" class="footer-location-wrapper"><span
+            class="fa fa-map-marker-alt footer-icon"></span>
           <span id="location-link">Getting Here</span>
         </a>
       </div>
-      <div class="footer-container">
+      <div>
         <h6 class="footer-heading">USEFUL LINKS:</h6>
-        <ul class="footer-list">
+        <ul class="footer-list footer-links-list">
           <li><a href="contact.html#contact-section">Contact</a></li>
           <li><a href="about_us.html">About Us</a></li>
-          <li><a href="visit.html#facilities-section">Facilities</a></li>  
+          <li><a href="visit.html#facilities-section">Facilities</a></li>
           <li><a href="contact.html#faq-section">FAQ</a></li>
           <li><a href="visit.html#prices">Prices</a></li>
         </ul>

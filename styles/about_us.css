@@ -8,7 +8,7 @@
   height: 100%;
   min-height: 400px;
   width: 100%;
-  background-image: url(../images/together_large.jpg);
+  background-image: url(../images/together.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,6 +28,11 @@
 
 .item-5 {
   grid-area: cta;
+}
+
+.item-2, .item-3, .item-4 {
+  background-color: var(--blue);
+  color: white;
 }
 
 .vision-grid {

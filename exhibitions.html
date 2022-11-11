@@ -30,7 +30,7 @@
             <span class="fa fa-clock" id="header-time-icon"></span>
             <p id="header-time-text">Open today 10:00 — 16:00</p>
           </div>
-          <button class="ticket-button"><span>Buy tickets</span><span
+          <button id="ticket-button" class="button"><span>Buy tickets</span><span
               class="fa fa-ticket-alt ticket-icon"></span></button>
         </div>
         <div class="modal" id="ticket-modal">
@@ -59,7 +59,7 @@
                 <input type="date" id="date" name="date" value="2020-11-10" min="2020-11-10" max="2020-12-31">
               </div>
             </form>
-            <button class="button modal-button">Checkout</button>
+            <button class="button id=" modal-button">Checkout</button>
           </div>
         </div>
       </div>
@@ -223,21 +223,19 @@
                 <hr class="space-divider" />
                 <div class="space-container reverse" id="special-space">
                   <figure class="space-image">
-                    <img src="images/ecology_large.jpg" class="space-image" />
+                    <img src="images/special-events.jpg" class="space-image" />
                   </figure>
                   <div>
                     <h3 class="space-heading" id="special-heading">Special events</h3>
                     <p>
-                      As we learn more and more of the impact humans are having on
-                      the planet, the more important it becomes that scientists
-                      explore how to create a sustainable future not just for humans
-                      but for the whole planet.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <p>
-                      From January 4th 2021 we will have the Energetica exhibition
-                      on loan from the NEMO Science Museum in Amsterdam. This is a
-                      series of installations that allow visitors to experience the
-                      power of the elements as we harness them.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                      mollit anim id est laborum.
                     </p>
                   </div>
                 </div>
@@ -248,7 +246,7 @@
             <div class="header">
               <div class="main-heading-wrapper">
                 <div class="main-heading-left"></div>
-                <h2 class="main-heading">Lorem ipsum</h2>
+                <h2 class="main-heading">More to explore</h2>
               </div>
               <hr class="heading-divider" />
               <p class="main-heading-lead">— Come visit us and continue your exploration</p>
@@ -270,7 +268,7 @@
               </figure>
               <figure>
                 <img src="../images/gallery-5.jpg"
-                  alt="a woman in lab equipment is operating a huge sylinder shaped machine" />
+                  alt="a woman in lab equipment is operating a huge cylinder shaped machine" />
               </figure>
               <figure>
                 <img src="../images/gallery-6.jpg" alt="a kid with virtual reality headset" />
@@ -282,32 +280,30 @@
       </div>
   </div>
   <div class="newsletter-wrapper">
-    <div class="blur">
-      <section class="newsletter-section">
-        <label class="newsletter-label" for="newsletter">
-          Sign up to our <em>newsletter</em> and be the first to know about our
-          exciting <em>new stuff</em>:
-        </label>
-        <div class="newsletter-success">
-          Welcome! Please check your inbox
-        </div>
-        <form class="newsletter-form">
-          <!-- <label for="newsletter-input">E-mail</label> -->
-          <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
-          <button id="sign-up-button" type="submit" name="subscribe">Sign up</button>
-        </form>
-        <p id="newsletter-error" class="error-message">
-          Please enter a valid e-mail address
-        </p>
-      </section>
-    </div>
+    <section class="newsletter-section">
+      <label class="newsletter-label" for="newsletter">
+        Sign up to our <em>newsletter</em> and be the first to know about our
+        exciting <em>new stuff</em>:
+      </label>
+      <div class="newsletter-success">
+        Welcome! Please check your inbox
+      </div>
+      <form class="newsletter-form">
+        <!-- <label for="newsletter-input">E-mail</label> -->
+        <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
+        <button class="button" id="sign-up-button" type="submit" name="subscribe">Sign up</button>
+      </form>
+      <p id="newsletter-error" class="error-message">
+        Please enter a valid e-mail address
+      </p>
+    </section>
   </div>
   </main>
   </div>
   <footer>
     <div class="footer-wrapper">
-      <div class="footer-container fi1">
-        <h6 class="footer-heading">CONNECT:</h6>
+      <div>
+        <h4 class="footer-heading">CONNECT:</h4>
         <ul class="footer-icon-list">
           <li>
             <a href="https://www.facebook.com/"><span class="fa fa-facebook-f footer-icon"></span></a>
@@ -323,8 +319,8 @@
           </li>
         </ul>
       </div>
-      <div class="footer-container">
-        <h6 class="footer-heading">HOURS:</h6>
+      <div>
+        <h4 class="footer-heading">HOURS:</h4>
         <div class="footer-hours-wrapper">
           <ul class="footer-list">
             <li>Monday:</li>
@@ -346,22 +342,23 @@
           </ul>
         </div>
       </div>
-      <div class="footer-container">
+      <div>
         <div>
-          <h6 class="footer-heading">LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
+          <h4 class="footer-heading">LOCATION:</h4>
+          <p><em>Nygårdsgaten 112</em></p>
+          <p><em>5008 Bergen, Norway</em></p>
         </div>
-        <a href="visit.html#location" class="footer-location-wrapper"><span class="fa fa-map-marker-alt footer-icon"></span>
+        <a href="visit.html#location" class="footer-location-wrapper"><span
+            class="fa fa-map-marker-alt footer-icon"></span>
           <span id="location-link">Getting Here</span>
         </a>
       </div>
-      <div class="footer-container">
-        <h6 class="footer-heading">USEFUL LINKS:</h6>
-        <ul class="footer-list">
+      <div>
+        <h4 class="footer-heading">USEFUL LINKS:</h4>
+        <ul class="footer-list footer-links-list">
           <li><a href="contact.html#contact-section">Contact</a></li>
           <li><a href="about_us.html">About Us</a></li>
-          <li><a href="visit.html#facilities-section">Facilities</a></li>  
+          <li><a href="visit.html#facilities-section">Facilities</a></li>
           <li><a href="contact.html#faq-section">FAQ</a></li>
           <li><a href="visit.html#prices">Prices</a></li>
         </ul>

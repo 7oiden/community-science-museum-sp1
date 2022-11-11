@@ -9,9 +9,13 @@
 }
 
 #info-box-kids {
-  /* background-color: var(--blue);
-  color: var(--white); */
+  background-color: var(--blue);
+  color: var(--white);
   border-radius: 0;
+}
+
+#info-box-kids p {
+  color: var(--white);
 }
 
 #image-box-kids {

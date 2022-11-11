@@ -135,15 +135,15 @@ tr.even {
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
 }
 
 #accessibility-img {
-  background-image: url(../images/handicap_large.jpg);
+  background-image: url(../images/handicap.jpg);
 }
 
 #food-img {
-  background-image: url(../images/cafe_large.jpg);
+  background-image: url(../images/cafe.jpg);
 }
 
 #shop-img {

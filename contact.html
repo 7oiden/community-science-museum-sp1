@@ -28,7 +28,7 @@
             <span class="fa fa-clock" id="header-time-icon"></span>
             <p id="header-time-text">Open today 10:00 — 16:00</p>
           </div>
-          <button class="ticket-button"><span>Buy tickets</span><span
+          <button id="ticket-button" class="button"><span>Buy tickets</span><span
               class="fa fa-ticket-alt ticket-icon"></span></button>
         </div>
         <div class="modal" id="ticket-modal">
@@ -57,7 +57,7 @@
                 <input type="date" id="date" name="date" value="2020-11-10" min="2020-11-10" max="2020-12-31">
               </div>
             </form>
-            <button class="button modal-button">Checkout</button>
+            <button class="button id="modal-button">Checkout</button>
           </div>
         </div>
       </div>
@@ -217,7 +217,6 @@
         </div>
       </div>
       <div class="newsletter-wrapper">
-        <div class="blur">
           <section class="newsletter-section">
             <label class="newsletter-label" for="newsletter">
               Sign up to our <em>newsletter</em> and be the first to know about our
@@ -229,13 +228,12 @@
             <form class="newsletter-form">
               <!-- <label for="newsletter-input">E-mail</label> -->
               <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
-              <button id="sign-up-button" type="submit" name="subscribe">Sign up</button>
+              <button class="button" id="sign-up-button" type="submit" name="subscribe">Sign up</button>
             </form>
             <p id="newsletter-error" class="error-message">
               Please enter a valid e-mail address
             </p>
           </section>
-        </div>
       </div>
     </main>
   </div>
@@ -284,8 +282,8 @@
       <div class="footer-container">
         <div>
           <h6 class="footer-heading">LOCATION:</h6>
-          <p>Nygårdsgaten 112</p>
-          <p>5008 Bergen, Norway</p>
+          <p><em>Nygårdsgaten 112</em></p>
+          <p><em>5008 Bergen, Norway</em></p>
         </div>
         <a href="visit.html#location" class="footer-location-wrapper"><span class="fa fa-map-marker-alt footer-icon"></span>
           <span id="location-link">Getting Here</span>
@@ -293,7 +291,7 @@
       </div>
       <div class="footer-container">
         <h6 class="footer-heading">USEFUL LINKS:</h6>
-        <ul class="footer-list">
+        <ul class="footer-list footer-links-list">
           <li><a href="contact.html#contact-section">Contact</a></li>
           <li><a href="about_us.html">About Us</a></li>
           <li><a href="visit.html#facilities-section">Facilities</a></li>  
