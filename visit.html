@@ -75,7 +75,7 @@
             <li><a href="explore.html">Explore</a></li>
             <li><a href="get_involved.html">Get involved</a></li>
             <li><a href="about_us.html">About us</a></li>
-            <li><a href="visit.html">Visit</a></li> 
+            <li><a href="visit.html">Visit</a></li>
           </ul>
           <ul class="navbar-menu-list">
             <li>
@@ -92,7 +92,7 @@
             </li>
             <li>
               <a href="visit.html" class="menu-link menu-link-active">Visit</a>
-            </li>    
+            </li>
           </ul>
         </div>
       </nav>
@@ -111,7 +111,7 @@
                 </h1>
               </div>
               <hr class="heading-divider" />
-              <p class="main-heading-lead">— You will find us right in the center of Bergen
+              <p class="main-heading-lead">— You will find us right in the heart of Bergen
               </p>
             </div>
             <div class="info-grid">
@@ -148,7 +148,7 @@
                 </ul>
               </div>
               <div class="info-box" id="item-2">
-                <h3 class="info-box-heading">Location</h3>
+                <h3 class="info-box-heading" id="location">Location</h3>
                 <div class="location-wrapper">
                   <p>The museum is located at:</p>
                   <p id="street">Nygårdsgaten 112</p>
@@ -164,7 +164,7 @@
                   <table>
                     <tr>
                       <th scope="row">Monday:</th>
-                      <td>Closed</td>
+                      <td><em>Closed</em></td>
                     </tr>
                     <tr class="even">
                       <th scope="row">Tuesday:</th>
@@ -191,10 +191,10 @@
                       <td>09:00 — 13:00</td>
                     </tr>
                   </table>
-                  <table>
+                  <table id="prices">
                     <tr>
                       <th scope="row">Children under 5:</th>
-                      <td>Free</td>
+                      <td><em>Free</em></td>
                     </tr>
                     <tr class="even">
                       <th scope="row">Children over 5:</th>
@@ -208,13 +208,16 @@
                       <th scope="row">Guided tour:</th>
                       <td>150 NOK</td>
                     </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
                   </table>
                 </div>
               </div>
             </div>
           </section>
           <!-- <div id="facilities"></div> -->
-          <section>
+          <section id="facilities-section">
             <div class="header">
               <div class="main-heading-wrapper">
                 <div class="main-heading-left"></div>
@@ -225,33 +228,43 @@
               <hr class="heading-divider" />
               <p class="main-heading-lead">— Our museum offers top modern facilities</p>
             </div>
+
             <div class="facilities-grid">
-              <div id="accessibility" class="info-box item-1">
-                <h4 class="info-box-heading">Accessibility</h4>
-                <p>The museum has wheelchair accessibility ramps.</p>
-                <p>
-                  It also has audio guides and braille display signs for the
-                  visually impaired.
-                </p>
+              <div id="accessibility" class="facilities-container item-1">
+                <div>
+                  <h4 class="info-box-heading facilities-heading">Accessibility</h4>
+                  <p>The museum has wheelchair accessibility ramps.</p>
+                  <p>
+                    It also has audio guides and braille display signs for the
+                    visually impaired.
+                  </p>
+                </div>
+                <div id="accessibility-img" class="facility-img"></div>
               </div>
-              <div class="image-box item-2"></div>
-              <div id="food-drink" class="info-box item-3">
-                <h4 class="info-box-heading">Food and Drink</h4>
-                <p>
-                  There is a café attached to the museum where you can get light
-                  lunches, soft drinks, coffee, snacks and more.
-                </p>
+
+              <div id="food-drink" class="facilities-container item-2">
+                <div>
+                  <h4 class="info-box-heading facilities-heading">Food and Drink</h4>
+                  <p>
+                    There is a café attached to the museum where you can get light
+                    lunches, soft drinks, coffee, snacks and more.
+                  </p>
+                </div>
+                <div id="food-img" class="facility-img"></div>
               </div>
-              <div class="image-box item-4"></div>
-              <div id="shop" class="info-box item-5">
-                <h4 class="info-box-heading">Shop</h4>
-                <p>
-                  Our shop offers a range of memorabilia from the museum as well as
-                  great gifts and activity packs that allow you to continue to
-                  explore science even after you have left the museum.
-                </p>
+
+              <div id="shop" class="facilities-container item-3">
+                <div>
+                  <h4 class="info-box-heading facilities-heading">Shop</h4>
+                  <p>
+                    Our shop offers a range of memorabilia from the museum as well as
+                    great gifts and activity packs that allow you to continue to
+                    explore science even after you have left the museum.
+                  </p>
+                </div>
+                <div id="shop-img" class="facility-img"></div>
               </div>
-              <div class="image-box item-6"></div>
+
             </div>
           </section>
         </div>
@@ -282,7 +295,7 @@
   <footer>
     <div class="footer-wrapper">
       <div class="footer-container fi1">
-        <h5 class="footer-heading">CONNECT:</h5>
+        <h6 class="footer-heading">CONNECT:</h6>
         <ul class="footer-icon-list">
           <li>
             <a href="https://www.facebook.com/"><span class="fa fa-facebook-f footer-icon"></span></a>
@@ -299,7 +312,7 @@
         </ul>
       </div>
       <div class="footer-container">
-        <h5 class="footer-heading">HOURS:</h5>
+        <h6 class="footer-heading">HOURS:</h6>
         <div class="footer-hours-wrapper">
           <ul class="footer-list">
             <li>Monday:</li>
@@ -311,7 +324,7 @@
             <li>Sunday:</li>
           </ul>
           <ul class="footer-list">
-            <li>Closed</li>
+            <li><em>Closed</em></li>
             <li>10:00 - 16:00</li>
             <li>10:00 - 16:00</li>
             <li>10:00 - 16:00</li>
@@ -323,26 +336,23 @@
       </div>
       <div class="footer-container">
         <div>
-          <h5 class="footer-heading">LOCATION:</h5>
+          <h6 class="footer-heading">LOCATION:</h6>
           <p>Nygårdsgaten 112</p>
           <p>5008 Bergen, Norway</p>
         </div>
-        <a href="visit.html#map" class="footer-location-wrapper"><span class="fa fa-map-marker-alt footer-icon"></span>
+        <a href="visit.html#location" class="footer-location-wrapper"><span
+            class="fa fa-map-marker-alt footer-icon"></span>
           <span id="location-link">Getting Here</span>
         </a>
       </div>
       <div class="footer-container">
-        <h5 class="footer-heading">CONTACT & SUPPORT:</h5>
+        <h6 class="footer-heading">USEFUL LINKS:</h6>
         <ul class="footer-list">
+          <li><a href="contact.html#contact-section">Contact</a></li>
           <li><a href="about_us.html">About Us</a></li>
-          <li><a href="visit.html#facilities">Facilities</a></li>
-          <li><a href="contact.html">Contact & FAQ</a></li>
-          <li>
-            <a>Email: contact@cms.com</a>
-          </li>
-          <li>
-            <a>Phone: 500 55 555</a>
-          </li>
+          <li><a href="visit.html#facilities-section">Facilities</a></li>
+          <li><a href="contact.html#faq-section">FAQ</a></li>
+          <li><a href="visit.html#prices">Prices</a></li>
         </ul>
       </div>
     </div>

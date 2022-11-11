@@ -3,8 +3,8 @@
 
 /* main 
 --------------------*/
-.contact-section,
-.faq-section {
+#contact-section,
+#faq-section {
   width: 100%;
   margin: 0 auto;
 }
@@ -62,8 +62,8 @@ li > P {
 @media only screen and (min-width: 768px) {
   /* Main
 --------------------*/
-  .contact-section,
-  .faq-section, .main-heading-wrapper, .main-sub-heading {
+  #contact-section,
+  #faq-section, .main-heading-wrapper, .main-sub-heading {
     width: 85%;
   }
 
@@ -76,8 +76,8 @@ li > P {
 @media only screen and (min-width: 992px) {
   /* Main
 --------------------*/
-.contact-section,
-  .faq-section, .main-heading-wrapper, .main-sub-heading {
+  #contact-section,
+  #faq-section, .main-heading-wrapper, .main-sub-heading {
     width: 80%;
   }
 
@@ -91,10 +91,10 @@ li > P {
   /* main 
 --------------------*/
 
-.contact-section,
-.faq-section, .main-heading-wrapper, .main-sub-heading {
-  width: 75%;
-}
+  #contact-section,
+  #faq-section, .main-heading-wrapper, .main-sub-heading {
+    width: 75%; 
+  }
 
   section > p {
     font-size: 1.25rem;
@@ -110,15 +110,14 @@ li > P {
 }
 
 @media only screen and (min-width: 1600px) {
-  .contact-section, .faq-section, .main-heading-wrapper, .main-sub-heading {
+  #contact-section, #faq-section, .main-heading-wrapper, .main-sub-heading {
     width: 70%;
   }
 }
 
 @media only screen and (min-width: 1800px) {
-
-  .contact-section,
-  .faq-section,
+  #contact-section,
+  #faq-section,
   .main-heading-wrapper,
   .main-sub-heading {
     width: 60%;
