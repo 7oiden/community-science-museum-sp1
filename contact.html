@@ -20,9 +20,12 @@
   <div class="flex-wrapper">
     <header>
       <div class="header-wrapper">
-        <figure class="logo">
-          <a href="index.html"><img src="images/cms-logo.png" alt="Community Science Museum logo" /></a>
-        </figure>
+        <a href="index.html" class="logo-wrapper">
+          <div class="logo">
+            <img src="images/cms-logo-new.png" alt="Community Science Museum logo" />
+          </div>
+          <span class="logo-text">CSM</span>
+        </a>
         <div class="header-content-wrapper">
           <div class="time-wrapper">
             <span class="fa fa-clock" id="header-time-icon"></span>
@@ -33,14 +36,15 @@
         </div>
         <div class="modal" id="ticket-modal">
           <div class="modal-header"><span class="modal-heading">Buy tickets</span><i
-              class="fas fa-times close-icon"></i>
+              class="fas fa-times-circle close-icon"></i>
           </div>
           <div class="modal-body">
             <p class="modal-text">
-              Please choose the desired number of tickets and click proceed in
-              order to finalize your purchase on www.ticketmaster.com
+              Please choose the desired number of tickets and proceed to checkout in
+              order to finalize your purchase.
             </p>
-            <form action="" class="ticket-form">
+            <p class="modal-text"><a href="visit.html#prices">Price list</a></p>
+            <form class="ticket-form">
               <div class="form-block">
                 <label for="select" class="modal-label">Number of tickets</label>
                 <select name="tickets" id="select">
@@ -57,7 +61,7 @@
                 <input type="date" id="date" name="date" value="2020-11-10" min="2020-11-10" max="2020-12-31">
               </div>
             </form>
-            <button class="button id="modal-button">Checkout</button>
+            <button class="button" id="modal-button" disabled>Checkout</button>
           </div>
         </div>
       </div>
@@ -114,14 +118,7 @@
               <p class="main-heading-lead">— Please submit your inquiry, and we will get back to you as soon as
                 possible</p>
             </div>
-            <form class="form info-box">
-              <!-- <ul class="form-info">
-                <li>
-                  Submit your inquiry, and we will get back to you as soon as
-                  possible
-                </li>
-                <li>Please also see our FAQ before submitting a question.</li>
-              </ul> -->
+            <form class="form info-box" id="contact-form">
               <div class="form-block">
                 <label for="name" class="label">Name</label>
                 <input type="text" id="name" placeholder="Name" />
@@ -217,23 +214,23 @@
         </div>
       </div>
       <div class="newsletter-wrapper">
-          <section class="newsletter-section">
-            <label class="newsletter-label" for="newsletter">
-              Sign up to our <em>newsletter</em> and be the first to know about our
-              exciting <em>new stuff</em>:
-            </label>
-            <div class="newsletter-success">
-              Welcome! Please check your inbox
-            </div>
-            <form class="newsletter-form">
-              <!-- <label for="newsletter-input">E-mail</label> -->
-              <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
-              <button class="button" id="sign-up-button" type="submit" name="subscribe">Sign up</button>
-            </form>
+        <section class="newsletter-section">
+          <label class="newsletter-label" for="newsletter">
+            Sign up to our <em>newsletter</em> and be the first to know about our
+            exciting <em>new stuff</em>:
+          </label>
+          <div class="newsletter-success">
+            Welcome! Please check your inbox
+          </div>
+          <form class="newsletter-form">
+            <!-- <label for="newsletter-input">E-mail</label> -->
+            <input id="newsletter-input" type="text" name="email" placeholder="youremail@domain.com" />
+            <button class="button" id="sign-up-button" type="submit" name="subscribe">Sign up</button>
             <p id="newsletter-error" class="error-message">
               Please enter a valid e-mail address
             </p>
-          </section>
+          </form>
+        </section>
       </div>
     </main>
   </div>
@@ -285,7 +282,8 @@
           <p><em>Nygårdsgaten 112</em></p>
           <p><em>5008 Bergen, Norway</em></p>
         </div>
-        <a href="visit.html#location" class="footer-location-wrapper"><span class="fa fa-map-marker-alt footer-icon"></span>
+        <a href="visit.html#location" class="footer-location-wrapper"><span
+            class="fa fa-map-marker-alt footer-icon"></span>
           <span id="location-link">Getting Here</span>
         </a>
       </div>
@@ -294,7 +292,7 @@
         <ul class="footer-list footer-links-list">
           <li><a href="contact.html#contact-section">Contact</a></li>
           <li><a href="about_us.html">About Us</a></li>
-          <li><a href="visit.html#facilities-section">Facilities</a></li>  
+          <li><a href="visit.html#facilities-section">Facilities</a></li>
           <li><a href="contact.html#faq-section">FAQ</a></li>
           <li><a href="visit.html#prices">Prices</a></li>
         </ul>

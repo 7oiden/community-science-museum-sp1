@@ -15,8 +15,12 @@
   /* --light-grey: #e8e8e8; */
   --main-bg: #FFFFFB;
   --navbar-color: #05778b;
+  --success-bg: #19a184bf;
+  --error-color: #fb655a;
   --info-box-bg: #f1f1f1;
   --footer-bg: #3d6a6b;
+  --input-focus-col: #02AAB0;
+  --text-highlight-col: #A9FFDB;
   --white: #ffffff;
   --sofia: "sofia-pro", "helvetica", "arial", "sans-serif";
   --proxima: "proxima-nova", "open sans", "corbel", "arial", "sans-serif";
@@ -27,4 +31,5 @@
   --main-sub-heading: "skolar-sans-latin",
     serif;
   --button-text: "proxima-soft", "helvetica", "arial", "sans-serif";
+  --logo-text: "futura-pt-condensed"
 }

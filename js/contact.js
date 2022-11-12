@@ -1,24 +1,21 @@
-const form = document.querySelector(".main-form");
-
+const form = document.querySelector("#contact-form");
 const name = document.querySelector("#name");
 const email = document.querySelector("#email_2");
 const message = document.querySelector("#message");
-
 const success = document.querySelector("#success");
-
 const nameError = document.querySelector("#name-error");
 const emailError = document.querySelector("#email_2-error");
 const messageError = document.querySelector("#message-error");
 
 function checkInput() {
   if (checkLength(name.value, 4)) {
-    nameError.style.visibility = "hidden";
+    nameError.style.display = "none";
   }
   if (checkLength(message.value, 14)) {
-    messageError.style.visibility = "hidden";
+    messageError.style.display = "none";
   }
   if (validateEmail(email.value) === true) {
-    emailError.style.visibility = "hidden";
+    emailError.style.display = "none";
   }
 }
 
@@ -30,19 +27,19 @@ function validateForm(event) {
   event.preventDefault();
 
   if (checkLength(name.value, 4) === true) {
-    nameError.style.visibility = "hidden";
+    nameError.style.display = "none";
   } else {
-    nameError.style.visibility = "visible";
+    nameError.style.display = "block";
   }
   if (checkLength(message.value, 14) === true) {
-    messageError.style.visibility = "hidden";
+    messageError.style.display = "none";
   } else {
-    messageError.style.visibility = "visible";
+    messageError.style.display = "block";
   }
   if (validateEmail(email.value) === true) {
-    emailError.style.visibility = "hidden";
+    emailError.style.display = "none";
   } else {
-    emailError.style.visibility = "visible";
+    emailError.style.display = "block";
   }
   if (
     checkLength(name.value, 4) === true &&

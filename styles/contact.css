@@ -23,7 +23,7 @@ section > p {
   gap: 1rem;
   width: 100%;
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 5%;
 }
 
 #submit-button {
@@ -34,11 +34,11 @@ section > p {
 #success {
   text-align: center;
   font-size: 1.125rem;
-  background-color: #034638bf;
+  background-color: var(--success-bg);
   border: 2px solid var(--dark-green);
   border-radius: 5px;
   color: white;
-  padding: 5px;
+  padding: 0.5rem 1rem;
   display: none;
 }
 
@@ -68,9 +68,8 @@ li > P {
   }
 
   .form {
-    width: 90%;
-    margin: 0 auto;
-  }
+    padding: 2rem 10%;
+   } 
 }
 
 @media only screen and (min-width: 992px) {
@@ -86,7 +85,9 @@ li > P {
   }
 
  .form {
-  padding: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 15%;
   gap: 1.5rem;
  } 
 }
