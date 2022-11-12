@@ -10,12 +10,12 @@
 
 #info-box-kids {
   background-color: var(--blue);
-  color: var(--white);
+  color: var(--light-text-col);
   border-radius: 0;
 }
 
 #info-box-kids p {
-  color: var(--white);
+  color: var(--light-text-col);
 }
 
 #image-box-kids {
@@ -28,8 +28,8 @@
 }
 
 .clubs-section {
-  background-color: var(--dark);
-  color: var(--white);
+  background-color: var(--dark-bg);
+  color: var(--light-text-col);
   padding: 2rem 1rem;
   margin: 0 auto 2rem auto;
   box-shadow: 0 6px 12px #00000040;
@@ -38,8 +38,8 @@
 .clubs-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: var(--dark);
-  color: var(--white);
+  background-color: var(--dark-bg);
+  color: var(--light-text-col);
 }
 
 .clubs-container {
@@ -94,7 +94,7 @@
 }
 
 .clubs-divider {
-  background-color: var(white);
+  color: var(--light-text-col);
   height: 1px;
   width: 100%;
   margin: 3rem 0;
@@ -137,7 +137,7 @@
 }
 
 #clubs-cta-wrapper p {
-  color: var(--white);
+  color: var(--light-text-col);
 }
 
 #club-anchor {

@@ -9,7 +9,7 @@
 .news-section {
   margin: 0;
   padding-top: 2rem;
-  background-color: white;
+  /* background-color: white; */
 }
 
 /* carousel */
@@ -44,7 +44,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--dark);
+  background-color: var(--dark-bg);
   color: #fff;
   border-radius: 3px;
 }
@@ -60,7 +60,7 @@
 }
 
 .slide-heading {
-  font-family: var(--proxima);
+  font-family: var(--main-heading);
   font-size: 1.125rem;
   margin: 0;
   padding: 0;
@@ -105,7 +105,7 @@
 
 .slider-controls {
   font-size: 1.5rem;
-  color: white;
+  color: var(--light-text-col);
   position: absolute;
   top: 2rem;
   transform: translateY(-50%);
@@ -134,7 +134,7 @@
   position: relative;
   width: 100%;
   height: 1000px;
-  color: var(--white);
+  color: var(--light-text-col);
   background-image: url(../images/robot-main_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,14 +147,14 @@
   max-width: 600px;
   margin: 0 auto;
   padding-top: 3rem;
-  font-family: var(--sofia);
+  font-family: var(--body-text);
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .hero-heading {
-  font-family: var(--proxima);
+  font-family: var(--main-heading);
   font-size: 2.5rem;
   margin: 0;
   padding: 0;
@@ -180,7 +180,7 @@
   margin: 0 auto;
   right: 10%;
   top: 60%;
-  font-family: var(--proxima);
+  font-family: var(--main-heading);
   /* transform: translate(-50%, -50%); */
   padding: 1.5rem;
   z-index: 1;
@@ -232,14 +232,14 @@
 }
 
 .categories-section {
-  background-color: #252525;
-  color: var(--white);
+  background-color: var(--dark-bg);
+  color: var(--light-text-col);
   padding: 2rem 0;
 }
 
 .categories-wrapper {
   width: 100%;
-  font-family: var(--proxima-soft);
+  font-family: var(--secondary-heading);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -258,7 +258,7 @@
 }
 
 .category-box {
-  color: var(--white);
+  color: var(--light-text-col);
   text-align: center;
   border-radius: 15px;
   padding: 1.5rem 0.75rem;
@@ -411,7 +411,7 @@
 .clubs-section {
   width: 100%;
   margin: 0 auto;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .clubs-wrapper {
@@ -438,10 +438,10 @@
 
 .clubs img {
   width: 100%;
-  border-top: 2px solid var(--dark);
-  border-left: 2px solid var(--dark);
-  border-right: 4px solid var(--dark);
-  border-bottom: 8px solid var(--dark);
+  border-top: 2px solid var(--dark-bg);
+  border-left: 2px solid var(--dark-bg);
+  border-right: 4px solid var(--dark-bg);
+  border-bottom: 8px solid var(--dark-bg);
   border-radius: 15px;
   box-shadow: 0 6px 12px #00000029;
   position: relative;
@@ -454,16 +454,16 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  font-family: var(--proxima);
+  font-family: var(--main-heading);
   font-size: 1.25rem;
-  color: var(--dark);
+  color: var(--dark-text-col);
   font-weight: bold;
   text-align: center;
   background-color: #ffffffbf;
   padding: 0.75rem;
-  border-left: 2px solid var(--dark);
-  border-right: 4px solid var(--dark);
-  border-bottom: 8px solid var(--dark);
+  border-left: 2px solid var(--dark-bg);
+  border-right: 4px solid var(--dark-bg);
+  border-bottom: 8px solid var(--dark-bg);
   border-radius: 0 0 15px 15px;
 }
 
@@ -563,7 +563,6 @@
     width: 50%;
     margin-left: 10%;
     padding-top: 4rem;
-    font-family: var(--sofia);
   }
 
   .slide-body {

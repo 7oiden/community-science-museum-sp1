@@ -37,19 +37,17 @@ section > p {
   background-color: var(--success-bg);
   border: 2px solid var(--dark-green);
   border-radius: 5px;
-  color: white;
+  color: var(--light-text-col);
   padding: 0.5rem 1rem;
   display: none;
 }
 
 .faq > li {
-  font-family: var(--sofia);
   font-weight: bold;
   font-size: 1.125rem;
 }
 
 li > P {
-  font-family: var(--neue-haas);
   font-size: 0.875rem;
   font-weight: normal;
   margin-top: 0;

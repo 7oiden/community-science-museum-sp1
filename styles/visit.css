@@ -127,7 +127,7 @@ tr.even {
 }
 
 .facilities-heading {
-  color: var(--white);
+  color: var(--light-text-col);
 }
 
 .facility-img {
@@ -151,18 +151,18 @@ tr.even {
 }
 
 #accessibility {
-  background-color: #8c2639;
-  color: white;
+  background-color: #1A587D;
+  color: var(--light-text-col);
 }
 
 #food-drink {
-  background-color: var(--dark-green);
-  color: white;
+  background-color: #CF4F30;
+  color: var(--light-text-col);
 }
 
 #shop {
-  background-color: var(--blue);
-  color: white;
+  background-color: #1C4387;
+  color: var(--light-text-col);
 }
 
 @media only screen and (min-width: 768px) {

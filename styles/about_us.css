@@ -32,7 +32,7 @@
 
 .item-2, .item-3, .item-4 {
   background-color: var(--blue);
-  color: white;
+  color: var(--light-text-col);
 }
 
 .vision-grid {
@@ -92,7 +92,7 @@ figcaption {
   width: 100%;
   padding: 0.375rem 1rem;
   background-color: #ffffffbf;
-  font-family: var(--proxima-soft);
+  font-family: var(--secondary-heading);
   text-align: center;
   font-weight: bold;
   border-radius: 0 0 15px 15px;

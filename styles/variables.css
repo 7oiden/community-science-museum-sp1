@@ -1,20 +1,24 @@
 :root {
-  --magenta: #a20067;
+  /* --magenta: #a20067; */
   --button-color: #a20067;
   --navbar-color: #05778b;
   --dark-purple: #210759;
   --heading-bg: #252525;
   --purple: #470c68;
   --light-purple: #7c68a6;
-  --dark: #252525;
+  --dark-bg: #252525;
+  --dark-text-col: #252525;
+  --light-text-col: #ffffff;
   --dark-blue: #003057;
   --dark-green: #034638;
   --blue: #007298;
   --orange: #dc4405;
   --footer-color: #3d6a6b;
   /* --light-grey: #e8e8e8; */
+  --body-bg: #d8d8d8;
+  --content-bg: #fffffb;
   --main-bg: #FFFFFB;
-  --navbar-color: #05778b;
+  /* --navbar-color: #05778b; */
   --success-bg: #19a184bf;
   --error-color: #fb655a;
   --info-box-bg: #f1f1f1;
@@ -22,14 +26,13 @@
   --input-focus-col: #02AAB0;
   --text-highlight-col: #A9FFDB;
   --white: #ffffff;
-  --sofia: "sofia-pro", "helvetica", "arial", "sans-serif";
-  --proxima: "proxima-nova", "open sans", "corbel", "arial", "sans-serif";
-  --proxima-soft: "proxima-soft", "helvetica", "arial", "sans-serif";
   /* --center-align: 0 auto 0 auto; */
   --body-text: "sofia-pro", "helvetica", "arial", "sans-serif";
   --main-heading: "proxima-nova", "helvetica", "arial", "sans-serif";
   --main-sub-heading: "skolar-sans-latin",
     serif;
+  --secondary-heading: "proxima-soft", "helvetica", "arial", "sans-serif";
   --button-text: "proxima-soft", "helvetica", "arial", "sans-serif";
+  --link-text: "proxima-soft", "helvetica", "arial", "sans-serif";
   --logo-text: "futura-pt-condensed"
 }
