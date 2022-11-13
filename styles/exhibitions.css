@@ -83,8 +83,8 @@
 
 #special-heading {
   background: rgb(37,37,37);
-  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(15,53,91,1) 100%);
-  box-shadow: 3px 0 1px rgba(15,53,91,1); 
+  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(32,77,123,1) 100%);
+  box-shadow: 3px 0 1px rgba(32,77,123,1); 
 }
 
 .space-gallery {

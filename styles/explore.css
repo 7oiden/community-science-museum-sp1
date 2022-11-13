@@ -9,6 +9,7 @@
 }
 
 #info-box-kids {
+  background: transparent;
   background-color: var(--blue);
   color: var(--light-text-col);
   border-radius: 0;

@@ -31,9 +31,22 @@
 }
 
 .item-2, .item-3, .item-4 {
-  background-color: var(--blue);
-  color: var(--light-text-col);
+  /* background: transparent; */
+  /* background-color: var(--dark-bg); */
+  /* color: var(--light-text-col); */
 }
+
+/* .item-2 h3 {
+  color: #F2BC57;
+}
+
+.item-3 h3 {
+  color: #58b8d2;
+}
+
+.item-4 h3 {
+  color: #F98379;
+} */
 
 .vision-grid {
   /* background-color: var(--dark); */

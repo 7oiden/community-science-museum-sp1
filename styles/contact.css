@@ -61,7 +61,7 @@ li > P {
   /* Main
 --------------------*/
   #contact-section,
-  #faq-section, .main-heading-wrapper, .main-sub-heading {
+  #faq-section {
     width: 85%;
   }
 
@@ -74,7 +74,7 @@ li > P {
   /* Main
 --------------------*/
   #contact-section,
-  #faq-section, .main-heading-wrapper, .main-sub-heading {
+  #faq-section {
     width: 80%;
   }
 
@@ -95,7 +95,7 @@ li > P {
 --------------------*/
 
   #contact-section,
-  #faq-section, .main-heading-wrapper, .main-sub-heading {
+  #faq-section {
     width: 75%; 
   }
 
@@ -113,16 +113,14 @@ li > P {
 }
 
 @media only screen and (min-width: 1600px) {
-  #contact-section, #faq-section, .main-heading-wrapper, .main-sub-heading {
+  #contact-section, #faq-section {
     width: 70%;
   }
 }
 
 @media only screen and (min-width: 1800px) {
   #contact-section,
-  #faq-section,
-  .main-heading-wrapper,
-  .main-sub-heading {
+  #faq-section {
     width: 60%;
   }
 }

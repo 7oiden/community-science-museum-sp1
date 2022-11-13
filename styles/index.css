@@ -359,7 +359,7 @@
 }
 
 #events {
-  background-color: #0f355b;
+  background-color: #204d7b;
   transition-property: background-color scale;
   transition-duration: 0.5s;
   scale: 1;
@@ -726,7 +726,7 @@
     font-size: 1.375rem;
   }
 
-  .slider-wrapper {
+  .slider-wrapper, .clubs-wrapper {
     width: 80%;
   }
 }
