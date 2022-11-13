@@ -284,14 +284,33 @@ header {
   text-decoration: none;
   font-size: 1.25rem;
   outline: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+}
+
+.menu-link::after {
+  position: relative;
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--light-text-col);
+  border-radius: 4px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s;
+  top: -2px;
 }
 
 .menu-link:hover {
-  text-decoration: underline;
+  color: var(--dark-light-col);
+}
+
+.menu-link:hover::after {
+  transform: scaleX(1);
 }
 
 .menu-link-active {
-  text-decoration: underline;
+  /* border-bottom: 2px solid var(--light-text-col); */
+  text-shadow: 0 2px 10px #fff
 }
 
 .mobile-menu {
@@ -774,8 +793,8 @@ footer {
 }
 
 .copyright-container {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--dark-bg);
+  color: var(--light-text-col);
 }
 
 #copyright {
