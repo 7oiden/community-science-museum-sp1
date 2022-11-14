@@ -1,5 +1,4 @@
 :root {
-  /* --magenta: #a20067; */
   --button-color: #a20067;
   --navbar-color: #05778b;
   --dark-purple: #210759;
@@ -14,19 +13,16 @@
   --blue: #007298;
   --orange: #dc4405;
   --footer-color: #3d6a6b;
-  /* --light-grey: #e8e8e8; */
   --body-bg: #d8d8d8;
   --content-bg: #fffffb;
   --main-bg: #FFFFFB;
-  /* --navbar-color: #05778b; */
   --success-bg: #19a184bf;
   --error-color: #fb655a;
   --info-box-bg: #f1f1f1;
   --footer-bg: #3d6a6b;
   --input-focus-col: #02AAB0;
-  --text-highlight-col: #A9FFDB;
+  --text-highlight-col: #6effe7;
   --white: #ffffff;
-  /* --center-align: 0 auto 0 auto; */
   --body-text: "sofia-pro", "helvetica", "arial", "sans-serif";
   --main-heading: "proxima-nova", "helvetica", "arial", "sans-serif";
   --main-sub-heading: "skolar-sans-latin",
@@ -34,5 +30,5 @@
   --secondary-heading: "proxima-soft", "helvetica", "arial", "sans-serif";
   --button-text: "proxima-soft", "helvetica", "arial", "sans-serif";
   --link-text: "proxima-soft", "helvetica", "arial", "sans-serif";
-  --logo-text: "futura-pt-condensed"
+  --logo-text: "proxima-nova-condensed"
 }

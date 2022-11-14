@@ -32,10 +32,6 @@ main {
   background-color: var(--body-bg);
 }
 
-/* hr {
-  width: 100%;
-} */
-
 .fa {
   color: var(--light-text-col);
   font-size: 2.5rem;
@@ -99,7 +95,6 @@ a {
   position: relative;
   width: 100%;
   background-image: linear-gradient(to right, #C33764 0%, #1D2671 100%);
-  /* background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 100%); */
   color: #fff;
   font-family: var(--main-heading);
   font-size: 1.5rem;
@@ -117,11 +112,6 @@ a {
   flex-direction: column;
   gap: 1rem;
 }
-
-/* form {
-  width: 85%;
-  margin: 0 auto;
-} */
 
 .modal-text {
   font-size: 1rem;
@@ -208,29 +198,20 @@ header {
   gap: 0.5rem;
 }
 
-.logo-text {
+.logo-text, .logo-text-mobile {
+  background: linear-gradient(90deg, rgba(3,88,140,1) 0%, rgba(7,38,68,1) 31%, rgba(5,57,97,1) 88%, rgba(2,75,125,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: var(--logo-text);
   font-weight: bold;
   font-size: 2rem;
-  color: var(--dark-blue);
 }
 
-/* .header-search-form {
-  display: flex;
+.logo-text {
+  display: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
-
-.header-search-form input {
-  padding: 0.5rem;
-  font-size: 1.125rem;
-} */
-
-/* .header-search-button {
-  border: none;
-  border-radius: 0 3px 3px 0;
-  cursor: pointer;
-  padding: 0.75rem;
-  background-color: var(--dark-blue);
-} */
 
 .time-wrapper {
   display: flex;
@@ -253,14 +234,14 @@ header {
 
 .logo {
   display: block;
-  width: 3rem;
+  width: 2.75rem;
   margin: 0;
   padding: 0;
 }
 
 .logo img {
   display: block;
-  width: 3rem;
+  width: 2.75rem;
 }
 
 .navbar {
@@ -270,7 +251,6 @@ header {
   padding: 0;
   margin: 0;
   background-image: linear-gradient(to right, #C33764 0%, #1D2671 100%);
-  /* background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 100%); */
   color: var(--content-bg);
   font-family: var(--link-text);
   font-size: 1.5rem;
@@ -291,7 +271,6 @@ header {
   outline: none;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
-  /* margin-bottom: -2px; */
   padding: 0.5rem 2rem;
 }
 
@@ -304,7 +283,6 @@ header {
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s;
-  /* top: -2px; */
 }
 
 .menu-link:hover {
@@ -460,10 +438,6 @@ ul li {
   display: none;
 }
 
-/* #success-message {
-  visibility: hidden;
-} */
-
 .fading-background {
   height: 100%;
   background-color: #00000099;
@@ -475,7 +449,6 @@ ul li {
   animation-name: animate-backdrop;
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
-  /* top: 130px; */
 }
 
 .fb-show {
@@ -485,7 +458,6 @@ ul li {
 
 /* Main
 --------------------*/
-/* new code */
 .main-wrapper {
   width: 100%;
   background-color: var(--main-bg);
@@ -505,7 +477,6 @@ ul li {
 .header {
   color: var(--dark-text-col);
   margin-bottom: 2.5rem;
-  /* padding-right: 5%; */
 }
 
 .main-heading-wrapper {
@@ -535,21 +506,10 @@ ul li {
   font-family: var(--main-sub-heading);
   font-size: 1.125rem;
   font-weight: 600;
-  /* font-style: italic; */
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   color: #C33764;
 }
-
-/* .heading-divider {
-  width: 100%;
-  height: 1px;
-  color: #C33764;
-  opacity: 0.5;
-  margin: 0;
-  padding: 0;
-  display: none;
-} */
 
 .cta-wrapper {
   display: flex;
@@ -578,7 +538,6 @@ ul li {
   font-family: var(--button-text);
   font-size: 1.125rem;
   display: inline-block;
-  /* align-self: center; */
   text-align: center;
   border: none;
   border-radius: 5px;
@@ -596,20 +555,10 @@ ul li {
   box-shadow: none;
 }
 
-
 .newsletter-wrapper {
   width: 100%;
   background-color: var(--dark-bg);
 }
-
-/* .blur {
-  position: absolute;
-  margin: 0 auto;
-  background-color: #ffffff80;
-  margin-bottom: 0;
-  position: relative;
-  bottom: 0;
-} */
 
 .newsletter-section {
   width: 90%;
@@ -636,20 +585,14 @@ ul li {
 #newsletter-input {
   flex: 3;
   font-size: 1rem;
-  /* border: 3px solid #0030574d; */
   border-radius: 0 7px 7px 0;
   padding: 0.75rem 1rem;
-  /* outline: none; */
 }
 
 .newsletter-label {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: var(--text-highlight-col);
 }
-
-/* #newsletter-input:focus {
-  border-color: #02AAB0;
-} */
 
 #sign-up-button {
   position: absolute;
@@ -669,7 +612,7 @@ ul li {
 .newsletter-success {
   width: 100%;
   font-size: 1.125rem;
-  background-color: var(--success-color);
+  background-color: var(--success-bg);
   border: 2px solid var(--dark-green);
   border-radius: 5px;
   color: var(--light-text-col);
@@ -679,7 +622,6 @@ ul li {
 }
 
 .info-box {
-  /* background-color: var(--info-box-bg); */
   color: var(--dark-text-col);
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(235,236,242,1) 100%);
@@ -692,11 +634,6 @@ ul li {
   margin: 0;
   padding: 0;
 }
-
-/* .info-box p {
-  font-size: 1rem;
-  color: var(--dark);
-} */
 
 .gallery-section {
   width: 100%;
@@ -726,7 +663,6 @@ ul li {
 footer {
   flex-shrink: 0;
   background-color: var(--footer-bg);
-  
 }
 
 .footer-wrapper {
@@ -738,7 +674,6 @@ footer {
   color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  
 }
 
 .footer-container ul {
@@ -776,7 +711,6 @@ footer {
   gap: 0.25rem;
   padding: 0;
   margin: 0;
-  
 }
 
 .footer-links-list li {
@@ -847,10 +781,6 @@ footer {
     font-size: 1.5rem;
     text-align: center;
   }
-  
-  /* .gallery-wrapper {
-    gap: 2rem;
-  } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -884,26 +814,30 @@ footer {
 
   /* Main
 --------------------*/
-.info-box {
-  border-radius: 5px;
-}
+  .info-box {
+    border-radius: 5px;
+  }
 
-.image-box, .image-box img {
-  border-radius: 5px;
-}
-
-  /* Footer
---------------------*/
+  .image-box, .image-box img {
+    border-radius: 5px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
 
   /* Header
   --------------------*/
-
   .navbar-icon {
       font-size: 2.5rem;
     }
+
+  .logo-text {
+    display: block;
+  }
+    
+  .logo-text-mobile {
+    display: none;
+  }  
 
   #header-time-icon {
     font-size: 1.375rem;
@@ -963,7 +897,6 @@ footer {
 --------------------*/
   .navbar-menu {
     align-items: center;
-    /* padding: 0.75rem 0; */
   }
 
   .navbar-menu-list {
@@ -998,7 +931,6 @@ footer {
 
   .main-heading {
     font-size: 2.5rem;
-    /* text-align: center; */
   }
 
   .main-heading-lead {
@@ -1011,7 +943,6 @@ footer {
 
   .info-box-heading {
     font-size: 1.375rem;
-
   }
 
   .info-box p {
