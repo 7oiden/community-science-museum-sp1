@@ -3,7 +3,6 @@
 
 /* main 
 --------------------*/
-
 .info-list {
   padding-left: 1rem;
 }
@@ -57,8 +56,7 @@ table {
 
 th, td {
   padding: 0.5rem;
-  text-align: left;
-  
+  text-align: left; 
 }
 
 tr {
@@ -166,120 +164,114 @@ tr.even {
 }
 
 @media only screen and (min-width: 768px) {
+
   /* Main
 --------------------*/
-.info-section {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "admission admission"
-    "location hours";
+  .info-section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "admission admission"
+      "location hours";
   }
 
-.info-grid {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.facilities-container {
-  flex-direction: row;
-  border-radius: 5px;
-}
-
-.item-2 {
-  flex-direction: row-reverse;
-}
-
-#accessibility-img {
-  border-radius: 0 5px 5px 0;
-}
-
-#food-img {
-  border-radius: 5px 0 0 5px;
-}
-
-#shop-img {
-  border-radius: 0 5px 5px 0;
-}
-
-/* .facility-img {
-  height: auto;
-} */
-
-.facilities-container > div {
-  width: 50%;
-}
-
-.facilities-grid {
-  width: 90%;
+  .info-grid {
+    width: 90%;
+    margin: 0 auto;
   }
-}
 
-@media only screen and (min-width: 992px) {
-  
-}
+  .facilities-container {
+    flex-direction: row;
+    border-radius: 5px;
+  }
 
-@media only screen and (min-width: 1200px) {
-  /* Main
---------------------*/
-.info-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "admission admission location"
-    "hours hours hours";
+  .item-2 {
+    flex-direction: row-reverse;
+  }
+
+  #accessibility-img {
+    border-radius: 0 5px 5px 0;
+  }
+
+  #food-img {
+    border-radius: 5px 0 0 5px;
+  }
+
+  #shop-img {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .facilities-container>div {
+    width: 50%;
   }
 
   .facilities-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-        "accessability food shop";
-    }
+    width: 90%;
+  }
+}
 
-    .facilities-container {
-      flex-direction: column;
-    }
+@media only screen and (min-width: 1200px) {
 
-    .item-2 {
-      flex-direction: column-reverse;
-    }
-
-    #accessibility-img {
-      border-radius: 0 0 5px 5px;
-    }
-    
-    #food-img {
-      border-radius: 5px 5px 0 0;
-    }
-    
-    #shop-img {
-      border-radius: 0 0 5px 5px;
-    }
-
-    .facilities-container > div {
-      width: 100%;
-    }
-
-    .table-wrapper {
-      flex-direction: row;
-      gap: 3rem;
-    }
+  /* Main
+--------------------*/
+  .info-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "admission admission location"
+      "hours hours hours";
   }
 
-  @media only screen and (min-width: 1600px) {
-    .info-grid {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-        "admission location hours";
-    }
-
-    .table-wrapper {
-      flex-direction: column;
-    }
+  .facilities-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "accessability food shop";
   }
+
+  .facilities-container {
+    flex-direction: column;
+  }
+
+  .item-2 {
+    flex-direction: column-reverse;
+  }
+
+  #accessibility-img {
+    border-radius: 0 0 5px 5px;
+  }
+
+  #food-img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  #shop-img {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .facilities-container>div {
+    width: 100%;
+  }
+
+  .table-wrapper {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .info-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "admission location hours";
+  }
+
+  .table-wrapper {
+    flex-direction: column;
+  }
+}
 
   

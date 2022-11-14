@@ -65,7 +65,6 @@
 
 .club-heading {
   text-transform: uppercase;
-  /* text-decoration: underline; */
   font-family: var(--main-heading);
   font-size: 1.25rem;
   padding: 0;
@@ -240,10 +239,6 @@ figure, figure img {
   .clubs-wrapper {
     width: 85%;
   }
-
-  /* .clubs-section {
-    width: 85%;
-  } */
 
   .clubs-heading {
     font-size: 1.5rem;

@@ -58,6 +58,7 @@ li > P {
 --------------------*/
 
 @media only screen and (min-width: 768px) {
+
   /* Main
 --------------------*/
   #contact-section,
@@ -67,10 +68,11 @@ li > P {
 
   .form {
     padding: 2rem 10%;
-   } 
+  }
 }
 
 @media only screen and (min-width: 992px) {
+
   /* Main
 --------------------*/
   #contact-section,
@@ -78,28 +80,29 @@ li > P {
     width: 80%;
   }
 
-  .faq > li {
+  .faq>li {
     margin-left: 5%;
   }
 
- .form {
-  width: 90%;
-  margin: 0 auto;
-  padding: 3rem 15%;
-  gap: 1.5rem;
- } 
+  .form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 15%;
+    gap: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+
   /* main 
 --------------------*/
 
   #contact-section,
   #faq-section {
-    width: 75%; 
+    width: 75%;
   }
 
-  section > p {
+  section>p {
     font-size: 1.25rem;
   }
 
@@ -107,18 +110,21 @@ li > P {
     font-size: 1.25rem;
   }
 
-  li > p {
+  li>p {
     font-size: 1.125rem;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  #contact-section, #faq-section {
+
+  #contact-section,
+  #faq-section {
     width: 70%;
   }
 }
 
 @media only screen and (min-width: 1800px) {
+
   #contact-section,
   #faq-section {
     width: 60%;
