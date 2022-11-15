@@ -1,6 +1,6 @@
 # Semester Project 1 - Community Science Museum
 
-![image](https://res.cloudinary.com/dhd2paq70/image/upload/v1659102878/CMS_pmbnsc.png)
+![image](https://res.cloudinary.com/dhd2paq70/image/upload/v1668508833/csm-bergen_gi4z7d.jpg)
 
 _Screenshot of the projects hero at the homepage_
 
