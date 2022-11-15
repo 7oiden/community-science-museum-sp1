@@ -10,6 +10,8 @@ The Community Science Museum is a local science museum for children. The website
 
 This project was an assignment from Noroff's Frontend course first year and was delivered in December 2020. The time frame was 4 weeks, and the project requirements are listed in the next section.
 
+As part of the Noroff portfolio assignment the site was given a design overhaul, as well as som added JavaScript in 2021.
+
 <hr/>
 
 ## Assignment brief
@@ -26,6 +28,7 @@ The project should reflect the student's creative and technical knowledge and sk
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 
