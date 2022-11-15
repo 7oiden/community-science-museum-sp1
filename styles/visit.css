@@ -137,7 +137,7 @@ tr.even {
 }
 
 #accessibility-img {
-  background-image: url(../images/handicap.jpg);
+  background-image: url(../images/headphones.jpg);
 }
 
 #food-img {
@@ -149,17 +149,17 @@ tr.even {
 }
 
 #accessibility {
-  background-color: #1A587D;
+  background-color: var(--dark-green);
   color: var(--light-text-col);
 }
 
 #food-drink {
-  background-color: #CF4F30;
+  background-color: #8c2639;
   color: var(--light-text-col);
 }
 
 #shop {
-  background-color: #1C4387;
+  background-color: var(--dark-blue);
   color: var(--light-text-col);
 }
 

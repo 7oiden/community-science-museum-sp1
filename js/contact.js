@@ -47,6 +47,10 @@ function validateForm(event) {
     validateEmail(email.value) === true
   ) {
     success.style.display = "block";
+
+    setTimeout(function () {
+      success.style.display = "none";
+    }, 3000);
   }
 }
 

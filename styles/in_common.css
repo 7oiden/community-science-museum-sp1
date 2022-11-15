@@ -72,15 +72,15 @@ input, select, textarea {
   font-family: var(--body-text);
 }
 
-input:focus {
-  outline: none;
-  border: 3px solid var(--input-focus-col);
-}
-
 textarea {
   font-family: var(--body-text);
   padding: 0.75rem;
   height: 250px;
+}
+
+input:focus, .textarea:focus, select:focus {
+  outline: none;
+  border: 3px solid var(--input-focus-col);
 }
 
 .modal {
@@ -507,7 +507,7 @@ ul li {
   font-size: 1.125rem;
   font-weight: 600;
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   color: var(--dark-text-col);
   /* border-bottom: 1px solid #00000040; */
   /* background: linear-gradient(90deg, rgba(235,236,242,1) 0%, rgba(255,255,255,1) 100%); */
@@ -632,6 +632,7 @@ ul li {
 
 .info-box-heading {
   font-family: var(--secondary-heading);
+  color: #1D2671;
   font-size: 1.25rem;
   margin: 0;
   padding: 0;
@@ -717,7 +718,7 @@ footer {
 
 .footer-links-list li {
   list-style: disc;
-  padding: 0;
+  padding: 0.25rem 0 0 0;
   margin: 0 0 0 1rem;
   color: inherit;
 }
@@ -742,21 +743,25 @@ footer {
 }
 
 .copyright-container {
-  background-color: var(--dark-bg);
+  background-color: #000;
   color: var(--light-text-col);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+}
+
+.copyright-container > * {
+  display: block;
+  color: var(--body-bg)
 }
 
 #copyright {
   font-weight: bold;
-  display: block;
   text-align: center;
   margin: 0;
-  padding: 0.75rem 0;
-}
-
-#copyright::before {
-  content: "\00A9";
-  padding-right: 5px;
+  padding: 0;
 }
 
 /* styles that change
