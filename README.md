@@ -41,4 +41,3 @@ git clone git@github.com:7oiden/community-science-museum-sp1.git
 
 Get in touch at [LinkedIn](https://www.linkedin.com/in/tommy-j-16b56678/)
 
-test
