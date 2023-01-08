@@ -12,6 +12,8 @@ This project was an assignment from Noroff's Frontend course first year and was 
 
 As part of the Noroff portfolio assignment the site was given a design overhaul, as well as som added JavaScript in 2021.
 
+To better reflect my current design skills I gave the site a further facelift in the autumn of 2022.
+
 <hr/>
 
 ## Assignment brief
